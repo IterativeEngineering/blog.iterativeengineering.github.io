@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iterative Engineering</title>
+    <description>Iterative Engineering - website</description>
+    <link>https://blog.iterative.engineering</link>
+    <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 10 Jul 2021 01:55:46 +0200</pubDate>
+    <lastBuildDate>Sat, 10 Jul 2021 01:55:46 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>How to Avoid Overdesigning</title>
+        <description>&lt;p&gt;Overdesign is a state wherein a product is overly-complex or exceeds the usual standards of its contemporaries to the point where it becomes annoying or unusable. Engineering companies are the most likely to fall into this trap as we’re the ones competing to find the next big thing.&lt;/p&gt;
+
+&lt;p&gt;In addition to the negative impact on user experience it also heavily increases costs and time to market. As it leads to long design &amp;amp; analysis cycles, followed by even more  challenging implementation due to complexity of planned solution.&lt;/p&gt;
+
+&lt;p&gt;A prominent example of overdesign could be at the time (2013!) a potentially breakthrough &lt;a href=&quot;https://www.digitaltrends.com/cool-tech/samsung-to-introduce-eye-scroll-feature-on-galaxy-s4/&quot;&gt;eye-scroll feature&lt;/a&gt; of the Samsung Galaxy S4. The idea was to allow users a “hands-free” experience by letting their eyes control the screen, which in an essence sounds great.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;But smart scrolling didn’t always work well for me, and like Air Gesture, I found it easier just to touch the screen to navigate the old-fashioned way 
+&lt;cite&gt;Steve Kovach, Businessinsider&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;However, it turned out that users quickly became tired of the feature and its interference whenever they were watching a video or reading an article.&lt;/p&gt;
+
+&lt;p&gt;So how to avoid Overdesign? Following are a few rules that may help in doing so!&lt;/p&gt;
+
+&lt;h2 id=&quot;what-people-actually-want&quot;&gt;What People Actually Want&lt;/h2&gt;
+&lt;p&gt;Companies often get in their own way by overthinking features without sparing a thought for what users actually want. As we embrace a customer driven approach we wanted to figure this out for ourselves. So we simply asked some of our clients to leave reviews of our work on the &lt;a href=&quot;https://clutch.co/profile/iterative-engineering&quot;&gt;B2B service provider&lt;/a&gt; platforms, Clutch and The Manifest.&lt;/p&gt;
+
+&lt;p&gt;The answers were quite telling and most of them boil down to three essential elements. They want their projects done quickly, the products easy to use and the collaboration process to be tight &amp;amp; transparent.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-it-done&quot;&gt;Get It Done&lt;/h2&gt;
+&lt;p&gt;Projects operate under tight deadlines in order to minimize expenditures on a single factor. Finishing a job ahead of schedule is a big boost to everyone involved. While this isn’t anything groundbreaking, it seems most companies underestimate how much clients value this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/win.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our client in this review made a point of mentioning the rapid development that our development process allowed. This pushed their timetable up, which positively impacted their sales and leads for the rest of the period.&lt;/p&gt;
+
+&lt;h2 id=&quot;keep-it-lean&quot;&gt;Keep it Lean&lt;/h2&gt;
+&lt;p&gt;Iterative approach as one of the foundations of Lean principles is an invaluable solution for avoiding overdesign. The philosophy of many little steps provide a chance for a rapid verification and constant adjustments of taken direction. Leading to better results with less work, while also avoiding overthinking. It is also more appreciated by the customers as they see changes quickly and can really affect the shape of the product.&lt;/p&gt;
+
+&lt;h2 id=&quot;easy-to-use&quot;&gt;Easy to Use&lt;/h2&gt;
+&lt;p&gt;Features are supposed to make things easier. If the feature makes the overall process too complex, this is an utter failure of design. This is where expertise in UX and UI come in handy, as duly proven by this review.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/healthly.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The client was quite happy with the advanced functionalities that the app provided while being easy to use for their customers.&lt;/p&gt;
+
+&lt;p&gt;Another great example of how important is to facilaite ease of use via UI&amp;amp;UX is the case of &lt;a href=&quot;https://www.linkedin.com/posts/krzysztof-gasior_productmanagement-uxui-monetization-activity-6702359106499420160-yAeq/&quot;&gt;how Headspace had simplified their purchase flow&lt;/a&gt; which resulted with an increase of conversion rate by nearly 50%.&lt;/p&gt;
+
+&lt;h2 id=&quot;do-not-reinvent-the-wheel&quot;&gt;Do not reinvent the wheel&lt;/h2&gt;
+&lt;p&gt;Follow the design patterns and best practices - this will help you to maintain your work and avoid problems that others have already solved. Keep in mind that processes, tools and conventions lay at the core of a successful software development efforts.&lt;/p&gt;
+
+&lt;p&gt;Do market research &amp;amp; competition analysis - it’s not a shame to check and learn from others about how they have approached and solved similar challenges. In fact that is the true nature of progress - avoid previously made mistakes while enriching the experience with new features.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Overdesign is a big threat, but one that you can definitely avoid, by:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;focusing on features that matters&lt;/li&gt;
+  &lt;li&gt;delivering iteratively &amp;amp; quickly&lt;/li&gt;
+  &lt;li&gt;keeping things simple and intuitive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
+        
+        <category>Lean principles</category>
+        
+        <category>Iterative approach</category>
+        
+        <category>Good practices</category>
+        
+        <category>Overdesign</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
