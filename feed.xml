@@ -5,9 +5,159 @@
     <description>Iterative Engineering - website</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jul 2021 21:45:37 +0200</pubDate>
-    <lastBuildDate>Mon, 12 Jul 2021 21:45:37 +0200</lastBuildDate>
+    <pubDate>Tue, 28 Sep 2021 22:18:49 +0200</pubDate>
+    <lastBuildDate>Tue, 28 Sep 2021 22:18:49 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Creating optimised Docker Images using Multi-Stage Builds</title>
+        <description>&lt;p&gt;Have you ever wondered how you can leverage building docker containers in your project to take your experience to the next level? If so then have a look at this step by step guide that hopefully will help you achieve that goal using multi-stage builds.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you would like to preview the code used in this article, just clone &lt;a href=&quot;https://github.com/IterativeEngineering/blog.docker-multistage-builds&quot;&gt;this repository&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-use-multi-stage-builds&quot;&gt;Why use Multi-Stage builds?&lt;/h2&gt;
+
+&lt;p&gt;In a nutshell multi-stage builds feature is a recent improvement to the docker build system&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;final image sizes&lt;/li&gt;
+  &lt;li&gt;image build orchestration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The refinement is achieved via allowing to consecutively use different images (for whatever purpose is needed) and pipe data subsequently through them within a single Dockerfile with assumption that the final image is built based on the last FROM statement.&lt;/p&gt;
+
+&lt;h2 id=&quot;standard-approach&quot;&gt;Standard approach&lt;/h2&gt;
+
+&lt;p&gt;If you already worked with a docker, you certainly faced the problem of large built images or had to do custom shell scripts to orchestrate build. Each instruction in the dockerfile adds another layer to the image which increases its size. Moreover, creating more complex images may require the use of additional shell scripts and multiple dockerfiles which may be cumbersome to manage.&lt;/p&gt;
+
+&lt;p&gt;To illustrate the above issues, I’ve created a simple java web application that I am going to build and run in a docker container. By default, without using multistage builds, the  dockerfile would look like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Dockerfile.singlestage
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.3
+WORKDIR /deployments
+COPY . /deployments
+RUN mvn package
+EXPOSE 8080
+CMD [&quot;java&quot;, &quot;-jar&quot;, &quot;target/demo-webapp-0.0.1-SNAPSHOT.jar&quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the above file we perform following steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create a new image based on the redhat’s &lt;em&gt;universal base image&lt;/em&gt; that already contains openjdk-11.&lt;/li&gt;
+  &lt;li&gt;Create the &lt;em&gt;/deployments&lt;/em&gt; working directory and then copy the content of our project to it.&lt;/li&gt;
+  &lt;li&gt;Build java archive file with maven&lt;/li&gt;
+  &lt;li&gt;Run java application from command line&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Since we already have the Dockerfile prepared, we can start building the image with the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker build -t demo-webapp:singlestage -f Dockerfile.singlestage .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Afterwards we can check the result:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker images
+
+## _REPOSITORY 		TAG 		IMAGE ID 		CREATED 		SIZE
+demo-webapp		singlestage	491de71ef224		24 seconds ago		549MB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;build-an-image-using-builder-pattern--shell-script&quot;&gt;Build an image using builder pattern &amp;amp; shell script&lt;/h2&gt;
+
+&lt;p&gt;The newly created image that runs our application is quite large, so let’s optimize it using the builder pattern. For this purpose, we need to create 2 separate dockerfiles - one responsible for building the application and the other for launching it. Thanks to this approach, the final runner container may contain only elements that are important to us.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile.builder
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.3
+WORKDIR /deployments
+COPY . /deployments
+RUN mvn package
+# Dockerfile.runner
+FROM gcr.io/distroless/java:11
+COPY ./deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .
+EXPOSE 8080
+CMD [&quot;demo-webapp-0.0.1-SNAPSHOT.jar&quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To automate the process of building images defined in separate dockerfiles, we create a shell script that carries out the steps necessary to run our application.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Building demo-webapp builder image...&quot;&lt;/span&gt;
+docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:singlestage-builder &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Dockerfile.builder &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Extracting builder content...&quot;&lt;/span&gt;
+docker container create &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; extract-builder demo-webapp:singlestage-builder
+docker container &lt;span class=&quot;nb&quot;&gt;cp &lt;/span&gt;extract-builder:/deployments &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+docker container &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; extract-builder
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Building demo-webapp runner image...&quot;&lt;/span&gt;
+docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:singlestage-runner &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Dockerfile.runner &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After executing the &lt;em&gt;build.sh&lt;/em&gt; script, we can notice that 2 images were created and the final (runner) image is much smaller than before. It is a very big advantage, because you only need to transfer the runner image during application release in the future.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## _REPOSITORY 		TAG 			IMAGE ID 	CREATED 		SIZE
+demo-webapp		singlestage-runner	5fd438ae9faa	9 seconds ago		217MB
+demo-webapp		singlestage-builder	f6e90caab67b	10 seconds ago		532MB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;multi-stage-build&quot;&gt;Multi-stage build&lt;/h2&gt;
+
+&lt;p&gt;Along with the implementation of version 17.05, docker provided the multi-stage build functionality which allows you to divide the creation of the container into several phases and build it as several separate images that have access to each other. To take advantage of multistage builds, we need to create a new dockerfile.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile.multistage
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.3 AS builder
+WORKDIR /deployments
+COPY . /deployments
+RUN mvn package
+FROM gcr.io/distroless/java:11 AS runner
+COPY --from=builder /deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .
+EXPOSE 8080
+CMD [&quot;demo-webapp-0.0.1-SNAPSHOT.jar&quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As of now dockerfile contains two &lt;em&gt;FROM&lt;/em&gt; clauses and it will build 2 separate images consecutively - the first &lt;em&gt;builder&lt;/em&gt; and the second, &lt;em&gt;runner&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;When building the &lt;em&gt;builder&lt;/em&gt; image we execute almost exactly the same commands as in the case of executing the build using the single-stage build. The difference is the application startup command, which will be invoked by the &lt;em&gt;runner image&lt;/em&gt;. So let’s try to run it.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker build -t demo-webapp:multistage -f Dockerfile.multistage .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After calling the &lt;em&gt;docker images&lt;/em&gt; command, we can see that also this time two images were created. However, we didn’t need to write additional shell scripts for this.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## _REPOSITORY 		TAG 		IMAGE ID 		CREATED 		SIZE
+demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
+&amp;lt;none&amp;gt; 		&amp;lt;none&amp;gt;			4969b156508a		8 seconds ago		549MB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;As you can see, the multi-stage approach has many advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Easier management of the image creation process (thanks to the possibility of including instructions for several related images in a single dockerfile)&lt;/li&gt;
+  &lt;li&gt;No need to create shell scripts to automate the entire process.&lt;/li&gt;
+  &lt;li&gt;Saving disk space (By using the builder container as a common base for subsequent containers)&lt;/li&gt;
+  &lt;li&gt;Reducing the size of the final runtime container&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it! We hope you found “Creating optimised Docker Images using Multi-Stage Builds” helpful in your devops activities.&lt;/p&gt;
+
+&lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
+        
+        <category>Docker</category>
+        
+        <category>Docker Images</category>
+        
+        <category>Containers</category>
+        
+        <category>Build pipeline</category>
+        
+        <category>Continuous Delivery</category>
+        
+        
+      </item>
     
       <item>
         <title>How to Avoid Overdesigning</title>
