@@ -5,9 +5,186 @@
     <description>Iterative Engineering - website</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Sep 2021 19:32:18 +0200</pubDate>
-    <lastBuildDate>Wed, 29 Sep 2021 19:32:18 +0200</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Fri, 10 Dec 2021 20:21:20 +0100</pubDate>
+    <lastBuildDate>Fri, 10 Dec 2021 20:21:20 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Key 8 takeaways from StackOverflow 2021 developers survey</title>
+        <description>&lt;p&gt;Recently over 80k developers gave their voice on how they earn, learn, level up and which tools they use the most willingly or which they hate. Following we share our CEO and CTO subjective viewpoint on some of the most important insights from Stack Overflow Developer Survey 2021.&lt;/p&gt;
+
+&lt;p&gt;The IT industry is a very dynamic landscape. As any competitive employer and digital product development company we try to stay up to date with rapid changes and newest technology trends. We analyse the market, track research reports and surveys, all of that to try to stay at the bleeding edge of technology.&lt;/p&gt;
+
+&lt;h3 id=&quot;executive-summary&quot;&gt;Executive Summary&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;JavaScript is the most widely used technology, however position of Python, Java and C# is still strong.&lt;/li&gt;
+  &lt;li&gt;Scripting (JavaScript, Python, TypeScript) and modern compiled languages (GO and Rust) are trending and getting more and more interest from the community.&lt;/li&gt;
+  &lt;li&gt;Proficiency with Docker &amp;amp; containers is a must have for modern developers.&lt;/li&gt;
+  &lt;li&gt;Visual Studio Code as an IDE, and React.js as a web framework are dominating on the market in their category, both loved and widely used.&lt;/li&gt;
+  &lt;li&gt;Open source document databases (Mongo, ElasticSearch) and SQL databases (PostgreSQL, MySql) are storage technologies which developers want to use the most.&lt;/li&gt;
+  &lt;li&gt;Online resources are the primary source for knowledge and information.&lt;/li&gt;
+  &lt;li&gt;Most of the developers are graduates but they learn how to code elsewhere.&lt;/li&gt;
+  &lt;li&gt;Top paid jobs are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;current-tech-demand-and-workloads&quot;&gt;Current tech demand and workloads&lt;/h2&gt;
+
+&lt;p&gt;Let’s start with a look at the most utilised technologies across the sector and dive into details of what is used to turn the cogs&lt;/p&gt;
+
+&lt;h3 id=&quot;most-popular-programming-languages&quot;&gt;Most popular programming languages&lt;/h3&gt;
+
+&lt;p&gt;There can be only one king and it is JavaScript. The domination is impressive and we believe it will remain as such for a longer time. Its universality is probably a key factor here. It is applied for all ‘sides’ of software development: server side programming (backend), web (frontend) and mobile (hybrid). And to be fair it’s pretty damn good for all of those.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-programming-language.png&quot; alt=&quot;Most used programming language - there can only be one king and it is JavaScript&quot; title=&quot;Most used programming language - there can be only one king and it is JavaScript&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The trend of steady and constant growth of scripting languages such as JavaScript, Python or TypeScript still in place. As their performance limitations are less and less relevant, they can be applied to more and more cases. While working with such languages is in a lot of cases more efficient and quick compared to native or managed technologies.&lt;/p&gt;
+
+&lt;p&gt;However Java in Top 5 and C# in the Top 10 is definitely a signal that managed languages are still strong. In fact they are evolving faster than ever before. Very recently we’ve welcomed the official release of Java 17 (!) and it just took 6 months to get there after the release of Java 16, while in the past new releases took years (i.e. jump from java 8 to Java 9 took 5 years). It really became worth following the official road map: &lt;a href=&quot;https://www.java.com/releases/&quot;&gt;https://www.java.com/releases/&lt;/a&gt; as changes are happening rapidly and often are pretty useful (i.e. Record).&lt;/p&gt;
+
+&lt;p&gt;It feels that we at Iterative Engineering are pretty well placed. Our main focus is Java for backend and JavaScript/TypeScript for frontend and mobile. We also often deal with most of the TOP 10, with the only exception of native technologies - C or C++, which we’ve never found that attractive. We believe that such focus gives a great current and future outlook.&lt;/p&gt;
+
+&lt;h3 id=&quot;integrated-development-environment-ide-means&quot;&gt;Integrated Development Environment (IDE means)&lt;/h3&gt;
+
+&lt;p&gt;Kudos to Microsoft for Visual Studio Code. Efficient yet lightweight tool, with on-demand support for a variety of technologies. It is truly a pleasure to use it and clearly the market voice confirms that. A well deserved 1st place with more than double the score of the closest competitor.&lt;/p&gt;
+
+&lt;p&gt;Top 5 consist of 3 lightweight and 2 fully featured IDEs. The trend is for sure related to increasing popularity of scripting languages. However we think that the core reason was that bloated IDEs used to be not fun to work with. A myriad of features along with bad performance - was just a killer. Fortunately modern ones like IntelliJ and Visual Studio (at least the recent versions) are definitely built with performance in mind and are superb to work with.&lt;/p&gt;
+
+&lt;p&gt;A surprise for us was the strong position of Notepad++. Internally we had given up on it a while ago in favour of Visual Studio Code or Sublime, but clearly it’s worth revisiting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-IDE.png&quot; alt=&quot;Most used IDEs - the winner is Visual Studio Code&quot; title=&quot;Most used IDEs - the winner is Visual Studio Code&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fundamental-coding-toolset&quot;&gt;Fundamental coding toolset&lt;/h3&gt;
+
+&lt;p&gt;Git &amp;amp; Docker (containers), a must haves for any modern developer. Those tools make life (or work should we say?) so much easier that it’s unprecedented. If you wish to learn a recently new and interesting Docker feature might be worth a look at a really great article on &lt;a href=&quot;https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/&quot;&gt;Creating optimised Docker Images using Multi-Stage Builds&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kubernetes as the only container orchestrator on the top 10 list is no surprise. Developer driven environment alongside reliable operations, makes it a first choice for more complex deployment scenarios. Once combined with other most used tools from devops perspective - Ansible and Terraform, we get a pretty neat set up for CI/CD.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/fundamental-coding-toolset.png&quot; alt=&quot;Fundamental coding toolset starts with Git and Docker&quot; title=&quot;Fundamental coding toolset starts with Git and Docker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A bit of curiosity for us are &lt;a href=&quot;https://github.com/yarnpkg/berry&quot;&gt;Yarn&lt;/a&gt; and &lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=2ahUKEwij47-Wk9D0AhXJxIsKHcDrAQMQFnoECAsQAQ&amp;amp;url=https%3A%2F%2Fdeno.land%2F&amp;amp;usg=AOvVaw2tfvsEssp_oAi-6XYbU_uo&quot;&gt;Deno&lt;/a&gt;. The result of the first we take as a signal to consider it as a replacement of npm package manager, especially that it recently increased on development. The second proves that Rust and V8 JavaScript are reality and we really need to get up to speed with those technologies as we expect it to grow rapidly.&lt;/p&gt;
+
+&lt;h3 id=&quot;top-cloud-platforms&quot;&gt;Top cloud platforms&lt;/h3&gt;
+
+&lt;p&gt;AWS maintains its lead as the most widely used cloud platform, but Google Cloud and Microsoft Azure made substantial gains and are catching up. They simply became reliable and performant, especially Microsoft Azure, which a few years ago was just a pain to work with (from dev perspective).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/top-cloud-platforms.png&quot; alt=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; title=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-desired-by-the-tech-talents&quot;&gt;What is desired by the tech talents?&lt;/h2&gt;
+
+&lt;p&gt;Now the other side of the coin - the outlook on which technologies are the most inspiring for and the most wanted across developers. While at Iterative we do not blindly follow hypes, we really keep an eye on the trends. Simply because all of the great technologies of tomorrow are newcomers of today.&lt;/p&gt;
+
+&lt;h3 id=&quot;most-wished-programming-languages&quot;&gt;Most wished programming languages&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/coding-in-python-bridy-not-enjoys-it.png&quot; alt=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; title=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One may not like it (as the birdy above!), yet still Python is the most desired programming language to work with across the Community. The lead however isn’t ultimate and there is strong competition right behind. TypeScript &amp;amp; JavaScript, but also Go and Rust - modern compile concurrency focused languages, which seems like another trend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wished-programming-languages.png&quot; alt=&quot;Most wished programming languages - One may not like it (as the birdy above!), yet still Python is the most desired programming language&quot; title=&quot;Most wished programming languages - One may not like it (as the birdy above!), yet still Python is the most desired programming language&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From our tech of choice perspective seeing two JVM related Java &amp;amp; Kotlin in Top 10 feels pretty great. While not the most hyped out there, still many so many wish to learn it, just because of the fact that it’s reliable and enjoyable to work with.&lt;/p&gt;
+
+&lt;h3 id=&quot;loved-data-storage-technologies&quot;&gt;Loved data storage technologies&lt;/h3&gt;
+
+&lt;p&gt;Quite shocked by the fact of such a close competition for 1st place. PostgreSql and MongoDB, two completely different philosophies, yet both got a sizable amount of interest from the Community. Redis in 3rd and Elasticsearch in 4th place - no surprise at all - simply well proven and excellent at what they are aimed for. MySql closing Top 5 just seals that open source SQL and document stores are having a good time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/loved-data-storage-technologies.png&quot; alt=&quot;Loved data storage technologies - PostgreSql and MongoDB are the winners&quot; title=&quot;Loved data storage technologies - PostgreSql and MongoDB are the winners&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A bit disappointing to not see any interest in graph databases like Neo4j, however it may be that they still need to prove their merits. Finally at Iterative we use 4 out of Top 5 daily, but now are also tempted to give Mongo a try, as the desire must be there for the reason.&lt;/p&gt;
+
+&lt;h3 id=&quot;most-wanted-web-frameworks&quot;&gt;Most wanted web frameworks&lt;/h3&gt;
+
+&lt;p&gt;React.js not only has dominated the market (as this year it has overtaken jQuery in usage), but it is also the most wanted web framework by the devs. Winning in both rankings, in probably the most competitive and variable category, confirms that going with it you can’t be wrong.&lt;/p&gt;
+
+&lt;p&gt;Vue.js and Angular are still valued and on the radar of the community, but a newcomer Svelte had taken a fair chunk of interest too. Definitely a one to try out.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wanted-web-frameworks.png&quot; alt=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; title=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-curve-and-knowledge-sources&quot;&gt;Learning curve and knowledge sources&lt;/h2&gt;
+
+&lt;p&gt;The learning process or at least first encounters with coding happens pretty early, sometimes as early as 5-10y old, mostly before 18y old and in 90% before 24y! It may mean that learning to code in your 30’s may be nearly impossible. However we need to remember that for at least several years everyone has basic contact with programming in early school days, therefore the meaning might be a bit blurred here&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-when-we-start-to-code.png&quot; alt=&quot;When we start to code - in 90% of cases before 24y&quot; title=&quot;When we start to code - in 90% of cases before 24y&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s a pity that this question isn’t followed with more detailed ones about the learning curve. Writing first lines of code and the actual start of learning to code might not be the same for many.&lt;/p&gt;
+
+&lt;p&gt;80% of professionals have higher education and while (good) companies do not care for the education grades but rather for the actual knowledge. Still it’s the most natural path to become a developer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-developers-education.png&quot; alt=&quot;Developers education - 80% of professionals have higher education&quot; title=&quot;Developers education - 80% of professionals have higher education&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Contrary to education, developers do not learn how to code in a college but rather from online resources, books and in school. Younger ones tend to learn from online resources, while older ones have learned from traditional mediums like school or books. The speed at which technology changes might be the reason, as it’s not feasible to maintain college or school courses up to date with all updates and trends. However the principals and concepts for building the software remain mostly intact and this might be a real value proposition.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-where-do-devs-learn-from.png&quot; alt=&quot;Where do devs learn from - Contrary to education, developers learn from online resources&quot; title=&quot;Where do devs learn from - Contrary to education, developers learn from online resources&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once work related questions or challenges are in need to solve then Google and StackOverflow are the first line of support. Countless situations for us in which those significantly helped to solve the problems. IT actually maybe one of the most important skills to learn as a developer - effective searching for information. One may think it’s easy, but it takes time to master to search efficiently.&lt;/p&gt;
+
+&lt;p&gt;If stuck, another approach is context switching or having a pause. Very often helpful, as problems then are analyzed subconsciously often leading to solutions immediately once back to work. However, sometimes it’s a burden, as not easy to switch off from working, that’s the reality and needs to be accepted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-what-do-devs-when-stuck.png&quot; alt=&quot;What do devs when stuck - Google and StackOverflow are the first line of support&quot; title=&quot;What do devs when stuck - Google and StackOverflow are the first line of support&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At Iterative in addition to all mentioned in TOP 5 we also like to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber duck debugging&lt;/a&gt; technique. It simply is about describing the problem to someone else, so he can understand the context. Turns out that such exercise helps to structure the problem to yourself and very often points to an error or blocker immediately once prepared.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-is-the-money&quot;&gt;Where is the money?&lt;/h2&gt;
+
+&lt;p&gt;When it comes to coding, it looks like the biggest money is in less popular, functional paradigm related programming languages. Clojure with an average equal to $95k per year takes a 1st place with a big lead against following F# at $81k - pretty impressive! Python with $59k on 19th, JavaScript with $54k on 29th and Java with $52k on 34th places. Not bad, but the gap between leaders is quite significant. Not sure if the results are fully representative due a smaller sample for functional technologies, but not being common may actually be the reason for the price.&lt;/p&gt;
+
+&lt;p&gt;In the devops world what is popular and what is desired is also paid pretty well. 1st place was taken by Pulumi with an average of $110k, followed by Terraform and Chef with $90k averages, next are Ansible, Puppet and Chef with around $75k average.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-top-paid-technologies.png&quot; alt=&quot;Top paid technologies are related to functional programming (Clojure, F#)&quot; title=&quot;Top paid technologies are related to functional programming (Clojure, F#)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at salaries from a role angle confirms that except executives and managers ranging at average of $95k, devops specialists are the ones to earn the most with an average of $70k. Then next to them are data engineers at $68k. The gap to software developers is quite big as full stack or backend specialists average at around $55k, while frontend at $50k. The least paid are students at roughly $20k and weirdly mobile developers at only $42k.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-best-salaries.png&quot; alt=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; title=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Thank you for getting with us over here, as it wasn’t a short read! We hope our analysis will give you base ground for further thinking, discussion and planning the future.&lt;/p&gt;
+
+&lt;p&gt;Takeaways:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;JavaScript is the most widely used technology, however position of Python, Java and C# is still strong.&lt;/li&gt;
+  &lt;li&gt;Scripting (JavaScript, Python, TypeScript) and modern compiled languages (GO and Rust) are trending and getting more and more interest from the community.&lt;/li&gt;
+  &lt;li&gt;Proficiency with Docker &amp;amp; containers is a must have for modern developers.&lt;/li&gt;
+  &lt;li&gt;Visual Studio Code as an IDE, and React.js as a web framework are dominating on the market in their category, both loved and widely used.&lt;/li&gt;
+  &lt;li&gt;Open source document databases (Mongo, ElasticSearch) and SQL databases (PostgreSQL, MySql) are storage technologies which developers want to use the most.&lt;/li&gt;
+  &lt;li&gt;Online resources are the primary source for knowledge and information.&lt;/li&gt;
+  &lt;li&gt;Most of the developers are graduates but they learn how to code elsewhere.&lt;/li&gt;
+  &lt;li&gt;Top paid jobs are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Conclusions for us at Iterative Engineering:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Explore and evaluate Rust and GO technologies&lt;/li&gt;
+  &lt;li&gt;Dockerize, Containerize, Kubernitize… just do it, no excuses!&lt;/li&gt;
+  &lt;li&gt;Embrace the fact that devs learn online - encourage and provide them means for that&lt;/li&gt;
+  &lt;li&gt;Consider unifying towards React.js and Visual Studio Code  as a primary choice&lt;/li&gt;
+  &lt;li&gt;Prepare higher budgets when going for devops and data engineering related endeavours.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, while the above seemed most insightful, there are many other aspects which the StackOverflow survey has touched and we really recommend &lt;a href=&quot;https://insights.stackoverflow.com/survey/2021&quot;&gt;taking a look at it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you wish to discuss your thoughts or have any questions give us a shout on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LinkedIn&lt;/li&gt;
+  &lt;li&gt;contact@iterative.pl&lt;/li&gt;
+  &lt;li&gt;l or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
+        
+        <category>IT Industry State &amp; Outlook</category>
+        
+        <category>Software Development Trends</category>
+        
+        <category>Community Surveys &amp; Raports</category>
+        
+        
+      </item>
     
       <item>
         <title>Creating optimised Docker Images using Multi-Stage Builds</title>
@@ -17,7 +194,7 @@
 
 &lt;h2 id=&quot;why-use-multi-stage-builds&quot;&gt;Why use Multi-Stage builds?&lt;/h2&gt;
 
-&lt;p&gt;In a nutshell multi-stage builds feature is a recent improvement to the docker build system, which improves and simplifies control over:&lt;/p&gt;
+&lt;p&gt;In a nutshell multi-stage builds feature is a recent improvement to the docker build system&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;final image sizes&lt;/li&gt;
@@ -64,18 +241,14 @@ demo-webapp		singlestage	491de71ef224		24 seconds ago		549MB
 
 &lt;h2 id=&quot;build-an-image-using-builder-pattern--shell-script&quot;&gt;Build an image using builder pattern &amp;amp; shell script&lt;/h2&gt;
 
-&lt;p&gt;The newly created image that runs our application is quite large, so let’s optimize it using the builder pattern. For this purpose, we need to create 2 separate dockerfiles. First responsible for building the application:&lt;/p&gt;
+&lt;p&gt;The newly created image that runs our application is quite large, so let’s optimize it using the builder pattern. For this purpose, we need to create 2 separate dockerfiles - one responsible for building the application and the other for launching it. Thanks to this approach, the final runner container may contain only elements that are important to us.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile.builder
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.3
 WORKDIR /deployments
 COPY . /deployments
 RUN mvn package
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Second, as follows, used for launching the app. Separation allows to package only elements that are important to run the app and omitt anything which used just for building.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile.runner
+# Dockerfile.runner
 FROM gcr.io/distroless/java:11
 COPY ./deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .
 EXPOSE 8080
@@ -95,7 +268,7 @@ docker container &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class
 docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:singlestage-runner &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Dockerfile.runner &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;After executing the &lt;em&gt;build.sh&lt;/em&gt; script, we can notice that 2 images were created and the runner image is much smaller than before. This obviously is an improvement in context of distribution and storage.&lt;/p&gt;
+&lt;p&gt;After executing the &lt;em&gt;build.sh&lt;/em&gt; script, we can notice that 2 images were created and the final (runner) image is much smaller than before. It is a very big advantage, because you only need to transfer the runner image during application release in the future.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## _REPOSITORY 		TAG 			IMAGE ID 	CREATED 		SIZE
 demo-webapp		singlestage-runner	5fd438ae9faa	9 seconds ago		217MB
@@ -188,7 +361,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 &lt;h2 id=&quot;get-it-done&quot;&gt;Get It Done&lt;/h2&gt;
 &lt;p&gt;Projects operate under tight deadlines in order to minimize expenditures on a single factor. Finishing a job ahead of schedule is a big boost to everyone involved. While this isn’t anything groundbreaking, it seems most companies underestimate how much clients value this.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/win.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/win.png&quot; alt=&quot;Wakacje.IN, a travel holidays e-commerce app - client review for 5 stars&quot; title=&quot;Wakacje.IN, a travel holidays e-commerce app - client review for 5 stars&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Our client in this review made a point of mentioning the rapid development that our development process allowed. This pushed their timetable up, which positively impacted their sales and leads for the rest of the period.&lt;/p&gt;
 
@@ -198,7 +371,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 &lt;h2 id=&quot;easy-to-use&quot;&gt;Easy to Use&lt;/h2&gt;
 &lt;p&gt;Features are supposed to make things easier. If the feature makes the overall process too complex, this is an utter failure of design. This is where expertise in UX and UI come in handy, as duly proven by this review.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/healthly.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/healthly.png&quot; alt=&quot;Healthly, award wining telemedicine platform - another 5 start client review&quot; title=&quot;Healthly, award wining telemedicine platform - another 5 start client review&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The client was quite happy with the advanced functionalities that the app provided while being easy to use for their customers.&lt;/p&gt;
 
