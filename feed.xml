@@ -5,8 +5,8 @@
     <description>Iterative Engineering - website</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Dec 2021 20:21:20 +0100</pubDate>
-    <lastBuildDate>Fri, 10 Dec 2021 20:21:20 +0100</lastBuildDate>
+    <pubDate>Fri, 10 Dec 2021 21:10:26 +0100</pubDate>
+    <lastBuildDate>Fri, 10 Dec 2021 21:10:26 +0100</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -25,7 +25,7 @@
   &lt;li&gt;Open source document databases (Mongo, ElasticSearch) and SQL databases (PostgreSQL, MySql) are storage technologies which developers want to use the most.&lt;/li&gt;
   &lt;li&gt;Online resources are the primary source for knowledge and information.&lt;/li&gt;
   &lt;li&gt;Most of the developers are graduates but they learn how to code elsewhere.&lt;/li&gt;
-  &lt;li&gt;Top paid jobs are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries.&lt;/li&gt;
+  &lt;li&gt;Top paid jobs, ranging at $100k+ per year, are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries with an average of $70k per year.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;current-tech-demand-and-workloads&quot;&gt;Current tech demand and workloads&lt;/h2&gt;
@@ -150,7 +150,7 @@
   &lt;li&gt;Open source document databases (Mongo, ElasticSearch) and SQL databases (PostgreSQL, MySql) are storage technologies which developers want to use the most.&lt;/li&gt;
   &lt;li&gt;Online resources are the primary source for knowledge and information.&lt;/li&gt;
   &lt;li&gt;Most of the developers are graduates but they learn how to code elsewhere.&lt;/li&gt;
-  &lt;li&gt;Top paid jobs are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries.&lt;/li&gt;
+  &lt;li&gt;Top paid jobs, ranging at $100k+ per year, are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries with an average of $70k per year.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Conclusions for us at Iterative Engineering:&lt;/p&gt;
