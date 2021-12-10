@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iterative Engineering</title>
-    <description>Iterative Engineering - website</description>
+    <title>Iterative Engineering Blog</title>
+    <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Dec 2021 21:10:26 +0100</pubDate>
-    <lastBuildDate>Fri, 10 Dec 2021 21:10:26 +0100</lastBuildDate>
+    <pubDate>Fri, 10 Dec 2021 22:56:45 +0100</pubDate>
+    <lastBuildDate>Fri, 10 Dec 2021 22:56:45 +0100</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
