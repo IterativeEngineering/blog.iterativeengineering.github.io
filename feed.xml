@@ -5,9 +5,71 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Dec 2021 00:27:34 +0100</pubDate>
-    <lastBuildDate>Sat, 11 Dec 2021 00:27:34 +0100</lastBuildDate>
+    <pubDate>Sun, 02 Jan 2022 20:17:53 +0100</pubDate>
+    <lastBuildDate>Sun, 02 Jan 2022 20:17:53 +0100</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>How to keep the team integrated despite physical distance</title>
+        <description>&lt;p&gt;Last year was a challenge for all of us. The pandemic has shaken the whole world and reshaped it in many ways. We are all aware of the negative imprint it left on people’s everyday lives. Among other things, it heavily reduced the social aspects of daily work impacting teamwork and collaboration. But as every coin has two sides, even the hard times may offer opportunities for growth.&lt;/p&gt;
+
+&lt;h3 id=&quot;challenges&quot;&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;In our case the lockdown and work from home policy had almost no impact on our work routines, because over the years of providing remote services for our clients we were well equipped with the right tools. The main downside of social distancing was the reduced flow of information. If you are in the office, sitting next to each other, it’s so much easier to cooperate! It was not a problem to switch to the online communication channels within the team, as everyone was already using them daily to talk directly to our clients. To ensure the proper flow of information, we introduced a few sync-up meetings focused on specific topics, along with one monthly company-wide where everyone is encouraged to share their thoughts. That worked surprisingly well!&lt;/p&gt;
+
+&lt;p&gt;But it’s not just about work. An ability to stay at home with my favourite cup of coffee and avoid terrible traffic, that recently jammed my district due to construction works, was awesome. But I quickly realised that I was missing something important, that I wasn’t fully aware of before it suddenly disappeared. I enjoyed my work not only because of the technical and business challenges, but also because I could spend time with great people. These seemingly unimportant chats in the kitchen, jokes and casual conversations are the actual glue that keeps the team together.&lt;/p&gt;
+
+&lt;p&gt;That social aspect may start to fade away when everyone is focused just on their work, but it’s an essential part of an enjoyable workplace. When people know and like each other, it’s much easier to work together on tasks requiring cooperation, provide onboarding and mentoring for the newcomers or just delivering – as people help each other and feel responsible for the end result.&lt;/p&gt;
+
+&lt;h2 id=&quot;opportunities&quot;&gt;Opportunities&lt;/h2&gt;
+
+&lt;p&gt;The fully remote working environment has also encouraged us to look beyond our neighbourhood and open for fully remote workers from other parts of the country. We have now successfully established cooperation with developers from southern, central and northern Poland, which proved to be very productive.&lt;/p&gt;
+
+&lt;p&gt;As the pandemic restrictions were relaxed, we slowly started to transition to a hybrid way of working, where the office is open for everyone, but they can decide to work remotely if that’s more convenient. As we now had some fully-remote teammates, a new challenge arose. How can we integrate the team members, when we are so far away from each other?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-kitchen.jpg&quot; alt=&quot;Kitchen party&quot; title=&quot;Kitchen party&quot; /&gt;
+&lt;em&gt;So good to have a kitchen in the office&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, we were successful in building a company not only on technical skills of individuals, but also on relationships and teamwork. We were celebrating birthdays (where individually crafted memes became tradition), meeting regularly at pizza parties and spending casual time together. But for the new team members from northern Poland it was much more difficult to travel 600 km just to meet us in the office.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-together&quot;&gt;Get together!&lt;/h2&gt;
+
+&lt;p&gt;We decided to pick up a central location and provide a convenient opportunity for everyone to meet in person. After a short voting, the team decided for Warsaw. We organised a weekend trip to meet everyone in person and spend some time together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/remote-work.jpg&quot; alt=&quot;Who said that remote work should be limited to home-office?&quot; title=&quot;Who said that remote work should be limited to home-office?&quot; /&gt;
+&lt;em&gt;Who said that remote work should be limited to home-office?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We are located in different parts of Poland, but the majority lives in the Silesia region. That group took a direct high-speed train to Warsaw, where the integration started. When the rest of the folks arrived, we began the evening by visiting a fantastic Croatian restaurant. After that, there was a pub crawl, a couple of shots and a visit to a club. That was a great come back to normal life after months of social distancing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/in-restaurant.jpg&quot; alt=&quot;The Iterative team in a Croatian restaurant&quot; title=&quot;The Iterative team in a Croatian restaurant&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/bar.jpg&quot; alt=&quot;Pub crawling&quot; title=&quot;Pub crawling&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next day started with a delicious breakfast in the pancake restaurant and then there was time for team building. We decided to visit an escape room and divided into two sub-teams that competed for the fastest time to solve the mysteries of a WWII bunker and riddles left by a couple of artists. That was fun!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/escape-room.jpg&quot; alt=&quot;Escape Room&quot; title=&quot;Escape Room&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-engineering-team.jpg&quot; alt=&quot;Iterative Engineering Team&quot; title=&quot;Iterative Engineering Team&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Integration events like this are seemingly just unimportant entertainment. But they provide a hidden, immeasurable value. Interaction between people is essential for having a productive and well-organized team. As social animals (yes, engineers also count!), we cannot rely solely on verbal online communication. Even though we still keep working remotely, meeting a person in real life and spending even a short time together is the fastest way to encourage further cooperation. It is important to put a face to a voice, and H254-compressed video of a face on a zoom call won’t let you build the same level of relationship as a real meeting!&lt;/p&gt;
+
+&lt;p&gt;We’re definitely going to repeat this regularly!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.jpg&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
+&lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
+        
+        <category>Remote work</category>
+        
+        <category>Team integration</category>
+        
+        <category>Distributed teams</category>
+        
+        
+      </item>
     
       <item>
         <title>Key 8 Takeaways from Stack Overflow 2021 Developers Survey</title>
