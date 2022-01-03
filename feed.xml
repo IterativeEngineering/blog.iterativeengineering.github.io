@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Jan 2022 22:43:24 +0100</pubDate>
-    <lastBuildDate>Sun, 02 Jan 2022 22:43:24 +0100</lastBuildDate>
+    <pubDate>Mon, 03 Jan 2022 17:04:33 +0100</pubDate>
+    <lastBuildDate>Mon, 03 Jan 2022 17:04:33 +0100</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -271,13 +271,13 @@
 
 &lt;p&gt;To illustrate the above issues, I’ve created a simple java web application that I am going to build and run in a docker container. By default, without using multistage builds, the  dockerfile would look like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Dockerfile.singlestage
-FROM registry.access.redhat.com/ubi8/openjdk-11:1.3
-WORKDIR /deployments
-COPY . /deployments
-RUN mvn package
-EXPOSE 8080
-CMD [&quot;java&quot;, &quot;-jar&quot;, &quot;target/demo-webapp-0.0.1-SNAPSHOT.jar&quot;]
+&lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Dockerfile.singlestage&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; registry.access.redhat.com/ubi8/openjdk-11:1.3&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /deployments&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; . /deployments&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;mvn package
+&lt;span class=&quot;k&quot;&gt;EXPOSE&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; 8080&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;java&quot;, &quot;-jar&quot;, &quot;target/demo-webapp-0.0.1-SNAPSHOT.jar&quot;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In the above file we perform following steps:&lt;/p&gt;
@@ -290,14 +290,14 @@ CMD [&quot;java&quot;, &quot;-jar&quot;, &quot;target/demo-webapp-0.0.1-SNAPSHOT
 
 &lt;p&gt;Since we already have the Dockerfile prepared, we can start building the image with the following command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker build -t demo-webapp:singlestage -f Dockerfile.singlestage .
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:singlestage &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Dockerfile.singlestage &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Afterwards we can check the result:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker images
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker images
 
-## _REPOSITORY 		TAG 		IMAGE ID 		CREATED 		SIZE
+&lt;span class=&quot;c&quot;&gt;## _REPOSITORY 		TAG 		IMAGE ID 		CREATED 		SIZE&lt;/span&gt;
 demo-webapp		singlestage	491de71ef224		24 seconds ago		549MB
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -305,21 +305,21 @@ demo-webapp		singlestage	491de71ef224		24 seconds ago		549MB
 
 &lt;p&gt;The newly created image that runs our application is quite large, so let’s optimize it using the builder pattern. For this purpose, we need to create 2 separate dockerfiles - one responsible for building the application and the other for launching it. Thanks to this approach, the final runner container may contain only elements that are important to us.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile.builder
-FROM registry.access.redhat.com/ubi8/openjdk-11:1.3
-WORKDIR /deployments
-COPY . /deployments
-RUN mvn package
-# Dockerfile.runner
-FROM gcr.io/distroless/java:11
-COPY ./deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .
-EXPOSE 8080
-CMD [&quot;demo-webapp-0.0.1-SNAPSHOT.jar&quot;]
+&lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Dockerfile.builder&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; registry.access.redhat.com/ubi8/openjdk-11:1.3&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /deployments&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; . /deployments&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;mvn package
+&lt;span class=&quot;c&quot;&gt;# Dockerfile.runner&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; gcr.io/distroless/java:11&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; ./deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;EXPOSE&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; 8080&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;demo-webapp-0.0.1-SNAPSHOT.jar&quot;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To automate the process of building images defined in separate dockerfiles, we create a shell script that carries out the steps necessary to run our application.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Building demo-webapp builder image...&quot;&lt;/span&gt;
 docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:singlestage-builder &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Dockerfile.builder &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Extracting builder content...&quot;&lt;/span&gt;
@@ -332,7 +332,7 @@ docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:single
 
 &lt;p&gt;After executing the &lt;em&gt;build.sh&lt;/em&gt; script, we can notice that 2 images were created and the final (runner) image is much smaller than before. It is a very big advantage, because you only need to transfer the runner image during application release in the future.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## _REPOSITORY 		TAG 			IMAGE ID 	CREATED 		SIZE
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## _REPOSITORY 		TAG 			IMAGE ID 	CREATED 		SIZE&lt;/span&gt;
 demo-webapp		singlestage-runner	5fd438ae9faa	9 seconds ago		217MB
 demo-webapp		singlestage-builder	f6e90caab67b	10 seconds ago		532MB
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -341,27 +341,27 @@ demo-webapp		singlestage-builder	f6e90caab67b	10 seconds ago		532MB
 
 &lt;p&gt;Along with the implementation of version 17.05, docker provided the multi-stage build functionality which allows you to divide the creation of the container into several phases and build it as several separate images that have access to each other. To take advantage of multistage builds, we need to create a new dockerfile.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile.multistage
-FROM registry.access.redhat.com/ubi8/openjdk-11:1.3 AS builder
-WORKDIR /deployments
-COPY . /deployments
-RUN mvn package
-FROM gcr.io/distroless/java:11 AS runner
-COPY --from=builder /deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .
-EXPOSE 8080
-CMD [&quot;demo-webapp-0.0.1-SNAPSHOT.jar&quot;]
+&lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Dockerfile.multistage&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; registry.access.redhat.com/ubi8/openjdk-11:1.3 AS builder&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /deployments&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; . /deployments&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;mvn package
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; gcr.io/distroless/java:11 AS runner&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; --from=builder /deployments/target/demo-webapp-0.0.1-SNAPSHOT.jar .&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;EXPOSE&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; 8080&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;demo-webapp-0.0.1-SNAPSHOT.jar&quot;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;As of now dockerfile contains two &lt;em&gt;FROM&lt;/em&gt; clauses and it will build 2 separate images consecutively - the first &lt;em&gt;builder&lt;/em&gt; and the second, &lt;em&gt;runner&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;When building the &lt;em&gt;builder&lt;/em&gt; image we execute almost exactly the same commands as in the case of executing the build using the single-stage build. The difference is the application startup command, which will be invoked by the &lt;em&gt;runner image&lt;/em&gt;. So let’s try to run it.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker build -t demo-webapp:multistage -f Dockerfile.multistage .
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; demo-webapp:multistage &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Dockerfile.multistage &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;After calling the &lt;em&gt;docker images&lt;/em&gt; command, we can see that also this time two images were created. However, we didn’t need to write additional shell scripts for this.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## _REPOSITORY 		TAG 		IMAGE ID 		CREATED 		SIZE
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## _REPOSITORY 		TAG 		IMAGE ID 		CREATED 		SIZE&lt;/span&gt;
 demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 &amp;lt;none&amp;gt; 		&amp;lt;none&amp;gt;			4969b156508a		8 seconds ago		549MB
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
