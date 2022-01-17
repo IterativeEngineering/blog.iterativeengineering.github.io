@@ -5,9 +5,375 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Jan 2022 17:04:33 +0100</pubDate>
-    <lastBuildDate>Mon, 03 Jan 2022 17:04:33 +0100</lastBuildDate>
+    <pubDate>Mon, 17 Jan 2022 18:05:34 +0100</pubDate>
+    <lastBuildDate>Mon, 17 Jan 2022 18:05:34 +0100</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Secure Spring Boot Application with Microsoft Azure AD</title>
+        <description>&lt;p&gt;Application security is an important part of cohesive digital product security and one for which typically software developers are responsible for. Handling it properly and according to industry standards is crucial, especially nowadays where literally anything that gets published is immediately targeted and scanned for vulnerabilities.&lt;/p&gt;
+
+&lt;p&gt;One of the most common challenges in that aspect is authentication &amp;amp; authorization of the users. While there are many ways to do it, its really worth considering an external Identity Provider approach either via OAuth2 or SAML. The reason is that it typically gives great and proven security without the need to code and maintain the whole process, which is not trival!&lt;/p&gt;
+
+&lt;p&gt;This article presents an in detail walkthrough on how to secure a Java Spring Boot Application using Microsoft Azure AD, which is a great and widely adopted example of a reliable Identity Provider.&lt;/p&gt;
+
+&lt;h4 id=&quot;who-may-find-this-article-helpful&quot;&gt;Who may find this article helpful&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Java developers experienced with Spring looking for ‘how to’ on pluging in Azure AD as Identity Provider into their apps.&lt;/li&gt;
+  &lt;li&gt;Software Developers wishing to increase their knowledge around applications security and authentication schemes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you belong to first group you may skip the first part and jump directly to the “Register application in Azure Tenant” chapter.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-will-you-learn&quot;&gt;What will you learn&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What are the advantages and disadvantages of using an external Identity Provider&lt;/li&gt;
+  &lt;li&gt;How to configure and register your application in the Azure Tenant which is required to secure it by Azure AD&lt;/li&gt;
+  &lt;li&gt;How to configure Spring Boot Application to secure it via Microsoft Identity Provider&lt;/li&gt;
+  &lt;li&gt;How to configure Nginx / Apache as a reverse proxy when secured as such&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;example-project&quot;&gt;Example project&lt;/h4&gt;
+
+&lt;p&gt;One to be found on GitHub: &lt;a href=&quot;https://github.com/IterativeEngineering/blog.secure-spring-boot-application-with-microsoft-azure-ad&quot;&gt;Spring Boot Secured App&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Azure account with a subscription (e.g Pay as you go)&lt;/li&gt;
+  &lt;li&gt;Java 11 or higher (or a docker container with such)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;self-implemented-authentication--authorization&quot;&gt;Self-implemented Authentication &amp;amp; Authorization&lt;/h1&gt;
+
+&lt;p&gt;Imagine that in 2010 you have to prepare an application for e.g company managers. With different access levels. What would be your approach to achieve that? Most probably you would go with something similar to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a table of users + passwords and roles in the application&lt;/li&gt;
+  &lt;li&gt;Prepare admin panel that allows to manage users and their privileges&lt;/li&gt;
+  &lt;li&gt;Manage sessions (either as cookies or tokens) on the client web-app side and store them on the application server, e.g in memory or in DB&lt;/li&gt;
+  &lt;li&gt;Implement features such as: Password restore&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A self baked authentication &amp;amp; authorization system with local user information storage. Such  setup, even today, is a common way to craft a prototype or MVP and it has advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;low complexity - no 3rd party libraries, no external services engaged&lt;/li&gt;
+  &lt;li&gt;data control - all users data are available and may be used the application&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, it has also major disadvantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;vulnerability - Important user data are stored within the application. So they have to be well secured&lt;/li&gt;
+  &lt;li&gt;maintenance problems - Roles/groups have to be managed  in the app, not in a central point&lt;/li&gt;
+  &lt;li&gt;limited extendability - Each feature such as 2FA, Single Sign-On have to be implemented, while implementing security mechanisms is costly and time consuming&lt;/li&gt;
+  &lt;li&gt;lack of 3rd party systems integrations - For instance logging via Facebook or Google have to be implemented within the application. While services like Azure AD provide easy-to-use integrations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the long term maintenance efforts could be significant, while not giving any benefits. So let’s look at alternatives.&lt;/p&gt;
+
+&lt;h2 id=&quot;identity-providers-come-on-stage&quot;&gt;Identity providers come on stage&lt;/h2&gt;
+
+&lt;p&gt;In 2007 OAuth 1.0 protocol was released and in 2012 its new version: Oauth 2.0 was released. This started a popularization process of external identity providers - systems that keep users data and provide these data to business applications with user acceptance.&lt;/p&gt;
+
+&lt;p&gt;OAuth 2.0 is widely supported by Microsoft, Google, Amazon etc. The solution I present in this article, while aimed at Microsoft Azure, could be implemented with other identity providers with minor tweaks.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-secure-spring-boot-with-azure-ad&quot;&gt;How to secure Spring Boot with Azure AD&lt;/h1&gt;
+
+&lt;p&gt;Let’s go step by step through the configurations that have to be applied in the Microsoft Azure Portal, to secure the application using the Azure Active Directory.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Register application in Microsoft Azure Tenant&lt;/li&gt;
+  &lt;li&gt;Create &amp;amp; Configure Java (Spring Boot) Application&lt;/li&gt;
+  &lt;li&gt;Configure reverse proxy&lt;/li&gt;
+  &lt;li&gt;Authenticate to the app (Test the setup)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;register-application-in-azure-tenant&quot;&gt;Register application in Azure Tenant&lt;/h2&gt;
+
+&lt;p&gt;Here are steps that are presented below on screenshots:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a new Tenant&lt;/li&gt;
+  &lt;li&gt;Register a new application &amp;amp; set its allowed ‘redirect-uri’&lt;/li&gt;
+  &lt;li&gt;Generate application secret&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;setup-a-new-tenant&quot;&gt;Setup a new Tenant&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log in to portal.azure.com and search for Azure Active Directory service:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/9.png&quot; alt=&quot;Search for Azure Active Directory&quot; title=&quot;Search for Azure Active Directory&quot; /&gt;
+  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select manage tenants:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/15.png&quot; alt=&quot;Select manage tenants&quot; title=&quot;Select manage tenants&quot; /&gt;
+  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select basic tenant:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/14.png&quot; alt=&quot;Select basic tenant&quot; title=&quot;Select basic tenant&quot; /&gt;
+  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finish the configuration and create it:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/12.png&quot; alt=&quot;Finish the configuration and create it&quot; title=&quot;Finish the configuration and create it&quot; /&gt;
+  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once ready copy the tenant ID, as it will be neccessary further:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/11.png&quot; alt=&quot;Once ready copy the tenant ID&quot; title=&quot;Once ready copy the tenant ID&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;register-a-new-application--set-its-allowed-redirect-uri&quot;&gt;Register a new application &amp;amp; set its allowed ‘redirect-uri’&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select “App registrations” and “Register an application”&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/3.png&quot; alt=&quot;Register a new application via App registration&quot; title=&quot;Register a new application via App registration&quot; /&gt;
+  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define app name and set redirect URI:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/2.png&quot; alt=&quot;Define app name and redirect URI&quot; title=&quot;Define app name and redirect URI&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; Users will see this name e.g on the “Grant permissions” screen.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Supported accounts types:&lt;/strong&gt; By choosing option 1 only you and users from your tenant will be able to log in to the application. As you see, you can allow logging in to your application even for users who are not part of your organisation (option 2,3,4). Choose these options wisely, and only if your application does not expose any vulnerable data.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Redirect URI:&lt;/strong&gt; In our example it’s not optional. It’s the URL to which the user is redirected after a successful authentication on the Microsoft login page. If you deploy your application not on localhost but on some server, change localhost:8080 to the appropriate domain name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create-a-secret&quot;&gt;Create a Secret&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Generate a new client secret
+ &lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/10.png&quot; alt=&quot;Add certificate or secret&quot; title=&quot;Add certificate or secret&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/4.png&quot; alt=&quot;Create new client secret&quot; title=&quot;Create new client secret&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Note: All secrets have to have an expiration date and they can’t be renewed, so if a secret expires, you can generate a new secret and update it in your application.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy and save the Secret value (it is visible only just after secret creation)&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/16.png&quot; alt=&quot;Copy and save generated Secret&quot; title=&quot;Copy and save generated Secret&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Never reveal the Secret to anyone nor publish it to public repositories!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Great! At this point the setup on the Azure side is now complete, let’s move on to the application.&lt;/p&gt;
+
+&lt;h2 id=&quot;configure-spring-boot-application&quot;&gt;Configure Spring-Boot application&lt;/h2&gt;
+
+&lt;p&gt;Key things that have to be created:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dependency to the azure spring-boot library that does the ‘magic’ and simplifies integration between SpringBoot app and our Azure Tenant&lt;/li&gt;
+  &lt;li&gt;Properties that allow the app to connect to the Azure Tenant&lt;/li&gt;
+  &lt;li&gt;Rest controller that will be used for tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here is an example build.gradle file, but a similar setup could be done in maven pom.xml.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;build.gradle&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.springframework.boot&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2.5.0&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'io.spring.dependency-management'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.6.RELEASE'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'java'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pl.iterative'&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.0-SNAPSHOT'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;mavenCentral&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gradlePluginPortal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// Spring boot&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-oauth2-client'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-web'&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// Azure&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0'&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;application.properties&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;server.port&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;8080&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;azure.activedirectory.tenant-id&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;e76d7581-eabe-4e6b-a676-55e28d9325ee&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;azure.activedirectory.client-id&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4b37344a-6dda-4e10-9f02-359477227f25&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;azure.activedirectory.client-secret&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SECRET_VALUE_HERE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Application.java&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pl.iterative&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.SpringApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.autoconfigure.SpringBootApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@SpringBootApplication&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Application&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nc&quot;&gt;SpringApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;AuthController.java&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pl.iterative.api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.web.bind.annotation.GetMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.web.bind.annotation.RequestMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.web.bind.annotation.RestController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@RestController&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/api&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AuthController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nd&quot;&gt;@GetMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/login&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;User logged in&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The default setup restricts access to all application endpoints. If you wish to customize  following article describes how to implement custom security configuration: 
+&lt;a href=&quot;https://www.baeldung.com/java-config-spring-security#Security&quot;&gt;https://www.baeldung.com/java-config-spring-security#Security&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For the sake of this tutorial we will stick to defaults. Once the app is prepared as above config we can run it and access the resource: &lt;a href=&quot;http://localhost:8080/api/v1/login&quot;&gt;http://localhost:8080/api/login&lt;/a&gt; via a web browser.&lt;/p&gt;
+
+&lt;p&gt;On the first login attempt, the user is asked to consent to grant the permissions that the application requests. Always grant this consent carefully, especially to applications you don’t develop, and check precisely which exact permissions you’re granting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/13.png&quot; alt=&quot;Microsoft Azure permission request for identity data&quot; title=&quot;Microsoft Azure permission request for identity data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A successful log-in process is finished, when user accesses the requested resource:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/17.png&quot; alt=&quot;URL if login is successfuly&quot; title=&quot;URL if login is successfuly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What actually happens during the authorization process is described further in the article.&lt;/p&gt;
+
+&lt;h2 id=&quot;configure-nginx--apache-reverse-proxy&quot;&gt;Configure Nginx / Apache reverse proxy&lt;/h2&gt;
+
+&lt;p&gt;So while we got the Spring App and Azure AD to work together it’s common scenario to put app behind a reverse proxy like Nginx or Apache.&lt;/p&gt;
+
+&lt;p&gt;However such case implies requirement for additional set up, as we need to properly handle headers and redirects on proxy side.&lt;/p&gt;
+
+&lt;h3 id=&quot;app-config&quot;&gt;App config&lt;/h3&gt;
+
+&lt;p&gt;Add following entries to the application.properties, as first we need to let know app that its behind the proxy.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;application.properties&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;server.forward-headers-strategy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;FRAMEWORK&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;server.tomcat.redirect-context-root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;nginx&quot;&gt;Nginx&lt;/h3&gt;
+
+&lt;p&gt;If using Nginx as a proxy, we nned to set proxy_set_header directives and a proxy rule for &lt;code class=&quot;highlighter-rouge&quot;&gt;/oauth2&lt;/code&gt; endpoint, so roughly like following, assuming the app is accessible on localhost under port 8080:&lt;/p&gt;
+
+&lt;div class=&quot;language-nginx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;proxy_set_header&lt;/span&gt;     &lt;span class=&quot;s&quot;&gt;X-Forwarded-Proto&lt;/span&gt;   &lt;span class=&quot;nv&quot;&gt;$scheme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/oauth2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;proxy_pass&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:8080/oauth2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+  &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/login/oauth2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;proxy_pass&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:8080/login/oauth2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;apachehttpd&quot;&gt;Apache/Httpd&lt;/h3&gt;
+
+&lt;p&gt;In case of Apache2/httpd similarlly, but just using a bit different directives, again assuming app availability on port 8080:&lt;/p&gt;
+
+&lt;div class=&quot;language-apache highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;RequestHeader&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;set&lt;/span&gt; X-Forwarded-Proto &quot;https&quot;
+&lt;span class=&quot;nc&quot;&gt;RewriteRule&lt;/span&gt; ^/oauth2/(.*) http://localhost:8080/oauth2/$1 [P]
+&lt;span class=&quot;nc&quot;&gt;ProxyPassReverse&lt;/span&gt;  /oauth2 [http://localhost:8080/oauth2/](http://localhost:8080/oauth2/)
+&lt;span class=&quot;nc&quot;&gt;RewriteRule&lt;/span&gt; ^/login/oauth2/(.*) http://localhost:8080/login/oauth2/$1 [P]
+&lt;span class=&quot;nc&quot;&gt;ProxyPassReverse&lt;/span&gt;  /login/oauth2 http://localhost:8080/login/oauth2/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These custom rewrite rules are required because these endpoints are default oauth2 endpoints to which user is redirected before and after a login attempt.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-the-authorization-process-works&quot;&gt;How the authorization process works&lt;/h2&gt;
+
+&lt;p&gt;Let’s see the tab in your browser to check how the whole process works.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;User accessed &lt;a href=&quot;http://localhost:8080/api/v1/login&quot;&gt;http://localhost:8080/api/v1/login&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Because he was not logged-in (no appropriate cookie was sent as a request header) user is immediately redirected to authentication endpoint of your app &lt;a href=&quot;http://localhost:8080/oauth2/authorization/azure&quot;&gt;http://localhost:8080/oauth2/authorization/azure&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/5.png&quot; alt=&quot;Azure login form, redirected from our app endpoint&quot; title=&quot;Azure login form, redirected from our app endpoint&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This endpoint redirects user further, to login.microsoft page, along with information about which app did the redirect (this allows MS to sent back user to your app after he successfully authenticate):&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/6.png&quot; alt=&quot;Pass of a redirect url&quot; title=&quot;Pass of a redirect url&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When the user passes the appropriate email and password, it’s redirected back to the application, to endpoint http://localhost:8080/login/oauth2/code/?code=0.AV… So to the redirect-uri that we’ve set in while registering the application in Azure. &lt;strong&gt;The code parameter is quite important here.&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;The application sends the code and client_secret in a background (via so-called backchannel - a non-frontend HTTPS call, so the user of your app does not even know about this request) to Microsoft Azure to exchange it into a JWT token that contains some user data like email address. This happens directly after the user is redirected to the redirect URL, and it’s done by the microsoft library. Which data is sent by MS Azure in the JWT token as a response, depends on the permissions that application is granted.&lt;/p&gt;
+
+    &lt;p&gt;Deep dive into application permissions are out of the scope of this article. 
+ You can check which permissions your app has by going to the azure console: 
+ “App registrations” -&amp;gt; {your_app_name} -&amp;gt; “API permissions”.&lt;/p&gt;
+
+    &lt;p&gt;The JWT token can be used to fetch more data via Microsoft Graph API (but only data to which the user gave the permission). This  for example  can be used to get user groups/roles in order to authorize parts of the application only for administrators or other privileged users.&lt;/p&gt;
+
+    &lt;p&gt;The redirect from Azure contains a response header “Set-Cookie” which indicates  session initialization  by the application. JSESSIONID is the id of the session. The “path=/” means that the cookie is set to all resources of the app, so the browser will append the JSESSIONID cookie to all requests under this origin (domain).&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/8.png&quot; alt=&quot;Redirect user back to app, verify token and initalize session&quot; title=&quot;Redirect user back to app, verify token and initalize session&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finally, after all of these jumps the user is allowed to access the endpoint he requested. User accessed the page because the session cookie has been sent via request header, and based on that JSESSIONID cookie, the application authorized user access to the requested resource:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/7.png&quot; alt=&quot;Authentication process finished&quot; title=&quot;Authentication process finished&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;You’ve made it till the end and now your app is secured with Azure OAuth, great work!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
+        
+        <category>Java</category>
+        
+        <category>Spring Framework</category>
+        
+        <category>Azure</category>
+        
+        <category>Azure AD</category>
+        
+        <category>OAuth</category>
+        
+        
+      </item>
     
       <item>
         <title>How to keep the team integrated despite physical distance</title>
