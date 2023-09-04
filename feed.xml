@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Jun 2023 20:50:13 +0200</pubDate>
-    <lastBuildDate>Fri, 30 Jun 2023 20:50:13 +0200</lastBuildDate>
+    <pubDate>Mon, 04 Sep 2023 17:22:21 -0500</pubDate>
+    <lastBuildDate>Mon, 04 Sep 2023 17:22:21 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -330,7 +330,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 08 Aug 2022 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</guid>
         
@@ -343,7 +343,7 @@
         <category>Testing</category>
         
         
-        <category>business</category>
+        <category>technical</category>
         
       </item>
     
@@ -395,7 +395,7 @@
   &lt;li&gt;Implement features such as: Password restore&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;A self baked authentication &amp;amp; authorization system with local user information storage. Such  setup, even today, is a common way to craft a prototype or MVP and it has advantages:&lt;/p&gt;
+&lt;p&gt;A self baked authentication &amp;amp; authorization system with local user information storage. Such setup, even today, is a common way to craft a prototype or MVP and it has advantages:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;low complexity - no 3rd party libraries, no external services engaged&lt;/li&gt;
@@ -406,7 +406,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;vulnerability - Important user data are stored within the application. So they have to be well secured&lt;/li&gt;
-  &lt;li&gt;maintenance problems - Roles/groups have to be managed  in the app, not in a central point&lt;/li&gt;
+  &lt;li&gt;maintenance problems - Roles/groups have to be managed in the app, not in a central point&lt;/li&gt;
   &lt;li&gt;limited extendability - Each feature such as 2FA, Single Sign-On have to be implemented, while implementing security mechanisms is costly and time consuming&lt;/li&gt;
   &lt;li&gt;lack of 3rd party systems integrations - For instance logging via Facebook or Google have to be implemented within the application. While services like Azure AD provide easy-to-use integrations.&lt;/li&gt;
 &lt;/ul&gt;
@@ -446,26 +446,22 @@
   &lt;li&gt;
     &lt;p&gt;Log in to portal.azure.com and search for Azure Active Directory service:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/9.png&quot; alt=&quot;Search for Azure Active Directory&quot; title=&quot;Search for Azure Active Directory&quot; /&gt;
-  &lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/9.png&quot; alt=&quot;Search for Azure Active Directory&quot; title=&quot;Search for Azure Active Directory&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Select manage tenants:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/15.png&quot; alt=&quot;Select manage tenants&quot; title=&quot;Select manage tenants&quot; /&gt;
-  &lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/15.png&quot; alt=&quot;Select manage tenants&quot; title=&quot;Select manage tenants&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Select basic tenant:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/14.png&quot; alt=&quot;Select basic tenant&quot; title=&quot;Select basic tenant&quot; /&gt;
-  &lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/14.png&quot; alt=&quot;Select basic tenant&quot; title=&quot;Select basic tenant&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Finish the configuration and create it:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/12.png&quot; alt=&quot;Finish the configuration and create it&quot; title=&quot;Finish the configuration and create it&quot; /&gt;
-  &lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/12.png&quot; alt=&quot;Finish the configuration and create it&quot; title=&quot;Finish the configuration and create it&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Once ready copy the tenant ID, as it will be neccessary further:&lt;/p&gt;
@@ -480,8 +476,7 @@
   &lt;li&gt;
     &lt;p&gt;Select “App registrations” and “Register an application”&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/3.png&quot; alt=&quot;Register a new application via App registration&quot; title=&quot;Register a new application via App registration&quot; /&gt;
-  &lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/3.png&quot; alt=&quot;Register a new application via App registration&quot; title=&quot;Register a new application via App registration&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Define app name and set redirect URI:&lt;/p&gt;
@@ -501,7 +496,7 @@
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Generate a new client secret
- &lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/10.png&quot; alt=&quot;Add certificate or secret&quot; title=&quot;Add certificate or secret&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/10.png&quot; alt=&quot;Add certificate or secret&quot; title=&quot;Add certificate or secret&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/4.png&quot; alt=&quot;Create new client secret&quot; title=&quot;Create new client secret&quot; /&gt;&lt;/p&gt;
 
@@ -531,6 +526,7 @@
 &lt;p&gt;Here is an example build.gradle file, but a similar setup could be done in maven pom.xml.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;build.gradle&lt;/em&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.springframework.boot&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2.5.0&quot;&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'io.spring.dependency-management'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.6.RELEASE'&lt;/span&gt;
@@ -560,6 +556,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;application.properties&lt;/em&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;server.port&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;8080&lt;/span&gt;
 &lt;span class=&quot;py&quot;&gt;azure.activedirectory.tenant-id&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;e76d7581-eabe-4e6b-a676-55e28d9325ee&lt;/span&gt;
 &lt;span class=&quot;py&quot;&gt;azure.activedirectory.client-id&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4b37344a-6dda-4e10-9f02-359477227f25&lt;/span&gt;
@@ -567,6 +564,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Application.java&lt;/em&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pl.iterative&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.SpringApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.boot.autoconfigure.SpringBootApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -579,6 +577,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;AuthController.java&lt;/em&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pl.iterative.api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.web.bind.annotation.GetMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.web.bind.annotation.RequestMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -594,7 +593,7 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The default setup restricts access to all application endpoints. If you wish to customize  following article describes how to implement custom security configuration: 
+&lt;p&gt;The default setup restricts access to all application endpoints. If you wish to customize following article describes how to implement custom security configuration:
 &lt;a href=&quot;https://www.baeldung.com/java-config-spring-security#Security&quot;&gt;https://www.baeldung.com/java-config-spring-security#Security&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;For the sake of this tutorial we will stick to defaults. Once the app is prepared as above config we can run it and access the resource: &lt;a href=&quot;http://localhost:8080/api/v1/login&quot;&gt;http://localhost:8080/api/login&lt;/a&gt; via a web browser.&lt;/p&gt;
@@ -620,6 +619,7 @@
 &lt;p&gt;Add following entries to the application.properties, as first we need to let know app that its behind the proxy.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;application.properties&lt;/em&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;server.forward-headers-strategy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;FRAMEWORK&lt;/span&gt;
 &lt;span class=&quot;py&quot;&gt;server.tomcat.redirect-context-root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -632,10 +632,10 @@
   &lt;span class=&quot;kn&quot;&gt;proxy_set_header&lt;/span&gt;     &lt;span class=&quot;s&quot;&gt;X-Forwarded-Proto&lt;/span&gt;   &lt;span class=&quot;nv&quot;&gt;$scheme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/oauth2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kn&quot;&gt;proxy_pass&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:8080/oauth2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/login/oauth2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kn&quot;&gt;proxy_pass&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:8080/login/oauth2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -673,13 +673,13 @@
 
     &lt;p&gt;The application sends the code and client_secret in a background (via so-called backchannel - a non-frontend HTTPS call, so the user of your app does not even know about this request) to Microsoft Azure to exchange it into a JWT token that contains some user data like email address. This happens directly after the user is redirected to the redirect URL, and it’s done by the microsoft library. Which data is sent by MS Azure in the JWT token as a response, depends on the permissions that application is granted.&lt;/p&gt;
 
-    &lt;p&gt;Deep dive into application permissions are out of the scope of this article. 
- You can check which permissions your app has by going to the azure console: 
- “App registrations” -&amp;gt; {your_app_name} -&amp;gt; “API permissions”.&lt;/p&gt;
+    &lt;p&gt;Deep dive into application permissions are out of the scope of this article.
+You can check which permissions your app has by going to the azure console:
+“App registrations” -&amp;gt; {your_app_name} -&amp;gt; “API permissions”.&lt;/p&gt;
 
-    &lt;p&gt;The JWT token can be used to fetch more data via Microsoft Graph API (but only data to which the user gave the permission). This  for example  can be used to get user groups/roles in order to authorize parts of the application only for administrators or other privileged users.&lt;/p&gt;
+    &lt;p&gt;The JWT token can be used to fetch more data via Microsoft Graph API (but only data to which the user gave the permission). This for example can be used to get user groups/roles in order to authorize parts of the application only for administrators or other privileged users.&lt;/p&gt;
 
-    &lt;p&gt;The redirect from Azure contains a response header “Set-Cookie” which indicates  session initialization  by the application. JSESSIONID is the id of the session. The “path=/” means that the cookie is set to all resources of the app, so the browser will append the JSESSIONID cookie to all requests under this origin (domain).&lt;/p&gt;
+    &lt;p&gt;The redirect from Azure contains a response header “Set-Cookie” which indicates session initialization by the application. JSESSIONID is the id of the session. The “path=/” means that the cookie is set to all resources of the app, so the browser will append the JSESSIONID cookie to all requests under this origin (domain).&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/8.png&quot; alt=&quot;Redirect user back to app, verify token and initalize session&quot; title=&quot;Redirect user back to app, verify token and initalize session&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -696,7 +696,7 @@
 
 &lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
         
@@ -719,7 +719,7 @@
         <title>How to keep the team integrated despite physical distance</title>
         <description>&lt;p&gt;Last year was a challenge for all of us. The pandemic has shaken the whole world and reshaped it in many ways. We are all aware of the negative imprint it left on people’s everyday lives. Among other things, it heavily reduced the social aspects of daily work impacting teamwork and collaboration. But as every coin has two sides, even the hard times may offer opportunities for growth.&lt;/p&gt;
 
-&lt;h3 id=&quot;challenges&quot;&gt;Challenges&lt;/h3&gt;
+&lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
 
 &lt;p&gt;In our case the lockdown and work from home policy had almost no impact on our work routines, because over the years of providing remote services for our clients we were well equipped with the right tools. The main downside of social distancing was the reduced flow of information. If you are in the office, sitting next to each other, it’s so much easier to cooperate! It was not a problem to switch to the online communication channels within the team, as everyone was already using them daily to talk directly to our clients. To ensure the proper flow of information, we introduced a few sync-up meetings focused on specific topics, along with one monthly company-wide where everyone is encouraged to share their thoughts. That worked surprisingly well!&lt;/p&gt;
 
@@ -757,25 +757,25 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-engineering-team.jpg&quot; alt=&quot;Iterative Engineering Team&quot; title=&quot;Iterative Engineering Team&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Integration events like this are seemingly just unimportant entertainment. But they provide a hidden, immeasurable value. Interaction between people is essential for having a productive and well-organized team. As social animals (yes, engineers also count!), we cannot rely solely on verbal online communication. Even though we still keep working remotely, meeting a person in real life and spending even a short time together is the fastest way to encourage further cooperation. It is important to put a face to a voice, and H254-compressed video of a face on a zoom call won’t let you build the same level of relationship as a real meeting!&lt;/p&gt;
+&lt;p&gt;Integration events like this are seemingly just unimportant entertainment. But they provide a hidden, immeasurable value. Interaction between people is essential for having a productive and well-organized team. As social animals (yes, engineers also count!), we cannot rely solely on verbal online communication. Even though we still keep working remotely, meeting a person in real life and spending even a short time together is the fastest way to encourage further cooperation. It is important to put a face to a voice, and H264-compressed video of a face on a zoom call won’t let you build the same level of relationship as a real meeting!&lt;/p&gt;
 
 &lt;p&gt;We’re definitely going to repeat this regularly!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.jpg&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
         
-        <category>Remote work</category>
+        <category>Remote Work</category>
         
-        <category>Team integration</category>
+        <category>Team Integration</category>
         
-        <category>Distributed teams</category>
+        <category>Distributed Teams</category>
         
         
-        <category>technical</category>
+        <category>business</category>
         
       </item>
     
@@ -798,11 +798,11 @@
   &lt;li&gt;Top paid jobs, ranging at $100k+ per year, are related to functional programming (Clojure, F#). Except for the execs and management, devops and data engineering are positions with the highest salaries with an average of $70k per year.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;current-tech-demand-and-workloads&quot;&gt;Current tech demand and workloads&lt;/h2&gt;
+&lt;h1 id=&quot;current-tech-demand-and-workloads&quot;&gt;Current tech demand and workloads&lt;/h1&gt;
 
 &lt;p&gt;Let’s start with a look at the most utilised technologies across the sector and dive into details of what is used to turn the cogs&lt;/p&gt;
 
-&lt;h3 id=&quot;most-popular-programming-languages&quot;&gt;Most popular programming languages&lt;/h3&gt;
+&lt;h2 id=&quot;most-popular-programming-languages&quot;&gt;Most popular programming languages&lt;/h2&gt;
 
 &lt;p&gt;There can be only one king and it is JavaScript. The domination is impressive and we believe it will remain as such for a longer time. Its universality is probably a key factor here. It is applied for all ‘sides’ of software development: server side programming (backend), web (frontend) and mobile (hybrid). And to be fair it’s pretty damn good for all of those.&lt;/p&gt;
 
@@ -814,7 +814,7 @@
 
 &lt;p&gt;It feels that we at Iterative Engineering are pretty well placed. Our main focus is Java for backend and JavaScript/TypeScript for frontend and mobile. We also often deal with most of the TOP 10, with the only exception of native technologies - C or C++, which we’ve never found that attractive. We believe that such focus gives a great current and future outlook.&lt;/p&gt;
 
-&lt;h3 id=&quot;integrated-development-environment-ide-means&quot;&gt;Integrated Development Environment (IDE means)&lt;/h3&gt;
+&lt;h2 id=&quot;integrated-development-environment-ide-means&quot;&gt;Integrated Development Environment (IDE means)&lt;/h2&gt;
 
 &lt;p&gt;Kudos to Microsoft for Visual Studio Code. Efficient yet lightweight tool, with on-demand support for a variety of technologies. It is truly a pleasure to use it and clearly the market voice confirms that. A well deserved 1st place with more than double the score of the closest competitor.&lt;/p&gt;
 
@@ -824,7 +824,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-IDE.png&quot; alt=&quot;Most used IDEs - the winner is Visual Studio Code&quot; title=&quot;Most used IDEs - the winner is Visual Studio Code&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;fundamental-coding-toolset&quot;&gt;Fundamental coding toolset&lt;/h3&gt;
+&lt;h2 id=&quot;fundamental-coding-toolset&quot;&gt;Fundamental coding toolset&lt;/h2&gt;
 
 &lt;p&gt;Git &amp;amp; Docker (containers), a must haves for any modern developer. Those tools make life (or work should we say?) so much easier that it’s unprecedented. If you wish to learn a recently new and interesting Docker feature might be worth a look at a really great article on &lt;a href=&quot;https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/&quot;&gt;Creating optimised Docker Images using Multi-Stage Builds&lt;/a&gt;.&lt;/p&gt;
 
@@ -834,17 +834,17 @@
 
 &lt;p&gt;A bit of curiosity for us are &lt;a href=&quot;https://github.com/yarnpkg/berry&quot;&gt;Yarn&lt;/a&gt; and &lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=2ahUKEwij47-Wk9D0AhXJxIsKHcDrAQMQFnoECAsQAQ&amp;amp;url=https%3A%2F%2Fdeno.land%2F&amp;amp;usg=AOvVaw2tfvsEssp_oAi-6XYbU_uo&quot;&gt;Deno&lt;/a&gt;. The result of the first we take as a signal to consider it as a replacement of npm package manager, especially that it recently increased on development. The second proves that Rust and V8 JavaScript are reality and we really need to get up to speed with those technologies as we expect it to grow rapidly.&lt;/p&gt;
 
-&lt;h3 id=&quot;top-cloud-platforms&quot;&gt;Top cloud platforms&lt;/h3&gt;
+&lt;h2 id=&quot;top-cloud-platforms&quot;&gt;Top cloud platforms&lt;/h2&gt;
 
 &lt;p&gt;AWS maintains its lead as the most widely used cloud platform, but Google Cloud and Microsoft Azure made substantial gains and are catching up. They simply became reliable and performant, especially Microsoft Azure, which a few years ago was just a pain to work with (from dev perspective).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/top-cloud-platforms.png&quot; alt=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; title=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;what-is-desired-by-the-tech-talents&quot;&gt;What is desired by the tech talents?&lt;/h2&gt;
+&lt;h1 id=&quot;what-is-desired-by-the-tech-talents&quot;&gt;What is desired by the tech talents?&lt;/h1&gt;
 
 &lt;p&gt;Now the other side of the coin - the outlook on which technologies are the most inspiring for and the most wanted across developers. While at Iterative we do not blindly follow hypes, we really keep an eye on the trends. Simply because all of the great technologies of tomorrow are newcomers of today.&lt;/p&gt;
 
-&lt;h3 id=&quot;most-wished-programming-languages&quot;&gt;Most wished programming languages&lt;/h3&gt;
+&lt;h2 id=&quot;most-wished-programming-languages&quot;&gt;Most wished programming languages&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/coding-in-python-bridy-not-enjoys-it.png&quot; alt=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; title=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; /&gt;&lt;/p&gt;
 
@@ -854,7 +854,7 @@
 
 &lt;p&gt;From our tech of choice perspective seeing two JVM related Java &amp;amp; Kotlin in Top 10 feels pretty great. While not the most hyped out there, still many so many wish to learn it, just because of the fact that it’s reliable and enjoyable to work with.&lt;/p&gt;
 
-&lt;h3 id=&quot;loved-data-storage-technologies&quot;&gt;Loved data storage technologies&lt;/h3&gt;
+&lt;h2 id=&quot;loved-data-storage-technologies&quot;&gt;Loved data storage technologies&lt;/h2&gt;
 
 &lt;p&gt;Quite shocked by the fact of such a close competition for 1st place. PostgreSql and MongoDB, two completely different philosophies, yet both got a sizable amount of interest from the Community. Redis in 3rd and Elasticsearch in 4th place - no surprise at all - simply well proven and excellent at what they are aimed for. MySql closing Top 5 just seals that open source SQL and document stores are having a good time.&lt;/p&gt;
 
@@ -862,7 +862,7 @@
 
 &lt;p&gt;A bit disappointing to not see any interest in graph databases like Neo4j, however it may be that they still need to prove their merits. Finally at Iterative we use 4 out of Top 5 daily, but now are also tempted to give Mongo a try, as the desire must be there for the reason.&lt;/p&gt;
 
-&lt;h3 id=&quot;most-wanted-web-frameworks&quot;&gt;Most wanted web frameworks&lt;/h3&gt;
+&lt;h2 id=&quot;most-wanted-web-frameworks&quot;&gt;Most wanted web frameworks&lt;/h2&gt;
 
 &lt;p&gt;React.js not only has dominated the market (as this year it has overtaken jQuery in usage), but it is also the most wanted web framework by the devs. Winning in both rankings, in probably the most competitive and variable category, confirms that going with it you can’t be wrong.&lt;/p&gt;
 
@@ -870,7 +870,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wanted-web-frameworks.png&quot; alt=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; title=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;learning-curve-and-knowledge-sources&quot;&gt;Learning curve and knowledge sources&lt;/h2&gt;
+&lt;h1 id=&quot;learning-curve-and-knowledge-sources&quot;&gt;Learning curve and knowledge sources&lt;/h1&gt;
 
 &lt;p&gt;The learning process or at least first encounters with coding happens pretty early, sometimes as early as 5-10y old, mostly before 18y old and in 90% before 24y! It may mean that learning to code in your 30’s may be nearly impossible. However we need to remember that for at least several years everyone has basic contact with programming in early school days, therefore the meaning might be a bit blurred here&lt;/p&gt;
 
@@ -894,7 +894,7 @@
 
 &lt;p&gt;At Iterative in addition to all mentioned in TOP 5 we also like to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber duck debugging&lt;/a&gt; technique. It simply is about describing the problem to someone else, so he can understand the context. Turns out that such exercise helps to structure the problem to yourself and very often points to an error or blocker immediately once prepared.&lt;/p&gt;
 
-&lt;h2 id=&quot;where-is-the-money&quot;&gt;Where is the money?&lt;/h2&gt;
+&lt;h1 id=&quot;where-is-the-money&quot;&gt;Where is the money?&lt;/h1&gt;
 
 &lt;p&gt;When it comes to coding, it looks like the biggest money is in less popular, functional paradigm related programming languages. Clojure with an average equal to $95k per year takes a 1st place with a big lead against following F# at $81k - pretty impressive! Python with $59k on 19th, JavaScript with $54k on 29th and Java with $52k on 34th places. Not bad, but the gap between leaders is quite significant. Not sure if the results are fully representative due a smaller sample for functional technologies, but not being common may actually be the reason for the price.&lt;/p&gt;
 
@@ -906,7 +906,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-best-salaries.png&quot; alt=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; title=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
 
 &lt;p&gt;Thank you for getting with us over here, as it wasn’t a short read! We hope our analysis will give you base ground for further thinking, discussion and planning the future.&lt;/p&gt;
 
@@ -929,7 +929,7 @@
   &lt;li&gt;Explore and evaluate Rust and GO technologies&lt;/li&gt;
   &lt;li&gt;Dockerize, Containerize, Kubernitize… just do it, no excuses!&lt;/li&gt;
   &lt;li&gt;Embrace the fact that devs learn online - encourage and provide them means for that&lt;/li&gt;
-  &lt;li&gt;Consider unifying towards React.js and Visual Studio Code  as a primary choice&lt;/li&gt;
+  &lt;li&gt;Consider unifying towards React.js and Visual Studio Code as a primary choice&lt;/li&gt;
   &lt;li&gt;Prepare higher budgets when going for devops and data engineering related endeavours.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -940,14 +940,14 @@
 &lt;ul&gt;
   &lt;li&gt;LinkedIn&lt;/li&gt;
   &lt;li&gt;contact@iterative.pl&lt;/li&gt;
-  &lt;li&gt;l or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
         
-        <category>IT Industry State and Outlook</category>
+        <category>IT Industry</category>
         
         <category>Software Development Trends</category>
         
@@ -979,7 +979,7 @@
 
 &lt;p&gt;If you already worked with a docker, you certainly faced the problem of large built images or had to do custom shell scripts to orchestrate build. Each instruction in the dockerfile adds another layer to the image which increases its size. Moreover, creating more complex images may require the use of additional shell scripts and multiple dockerfiles which may be cumbersome to manage.&lt;/p&gt;
 
-&lt;p&gt;To illustrate the above issues, I’ve created a simple java web application that I am going to build and run in a docker container. By default, without using multistage builds, the  dockerfile would look like this:&lt;/p&gt;
+&lt;p&gt;To illustrate the above issues, I’ve created a simple java web application that I am going to build and run in a docker container. By default, without using multistage builds, the dockerfile would look like this:&lt;/p&gt;
 
 &lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Dockerfile.singlestage&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; registry.access.redhat.com/ubi8/openjdk-11:1.3&lt;/span&gt;
@@ -991,6 +991,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In the above file we perform following steps:&lt;/p&gt;
+
 &lt;ol&gt;
   &lt;li&gt;Create a new image based on the redhat’s &lt;em&gt;universal base image&lt;/em&gt; that already contains openjdk-11.&lt;/li&gt;
   &lt;li&gt;Create the &lt;em&gt;/deployments&lt;/em&gt; working directory and then copy the content of our project to it.&lt;/li&gt;
@@ -1091,7 +1092,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
         
@@ -1101,7 +1102,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
         
         <category>Containers</category>
         
-        <category>Build pipeline</category>
+        <category>Build Pipeline</category>
         
         <category>Continuous Delivery</category>
         
@@ -1173,15 +1174,15 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
         
-        <category>Lean principles</category>
+        <category>Lean Principles</category>
         
-        <category>Iterative approach</category>
+        <category>Iterative Approach</category>
         
-        <category>Good practices</category>
+        <category>Good Practices</category>
         
         <category>Overdesign</category>
         
