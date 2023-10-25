@@ -1565,7 +1565,7 @@ img.zoom-img {
 .main_content-wrapper {
   position: relative;
   width: 100%;
-  background-image: url(/assets/images/office.jpg);
+  background-image: url(/assets/images/office.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4020,7 +4020,7 @@ section.sharing-section .share-with-friends-two .post__social {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(/assets/images/blog.jpg);
+  background-image: url(/assets/images/blog.webp);
 }
 .sp_dim {
   position: absolute;

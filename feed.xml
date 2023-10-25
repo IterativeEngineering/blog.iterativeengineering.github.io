@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Sep 2023 17:22:21 -0500</pubDate>
-    <lastBuildDate>Mon, 04 Sep 2023 17:22:21 -0500</lastBuildDate>
+    <pubDate>Wed, 25 Oct 2023 17:29:40 -0500</pubDate>
+    <lastBuildDate>Wed, 25 Oct 2023 17:29:40 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -39,7 +39,7 @@
 
 &lt;p&gt;Now it’s time for practice! Let’s start with the Producer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/contract-testing-with-spring/producer-side.jpg&quot; alt=&quot;Producer side&quot; title=&quot;Producer side&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/contract-testing-with-spring/producer-side.webp&quot; alt=&quot;Producer side&quot; title=&quot;Producer side&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Therefore, we will start by creating a simple Spring Boot web application and adding the following dependency:&lt;/p&gt;
 
@@ -185,7 +185,7 @@
 
 &lt;p&gt;Since we already have a Producer implementation and defined contract, let’s move on to creating the Consumer service. Our new service will be responsible for calculating the average value of 2 given numbers.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/contract-testing-with-spring/consumer-side.jpg&quot; alt=&quot;Consumer side&quot; title=&quot;Consumer side&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/contract-testing-with-spring/consumer-side.webp&quot; alt=&quot;Consumer side&quot; title=&quot;Consumer side&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To do this, we first need to use a producer’s endpoint to provide us the sum of the mentioned numbers, and then we can return their average value.&lt;/p&gt;
 
@@ -446,27 +446,27 @@
   &lt;li&gt;
     &lt;p&gt;Log in to portal.azure.com and search for Azure Active Directory service:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/9.png&quot; alt=&quot;Search for Azure Active Directory&quot; title=&quot;Search for Azure Active Directory&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/9.webp&quot; alt=&quot;Search for Azure Active Directory&quot; title=&quot;Search for Azure Active Directory&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Select manage tenants:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/15.png&quot; alt=&quot;Select manage tenants&quot; title=&quot;Select manage tenants&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/15.webp&quot; alt=&quot;Select manage tenants&quot; title=&quot;Select manage tenants&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Select basic tenant:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/14.png&quot; alt=&quot;Select basic tenant&quot; title=&quot;Select basic tenant&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/14.webp&quot; alt=&quot;Select basic tenant&quot; title=&quot;Select basic tenant&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Finish the configuration and create it:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/12.png&quot; alt=&quot;Finish the configuration and create it&quot; title=&quot;Finish the configuration and create it&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/12.webp&quot; alt=&quot;Finish the configuration and create it&quot; title=&quot;Finish the configuration and create it&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Once ready copy the tenant ID, as it will be neccessary further:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/11.png&quot; alt=&quot;Once ready copy the tenant ID&quot; title=&quot;Once ready copy the tenant ID&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/11.webp&quot; alt=&quot;Once ready copy the tenant ID&quot; title=&quot;Once ready copy the tenant ID&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -476,12 +476,12 @@
   &lt;li&gt;
     &lt;p&gt;Select “App registrations” and “Register an application”&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/3.png&quot; alt=&quot;Register a new application via App registration&quot; title=&quot;Register a new application via App registration&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/3.webp&quot; alt=&quot;Register a new application via App registration&quot; title=&quot;Register a new application via App registration&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Define app name and set redirect URI:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/2.png&quot; alt=&quot;Define app name and redirect URI&quot; title=&quot;Define app name and redirect URI&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/2.webp&quot; alt=&quot;Define app name and redirect URI&quot; title=&quot;Define app name and redirect URI&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -496,16 +496,16 @@
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Generate a new client secret
-&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/10.png&quot; alt=&quot;Add certificate or secret&quot; title=&quot;Add certificate or secret&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/10.webp&quot; alt=&quot;Add certificate or secret&quot; title=&quot;Add certificate or secret&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/4.png&quot; alt=&quot;Create new client secret&quot; title=&quot;Create new client secret&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/4.webp&quot; alt=&quot;Create new client secret&quot; title=&quot;Create new client secret&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;Note: All secrets have to have an expiration date and they can’t be renewed, so if a secret expires, you can generate a new secret and update it in your application.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Copy and save the Secret value (it is visible only just after secret creation)&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/16.png&quot; alt=&quot;Copy and save generated Secret&quot; title=&quot;Copy and save generated Secret&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/16.webp&quot; alt=&quot;Copy and save generated Secret&quot; title=&quot;Copy and save generated Secret&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -600,11 +600,11 @@
 
 &lt;p&gt;On the first login attempt, the user is asked to consent to grant the permissions that the application requests. Always grant this consent carefully, especially to applications you don’t develop, and check precisely which exact permissions you’re granting.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/13.png&quot; alt=&quot;Microsoft Azure permission request for identity data&quot; title=&quot;Microsoft Azure permission request for identity data&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/13.webp&quot; alt=&quot;Microsoft Azure permission request for identity data&quot; title=&quot;Microsoft Azure permission request for identity data&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A successful log-in process is finished, when user accesses the requested resource:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/17.png&quot; alt=&quot;URL if login is successfuly&quot; title=&quot;URL if login is successfuly&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/17.webp&quot; alt=&quot;URL if login is successfuly&quot; title=&quot;URL if login is successfuly&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;What actually happens during the authorization process is described further in the article.&lt;/p&gt;
 
@@ -661,12 +661,12 @@
   &lt;li&gt;
     &lt;p&gt;Because he was not logged-in (no appropriate cookie was sent as a request header) user is immediately redirected to authentication endpoint of your app &lt;a href=&quot;http://localhost:8080/oauth2/authorization/azure&quot;&gt;http://localhost:8080/oauth2/authorization/azure&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/5.png&quot; alt=&quot;Azure login form, redirected from our app endpoint&quot; title=&quot;Azure login form, redirected from our app endpoint&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/5.webp&quot; alt=&quot;Azure login form, redirected from our app endpoint&quot; title=&quot;Azure login form, redirected from our app endpoint&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;This endpoint redirects user further, to login.microsoft page, along with information about which app did the redirect (this allows MS to sent back user to your app after he successfully authenticate):&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/6.png&quot; alt=&quot;Pass of a redirect url&quot; title=&quot;Pass of a redirect url&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/6.webp&quot; alt=&quot;Pass of a redirect url&quot; title=&quot;Pass of a redirect url&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;When the user passes the appropriate email and password, it’s redirected back to the application, to endpoint http://localhost:8080/login/oauth2/code/?code=0.AV… So to the redirect-uri that we’ve set in while registering the application in Azure. &lt;strong&gt;The code parameter is quite important here.&lt;/strong&gt;&lt;/p&gt;
@@ -681,12 +681,12 @@ You can check which permissions your app has by going to the azure console:
 
     &lt;p&gt;The redirect from Azure contains a response header “Set-Cookie” which indicates session initialization by the application. JSESSIONID is the id of the session. The “path=/” means that the cookie is set to all resources of the app, so the browser will append the JSESSIONID cookie to all requests under this origin (domain).&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/8.png&quot; alt=&quot;Redirect user back to app, verify token and initalize session&quot; title=&quot;Redirect user back to app, verify token and initalize session&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/8.webp&quot; alt=&quot;Redirect user back to app, verify token and initalize session&quot; title=&quot;Redirect user back to app, verify token and initalize session&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Finally, after all of these jumps the user is allowed to access the endpoint he requested. User accessed the page because the session cookie has been sent via request header, and based on that JSESSIONID cookie, the application authorized user access to the requested resource:&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/7.png&quot; alt=&quot;Authentication process finished&quot; title=&quot;Authentication process finished&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/secure-spring-boot-application-with-microsoft-azure-ad/7.webp&quot; alt=&quot;Authentication process finished&quot; title=&quot;Authentication process finished&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -733,7 +733,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;As the pandemic restrictions were relaxed, we slowly started to transition to a hybrid way of working, where the office is open for everyone, but they can decide to work remotely if that’s more convenient. As we now had some fully-remote teammates, a new challenge arose. How can we integrate the team members, when we are so far away from each other?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-kitchen.jpg&quot; alt=&quot;Kitchen party&quot; title=&quot;Kitchen party&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-kitchen.webp&quot; alt=&quot;Kitchen party&quot; title=&quot;Kitchen party&quot; /&gt;
 &lt;em&gt;So good to have a kitchen in the office&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;So far, we were successful in building a company not only on technical skills of individuals, but also on relationships and teamwork. We were celebrating birthdays (where individually crafted memes became tradition), meeting regularly at pizza parties and spending casual time together. But for the new team members from northern Poland it was much more difficult to travel 600 km just to meet us in the office.&lt;/p&gt;
@@ -742,26 +742,26 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;We decided to pick up a central location and provide a convenient opportunity for everyone to meet in person. After a short voting, the team decided for Warsaw. We organised a weekend trip to meet everyone in person and spend some time together.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/remote-work.jpg&quot; alt=&quot;Who said that remote work should be limited to home-office?&quot; title=&quot;Who said that remote work should be limited to home-office?&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/remote-work.webp&quot; alt=&quot;Who said that remote work should be limited to home-office?&quot; title=&quot;Who said that remote work should be limited to home-office?&quot; /&gt;
 &lt;em&gt;Who said that remote work should be limited to home-office?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;We are located in different parts of Poland, but the majority lives in the Silesia region. That group took a direct high-speed train to Warsaw, where the integration started. When the rest of the folks arrived, we began the evening by visiting a fantastic Croatian restaurant. After that, there was a pub crawl, a couple of shots and a visit to a club. That was a great come back to normal life after months of social distancing.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/in-restaurant.jpg&quot; alt=&quot;The Iterative team in a Croatian restaurant&quot; title=&quot;The Iterative team in a Croatian restaurant&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/in-restaurant.webp&quot; alt=&quot;The Iterative team in a Croatian restaurant&quot; title=&quot;The Iterative team in a Croatian restaurant&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/bar.jpg&quot; alt=&quot;Pub crawling&quot; title=&quot;Pub crawling&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/bar.webp&quot; alt=&quot;Pub crawling&quot; title=&quot;Pub crawling&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The next day started with a delicious breakfast in the pancake restaurant and then there was time for team building. We decided to visit an escape room and divided into two sub-teams that competed for the fastest time to solve the mysteries of a WWII bunker and riddles left by a couple of artists. That was fun!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/escape-room.jpg&quot; alt=&quot;Escape Room&quot; title=&quot;Escape Room&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/escape-room.webp&quot; alt=&quot;Escape Room&quot; title=&quot;Escape Room&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-engineering-team.jpg&quot; alt=&quot;Iterative Engineering Team&quot; title=&quot;Iterative Engineering Team&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/iterative-engineering-team.webp&quot; alt=&quot;Iterative Engineering Team&quot; title=&quot;Iterative Engineering Team&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Integration events like this are seemingly just unimportant entertainment. But they provide a hidden, immeasurable value. Interaction between people is essential for having a productive and well-organized team. As social animals (yes, engineers also count!), we cannot rely solely on verbal online communication. Even though we still keep working remotely, meeting a person in real life and spending even a short time together is the fastest way to encourage further cooperation. It is important to put a face to a voice, and H264-compressed video of a face on a zoom call won’t let you build the same level of relationship as a real meeting!&lt;/p&gt;
 
 &lt;p&gt;We’re definitely going to repeat this regularly!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.jpg&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.webp&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
@@ -806,7 +806,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;There can be only one king and it is JavaScript. The domination is impressive and we believe it will remain as such for a longer time. Its universality is probably a key factor here. It is applied for all ‘sides’ of software development: server side programming (backend), web (frontend) and mobile (hybrid). And to be fair it’s pretty damn good for all of those.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-programming-language.png&quot; alt=&quot;Most used programming language - there can only be one king and it is JavaScript&quot; title=&quot;Most used programming language - there can be only one king and it is JavaScript&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-programming-language.webp&quot; alt=&quot;Most used programming language - there can only be one king and it is JavaScript&quot; title=&quot;Most used programming language - there can be only one king and it is JavaScript&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The trend of steady and constant growth of scripting languages such as JavaScript, Python or TypeScript still in place. As their performance limitations are less and less relevant, they can be applied to more and more cases. While working with such languages is in a lot of cases more efficient and quick compared to native or managed technologies.&lt;/p&gt;
 
@@ -822,7 +822,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;A surprise for us was the strong position of Notepad++. Internally we had given up on it a while ago in favour of Visual Studio Code or Sublime, but clearly it’s worth revisiting.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-IDE.png&quot; alt=&quot;Most used IDEs - the winner is Visual Studio Code&quot; title=&quot;Most used IDEs - the winner is Visual Studio Code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-used-IDE.webp&quot; alt=&quot;Most used IDEs - the winner is Visual Studio Code&quot; title=&quot;Most used IDEs - the winner is Visual Studio Code&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;fundamental-coding-toolset&quot;&gt;Fundamental coding toolset&lt;/h2&gt;
 
@@ -830,7 +830,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Kubernetes as the only container orchestrator on the top 10 list is no surprise. Developer driven environment alongside reliable operations, makes it a first choice for more complex deployment scenarios. Once combined with other most used tools from devops perspective - Ansible and Terraform, we get a pretty neat set up for CI/CD.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/fundamental-coding-toolset.png&quot; alt=&quot;Fundamental coding toolset starts with Git and Docker&quot; title=&quot;Fundamental coding toolset starts with Git and Docker&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/fundamental-coding-toolset.webp&quot; alt=&quot;Fundamental coding toolset starts with Git and Docker&quot; title=&quot;Fundamental coding toolset starts with Git and Docker&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A bit of curiosity for us are &lt;a href=&quot;https://github.com/yarnpkg/berry&quot;&gt;Yarn&lt;/a&gt; and &lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=2ahUKEwij47-Wk9D0AhXJxIsKHcDrAQMQFnoECAsQAQ&amp;amp;url=https%3A%2F%2Fdeno.land%2F&amp;amp;usg=AOvVaw2tfvsEssp_oAi-6XYbU_uo&quot;&gt;Deno&lt;/a&gt;. The result of the first we take as a signal to consider it as a replacement of npm package manager, especially that it recently increased on development. The second proves that Rust and V8 JavaScript are reality and we really need to get up to speed with those technologies as we expect it to grow rapidly.&lt;/p&gt;
 
@@ -838,7 +838,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;AWS maintains its lead as the most widely used cloud platform, but Google Cloud and Microsoft Azure made substantial gains and are catching up. They simply became reliable and performant, especially Microsoft Azure, which a few years ago was just a pain to work with (from dev perspective).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/top-cloud-platforms.png&quot; alt=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; title=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/top-cloud-platforms.webp&quot; alt=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; title=&quot;Top cloud platforms - AWS maintains its lead but Google Cloud and Microsoft Azure are catching up&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-desired-by-the-tech-talents&quot;&gt;What is desired by the tech talents?&lt;/h1&gt;
 
@@ -846,11 +846,11 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;h2 id=&quot;most-wished-programming-languages&quot;&gt;Most wished programming languages&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/coding-in-python-bridy-not-enjoys-it.png&quot; alt=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; title=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/coding-in-python-bridy-not-enjoys-it.webp&quot; alt=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; title=&quot;Coding in Python - bridy seems to not enjoy it that much!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;One may not like it (as the birdy above!), yet still Python is the most desired programming language to work with across the Community. The lead however isn’t ultimate and there is strong competition right behind. TypeScript &amp;amp; JavaScript, but also Go and Rust - modern compile concurrency focused languages, which seems like another trend.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wished-programming-languages.png&quot; alt=&quot;Most wished programming languages - One may not like it (as the birdy above!), yet still Python is the most desired programming language&quot; title=&quot;Most wished programming languages - One may not like it (as the birdy above!), yet still Python is the most desired programming language&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wished-programming-languages.webp&quot; alt=&quot;Most wished programming languages - One may not like it (as the birdy above!), yet still Python is the most desired programming language&quot; title=&quot;Most wished programming languages - One may not like it (as the birdy above!), yet still Python is the most desired programming language&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From our tech of choice perspective seeing two JVM related Java &amp;amp; Kotlin in Top 10 feels pretty great. While not the most hyped out there, still many so many wish to learn it, just because of the fact that it’s reliable and enjoyable to work with.&lt;/p&gt;
 
@@ -858,7 +858,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Quite shocked by the fact of such a close competition for 1st place. PostgreSql and MongoDB, two completely different philosophies, yet both got a sizable amount of interest from the Community. Redis in 3rd and Elasticsearch in 4th place - no surprise at all - simply well proven and excellent at what they are aimed for. MySql closing Top 5 just seals that open source SQL and document stores are having a good time.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/loved-data-storage-technologies.png&quot; alt=&quot;Loved data storage technologies - PostgreSql and MongoDB are the winners&quot; title=&quot;Loved data storage technologies - PostgreSql and MongoDB are the winners&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/loved-data-storage-technologies.webp&quot; alt=&quot;Loved data storage technologies - PostgreSql and MongoDB are the winners&quot; title=&quot;Loved data storage technologies - PostgreSql and MongoDB are the winners&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A bit disappointing to not see any interest in graph databases like Neo4j, however it may be that they still need to prove their merits. Finally at Iterative we use 4 out of Top 5 daily, but now are also tempted to give Mongo a try, as the desire must be there for the reason.&lt;/p&gt;
 
@@ -868,29 +868,29 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Vue.js and Angular are still valued and on the radar of the community, but a newcomer Svelte had taken a fair chunk of interest too. Definitely a one to try out.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wanted-web-frameworks.png&quot; alt=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; title=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/most-wanted-web-frameworks.webp&quot; alt=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; title=&quot;Most wanted web frameworks - React.js has dominated the market as most wanted and as moste used web framework&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;learning-curve-and-knowledge-sources&quot;&gt;Learning curve and knowledge sources&lt;/h1&gt;
 
 &lt;p&gt;The learning process or at least first encounters with coding happens pretty early, sometimes as early as 5-10y old, mostly before 18y old and in 90% before 24y! It may mean that learning to code in your 30’s may be nearly impossible. However we need to remember that for at least several years everyone has basic contact with programming in early school days, therefore the meaning might be a bit blurred here&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-when-we-start-to-code.png&quot; alt=&quot;When we start to code - in 90% of cases before 24y&quot; title=&quot;When we start to code - in 90% of cases before 24y&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-when-we-start-to-code.webp&quot; alt=&quot;When we start to code - in 90% of cases before 24y&quot; title=&quot;When we start to code - in 90% of cases before 24y&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s a pity that this question isn’t followed with more detailed ones about the learning curve. Writing first lines of code and the actual start of learning to code might not be the same for many.&lt;/p&gt;
 
 &lt;p&gt;80% of professionals have higher education and while (good) companies do not care for the education grades but rather for the actual knowledge. Still it’s the most natural path to become a developer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-developers-education.png&quot; alt=&quot;Developers education - 80% of professionals have higher education&quot; title=&quot;Developers education - 80% of professionals have higher education&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-developers-education.webp&quot; alt=&quot;Developers education - 80% of professionals have higher education&quot; title=&quot;Developers education - 80% of professionals have higher education&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Contrary to education, developers do not learn how to code in a college but rather from online resources, books and in school. Younger ones tend to learn from online resources, while older ones have learned from traditional mediums like school or books. The speed at which technology changes might be the reason, as it’s not feasible to maintain college or school courses up to date with all updates and trends. However the principals and concepts for building the software remain mostly intact and this might be a real value proposition.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-where-do-devs-learn-from.png&quot; alt=&quot;Where do devs learn from - Contrary to education, developers learn from online resources&quot; title=&quot;Where do devs learn from - Contrary to education, developers learn from online resources&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-where-do-devs-learn-from.webp&quot; alt=&quot;Where do devs learn from - Contrary to education, developers learn from online resources&quot; title=&quot;Where do devs learn from - Contrary to education, developers learn from online resources&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once work related questions or challenges are in need to solve then Google and StackOverflow are the first line of support. Countless situations for us in which those significantly helped to solve the problems. IT actually maybe one of the most important skills to learn as a developer - effective searching for information. One may think it’s easy, but it takes time to master to search efficiently.&lt;/p&gt;
 
 &lt;p&gt;If stuck, another approach is context switching or having a pause. Very often helpful, as problems then are analyzed subconsciously often leading to solutions immediately once back to work. However, sometimes it’s a burden, as not easy to switch off from working, that’s the reality and needs to be accepted.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-what-do-devs-when-stuck.png&quot; alt=&quot;What do devs when stuck - Google and StackOverflow are the first line of support&quot; title=&quot;What do devs when stuck - Google and StackOverflow are the first line of support&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/learning-curve-and-knowledge-sources-what-do-devs-when-stuck.webp&quot; alt=&quot;What do devs when stuck - Google and StackOverflow are the first line of support&quot; title=&quot;What do devs when stuck - Google and StackOverflow are the first line of support&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;At Iterative in addition to all mentioned in TOP 5 we also like to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;rubber duck debugging&lt;/a&gt; technique. It simply is about describing the problem to someone else, so he can understand the context. Turns out that such exercise helps to structure the problem to yourself and very often points to an error or blocker immediately once prepared.&lt;/p&gt;
 
@@ -900,11 +900,11 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;In the devops world what is popular and what is desired is also paid pretty well. 1st place was taken by Pulumi with an average of $110k, followed by Terraform and Chef with $90k averages, next are Ansible, Puppet and Chef with around $75k average.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-top-paid-technologies.png&quot; alt=&quot;Top paid technologies are related to functional programming (Clojure, F#)&quot; title=&quot;Top paid technologies are related to functional programming (Clojure, F#)&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-top-paid-technologies.webp&quot; alt=&quot;Top paid technologies are related to functional programming (Clojure, F#)&quot; title=&quot;Top paid technologies are related to functional programming (Clojure, F#)&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Looking at salaries from a role angle confirms that except executives and managers ranging at average of $95k, devops specialists are the ones to earn the most with an average of $70k. Then next to them are data engineers at $68k. The gap to software developers is quite big as full stack or backend specialists average at around $55k, while frontend at $50k. The least paid are students at roughly $20k and weirdly mobile developers at only $42k.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-best-salaries.png&quot; alt=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; title=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8-takeaways-from-stackoverflow-2021-developer-survey/where-is-the-money-best-salaries.webp&quot; alt=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; title=&quot;Best salaries - except for the execs and management, devops and data engineering are positions with the highest salaries&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
 
@@ -1138,7 +1138,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;Projects operate under tight deadlines in order to minimize expenditures on a single factor. Finishing a job ahead of schedule is a big boost to everyone involved. While this isn’t anything groundbreaking, it seems most companies underestimate how much clients value this.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/win.png&quot; alt=&quot;Wakacje.IN, a travel holidays e-commerce app - client review for 5 stars&quot; title=&quot;Wakacje.IN, a travel holidays e-commerce app - client review for 5 stars&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/win.webp&quot; alt=&quot;Wakacje.IN, a travel holidays e-commerce app - client review for 5 stars&quot; title=&quot;Wakacje.IN, a travel holidays e-commerce app - client review for 5 stars&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Our client in this review made a point of mentioning the rapid development that our development process allowed. This pushed their timetable up, which positively impacted their sales and leads for the rest of the period.&lt;/p&gt;
 
@@ -1150,7 +1150,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;Features are supposed to make things easier. If the feature makes the overall process too complex, this is an utter failure of design. This is where expertise in UX and UI come in handy, as duly proven by this review.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/healthly.png&quot; alt=&quot;Healthly, award wining telemedicine platform - another 5 start client review&quot; title=&quot;Healthly, award wining telemedicine platform - another 5 start client review&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-to-avoid-overdesign/healthly.webp&quot; alt=&quot;Healthly, award wining telemedicine platform - another 5 start client review&quot; title=&quot;Healthly, award wining telemedicine platform - another 5 start client review&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The client was quite happy with the advanced functionalities that the app provided while being easy to use for their customers.&lt;/p&gt;
 
