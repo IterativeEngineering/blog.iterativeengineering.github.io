@@ -5,9 +5,71 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Oct 2023 17:29:40 -0500</pubDate>
-    <lastBuildDate>Wed, 25 Oct 2023 17:29:40 -0500</lastBuildDate>
+    <pubDate>Fri, 27 Oct 2023 03:52:18 -0500</pubDate>
+    <lastBuildDate>Fri, 27 Oct 2023 03:52:18 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Battling Ad Fraud - Spoofed Browsers Detection</title>
+        <description>&lt;p&gt;$68bn worldwide of total ad spend will fall victim to fraudsters in 2022 alone. So what is AdTech doing to fight off fraud and what kind of technical challenges is it facing?&lt;/p&gt;
+
+&lt;p&gt;Detecting if ad impressions aren’t performed by bots is a massive subject in the industry. However the issue isn’t a new thing, its scale and impact has grown significantly. The problem applies to both big and small networks and is an increasingly growing concern across all of the clients.&lt;/p&gt;
+
+&lt;p&gt;According to the &lt;a href=&quot;https://www.juniperresearch.com/researchstore/content-digital-media/digital-advertising-fraud-research-report?utm_campaign=pr1_digitaladvertisingfraud_providers_content_feb22&amp;amp;utm_source=vuelio&amp;amp;utm_medium=pr&quot;&gt;Juniper Research&lt;/a&gt; report, a staggering amount of $68bn has grown from $59bn in 2021, while in 2017 it was ‘only’ $8bn. Other research claims that, as of now, 25%-40% ad campaigns budgets are affected by fraudulent traffic. While the exact numbers are not certain, the costs seems to be massive and growing.&lt;/p&gt;
+
+&lt;h1 id=&quot;so-what-are-the-technical-ways-to-protect-against-it&quot;&gt;So what are the technical ways to protect against it?&lt;/h1&gt;
+
+&lt;p&gt;One of the general approaches is scanning of the traffic and detection of various anomalies within. Suspicious impressions are then filtered out and should not affect the campaign.&lt;/p&gt;
+
+&lt;p&gt;The algorithms are both classic and AI based. They check technical and behavioral aspects in various perspectives in order to classify and score a given case. Typical example of checks are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;detecting mobile devices that don’t have a touchscreen&lt;/li&gt;
+  &lt;li&gt;learn the screen resolution of a particular mobile device and cross check it&lt;/li&gt;
+  &lt;li&gt;monitor IP address ranges or ISPs&lt;/li&gt;
+  &lt;li&gt;verify browser features and if they have not been overridden&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-does-it-look-in-practice&quot;&gt;How does it look in practice?&lt;/h1&gt;
+
+&lt;p&gt;Recently we’ve been working on the latter within a project for our long term client&lt;a href=&quot;https://www.adscore.com&quot;&gt; Adscore Technologies DMCC&lt;/a&gt;. The focus was around detection if certain Javascript (JS) methods have been tampered (modified). Yes, in JS it is entirely possible to overwrite any native function with your own code (yes, just like that).&lt;/p&gt;
+
+&lt;p&gt;So however, it’s also possible to detect such changes, at least in theory, as in practice it’s not that straightforward. Just have a look at recent conversation of our engineers, which has inspired me to write down this blog post!&lt;/p&gt;
+
+&lt;h2 id=&quot;out-of-the-box-thinking-is-required&quot;&gt;Out of the box thinking is required!&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: One way to detect changes is the ‘getString()’ method. Called on a function it returns its source code and in case of native functions the response is “[native code]”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: Great, so problem solved, isn’t it?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: Well, actually no! Think about what happens when someone modifies the ‘getString()’ so it returns “[native code]” for the function he had modified!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: Tricky! But we can actually call ‘getString()’ on the modified ‘getString()’ method, this will reveal that this one has been modified, as well!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: True but, what if someone modifies ‘Function.prototype.toString’ and ensures that if it’s called on itself it returns “[native code]”?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: I see, but we still can rely on the fact that all customly defined functions have a property named ‘prototype’, so we can check if ‘Function.prototype.toString’ does exist. If it does then we would know it was modified.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: That is indeed correct, but what if the implementation was done through the Proxy (granting transparent virtualization)?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: Well…&lt;/p&gt;
+
+&lt;h1 id=&quot;looking-for-more&quot;&gt;Looking for more?&lt;/h1&gt;
+
+&lt;p&gt;If you found that subject interesting you may want to look at &lt;a href=&quot;https://adtechmadness.wordpress.com/2019/03/23/javascript-tampering-detection-and-stealth/&quot;&gt;this article&lt;/a&gt;. And if you face fraudulent traffic which affects your campaigns &lt;a href=&quot;https://calendly.com/krzysztof-gasior/adtech-discovery-call-15m&quot;&gt;let’s talk&lt;/a&gt; as we should be able to help out!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Aug 2022 00:00:00 -0500</pubDate>
+        <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
+        
+        <category>Javascript</category>
+        
+        <category>AdTech</category>
+        
+        
+        <category>technical</category>
+        
+      </item>
     
       <item>
         <title>Contract testing with Spring</title>
