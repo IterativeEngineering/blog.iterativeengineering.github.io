@@ -5,9 +5,113 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Oct 2023 03:52:18 -0500</pubDate>
-    <lastBuildDate>Fri, 27 Oct 2023 03:52:18 -0500</lastBuildDate>
+    <pubDate>Wed, 17 Jan 2024 15:19:45 -0600</pubDate>
+    <lastBuildDate>Wed, 17 Jan 2024 15:19:45 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Teaching Java: Reflections on the Attempt</title>
+        <description>&lt;p&gt;I’ve been a programmer for more than 4 years, specifically a Java developer, while I still have a lot to learn, I also believe that I have some to share, especially for newcomers. In Iterative Engineering I’ve already had a chance to tutor interns or junior programmers, which was quite nice, but I thought it would be cool  taking on the challenge of creating an online course. In the past I used to learn a lot from such resources myself, so I thought the same would apply to others. A large library of courses that I have completed myself and those which I purchased, hoping that I would get around one day  (I believe there are people who can understand this situation! 😂) - would serve as a great inspiration..&lt;/p&gt;
+
+&lt;p&gt;However, before I started creating the online course, I had the idea to test myself in a real-life scenario with in-person course participants. I thought it would be a great foundation and experience to help me in preparing the course. So I found a group of people who were interested in learning the basics of programming in Java (it was easier than you think!). Six people decided to dedicate 4 hours a week for the next 3-4 months to embark on this training adventure with me.&lt;/p&gt;
+
+&lt;p&gt;The in-person training has now come to an end, and I would like to share with you the experiences I gained during the course.&lt;/p&gt;
+
+&lt;h1 id=&quot;preparation-of-the-training-material&quot;&gt;Preparation of the training material&lt;/h1&gt;
+
+&lt;p&gt;A great assistant for creating examples, coming up with tasks and for finding information was Chat GPT. It has saved me a great deal of time. Unfortunately, the content it generates is far from  perfect, and sometimes it gets a little wordy. It also  requires knowledge of subjects we ask it about, as it is necessary to verify the answers it gives us. I treated it as an assistant who provides me with the specific content I need instead of searching for it on google or in books, which would have taken me more time.&lt;/p&gt;
+
+&lt;p&gt;I tried to create materials that would be simple to understand. So that each topic is explained step by step in detail and covered in this case with enough tasks and examples. And after reading them, there would be no need for additional questions to understand them.&lt;/p&gt;
+
+&lt;p&gt;Each topic ended with a number of tasks that allowed students to repeat the content of the theoretical part. The tasks would have to be formulated in such a way that they used vocabulary commonly used by programmers. This vocabulary also had to be included in the course content so that one could review it at any time and be able to understand the task.&lt;/p&gt;
+
+&lt;p&gt;I noticed that such a way of creating tasks allowed them to be understood faster, they were completed faster and it helped in assimilating the knowledge contained in the theoretical content.&lt;/p&gt;
+
+&lt;p&gt;The next thing that guided me in creating tasks was to prepare several simple tasks that touched on various issues of the topic, and the last task was a “bigger” one that required the use of all the knowledge acquired in the topic. The task was created in such a way that it also covered previous topics. Which the trainees have already covered.&lt;/p&gt;
+
+&lt;p&gt;The last assumption about the materials and tasks was the 80/20 rule . 80% of the content and time I wanted it to be spent on tasks and 20% on theory. Hence, it was important to prepare the right amount of assignments that were worked out in detail. I think this was the best decision because I saw that the most fun and learning was during solving the tasks rather than discussing the theory.&lt;/p&gt;
+
+&lt;p&gt;As for the theory, I also approached it a bit practically. That is, I tried to explain the whole thing with as many examples as possible. So that participants in the course of reworking the theory could compile the code and see what happens. Also I encouraged the content to experiment by giving simple ideas of what else could be tested. Examples were very important after they could understand the issue in a simple way and in solving tasks. So that the students did not feel lost while solving them&lt;/p&gt;
+
+&lt;h1 id=&quot;starting-the-course-and-first-impressions&quot;&gt;Starting the course and first impressions&lt;/h1&gt;
+
+&lt;p&gt;At first I was stressed. I wondered if I would be able to answer the questions that would come up. A lot of black scenarios were forming in my head, in which the students will have more knowledge than me. Fortunately, after a few classes I realized that as a teacher I don’t need to know everything and the questions I don’t know the answer to will be known by ‘Uncle’ Google or Chat GPT. My task, as a teacher,is to understand the question, do proper research and provide  a good answer along with a clear explanation.&lt;/p&gt;
+
+&lt;p&gt;The initial classes helped me work out my teaching style and how I should present the knowledge and how to adapt the materials for the next classes. I think I made a good decision by not preparing all the materials before the course, only the first couple of chapters. This allowed me to quickly make changes and prepare the next materials already according to the new guidelines.&lt;/p&gt;
+
+&lt;h1 id=&quot;mistakes-i-made&quot;&gt;Mistakes I made&lt;/h1&gt;
+
+&lt;p&gt;The first mistake I made was trying to create a training course that would present all the secrets of java. When I prepared a list of issues related to the basics, I realized that there was too much information and it would take more time than ⅞ of the meetings I had planned.&lt;/p&gt;
+
+&lt;p&gt;The conclusion was simple for me: I had to narrow down the lists of topics I wanted to cover. Therefore, I set myself the goal of imparting enough knowledge that would allow me to create a simple console application. In my case, it was an application for cataloging the books we own. This allowed me to narrow down the range of skills needed to a minimum and make it in the 8 meetings I planned and at the same time to introduce basic programming skills and jointly create the first simple application.&lt;/p&gt;
+
+&lt;p&gt;The second mistake I noticed was the way I communicated with my students.
+I was using technical vocabulary related to programming that I hadn’t explained before. Because many of the words/terms that I use in my work have already become natural to me, so I no longer pay attention to them when I use them.&lt;/p&gt;
+
+&lt;p&gt;This mistake helped me improve the content of the materials and the way the course topics were discussed.&lt;/p&gt;
+
+&lt;p&gt;The third mistake of equal importance was too few examples and too much dry theory.
+Just as with code, each method should be properly tested. Here each topic should have a sufficient number of examples or additional tasks so that the student can better understand the issue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/teaching-java-reflections-on-the-attempt/mistakes.webp&quot; alt=&quot;Mistakes&quot; title=&quot;Learning from mistakes creats a path to grow&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The last and most important mistake I made was the content of the tasks I created for beginning  topics. The task descriptions were not very detailed for people who had never programmed before. e.g:&lt;/p&gt;
+
+&lt;p&gt;From a less detailed task:
+Display the sum of two numbers on the screen.&lt;/p&gt;
+
+&lt;p&gt;To a more detailed one, like an action instruction:
+Declare two variables x,y which will be natural number values. Initialize them with arbitrary values. Then perform an additional calculation using these two variables and assign the result to a new variable z. Display the value of variable z on the screen.&lt;/p&gt;
+
+&lt;p&gt;While in real life, we often face less defined tasks, at the stage of learning the technology and how to program it is really helpful to give more detailed definitions. Same approach often works for interns and junior programmers who still need to become proficient with technology and only later could also focus on domain and think themselves on solving business problems.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the fact that the task contained technical names it allowed faster and better familiarization. And the more detailed description of what you need to do allowed you to understand the tasks faster. After a few rewrites of the topics and dozens of tasks done, this was no longer required. Tasks had to be well defined but no longer required such detailed instruction.&lt;/p&gt;
+
+&lt;h1 id=&quot;interaction-with-participants-and-building-relationships&quot;&gt;Interaction with participants and building relationships&lt;/h1&gt;
+
+&lt;p&gt;The first and most important point that I focused on as an instructor was creating a friendly environment for each participant. Without such an atmosphere, learning, regardless of the topic, becomes more difficult. In the case of programming, which can often be frustrating for beginners, this is even more important.&lt;/p&gt;
+
+&lt;p&gt;An important aspect was listening to problems with tasks or understanding content and solving problems together. If a participant encountered an obstacle, I asked them to share it with the group. This provided an opportunity to learn from each other. It showed the value of collaboration in the world of technology. Which is an integral part of it.&lt;/p&gt;
+
+&lt;p&gt;Another key aspect was to provide ongoing support and motivation. Programming can be a challenge, and the learning process can be full of ups and downs. I wanted the students to know that they were supported throughout.&lt;/p&gt;
+
+&lt;h1 id=&quot;summary-on-running-the-course&quot;&gt;Summary on running the course&lt;/h1&gt;
+
+&lt;p&gt;The beginning was not easy. It required me to get out of my comfort zone. Putting myself in the position of being a person who creates content and communicates it and not just consumes it. Spending a lot of time preparing materials. I cannot say exactly how much, but I would say roughly 17 to 20 hours .  I managed to create 100 pages of a4.&lt;/p&gt;
+
+&lt;p&gt;Overall it was a great idea to organize a stationary course before preparing an online one.. It allowed me to better understand the learning process and accelerated the creation of effective training materials. The mistakes I made in the beginning became invaluable lessons that helped me improve my teaching methods.&lt;/p&gt;
+
+&lt;p&gt;In the near future will appear below links to materials from the course I have prepared, on java topics of my choice.&lt;/p&gt;
+
+&lt;h1 id=&quot;references--materials&quot;&gt;References &amp;amp; Materials:&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Head First Java - Kathy Sierra, Bert Bates, Trisha Gee&lt;/li&gt;
+  &lt;li&gt;The Science of Self-Learning - Peter Hollins&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Java: A Beginner’s Guide - Herbert Schildt&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.javatpoint.com/java-tutorial&quot;&gt;https://www.javatpoint.com/java-tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://beginnersbook.com/java-tutorial-for-beginners-with-examples/&quot;&gt;https://beginnersbook.com/java-tutorial-for-beginners-with-examples/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.guru99.com/java-tutorial.html&quot;&gt;https://www.guru99.com/java-tutorial.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/javarevisited/the-java-programmer-roadmap-f9db163ef2c2&quot;&gt;https://medium.com/javarevisited/the-java-programmer-roadmap-f9db163ef2c2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 -0600</pubDate>
+        <link>https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</guid>
+        
+        <category>Teaching</category>
+        
+        <category>Personal experience</category>
+        
+        <category>Java</category>
+        
+        
+        <category>lifestyle</category>
+        
+      </item>
     
       <item>
         <title>Battling Ad Fraud - Spoofed Browsers Detection</title>
