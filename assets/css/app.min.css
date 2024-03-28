@@ -1260,7 +1260,7 @@ mark {
   --height-spacing--D: 12px;
   --header-00: 56px;
   --line-height-header-00: 67px;
-  --header-01: 45px;
+  --header-01: 34px;
   --line-height-header-01: 54px;
   --header-02: 30px;
   --line-height-header-02: 36px;
@@ -1304,7 +1304,7 @@ mark {
   --height-spacing--D: 12px;
   --header-00: 56px;
   --line-height-header-00: 67px;
-  --header-01: 45px;
+  --header-01: 34px;
   --line-height-header-01: 54px;
   --header-02: 30px;
   --line-height-header-02: 36px;
@@ -1341,7 +1341,7 @@ mark {
     --height-spacing--D: 10px;
     --header-00: 50.5px;
     --line-height-header-00: 61px;
-    --header-01: 40.5px;
+    --header-01: 32px;
     --line-height-header-01: 49px;
     --header-02: 27px;
     --line-height-header-02: 32px;
@@ -1379,7 +1379,7 @@ mark {
     --height-spacing--D: 8px;
     --header-00: 45px;
     --line-height-header-00: 54px;
-    --header-01: 36px;
+    --header-01: 29px;
     --line-height-header-01: 43px;
     --header-02: 24px;
     --line-height-header-02: 29px;
@@ -1418,7 +1418,7 @@ mark {
     --height-spacing--D: 8px;
     --header-00: 45px;
     --line-height-header-00: 54px;
-    --header-01: 36px;
+    --header-01: 29px;
     --line-height-header-01: 43px;
     --header-02: 24px;
     --line-height-header-02: 29px;
@@ -1456,7 +1456,7 @@ mark {
     --height-spacing--D: 12px;
     --header-00: 45px;
     --line-height-header-00: 54px;
-    --header-01: 36px;
+    --header-01: 29px;
     --line-height-header-01: 43px;
     --header-02: 24px;
     --line-height-header-02: 29px;
@@ -1482,7 +1482,7 @@ mark {
     --height-spacing--D: 12px;
     --header-00: 45px;
     --line-height-header-00: 54px;
-    --header-01: 36px;
+    --header-01: 29px;
     --line-height-header-01: 43px;
     --header-02: 24px;
     --line-height-header-02: 29px;
@@ -3191,7 +3191,7 @@ h6 {
   font-family: var(--headers-font-family);
 }
 .content h1 {
-  font-size: calc(var(--header-01) / 1.25);
+  font-size: var(--header-01);
   line-height: var(--line-height-header-01);
   margin-bottom: 24px;
   text-align: left;
@@ -3223,6 +3223,30 @@ p {
   color: #22c6a9;
   overflow-wrap: break-word;
   text-decoration: underline;
+}
+.content table {
+  width: 100%;
+  margin-bottom: 1em;
+  overflow-wrap: break-word;
+}
+.content table td,
+.content table th {
+  padding: 1em;
+  font-size: var(--text-02);
+  line-height: var(--line-height-text-02);
+  background-color: #f8f8f8;
+}
+.content table td {
+  font-family: var(--text-font-family);
+}
+.content table th {
+  text-align: left;
+}
+@media (max-width: 1023px) and (min-width: 778px) {
+  .content table {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
 .post ol,
 .post ul:not(.post__social) {

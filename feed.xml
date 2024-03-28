@@ -5,9 +5,679 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Jan 2024 15:19:45 -0600</pubDate>
-    <lastBuildDate>Wed, 17 Jan 2024 15:19:45 -0600</lastBuildDate>
+    <pubDate>Thu, 28 Mar 2024 07:58:22 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Mar 2024 07:58:22 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Strengths and Limitations of Knip for Unused Code Detection in Angular</title>
+        <description>&lt;p&gt;As the codebase grows and evolves, the cost of maintaining it becomes higher. In extreme cases, leading to situations
+where upkeep takes significantly more time and effort than new developments. While you cannot prevent balancing out of
+those proportions overtime, there are ways to mitigate the risk of ending up in an endless maintenance loop. One of such
+is identification and removal of unused or overhead code to decrease complexity.&lt;/p&gt;
+
+&lt;p&gt;This article will delve into the capabilities of Knip tool that identifies unused code in Angular based applications.
+It advertises itself as a tool that “finds unused files, dependencies and exports in your JavaScript and TypeScript
+projects. Less code and dependencies lead to improved performance, less maintenance and easier refactorings”.
+Gaining popularity in the JavaScript ecosystem based on &lt;a href=&quot;https://www.npmjs.com/package/knip&quot;&gt;NPM weekly downloads&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To fully understand Knip’s effectiveness, we will comprehensively evaluate it in real-world application. In the upcoming
+section, we will evaluate its performance in identifying unused code in the Adscore project, which we are developing
+and maintaining at Iterative. Additionally, we will analyze Knip’s ability to navigate complex code within a sandbox
+Angular project in a controlled environment. This two-pronged approach will check Knip’s versatility and provide
+insights into its capabilities in Angular codebases.&lt;/p&gt;
+
+&lt;h1 id=&quot;real-world-project&quot;&gt;Real world project&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://adscore.com/&quot;&gt;Adscore&lt;/a&gt; allows users to categorize web traffic into distinct buckets like organic, paid, bot-generated, and low-quality. The app acts as a shield for ad budgets. The detailed comprehension guarantees that resources are directed towards the intended audience - real users - thereby maximizing campaign efficiency and return on investment.&lt;/p&gt;
+
+&lt;h2 id=&quot;projects-statistics&quot;&gt;Projects Statistics&lt;/h2&gt;
+
+&lt;p&gt;The following statistics provide an idea of the size of the Adscore system.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;Files&lt;/th&gt;
+      &lt;th&gt;Lines of code&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TypeScript&lt;/td&gt;
+      &lt;td&gt;248&lt;/td&gt;
+      &lt;td&gt;26995&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SCSS&lt;/td&gt;
+      &lt;td&gt;112&lt;/td&gt;
+      &lt;td&gt;16535&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HTML&lt;/td&gt;
+      &lt;td&gt;78&lt;/td&gt;
+      &lt;td&gt;12822&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The total count of Components, Pipes, and Directives is 74.&lt;/p&gt;
+
+&lt;h2 id=&quot;ignore-file&quot;&gt;Ignore File&lt;/h2&gt;
+
+&lt;p&gt;After several iterations due to Knip incorrectly detecting in-use packages, following ignore file was created:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;angular&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;angular.json&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ignore&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// both files used in angular.json file&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Karma.conf.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;src/polyfills.ts&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ignoreDependencies&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// used in angular.json&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@angular-eslint/schematics&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@angular-eslint/template-parser&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;eslint-config-prettier&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;jasmine-core&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Karma-chrome-launcher&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// used by Karma, several more plugins enlisted but removed for brevity&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// imported in global styles.scss, Knip lacks Sass plugin at the time of writing&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;loaders.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;husky&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// used in package.json&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;pretty-quick&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// used by husky&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;simple-line-icons&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// used in custom script&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Some dependencies are used in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;angular.json&lt;/code&gt; file, some in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.sass&lt;/code&gt; files. This is something that can
+be improved in the plugins used by Knip.&lt;/p&gt;
+
+&lt;h2 id=&quot;knip-scan-results-summary&quot;&gt;Knip Scan Results Summary&lt;/h2&gt;
+
+&lt;p&gt;Knip created following report after creation of ignore file (Knip provides list of unused components for each section, those details are removed for brevity):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Unused files (11)
+Unused dependencies (3)
+Unused devDependencies (5)
+Unused exports (10)
+Unused exported types (1)
+Configuration issues (1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In total, Knip allowed us to detect and remove 435 lines of code (which is 1.61% of total LOC) and 16 files.&lt;/p&gt;
+
+&lt;p&gt;While integrating Knip with our Angular project, optimizing the knip.jsonc file required multiple iterations to ensure
+accurate detection of unused code. However, this configuration effort was a one-time investment; moving forward, we can
+seamlessly integrate Knip into our post-refactoring workflow for recurring analysis. While inclusion in the automated
+pipeline is pending further evaluation, Knip has already proven its potential as a valuable tool for our codebase
+optimization. Despite Knip’s detection capabilities, we identified additional unused assets that require further
+investigation. We’ll be exploring this scenario within a controlled sandbox environment to gain deeper insights.&lt;/p&gt;
+
+&lt;h1 id=&quot;sandbox-project&quot;&gt;Sandbox Project&lt;/h1&gt;
+
+&lt;p&gt;A project containing unused code has been prepared. The objective is to identify all unused cases, which are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;7 class properties&lt;/li&gt;
+  &lt;li&gt;10 class methods&lt;/li&gt;
+  &lt;li&gt;2 interface properties&lt;/li&gt;
+  &lt;li&gt;2 variables&lt;/li&gt;
+  &lt;li&gt;1 constant&lt;/li&gt;
+  &lt;li&gt;5 classes (Angular’s: Component, Directive, Module, Pipe, Service)&lt;/li&gt;
+  &lt;li&gt;1 dependency (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@angular/forms&lt;/code&gt; - installed by default but unused in the project, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;express&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;1 devDependency (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;express&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;1 unused export (variable used locally)&lt;/li&gt;
+  &lt;li&gt;2 NgRx Actions (functions)&lt;/li&gt;
+  &lt;li&gt;1 NgRx Effect (class)&lt;/li&gt;
+  &lt;li&gt;2 functions - one is unit tested&lt;/li&gt;
+  &lt;li&gt;1 asset&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Total: 36&lt;/p&gt;
+
+&lt;p&gt;Code is available at: &lt;a href=&quot;https://github.com/IterativeEngineering/blog.angular-knip-unused-code-article&quot;&gt;https://github.com/IterativeEngineering/blog.angular-knip-unused-code-article&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;intentional-challenges&quot;&gt;Intentional Challenges&lt;/h2&gt;
+
+&lt;p&gt;Some of the parts of the code are directly unused, which should be easy to detect by the tool. Some are trickier like
+for example: an interface has a property, then the object implementing the interface, has the property
+defined, but property itself is unused as in the following snippet:&lt;/p&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InUseFeatureState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InUseFeatureState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ideally, an unused interface property should be detected on a first run. But iteratively also will do the job:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run the tool&lt;/li&gt;
+  &lt;li&gt;Identify and remove the detected code&lt;/li&gt;
+  &lt;li&gt;Run the tool again&lt;/li&gt;
+  &lt;li&gt;Repeat until no more unused code is detected&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;analyzing-knip-results&quot;&gt;Analyzing Knip Results&lt;/h2&gt;
+
+&lt;p&gt;Tested with following versions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Angular - v17.0.5&lt;/li&gt;
+  &lt;li&gt;Knip - v5.0.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Command used:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npx knip &lt;span class=&quot;nt&quot;&gt;--include&lt;/span&gt; classMembers
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since Knip version 4, class members are &lt;a href=&quot;https://knip.dev/blog/knip-v4#unused-class-members&quot;&gt;opted out by default&lt;/a&gt;, 
+but given Angular’s heavy class usage, enabling it seemed beneficial.&lt;/p&gt;
+
+&lt;p&gt;Result of the first Knip scan (details of each section removed for brevity):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Unused files (6)
+Unused dependencies (3)
+Unused devDependencies (8)
+Unlisted binaries (2)
+Unused exports (4)
+Unused exported class members (16)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s review each section’s outcome individually.&lt;/p&gt;
+
+&lt;h2 id=&quot;unused-files&quot;&gt;Unused files&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;File&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Detection&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Remarks&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused-function.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Even when in barrel file (index.ts) Knip was able to detect this file correctly.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused.service.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Service is exported but it is unused&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused-type.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Types are exported but not used anywhere in the code&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused.util.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Util is exported but not used anywhere in the code&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused-feature.module.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Module is exported but not used anywhere in the cod&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;.eslintrc.js&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used by ES Lint&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Detected: 5 files of 6 were detected correctly.&lt;/p&gt;
+
+&lt;h2 id=&quot;unused-dependencies&quot;&gt;Unused dependencies&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Dependency&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Detection&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Remarks&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;@angular/compiler&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Not directly used in the project, but for example @angular-devkit/build-angular depends on it, so it will be installed anyway in package-lock.json&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;@angular/forms&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Forms are installed by Angular by default, but this test project does not use them.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;@angular/platform-browser-dynamic&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Not directly used in the project but other Angular liblaries depends on it, will be installed anyway in package-lock.json&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused.util.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Util is exported but not used anywhere in the code&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unused-feature.module.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Module is exported but not used anywhere in the code&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;.eslintrc.js&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used by ES Lint&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Detected: 1 of 1 – 2 other dependencies have been detected as unused, but are used by Angular, won’t be included in the final score.&lt;/p&gt;
+
+&lt;h2 id=&quot;unused-devdependencies&quot;&gt;Unused devDependencies&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Dependency&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Detection&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Remarks&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;express&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Unused in the project&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;husky&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in package.json&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jasmine-core&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Installed by Angular and used during testing, but can be removed because it will be installed as a sub-dependency&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;karma-chrome-launcher&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Installed by Angular, cannot run tests without it&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;karma-coverage&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Can be used by Karma to generate coverage report, installed by default by Angular&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;karma-jasmine&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used by Karma&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;karma-jasmine-html-reporter&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used by Karma&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;lint-staged&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used by Husky&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Detected: 1 of 1 - All detected but with false positives.&lt;/p&gt;
+
+&lt;h2 id=&quot;unlisted-binaries&quot;&gt;Unlisted binaries&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Binary&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Detection&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Remarks&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;eslint&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Listed as script in package.json and run by lint-staged&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;prettier&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Listed in lint-staged script&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Detected: 0 of 0 - Did not expect to find any binaries, as the code was not prepared for this case. Anyway all were false positives.&lt;/p&gt;
+
+&lt;h2 id=&quot;unused-exports&quot;&gt;Unused exports&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Export&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;File&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Detection&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Remarks&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UNUSED_CONSTANT&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;constants.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Constant is exported but unused&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedAction1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;in-use-feature.actions.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Action is exported but unused&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedSelector1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;in-use-feature.selectors.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Selector is exported but unused&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rootState&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;in-use-feature.selectors.ts&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Selector is exported but only used locally&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Detected: 4 of 4 - Found one expected export and 3 unused Actions and Selectors.&lt;/p&gt;
+
+&lt;h2 id=&quot;unused-exported-class-members&quot;&gt;Unused exported class members&lt;/h2&gt;
+
+&lt;p&gt;The biggest part of the Knip result, and most likely the biggest part of any Angular application.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Class Member&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;File&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Detection&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Remarks&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedEffect$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseFeatureEffects&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedEmitAction&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseFeatureStateFacade&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseFeatureStateFacade&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseFeatureStateFacade&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedPublicMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UnusedComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UnusedComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Partially correct, because component is unused, but this variable is used in HTML (which was not recognized)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedPublicMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UnusedComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UnusedComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Partially correct, because component is unused, but this variable is used in HTML (which was not recognized)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;unusedMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseService&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Correct&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AppComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in HTML file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseAction1Effect$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseFeatureEffects&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used by NgRx&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in HTML file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseStoreProperty$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in HTML file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;16&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inUseMethod&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InUseComponent&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Incorrect&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in HTML file&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Detected: 11 of 17&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-of-first-run&quot;&gt;Summary of first run&lt;/h2&gt;
+
+&lt;p&gt;In its initial run, Knip successfully identified 22 out of 36 cases, demonstrating a promising detection rate. However, it’s important to note that 14 of the findings were classified as false positives, highlighting the need for further refinement.&lt;/p&gt;
+
+&lt;p&gt;Code removed after the first run can be found in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clean-up-after-knip-v5-detection&lt;/code&gt; branch.&lt;/p&gt;
+
+&lt;h2 id=&quot;subsequent-launches&quot;&gt;Subsequent launches&lt;/h2&gt;
+
+&lt;p&gt;Knip’s second run yielded an additional 2 detections:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;inUseActionInUnusedEffect&lt;/li&gt;
+  &lt;li&gt;unusedSelector2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Total identified cases: 24 out of 36. Subsequent launches did not detect any additional code.&lt;/p&gt;
+
+&lt;h2 id=&quot;missed-parts&quot;&gt;Missed Parts&lt;/h2&gt;
+
+&lt;p&gt;Let’s check which scenarios were not detected:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;UnusedPipe - most probably not found due to being defined in Angular Module which is in use&lt;/li&gt;
+  &lt;li&gt;UnusedPath - same as above&lt;/li&gt;
+  &lt;li&gt;UnusedComponent - same as above&lt;/li&gt;
+  &lt;li&gt;UnusedDirective - same as above&lt;/li&gt;
+  &lt;li&gt;unusedUtilButTestedFunction - function is unused, but unit tested - most probably because Knip does not have (unlike
+Jest) plugin for Jasmine it recognized this function as in use&lt;/li&gt;
+  &lt;li&gt;unusedPrivateProperty - Haven’t been detected, but ESLint or IDE’s like Visual Studio Code are capable to mark
+this case as unused&lt;/li&gt;
+  &lt;li&gt;unusedPrivateProperty2 - same as above&lt;/li&gt;
+  &lt;li&gt;unusedPrivateMethod - same as above&lt;/li&gt;
+  &lt;li&gt;definedButUnusedState - same as above&lt;/li&gt;
+  &lt;li&gt;unusedState - same as above&lt;/li&gt;
+  &lt;li&gt;unused.svg - looks like assets files were not checked at all&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;a-summary-of-knips-efficiency-with-angular&quot;&gt;A Summary of Knip’s Efficiency with Angular&lt;/h1&gt;
+
+&lt;p&gt;Understanding Knip’s capabilities and limitations is crucial for leveraging its power in Angular. Let’s explore its
+current performance, areas for improvement, and practical tips to optimize your code analysis process.&lt;/p&gt;
+
+&lt;p&gt;Strengths:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Detects unused functions and exports efficiently&lt;/li&gt;
+  &lt;li&gt;Can help reduce code complexity and improve maintainability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Weaknesses:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;May require multiple iterations for complex projects&lt;/li&gt;
+  &lt;li&gt;In the context of Angular:
+    &lt;ul&gt;
+      &lt;li&gt;Cannot find unused Components, Pipes etc if defined in Module because, and currently does not analyze HTML templates&lt;/li&gt;
+      &lt;li&gt;Can detect unused Actions/Selectors (NgRx) but not Effects/Reducers&lt;/li&gt;
+      &lt;li&gt;Detects class properties used in HTML templates as unused&lt;/li&gt;
+      &lt;li&gt;Doesn’t fully support Angular’s default test framework (Jasmine)&lt;/li&gt;
+      &lt;li&gt;May misinterpret certain devDependencies as unused&lt;/li&gt;
+      &lt;li&gt;Dependencies used only in Sass files are falsely detected as unused&lt;/li&gt;
+      &lt;li&gt;Assets are not checked&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Package.json scripts: limited detection in scripts, it didn’t detect &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Husky&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lint-staged&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Unit testing: May not detect unused code if tested with unsupported test frameworks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tips for Efficient Usage:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Review and remove unused Angular’s router paths before running Knip to improve Module detection.&lt;/li&gt;
+  &lt;li&gt;Consider alternative test frameworks supported by Knip for broader detection - Since Angular 16,
+&lt;a href=&quot;https://blog.angular.io/moving-angular-cli-to-jest-and-web-test-runner-ef85ef69ceca&quot;&gt;Jest has experimental support&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Be aware of limitations specific to your technology stack and adjust workflow accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additional Notes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Knip’s Angular support is evolving, so future updates might address some limitations&lt;/li&gt;
+  &lt;li&gt;Explore alternative code analysis tools that might complement Knip and address its shortcomings&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
+        <link>https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</guid>
+        
+        <category>Angular</category>
+        
+        <category>Knip</category>
+        
+        <category>Unused Code Detection</category>
+        
+        <category>Frontend</category>
+        
+        <category>JavaScript</category>
+        
+        <category>TypeScript</category>
+        
+        <category>Tools</category>
+        
+        
+        <category>technical</category>
+        
+      </item>
     
       <item>
         <title>Teaching Java: Reflections on the Attempt</title>
@@ -53,7 +723,7 @@ I was using technical vocabulary related to programming that I hadn’t explaine
 &lt;p&gt;The third mistake of equal importance was too few examples and too much dry theory.
 Just as with code, each method should be properly tested. Here each topic should have a sufficient number of examples or additional tasks so that the student can better understand the issue.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/teaching-java-reflections-on-the-attempt/mistakes.webp&quot; alt=&quot;Mistakes&quot; title=&quot;Learning from mistakes creats a path to grow&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/teaching-java-reflections-on-the-attempt/mistakes.webp&quot; alt=&quot;Mistakes&quot; title=&quot;Mistakes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The last and most important mistake I made was the content of the tasks I created for beginning  topics. The task descriptions were not very detailed for people who had never programmed before. e.g:&lt;/p&gt;
 
@@ -166,9 +836,11 @@ Declare two variables x,y which will be natural number values. Initialize them w
         <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
         
-        <category>Javascript</category>
+        <category>JavaScript</category>
         
         <category>AdTech</category>
+        
+        <category>Frontend</category>
         
         
         <category>technical</category>
