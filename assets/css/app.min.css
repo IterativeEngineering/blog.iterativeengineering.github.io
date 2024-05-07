@@ -654,9 +654,7 @@ strong {
 .related__title,
 .subscribe__error,
 .subscribe__text,
-.subscribe__title,
-blockquote,
-q {
+.subscribe__title {
   text-align: center;
 }
 .contact,
@@ -1204,12 +1202,25 @@ q {
   font-size: 1.25em;
   color: #323232;
   line-height: 1.4;
+  padding: 1em;
+  border-left: 3px solid #22c6a9;
+  margin-left: 1em;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #f8f8f8;
 }
 @media (min-width: 32em) {
   blockquote,
   q {
     font-size: 1.3em;
   }
+}
+blockquote p,
+q p {
+  margin: 0;
+}
+blockquote + p {
+  margin-top: 1.5em;
 }
 cite {
   display: block;
@@ -3228,6 +3239,8 @@ p {
   width: 100%;
   margin-bottom: 1em;
   overflow-wrap: break-word;
+  display: block;
+  overflow-x: auto;
 }
 .content table td,
 .content table th {
