@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Mar 2024 07:58:22 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Mar 2024 07:58:22 -0500</lastBuildDate>
+    <pubDate>Mon, 06 May 2024 14:54:58 +0200</pubDate>
+    <lastBuildDate>Mon, 06 May 2024 14:54:58 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -152,7 +152,7 @@ defined, but property itself is unused as in the following snippet:&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InUseFeatureState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -656,7 +656,7 @@ current performance, areas for improvement, and practical tips to optimize your 
   &lt;li&gt;Explore alternative code analysis tools that might complement Knip and address its shortcomings&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</guid>
         
@@ -768,7 +768,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 14 Jan 2024 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</guid>
         
@@ -810,29 +810,53 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;p&gt;So however, it’s also possible to detect such changes, at least in theory, as in practice it’s not that straightforward. Just have a look at recent conversation of our engineers, which has inspired me to write down this blog post!&lt;/p&gt;
 
-&lt;h2 id=&quot;out-of-the-box-thinking-is-required&quot;&gt;Out of the box thinking is required!&lt;/h2&gt;
+&lt;h2 id=&quot;outside-the-box-thinking-is-required&quot;&gt;Outside the box thinking is required!&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: One way to detect changes is the ‘getString()’ method. Called on a function it returns its source code and in case of native functions the response is “[native code]”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;One way to detect changes is the ‘getString()’ method. Called on a function it returns its source code and in case of native functions the response is “[native code]”.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: Great, so problem solved, isn’t it?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Great, so problem solved, isn’t it?&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: Well, actually no! Think about what happens when someone modifies the ‘getString()’ so it returns “[native code]” for the function he had modified!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Well, actually no! Think about what happens when someone modifies the ‘getString()’ so it returns “[native code]” for the function he had modified!&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: Tricky! But we can actually call ‘getString()’ on the modified ‘getString()’ method, this will reveal that this one has been modified, as well!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Tricky! But we can actually call ‘getString()’ on the modified ‘getString()’ method, this will reveal that this one has been modified, as well!&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: True but, what if someone modifies ‘Function.prototype.toString’ and ensures that if it’s called on itself it returns “[native code]”?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;True but, what if someone modifies ‘Function.prototype.toString’ and ensures that if it’s called on itself it returns “[native code]”?&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: I see, but we still can rely on the fact that all customly defined functions have a property named ‘prototype’, so we can check if ‘Function.prototype.toString’ does exist. If it does then we would know it was modified.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I see, but we still can rely on the fact that all customly defined functions have a property named ‘prototype’, so we can check if ‘Function.prototype.toString’ does exist. If it does then we would know it was modified.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;: That is indeed correct, but what if the implementation was done through the Proxy (granting transparent virtualization)?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adam&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;That is indeed correct, but what if the implementation was done through the Proxy (granting transparent virtualization)?&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;: Well…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pawel&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Well…&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;looking-for-more&quot;&gt;Looking for more?&lt;/h1&gt;
 
 &lt;p&gt;If you found that subject interesting you may want to look at &lt;a href=&quot;https://adtechmadness.wordpress.com/2019/03/23/javascript-tampering-detection-and-stealth/&quot;&gt;this article&lt;/a&gt;. And if you face fraudulent traffic which affects your campaigns &lt;a href=&quot;https://calendly.com/krzysztof-gasior/adtech-discovery-call-15m&quot;&gt;let’s talk&lt;/a&gt; as we should be able to help out!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Aug 2022 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 22 Aug 2022 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
         
@@ -1168,7 +1192,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 08 Aug 2022 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</guid>
         
@@ -1367,13 +1391,13 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.springframework.boot&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2.5.0&quot;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'io.spring.dependency-management'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.6.RELEASE'&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'java'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;io.spring.dependency-management&apos;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.6.RELEASE&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;java&apos;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pl.iterative'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;pl.iterative&apos;&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.0-SNAPSHOT'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.0-SNAPSHOT&apos;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
@@ -1384,11 +1408,11 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Spring boot&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-oauth2-client'&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-web'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-oauth2-client&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-web&apos;&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Azure&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0&apos;&lt;/span&gt;
 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1534,7 +1558,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2022 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
         
@@ -1602,7 +1626,7 @@ You can check which permissions your app has by going to the azure console:
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.webp&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
         
@@ -1781,7 +1805,7 @@ You can check which permissions your app has by going to the azure console:
   &lt;li&gt;or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Dec 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
         
@@ -1930,7 +1954,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
         
@@ -2012,7 +2036,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
         
