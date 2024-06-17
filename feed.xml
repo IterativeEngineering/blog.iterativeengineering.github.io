@@ -5,9 +5,236 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 May 2024 14:54:58 +0200</pubDate>
-    <lastBuildDate>Mon, 06 May 2024 14:54:58 +0200</lastBuildDate>
+    <pubDate>Mon, 17 Jun 2024 11:33:01 +0200</pubDate>
+    <lastBuildDate>Mon, 17 Jun 2024 11:33:01 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Secure VPS with CloudFlare Zero Trust in 5min</title>
+        <description>&lt;p&gt;You’ve probably heard about the &lt;strong&gt;xz backdoor&lt;/strong&gt;, which has unsettled admins all around the world, and you likely still remember Log4Shell - another CVE10 that sent shockwaves through IT security teams a few years back.&lt;/p&gt;
+
+&lt;p&gt;What if I told you that for in-company (and beyond) apps, you can easily reduce exposure to such vulnerabilities?&lt;/p&gt;
+
+&lt;p&gt;A &lt;strong&gt;Zero Trust&lt;/strong&gt; network can provide you with a second layer of security to protect your infrastructure. It’s a cloud-suited, highly scalable alternative solution to VPNs or Citrix.&lt;/p&gt;
+
+&lt;p&gt;This article presents an example architecture of a Zero Trust &lt;strong&gt;network&lt;/strong&gt;. Additionally, it provides a tutorial on how to build your first Zero Trust network using Cloudflare.&lt;/p&gt;
+
+&lt;p&gt;We chose &lt;strong&gt;Cloudflare&lt;/strong&gt; as an example Zero Trust network provider because, at Iterative Engineering, we’ve integrated Cloudflare solutions to secure our internal infrastructure&lt;/p&gt;
+&lt;h4 id=&quot;who-may-find-this-article-helpful&quot;&gt;Who may find this article helpful&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Security Professionals responsible for safeguarding their organization’s infrastructure against cybersecurity threats&lt;/li&gt;
+  &lt;li&gt;Administrators and Network Engineers involved in the deployment and management of IT infrastructure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;what-will-you-learn&quot;&gt;What will you learn&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The article will provide a detailed tutorial on building a Zero Trust network using Cloudflare as an example provider.&lt;/li&gt;
+  &lt;li&gt;What are the advantages and risks of selecting a Zero Trust Network provider&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cloudflare account. It’s free to create, but you must provide credit card details during registration. The services presented in this article are free for &amp;lt;50 users.&lt;/li&gt;
+  &lt;li&gt;VPS like free EC2 instance on AWS or even your private laptop as the host&lt;/li&gt;
+  &lt;li&gt;Docker installed on the machine. It’s not a strict requirement, but with Docker it’s just easier&lt;/li&gt;
+  &lt;li&gt;Registered domain like iterative.pl. It’s slightly easier to manage the network if the domain is registered in Cloudflare, and this article assumes that you have set it like that&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;steps-over-well-go-through&quot;&gt;Steps over we’ll go through&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Zero Trust network definition&lt;/li&gt;
+  &lt;li&gt;Setting up Zero Trust network with Cloudflare&lt;/li&gt;
+  &lt;li&gt;Securing the app by Google authentication provider&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-zero-trust-security&quot;&gt;What is Zero Trust security?&lt;/h2&gt;
+&lt;p&gt;It’s an IT security model where access to resources on a private network is granted only after thorough verification of the identity of every person and device seeking access.&lt;/p&gt;
+
+&lt;p&gt;This is the architecture schema of Cloudflare Zero Trust
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image0.webp&quot; alt=&quot;Architecture schema of Cloudflare Zero Trust&quot; title=&quot;Architecture schema of Cloudflare Zero Trust&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the user perspective - there is no difference, no need to install any apps or additional software (required in VPN networks).
+On the server side - the big difference is that the request first hits the Zero Trust provider infrastructure,
+and then via the tunnel, it goes to the service that handles it. The response comes back accordingly - via the tunnel.&lt;/p&gt;
+
+&lt;h2 id=&quot;configure-the-cloudflared-tunnel&quot;&gt;Configure the Cloudflared tunnel&lt;/h2&gt;
+
+&lt;p&gt;So, let’s dive in and begin configuring the tunnel!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log in to your &lt;a href=&quot;https://one.dash.cloudflare.com/&quot;&gt;Cloudlfare Zero Trust&lt;/a&gt; account&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Under the &lt;strong&gt;Networks&lt;/strong&gt; tab open &lt;strong&gt;Tunnels&lt;/strong&gt; and click &lt;strong&gt;Create a tunnel&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image1.webp&quot; alt=&quot;Create Tunnel&quot; title=&quot;Create Tunnel&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This art focuses on the &lt;strong&gt;Cloudflared&lt;/strong&gt; connector, so select this one as the type of tunnel:
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image2.webp&quot; alt=&quot;Select Connector&quot; title=&quot;Select Connector&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Name your &lt;strong&gt;tunnel&lt;/strong&gt; however you want and save it:
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image3.webp&quot; alt=&quot;Name your tunnel&quot; title=&quot;Name your tunnel&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose the OS on which the tunnel will be hosted. This article presents how to do it via &lt;strong&gt;Docker&lt;/strong&gt; because then you can run it almost anywhere
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image4.webp&quot; alt=&quot;Select Connector OS&quot; title=&quot;Select Connector OS&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy the docker command generated by the configurator. As the warning suggests the &lt;strong&gt;token&lt;/strong&gt; parameter should be kept in secrecy
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image5.webp&quot; alt=&quot;Copy the command&quot; title=&quot;Copy the command&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The final step in the configurator involves setting a &lt;strong&gt;Public Hostname&lt;/strong&gt; for your Zero Trust network. This necessitates setting up a domain first. 
+Cloudflare will create the subdomain if you specify it
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image6.webp&quot; alt=&quot;Setup public hostname&quot; title=&quot;Setup public hostname&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the Service section, you choose which resource on the server the traffic is proxied to
+It’s set to &lt;strong&gt;http://nginx:80&lt;/strong&gt;, aligning with the docker-compose example provided below
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image6_1.webp&quot; alt=&quot;Select service type and url&quot; title=&quot;Select service type and url&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;public-hostnames-vs-private-hostnames&quot;&gt;Public Hostnames vs Private Hostnames&lt;/h3&gt;
+&lt;p&gt;In the Public hostnames, you need to choose the domain (or subdomain) &lt;strong&gt;associated&lt;/strong&gt; with the tunneled service. Under this DNS name, the service will be accessible on the public internet.&lt;/p&gt;
+
+&lt;p&gt;Private Networks allow Zero Trust communication between services without &lt;strong&gt;exposing&lt;/strong&gt; them to the public internet, so we don’t need to configure it in our example.&lt;/p&gt;
+
+&lt;h2 id=&quot;configure-the-cloudflared-connector&quot;&gt;Configure the Cloudflared connector&lt;/h2&gt;
+&lt;p&gt;Now, it’s time to set up the Cloudflared &lt;strong&gt;connector&lt;/strong&gt; on the server. While you could use the Docker command generated by the configurator, for full-featured functionality,
+it’s easier to utilize this handy &lt;strong&gt;Docker Compose&lt;/strong&gt; file.&lt;/p&gt;
+
+&lt;p&gt;First, save it as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; on your server. Just set your &lt;strong&gt;token&lt;/strong&gt; by replacing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;your_secret_token&lt;/code&gt; placeholder&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;cloudflared&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;cloudflare/cloudflared&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;tunnel run&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;TUNNEL_TOKEN=your_secret_token&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;nginx&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nginx&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then start the &lt;strong&gt;containers&lt;/strong&gt; by executing&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker compose up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This starts two containers: &lt;strong&gt;nginx&lt;/strong&gt; to host its default html file and the Cloudflared &lt;strong&gt;connector&lt;/strong&gt;.
+The connector opens an outbound connection from your host to the Cloudflare infrastructure,
+routing all requests executed against zero-trust-subdomaine.your_domain.com (in our example, zero-trust.iterative.pl) 
+through the Cloudflare infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Such a page is an expected output in your favorite browser
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image7.webp&quot; alt=&quot;Nginx welcome page&quot; title=&quot;Nginx welcome page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These simple steps provided your serve with&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SSL certificate&lt;/strong&gt; issued and automatically renewed by Cloudflare&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;HTTPS inspection&lt;/strong&gt; (Cloudflare decrypts packages to inspect them and detect malware)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DOS/DDos protection&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition - the connector can expose services from machines that do not even have a public IP address&lt;/p&gt;
+
+&lt;p&gt;But that’s not all. You can configure finely-grained, restricted access to your application,
+allowing access only to users who authenticate themselves, for example, via a &lt;strong&gt;Google account&lt;/strong&gt;.
+This approach fits perfectly for all company-internal applications.&lt;/p&gt;
+
+&lt;h2 id=&quot;restrict-access-to-your-application&quot;&gt;Restrict access to your application&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open &lt;strong&gt;Applications&lt;/strong&gt; and &lt;strong&gt;Add an application&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image8.webp&quot; alt=&quot;Configure applications&quot; title=&quot;Configure applications&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Our nginx app is &lt;strong&gt;self-hosted&lt;/strong&gt;, so this is the option that have to be selected
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image8_1.webp&quot; alt=&quot;Self Hosted App&quot; title=&quot;Self Hosted App&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose the application name and refer to the same &lt;strong&gt;subdomain/domain&lt;/strong&gt; as the configured tunnel (other options have sensible defaults).
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image9.webp&quot; alt=&quot;App Configuration&quot; title=&quot;App Configuration&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Let’s add a &lt;strong&gt;policy&lt;/strong&gt; that allows only users with a specific email. First set the policy name and the &lt;strong&gt;allow&lt;/strong&gt; action
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image10.webp&quot; alt=&quot;Add policy&quot; title=&quot;Add policy&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Configure an &lt;strong&gt;include&lt;/strong&gt; rule that accepts requests only from &lt;strong&gt;authenticated&lt;/strong&gt; users that have specific email(s)
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image10_1.webp&quot; alt=&quot;Add rule&quot; title=&quot;Add rule&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Since &lt;strong&gt;cookies&lt;/strong&gt; and CORS settings are irrelevant in our example, simply click on &lt;strong&gt;Add application&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image10_2.webp&quot; alt=&quot;Save application&quot; title=&quot;Save Application&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Your app is now visible on the list of &lt;strong&gt;applications&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image11.webp&quot; alt=&quot;List of applications&quot; title=&quot;List of applications&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All requests to the application are authenticated against the application policies. If the user is not &lt;strong&gt;authenticated&lt;/strong&gt;,
+they are &lt;strong&gt;redirected&lt;/strong&gt; to the Google authentication login page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image11_1.webp&quot; alt=&quot;Login page&quot; title=&quot;Login page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cloudflare enables the configuration of advanced &lt;strong&gt;policies&lt;/strong&gt; based on request IP location, IP ranges, and email domains, etc.
+Additionally, ‘service’ tokens are available to facilitate communication between apps within the &lt;strong&gt;Zero-Trust&lt;/strong&gt; network.&lt;/p&gt;
+
+&lt;h3 id=&quot;overview-of-the-solutions-architecture&quot;&gt;Overview of the solution’s &lt;strong&gt;architecture&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/secure-vps-with-cloud-flare-zero-trust-in-5min/image12.webp&quot; alt=&quot;Architecture overview&quot; title=&quot;Architecture overview&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;risks-you-accept-by-relaying-on-a-zero-trust-provider&quot;&gt;Risks you accept by relaying on a Zero Trust provider:&lt;/h2&gt;
+
+&lt;p&gt;Zero Trust means that you trust nobody except your &lt;strong&gt;zero trust&lt;/strong&gt; provider.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the provider controls the SSL certificate, they may conduct &lt;strong&gt;deep packet inspection&lt;/strong&gt; (as Cloudflare does). This capability allows them to filter out malicious content, but it also means the provider has access to all data transmitted through their infrastructure. Alternatively, you can issue the SSL certificate yourself e.g. using Let’s Encrypt.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Outages of your provider may mean an outage of your services, e.g. Cloudflare &lt;strong&gt;outage&lt;/strong&gt; on June 21, 2022.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-did-we-select-the-zero-trust-cloudfare-network-at-iterative-engineering&quot;&gt;Why did we select the Zero Trust Cloudfare network at Iterative Engineering?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;To reduce exposure to &lt;strong&gt;0-day&lt;/strong&gt; vulnerabilities, we sought to establish a first layer of security independent of the security provided by the underlying applications, such as Gitlab or Mattermost&lt;/li&gt;
+  &lt;li&gt;To not require users to install any VPN apps on their laptops or mobile devices to access the services, they can simply &lt;strong&gt;authenticate&lt;/strong&gt; via their Google account.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;You can build your first Zero-Trust &lt;strong&gt;network&lt;/strong&gt; for free with Cloudflare&lt;/li&gt;
+  &lt;li&gt;Cloudflare Zero Trust has various &lt;strong&gt;built-in&lt;/strong&gt; features, including DDoS protection, monitoring, HTTPS inspection, Google authentication, and many others&lt;/li&gt;
+  &lt;li&gt;Since the Cloudflare tunnel opens an &lt;strong&gt;outbound&lt;/strong&gt; connection, your services do not require public IP addresses to be accessible&lt;/li&gt;
+  &lt;li&gt;The Zero Trust network is a concept that competes with &lt;strong&gt;VPNs&lt;/strong&gt; and, like VPNs, has many providers that may provide different sets of features&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further reading:
+&lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;&lt;strong&gt;Cloudlfare Zero Trust - Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Apr 2024 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</guid>
+        
+        <category>Security</category>
+        
+        <category>Cloud</category>
+        
+        <category>Zero Trust Network</category>
+        
+        <category>Cloudflare Zero Trust</category>
+        
+        
+        <category>technical</category>
+        
+      </item>
     
       <item>
         <title>Strengths and Limitations of Knip for Unused Code Detection in Angular</title>
@@ -152,7 +379,7 @@ defined, but property itself is unused as in the following snippet:&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InUseFeatureState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -1391,13 +1618,13 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.springframework.boot&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2.5.0&quot;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;io.spring.dependency-management&apos;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.6.RELEASE&apos;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;java&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'io.spring.dependency-management'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.6.RELEASE'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'java'&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;pl.iterative&apos;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pl.iterative'&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.0-SNAPSHOT&apos;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.0-SNAPSHOT'&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
@@ -1408,11 +1635,11 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Spring boot&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-oauth2-client&apos;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-web&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-oauth2-client'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-web'&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Azure&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0'&lt;/span&gt;
 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;

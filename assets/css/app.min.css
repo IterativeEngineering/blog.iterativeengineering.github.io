@@ -3235,6 +3235,10 @@ p {
   overflow-wrap: break-word;
   text-decoration: underline;
 }
+.content img {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 .content table {
   width: 100%;
   margin-bottom: 1em;

@@ -37,6 +37,10 @@
 <lastmod>2024-03-20T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</loc>
+<lastmod>2024-04-29T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>https://blog.iterative.engineering/404</loc>
 </url>
 <url>
@@ -136,6 +140,18 @@
 <loc>https://blog.iterative.engineering/tag/tools/</loc>
 </url>
 <url>
+<loc>https://blog.iterative.engineering/tag/security/</loc>
+</url>
+<url>
+<loc>https://blog.iterative.engineering/tag/cloud/</loc>
+</url>
+<url>
+<loc>https://blog.iterative.engineering/tag/zero-trust-network/</loc>
+</url>
+<url>
+<loc>https://blog.iterative.engineering/tag/cloudflare-zero-trust/</loc>
+</url>
+<url>
 <loc>https://blog.iterative.engineering/category/business/</loc>
 </url>
 <url>
@@ -146,6 +162,6 @@
 </url>
 <url>
 <loc>https://blog.iterative.engineering/cookies-policy.html</loc>
-<lastmod>2023-08-18T11:48:32+02:00</lastmod>
+<lastmod>2022-05-16T13:53:18+02:00</lastmod>
 </url>
 </urlset>
