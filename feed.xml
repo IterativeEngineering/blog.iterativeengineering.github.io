@@ -5,9 +5,79 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jun 2024 11:33:01 +0200</pubDate>
-    <lastBuildDate>Mon, 17 Jun 2024 11:33:01 +0200</lastBuildDate>
+    <pubDate>Sat, 13 Jul 2024 22:17:33 +0200</pubDate>
+    <lastBuildDate>Sat, 13 Jul 2024 22:17:33 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Iterative Engineering delivers AI solution for biomethane plant development</title>
+        <description>&lt;p&gt;Recently we teamed up with Nature Energy to create two bespoke software solutions to meet their business development challenges in biogas project development. A highlight of this collaboration is the Screening Tool, an innovative automated system for detecting objects of interest through algorithmic analysis of satellite and orthoimagery together with the digital elevation model.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-screening-tool&quot;&gt;The Screening Tool&lt;/h2&gt;
+
+&lt;p&gt;The solution features three main components, each working in sequence:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Data Collector&lt;/strong&gt; – A script designed to fetch imagery for a specified area from a designated source.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Analytical Engine&lt;/strong&gt; – A powerful combination of AI/ML and mathematical computer vision algorithms that processes the retrieved imagery to pinpoint objects of interest.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Packer&lt;/strong&gt; – A tool that compiles the analysis results into a comprehensive output package, ensuring only relevant data is included.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The detection process yields detailed results, providing exhaustive information about each identified object, including location, size, volume, and associated imagery. This structured data is ready for seamless integration into any third-party GIS system, facilitating further analysis and informed decision-making.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Iterative Engineering’s work has been highly detailed and has met expectations. The team is meticulous, on time, and proactive.”&lt;br /&gt;&lt;br /&gt;
+&lt;cite&gt;Dorota Fennessy, Head of Business Development at Nature Energy - Biomethane&lt;br /&gt;&lt;a style=&quot;cursor: pointer !important; font-weight: normal; color: grey&quot; href=&quot;https://clutch.co/profile/iterative-engineering#review-299025&quot; target=&quot;_blank&quot;&gt; &amp;gt; Read the full review on Clutch&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Nature Energy team has supplied experienced and seasoned experts who have tested the model and provided insightful, timely feedback, making the tool a product of co-creation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-delivers-innovative-solution-for-biomethane/orthoimagery-dem.webp&quot; alt=&quot;Orthoimagery combined with DEM data&quot; title=&quot;Orthoimagery combined with DEM data&quot; /&gt;
+&lt;em&gt;Orthoimagery combined with DEM data – input sources for the Analytical Engine&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;turning-waste-into-energy&quot;&gt;Turning waste into energy&lt;/h2&gt;
+
+&lt;p&gt;Nature Energy owns and operates 14 biogas plants located throughout Denmark and the Netherlands with more new projects in the pipeline. 
+The company is the market leader in turning biomass into green, CO₂-neutral gas as effectively as possible. They collect and deliver biomass – waste from agriculture, industry and households – and return the degassed biomass to the agriculture that recycles nutrients. This is circular economy at its best.&lt;/p&gt;
+
+&lt;p&gt;In 2022 Nature Energy’s biogas plants treated more than 4.7 million tonnes of biomass, converting it into more than 185 million m³ of green gas. That much biogas could be used to fuel almost 8,200 busses driving 30,000 miles per year, or to heat 160,000 homes. All of this is CO₂ neutral as well as replacing fossil fuels.&lt;/p&gt;
+
+&lt;p&gt;Since 2023 Nature Energy operates as Shell’s wholly-owned subsidiary.&lt;/p&gt;
+
+&lt;p&gt;Learn more at &lt;a href=&quot;https://nature-energy.com/&quot; target=&quot;_blank&quot;&gt;nature-energy.com&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</guid>
+        
+        <category>Business</category>
+        
+        <category>Projects</category>
+        
+        <category>Energy Transition</category>
+        
+        <category>Oil &amp; Gas</category>
+        
+        <category>Renewables</category>
+        
+        <category>AI</category>
+        
+        <category>GIS</category>
+        
+        <category>Machine Learning</category>
+        
+        <category>Image Recognition</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>Secure VPS with CloudFlare Zero Trust in 5min</title>
