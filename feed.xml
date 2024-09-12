@@ -5,9 +5,58 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Jul 2024 22:17:33 +0200</pubDate>
-    <lastBuildDate>Sat, 13 Jul 2024 22:17:33 +0200</lastBuildDate>
+    <pubDate>Thu, 12 Sep 2024 14:49:49 -0500</pubDate>
+    <lastBuildDate>Thu, 12 Sep 2024 14:49:49 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Iterative Engineering changes its address</title>
+        <description>&lt;p&gt;Iterative Engineering sp. z o. o. with its registered office in Zabrze, registered in the Register of Entrepreneurs of the National Court Register kept by the District Court in Gliwice, 10th Commercial Division of the National Court Register under the KRS number 0000900004, NIP: 6482804153, REGON: 388898977,&lt;/p&gt;
+
+&lt;p&gt;announces that its address will change as of 1&lt;sup&gt;st&lt;/sup&gt; of October 2024 to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ul. Wolności 191 lok. 913, 41-800 Zabrze&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The previous address: ul. Wolności 191 lok. 311, 41-800 Zabrze, remains valid till end of September.&lt;/p&gt;
+
+&lt;p&gt;At the same time, we would like to inform you that the change concerns only the Company’s address - all other data, including NIP, KRS, bank account numbers, telephone numbers, as well as e-mail addresses, remain unchanged. Please include the above change in all new documents issued for the Company starting from 1 October 2024. At the same time, we would like to mention that, in accordance with the applicable legal regulations, a change of the Company’s address does not have the effect of changing the entity that was and still is a party to the contracts already concluded. A change of the Company’s address does not result in any modification of the Company’s obligations or mutual rights and obligations under the agreements concluded by our Company and does not require their annexation. The change of the Company’s address takes effect as soon as it is made, and the relevant update of data in the National Court Register will take place within approximately two months.&lt;/p&gt;
+
+&lt;h1 id=&quot;informal-message&quot;&gt;Informal Message&lt;/h1&gt;
+
+&lt;p&gt;So after spending nearly 7 years at office 311 on Wolności 191 (since 1st of November 2017) it is time for a small change. We move to a different one. Not far indeed, as we stay in the same building but just change the floor from 3rd to 9th, preparing to occupy office 913, which shall happen from on 1st of October.&lt;/p&gt;
+
+&lt;p&gt;The new office shall provide us with more work and social space, therefore should address our current needs better. Not to mention it should also provide quite a better view of the Silesia panorama.&lt;/p&gt;
+
+&lt;p&gt;The setup operations and transfers have already begun and gave our team some interesting challenges :), following are just a few scenese from the process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/face-palm.webp&quot; alt=&quot;Desks are just the begining&quot; title=&quot;Desks are just the begining&quot; /&gt;
+&lt;em&gt;Desks are just the begining…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/duel-between-employes.webp&quot; alt=&quot;In between duel&quot; title=&quot;In between duel&quot; /&gt;
+&lt;em&gt;Swords were certified for training :&amp;gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/quick-work.webp&quot; alt=&quot;In between code fixes&quot; title=&quot;In between code fixes&quot; /&gt;
+&lt;em&gt;When there was a need for in between code fixes :P&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/beer-time.webp&quot; alt=&quot;Ain't no move without a beer&quot; title=&quot;Ain't no move without a beer&quot; /&gt;
+&lt;em&gt;Ain’t no move without a beer…&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 -0500</pubDate>
+        <link>https://blog.iterative.engineering/2024/07/12/iterative-engineering-new-address/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/07/12/iterative-engineering-new-address/</guid>
+        
+        <category>Business</category>
+        
+        <category>Official</category>
+        
+        <category>Announcement</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>Iterative Engineering delivers AI solution for biomethane plant development</title>
@@ -52,7 +101,7 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
 
 &lt;p&gt;Learn more at &lt;a href=&quot;https://nature-energy.com/&quot; target=&quot;_blank&quot;&gt;nature-energy.com&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 12 Jul 2024 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</guid>
         
@@ -289,7 +338,7 @@ Additionally, ‘service’ tokens are available to facilitate communication bet
 &lt;p&gt;Further reading:
 &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;&lt;strong&gt;Cloudlfare Zero Trust - Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 Apr 2024 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 29 Apr 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</guid>
         
@@ -953,7 +1002,7 @@ current performance, areas for improvement, and practical tips to optimize your 
   &lt;li&gt;Explore alternative code analysis tools that might complement Knip and address its shortcomings&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 20 Mar 2024 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</guid>
         
@@ -1065,7 +1114,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 14 Jan 2024 00:00:00 +0100</pubDate>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</guid>
         
@@ -1153,7 +1202,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;p&gt;If you found that subject interesting you may want to look at &lt;a href=&quot;https://adtechmadness.wordpress.com/2019/03/23/javascript-tampering-detection-and-stealth/&quot;&gt;this article&lt;/a&gt;. And if you face fraudulent traffic which affects your campaigns &lt;a href=&quot;https://calendly.com/krzysztof-gasior/adtech-discovery-call-15m&quot;&gt;let’s talk&lt;/a&gt; as we should be able to help out!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Aug 2022 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 22 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
         
@@ -1489,7 +1538,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 08 Aug 2022 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</guid>
         
@@ -1855,7 +1904,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
         
@@ -1923,7 +1972,7 @@ You can check which permissions your app has by going to the azure console:
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.webp&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
         
@@ -2102,7 +2151,7 @@ You can check which permissions your app has by going to the azure console:
   &lt;li&gt;or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
         
@@ -2251,7 +2300,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
         
@@ -2333,7 +2382,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
         
