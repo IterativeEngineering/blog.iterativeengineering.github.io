@@ -5,9 +5,210 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Sep 2024 16:30:03 -0500</pubDate>
-    <lastBuildDate>Mon, 30 Sep 2024 16:30:03 -0500</lastBuildDate>
+    <pubDate>Fri, 20 Dec 2024 10:58:46 -0600</pubDate>
+    <lastBuildDate>Fri, 20 Dec 2024 10:58:46 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Europe's Spaceport selected Iterative Engineering to improve the payload preparation process</title>
+        <description>&lt;p&gt;An Exciting time for us! We have been selected to work on the Proof of Concept system for Launch Campaign Information and Request Management at Guiana Space Center (CSG) operated by French Space Agency (CNES).&lt;/p&gt;
+
+&lt;h2 id=&quot;project-motivation&quot;&gt;Project Motivation&lt;/h2&gt;
+
+&lt;p&gt;Currently, there is no tool for creating, tracking or tracing a service request during the launch campaign period. Requests are made verbally, by email or by message, making it challenging to follow-up and track.&lt;/p&gt;
+
+&lt;p&gt;To improve the experience of launch operators, payload customers and the spaceport staff during future launch campaigns, CSG plans to introduce a digital platform providing a service catalogue and facilitating processing and tracking of raised requests.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-scope&quot;&gt;Project Scope&lt;/h2&gt;
+
+&lt;p&gt;While the PoC is supposed to showcase the feasibility of digitizing the process, it has concretely outlined functions and requirements. The outcome shall be operational and is intended to become a backbone for further developments, covering core concepts such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Exposing the CSG services catalogue to simplify raising payload processing requests&lt;/li&gt;
+  &lt;li&gt;Increasing request traceability for both the customer and the staff&lt;/li&gt;
+  &lt;li&gt;Improving stakeholder’s experience by integrating the request lifecycle within a single tool&lt;/li&gt;
+  &lt;li&gt;Streamlining campaign management by providing supporting workflows for typical activities&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/sequence-for-processing-customer-request.webp&quot; alt=&quot;Sequence for processing customer request&quot; title=&quot;Sequence for processing customer request&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;winning-bid&quot;&gt;Winning Bid&lt;/h2&gt;
+
+&lt;p&gt;According to feedback, the following features of our proposal convinced the CSG team to select our offer from almost a dozen competitors:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;comprehensive approach&lt;/strong&gt; - we have conducted domain and requirement analysis, based on which we proposed a technical solution along with a clear execution plan,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;attention to detail&lt;/strong&gt; -  we have put a lot of effort into domain discussions and questions through the bid preparation process,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;alignment with outlined goals&lt;/strong&gt; - our offer had elements directly addressing all mentioned goals and motivations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Before we started working on the bid, we had discussed how to approach it, as while we were actively exploring the space industry for some time already, it was really the first (!) tender we were taking part in. The conclusion was that first and foremost we need to prove (to them and ourselves) that we have a deep understanding of &lt;strong&gt;WHY&lt;/strong&gt; they want to do it, &lt;strong&gt;WHAT&lt;/strong&gt; they actually need and &lt;strong&gt;HOW&lt;/strong&gt; can we deliver it.&lt;/p&gt;
+
+&lt;h3 id=&quot;broader-picture&quot;&gt;Broader Picture&lt;/h3&gt;
+
+&lt;p&gt;To achieve that, we started by analysing the payload preparation process, its surroundings and how it fits into the bigger picture. This very quickly led us to learn more about the launch campaign structure, different stakeholders and phases of that process. The exploration involved reading Launch Operator User Manuals, NASA and ESA publications and various other materials on the subject of launch planning, conducting and post operations. Obviously, we were focusing on the payload preparation process, but the research involved getting an understanding of the other aspects as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/launch-site-at-csg.webp&quot; alt=&quot;Launch site at CSG&quot; title=&quot;Launch site at CSG&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For instance, it is important to understand the launch campaign structure at CSG which consists of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The launcher campaign - initially focused on rocket assembly and launchpad preparations, followed by payload integration and finally assembly.&lt;/li&gt;
+  &lt;li&gt;The spaceport preparation campaign - focused on ensuring ground facilities (such as radars, telemetry systems, etc.) at the Spaceport are 100% able to support the flight.&lt;/li&gt;
+  &lt;li&gt;The spacecraft (payload) preparation campaign - focused on ensuring that the payload is 100% prepared for the launch and that it is fully functional. Covering aspects such as:
+    &lt;ul&gt;
+      &lt;li&gt;placing the satellite in a clean zone,&lt;/li&gt;
+      &lt;li&gt;filling the satellite with propellant using specific equipment,&lt;/li&gt;
+      &lt;li&gt;installation of satellite check-out consoles and ground mechanical equipment,&lt;/li&gt;
+      &lt;li&gt;integration of separately shipped elements,&lt;/li&gt;
+      &lt;li&gt;fitting the payload adaptor.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of the above are performed independently by different teams, but are carefully synchronised to ensure that all the components are ready in time for the final integration and launch date.&lt;/p&gt;
+
+&lt;p&gt;Another example of an important aspect impacting the process is the variety of the payload setups. Different options have different implications on the spacecraft stakeholder teams impacting communication requirements. Specific configurations also require specific services and adequate operations during the preparation process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/various-payload-setups.webp&quot; alt=&quot;Broader Picture - various payload setups&quot; title=&quot;Broader Picture - various payload setups&quot; /&gt;
+&lt;em&gt;Broader Picture - various payload setups&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;During this process, we have identified many more relevant aspects which were extremely helpful for further requirements analysis and outlining the proposed solution sketch.&lt;/p&gt;
+
+&lt;h3 id=&quot;submission-outline&quot;&gt;Submission Outline&lt;/h3&gt;
+
+&lt;p&gt;Once we felt confident with our research we moved to preparing an outline of the proposal. The really good idea was to actually ask the CSG Team for confirmation on their expectations of proposal contents as we have quickly confirmed that the structure we proposed was relevant (as the tender did not define it). We ended up with the following scope:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WHY US - with general info about our company&lt;/li&gt;
+  &lt;li&gt;COMMERCIAL - with an executive summary of the offer focused on scope and  commercials such as quotes, commitments and promised outputs.&lt;/li&gt;
+  &lt;li&gt;TECHNICAL SUBMISSION - covering:
+    &lt;ul&gt;
+      &lt;li&gt;Broad Outlook - research on the broader picture of the process, different stakeholders and analogies&lt;/li&gt;
+      &lt;li&gt;Requirements Analysis - review supplied requirements and discuss how to approach them&lt;/li&gt;
+      &lt;li&gt;Offer Scope Definition - define and describe offered deliverables being a core and possible options extending it&lt;/li&gt;
+      &lt;li&gt;Sketch of a Solution - showcase &amp;amp; example of proposed solution based on outlined requirements&lt;/li&gt;
+      &lt;li&gt;Execution Plan - describe the plan for project execution&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ATTACHMENTS - evidence of experience and skills, case studies, certificates etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Having a clear and confirmed outline with a subsequent structure helped us greatly, as we used it as a plan for preparing the full contents of the bid.&lt;/p&gt;
+
+&lt;h3 id=&quot;requirements-analysis&quot;&gt;Requirements Analysis&lt;/h3&gt;
+
+&lt;p&gt;So the next thing to do was requirement analysis (both functional and non-functional) to ensure we are capable of addressing all of the required and potentially some of the optional tasks. This involved discussing things like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;potential impact on the process,&lt;/li&gt;
+  &lt;li&gt;review &amp;amp; reflection on expected functionality and how to provide it,&lt;/li&gt;
+  &lt;li&gt;identifying use cases &amp;amp; workflows,&lt;/li&gt;
+  &lt;li&gt;mapping of requirements to components &amp;amp; modules,&lt;/li&gt;
+  &lt;li&gt;discussing ergonomic requirements and how to approach them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This led to conclusions on key requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;process information is captured and available,&lt;/li&gt;
+  &lt;li&gt;oversight &amp;amp; insights are available at a glance,&lt;/li&gt;
+  &lt;li&gt;means of automation are available and configurable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It also allowed us to group functional requirements around different perspectives, which then served as a starting point for drawing the sketch of a solution.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/requirement-analysis-functions-groupped-by-different-perspectives.webp&quot; alt=&quot;Requirement Analysis - functions grouped by different perspectives&quot; title=&quot;Requirement Analysis - functions grouped by different perspectives&quot; /&gt;
+&lt;em&gt;Requirement Analysis - functions grouped by different perspectives&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sketch-of-a-solution&quot;&gt;Sketch of a Solution&lt;/h3&gt;
+
+&lt;p&gt;Once the analysis was ready and we felt like we knew WHY and WHAT we moved into the HOW section drawing out potential solution describing:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;conceptual &amp;amp; system architecture,&lt;/li&gt;
+  &lt;li&gt;data model&lt;/li&gt;
+  &lt;li&gt;integration with CSG systems,&lt;/li&gt;
+  &lt;li&gt;PoC perspective vs Long term perspective,&lt;/li&gt;
+  &lt;li&gt;used technologies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;but most importantly we also drew a number of mockups &amp;amp; workflow which visually show what could be the outcome addressing specified needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/solution-sketch-sample-dashboard-design.webp&quot; alt=&quot;Solution Sketch - sample dashboard design&quot; title=&quot;Solution Sketch - sample dashboard design&quot; /&gt;
+&lt;em&gt;Solution Sketch - sample dashboard design&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;execution-plan&quot;&gt;Execution Plan&lt;/h3&gt;
+
+&lt;p&gt;Finally, we contextualized the solution in a detailed execution plan defining timelines, actions and outputs of various steps we have identified as required (or useful) to deliver the final outcome:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Commencement&lt;/li&gt;
+  &lt;li&gt;Workshop &amp;amp; Scope Alignment&lt;/li&gt;
+  &lt;li&gt;Design Process&lt;/li&gt;
+  &lt;li&gt;Development Process&lt;/li&gt;
+  &lt;li&gt;Training &amp;amp; Documentation Process&lt;/li&gt;
+  &lt;li&gt;Deployment &amp;amp; Verification Process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/execution-plan-planned-time-line.webp&quot; alt=&quot;Execution Plan - planned project timeline&quot; title=&quot;Execution Plan - planned project timeline&quot; /&gt;
+&lt;em&gt;Execution Plan - planned project timeline&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, we also discussed Team Structure and its changes over time through the following phases explaining their responsibilities.&lt;/p&gt;
+
+&lt;h2 id=&quot;progress-sneak-peek&quot;&gt;Progress sneak peek&lt;/h2&gt;
+
+&lt;p&gt;So as we announce the good news the project is actually already ongoing and for the last few weeks we have been refining the initially proposed design &amp;amp; architecture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/design-and-analysis-sneak-peak-on-design-improvements.webp&quot; alt=&quot;Design &amp;amp; Analysis - sneak peek on design improvements&quot; title=&quot;Design &amp;amp; Analysis - sneak peak on design improvements&quot; /&gt;
+&lt;em&gt;P1 Design &amp;amp; Analysis - sneak peek on design improvements&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Together with CSG Team we have gone through a number of detailed domain discussions about various aspects of the process and the specific environment characteristics in order to confirm scope and functional expectations, touching on subjects like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Current approach to request management&lt;/li&gt;
+  &lt;li&gt;Spaceport and Spacecraft Stakeholders’ structures and its impact on the process&lt;/li&gt;
+  &lt;li&gt;Workflows needed to support various types of requests&lt;/li&gt;
+  &lt;li&gt;Details of Service Catalogue offering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stay tuned for further updates! :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/csg-poc-implementation.webp&quot; alt=&quot;Project implementation has already started&quot; title=&quot;Project implementation has already started&quot; /&gt;
+&lt;em&gt;Project implementation has already started&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Dec 2024 00:00:00 -0600</pubDate>
+        <link>https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</guid>
+        
+        <category>Business</category>
+        
+        <category>Official</category>
+        
+        <category>Announcement</category>
+        
+        <category>Projects</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>Guiana Space Centre (CSG)</category>
+        
+        <category>CNES</category>
+        
+        <category>Analysis</category>
+        
+        <category>Good Practices</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>Iterative Engineering changes its address</title>
@@ -122,6 +323,10 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
         <category>Machine Learning</category>
         
         <category>Image Recognition</category>
+        
+        <category>Official</category>
+        
+        <category>Announcement</category>
         
         
         <category>business</category>
