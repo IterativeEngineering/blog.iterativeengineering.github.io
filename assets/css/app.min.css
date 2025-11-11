@@ -3110,6 +3110,7 @@ h1 {
 }
 .author-wrapper .author-bio,
 .author-wrapper-mobile .author-bio {
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   color: var(--primary-font-color);
@@ -4375,6 +4376,10 @@ h1 {
   }
 }
 @media (max-width: 1366px) {
+  .author-wrapper-mobile .author-bio,
+  .author-wrapper .author-bio {
+    min-width: 120px;
+  }
   .recent_articles {
     top: -80px;
   }

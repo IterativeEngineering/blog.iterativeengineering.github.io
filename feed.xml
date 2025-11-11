@@ -5,9 +5,152 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Dec 2024 10:58:46 -0600</pubDate>
-    <lastBuildDate>Fri, 20 Dec 2024 10:58:46 -0600</lastBuildDate>
+    <pubDate>Tue, 11 Nov 2025 15:48:26 +0100</pubDate>
+    <lastBuildDate>Tue, 11 Nov 2025 15:48:26 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Behind the scenes at the European Spaceport: our visit to CSG</title>
+        <description>&lt;h1 id=&quot;welcome-to-the-jungle&quot;&gt;Welcome to the jungle!&lt;/h1&gt;
+
+&lt;p&gt;When you approach Kourou driving from the Cayenne airport, you immediately realise that you are in a very special place. The first thing you see are the hills surrounding the town, slowly emerging from the fog. But on these hilltops, apart from the vegetation, some large silhouettes cut through the hot, dense, and humid air.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/02-galliot-tracking-station.webp&quot; alt=&quot;Galliot Tracking Station&quot; title=&quot;Galliot Tracking Station&quot; /&gt;
+&lt;em&gt;Galliot Tracking Station at Montagne des Pères, Kourou (Photo: S. Corvaja, © ESA)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;These are the giant telescope dishes of the tracking stations, surrounding the Guiana Space Center (CSG). It is one of the few places on Earth where tropical jungle and advanced engineering literally meet on the same horizon. Ninety percent of the area is virgin forest, and the remaining 10% is concrete towers, enormous hangars, pipelines, and systems that regularly send European missions into space.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Even watching the launch later on TV, it’s hard to believe that just a short while ago we were standing a few meters away from where the rocket engine would ignite”&lt;br /&gt;&lt;br /&gt;
+&lt;cite&gt;recalls our CTO&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For us, this visit was not just professional curiosity. It was an experience that showed us what it’s like to work where the line between man, technology, and nature is exceptionally thin.&lt;/p&gt;
+
+&lt;h2 id=&quot;700-km-of-land-for-rockets-and-wildlife-exploring-csg&quot;&gt;700 km² of land for rockets and wildlife: exploring CSG&lt;/h2&gt;
+
+&lt;p&gt;A visit to French Guiana is an experience that stays with you for a long time. The main entrance to the CSG is immediately recognizable, with a giant Ariane 5 rocket mockup welcoming the visitors, and the flags of ESA member-states waving around. You can see buildings and radar stations behind a barbed fence, but unless you look at the map, it is hard to grasp  the enormity of the project: almost 700 km² of land, of which only about 10% is technical buildings. The rest is rainforest and protected areas. It is here, about five degrees north of the equator, where Europe has gained its independent gateway to space.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/03-csg-map.webp&quot; alt=&quot;Map of CSG&quot; title=&quot;Map of CSG&quot; /&gt;
+&lt;em&gt;Map of CSG near the main entrance (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This exotic location is no coincidence. Launches are directed over the Atlantic, which ensures safety, and the proximity to the equator gives the rockets an additional boost from the Earth’s rotational speed – about 460 m/s. As a result, they need less fuel to reach orbit, which means up to 15-20% greater efficiency than launches from higher latitudes.&lt;/p&gt;
+
+&lt;p&gt;Since 1979, 327 Ariane, Vega, and Soyuz missions have been launched from the CSG. It is here that the most important European launches of recent decades have taken place – from the first telecommunications satellites to the Galileo, ATV, Rosetta, BepiColombo, Gaia, JUICE, and James Webb Space Telescope missions.&lt;/p&gt;
+
+&lt;h2 id=&quot;safety-and-environmental-challenges&quot;&gt;Safety and environmental challenges&lt;/h2&gt;
+
+&lt;p&gt;Before arriving in French Guiana, we had to get vaccinated against tropical diseases and undergo rigorous safety training to obtain access to high-risk areas. Dangerous operations are carried out at various parts of the CSG, involving the handling of rocket fuel, high-pressure systems, and extremely toxic propellants classified under the Seveso III Directive.&lt;/p&gt;
+
+&lt;p&gt;Daily work requires precision and full concentration: a change in wind direction is enough to make cryogenic vapors from the refueling installation potentially dangerous. Added to this is the tropical environment – boggy ground, humidity exceeding 90%, and proximity to wildlife – mosquitoes included. It is a place where advanced technology literally meets nature – and every task requires a combination of engineering precision and the ability to operate in changing conditions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/04-cayman.webp&quot; alt=&quot;Cayman&quot; title=&quot;Cayman&quot; /&gt;
+&lt;em&gt;Trespassers are being watched closely! (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8200-tons-of-steel-are-moving-away-before-launch&quot;&gt;8,200 tons of steel are moving away before launch&lt;/h2&gt;
+
+&lt;p&gt;Our stay at CSG lasted several days and included much more than just a standard tour – we had the opportunity to see the facility from the inside, as much as possible in such a strategic location. We saw the payload preparation facilities, the launch towers with their precision installations, and the command centers built as giant bunkers – each module has its own function, and all must work together in perfect synchronization.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/05-ariane-launch-complex.webp&quot; alt=&quot;ELA-4&quot; title=&quot;ELA-4&quot; /&gt;
+&lt;em&gt;ELA-4 with horizontal integration building in front (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the most impressive elements of the infrastructure is the huge mobile service structure for the Ariane 6 rocket (mobile gantry). It is approximately 90 m high, 50 m wide, and weighs up to 8,200 tons. It moves along tracks at a speed of about 7 m/min, moving backwards in the final phase of preparations to reveal the rocket and enable launch. This structure protects the rocket from the weather, allows for integration in a vertical position, and provides technicians with access until launch day – which, in such a humid environment, is a logistical masterpiece.&lt;/p&gt;
+
+&lt;p&gt;The Ariane 6 launch complex (ELA-4) is one of the most modern in the World. Construction began in 2015, and the entire complex – including a horizontal assembly building, a mobile service tower, lightning rods, a launch table, a water tower, and a concrete platform with exhaust ducts – was completed in 2021. The cost of the investment exceeded €650 million.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/06-ariane-launch.webp&quot; alt=&quot;Launch of Ariane 6&quot; title=&quot;Launch of Ariane 6&quot; /&gt;
+&lt;em&gt;Launch of Ariane 6 #VA265, from the same angle as above (Photo: P. Piron, © ESA/CNES/CSG)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;moisture-microflora-and-uninvited-guests-the-difficulties-of-everyday-life-at-csg&quot;&gt;Moisture, microflora, and uninvited guests: the difficulties of everyday life at CSG&lt;/h2&gt;
+
+&lt;p&gt;The spaceport is located in an extremely demanding environment. The tropical climate means humidity often exceeds 90% and rainfall is intense. As a result, even new buildings quickly take on the appearance of older ones – their facades are covered with colorful stains and a layer of microflora typical for equatorial regions. The Guiana Space Center is also a place of exceptional heritage. While touring the CSG, you pass by the Ariane 5’s gigantic Launcher Integration (BIL) and Final Assembly (BAF) buildings, and tilt your head to take in the sight of massive Mobile Launch Tables – all of them waiting for a new purpose, while remaining a monument of engineering.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/07-bil.webp&quot; alt=&quot;Giant spaceport structures&quot; title=&quot;Giant spaceport structures&quot; /&gt;
+&lt;em&gt;Giant spaceport structures being colonized by tropical microflora (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;At the same time, CSG is an enclave of biodiversity. Research conducted by CNES has revealed the presence of over 25 species of mammals – from jaguars and tapirs to armadillos and sloths. The area is also home to caymans, tarantulas and macaws. When you travel along Route d’Espace, the main internal road connecting the CSG sites, you pass by some unusual road signs, warning about trespassing animals – jaguars, anteaters and, monkeys. It is a unique coexistence of advanced technology and tropical jungle – an everyday life unlike any other spaceport in the world.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/08-warning-anteaters-csg.webp&quot; alt=&quot;Anteater crossing sign&quot; title=&quot;Anteater crossing sign&quot; /&gt;
+&lt;em&gt;Warning: anteaters crossing the road (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;when-our-software-meets-the-real-challenges-of-a-spaceport&quot;&gt;When our software meets the real challenges of a spaceport&lt;/h1&gt;
+
+&lt;p&gt;For us, the people responsible for developing Iterative Engineering, the visit to CSG was particularly significant. We were able to see with our own eyes how complex the integration and coordination processes are in such an extensive ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/09-iterative-presentation.webp&quot; alt=&quot;Preparing for the final presentation&quot; title=&quot;Preparing for the final presentation&quot; /&gt;
+&lt;em&gt;Preparing for the final presentation (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The real privilege was not only the ability to visit the place, but also to talk to the spaceport personnel who make the marvels happen. We were really grateful for their precious time, which they generously dedicated to answer all our questions and make us feel at home. We had a chance to meet people who play the most significant roles – from industrialists, delivering specialised services, through the range of operations managers (DDOs) that perform the final countdown, to the vice-director of the CSG himself.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“During the project, we had the opportunity to work with both the director and deputy director of one of the Vega-C missions. Axel helped us define the scope of the project, and Xavier took part in a simulation where he tested our application in the role of DDO – the person conducting the final countdown”&lt;br /&gt;&lt;br /&gt;
+&lt;cite&gt;recalls the CTO&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/10-csg-simulation.webp&quot; alt=&quot;Workshop with mission specialists&quot; title=&quot;Workshop with mission specialists&quot; /&gt;
+&lt;em&gt;Workshop with mission specialists testing our launch campaign application in a simulated control environment (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The ones among the key personnel who devoted the most of their time to us were Payload Facility Managers (RMCUs) – Warren and Martin. During the project, we were able to learn a lot about their work, and during the visit they gave us private tours of EPCU S1 and S5 Payload Preparation Facilities, where we were even encouraged to put on the bunny suits and enter the cleanrooms, where spacecraft are prepared for launch and fuelled.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I walked to the middle of the S5B cleanroom and stood in the exact place where JWST and other spacecraft were earlier injected with liquid hydrazine propellant – that was an extraordinary experience for a space enthusiast like myself”&lt;br /&gt;&lt;br /&gt;
+&lt;cite&gt;Paweł&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/11-james-web-epcu.webp&quot; alt=&quot;JWST injected with hydrazine&quot; title=&quot;JWST injected with hydrazine&quot; /&gt;
+&lt;em&gt;The James Webb Space Telescope being fuelled inside the payload facility at Europe’s Spaceport before its launch (Photo: P. Piron, © ESA/CNES/CSG)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This experience became a key reference point for our tool for the digitization of satellite campaigns. While working on an application to support launch campaign management, we knew how important transparency and control over hundreds of dependencies were – from schedules and system configurations to environmental parameters and logistics. Our stay at CSG only confirmed this: the digital layer of operations is not an add-on, but an essential tool that allows you to respond in real time, synchronize team activities, and maintain consistency in processes where the margin for error is close to zero.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/12-epcu-s5.webp&quot; alt=&quot;EPCU S5&quot; title=&quot;EPCU S5&quot; /&gt;
+&lt;em&gt;Entrance to the EPCU S5 Payload Preparation Facilities complex (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;behind-the-scenes-of-ambition-a-lesson-from-french-guiana&quot;&gt;Behind the scenes of ambition: a lesson from French Guiana&lt;/h1&gt;
+
+&lt;p&gt;We take a look behind the scenes of the European spaceport to understand not only the power of technology, but also the scale of the organization behind it. At CSG, each launch is a concentrated effort of hundreds of people and dozens of systems – from rocket mechanics engineers, through fuel and safety control teams, to communications operators. At peak times, the center is able to handle up to 10-11 launches per year, and there are plans to significantly increase the cadence in the next couple of years.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/behind-the-scenes-at-the-european-spaceport/13-csg-juputer.webp&quot; alt=&quot;Jupiter&quot; title=&quot;Jupiter&quot; /&gt;
+&lt;em&gt;The Jupiter building – the main control center where all launch activities managed (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On top of that, there is cooperation with teams responsible for the satellites themselves, which come from different countries and companies. A single campaign often involves ESA, CNES, Arianespace, and payload component manufacturers from around the world. This collaboration requires not only precise logistics, but also a common, consistent information system – and this is precisely the area supported by the solutions we develop. Our software helps to combine data from different sources, coordinate workflows, and ensure that every decision – regardless of language, time zone, or organizational structure – reaches the right people at the right time.&lt;/p&gt;
+
+&lt;p&gt;A few months after our return from French Guiana, when Ariane 6 finally took off to the skies, these memories came back with a vengeance. As our CEO noted:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Even watching the launch broadcast is impressive when you still have the visit to the ELA-4 site fresh in your memory. It’s not just technology – it’s a huge, precisely synchronized undertaking by people who can think and act as one”&lt;br /&gt;&lt;br /&gt;
+&lt;cite&gt;Krzysztof&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We left Guiana not so much with inspiration as with a sense of participation in something fundamental to the European space program. Kourou is not just a launch site – it is where the future of Europe’s presence in space is being co-created, and we had the opportunity to participate in it in a real way.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/</guid>
+        
+        <category>Business</category>
+        
+        <category>Travel</category>
+        
+        <category>Projects</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>Guiana Space Center (CSG)</category>
+        
+        <category>CNES</category>
+        
+        <category>ESA</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>Europe's Spaceport selected Iterative Engineering to improve the payload preparation process</title>
@@ -177,7 +320,7 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/csg-poc-implementation.webp&quot; alt=&quot;Project implementation has already started&quot; title=&quot;Project implementation has already started&quot; /&gt;
 &lt;em&gt;Project implementation has already started&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 Dec 2024 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 19 Dec 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</guid>
         
@@ -244,7 +387,7 @@
 &lt;em&gt;Ain’t no move without a beer…&lt;/em&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 12 Sep 2024 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 12 Sep 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/09/12/iterative-engineering-new-address/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/09/12/iterative-engineering-new-address/</guid>
         
@@ -302,7 +445,7 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
 
 &lt;p&gt;Learn more at &lt;a href=&quot;https://nature-energy.com/&quot; target=&quot;_blank&quot;&gt;nature-energy.com&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 12 Jul 2024 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</guid>
         
@@ -543,7 +686,7 @@ Additionally, ‘service’ tokens are available to facilitate communication bet
 &lt;p&gt;Further reading:
 &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;&lt;strong&gt;Cloudlfare Zero Trust - Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 Apr 2024 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 29 Apr 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</guid>
         
@@ -1207,7 +1350,7 @@ current performance, areas for improvement, and practical tips to optimize your 
   &lt;li&gt;Explore alternative code analysis tools that might complement Knip and address its shortcomings&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</guid>
         
@@ -1319,7 +1462,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 14 Jan 2024 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</guid>
         
@@ -1407,7 +1550,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;p&gt;If you found that subject interesting you may want to look at &lt;a href=&quot;https://adtechmadness.wordpress.com/2019/03/23/javascript-tampering-detection-and-stealth/&quot;&gt;this article&lt;/a&gt;. And if you face fraudulent traffic which affects your campaigns &lt;a href=&quot;https://calendly.com/krzysztof-gasior/adtech-discovery-call-15m&quot;&gt;let’s talk&lt;/a&gt; as we should be able to help out!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Aug 2022 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 22 Aug 2022 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
         
@@ -1743,7 +1886,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 08 Aug 2022 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</guid>
         
@@ -2109,7 +2252,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2022 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
         
@@ -2177,7 +2320,7 @@ You can check which permissions your app has by going to the azure console:
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.webp&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
         
@@ -2356,7 +2499,7 @@ You can check which permissions your app has by going to the azure console:
   &lt;li&gt;or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Dec 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
         
@@ -2505,7 +2648,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
         
@@ -2587,7 +2730,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
         
