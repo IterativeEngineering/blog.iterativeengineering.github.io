@@ -5,9 +5,216 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Nov 2025 15:48:26 +0100</pubDate>
-    <lastBuildDate>Tue, 11 Nov 2025 15:48:26 +0100</lastBuildDate>
+    <pubDate>Fri, 05 Dec 2025 12:05:47 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Dec 2025 12:05:47 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>What did we learn in Bremen? Key takeaways from Space Tech Expo Europe</title>
+        <description>&lt;p&gt;Space Tech Expo Europe 2025 in Bremen is an event where you can clearly see the direction the European space sector is heading – and which specific operational challenges need to be solved so those ambitions don’t remain only on presentation slides.
+This year’s edition brought together, in one place, spaceport operators, launch providers, New Space companies, system integrators, space agencies, the military, and the public sector. Conversations in Bremen showed very clearly that despite differences in organisation type – from big operators and agencies, through system integrators, to New Space start-ups – the operational problems are surprisingly similar: everyone is trying to increase the pace of activities, improve reliability, and make better use of data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/02-IMG_6022.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;Iterative’s CEO and CTO in discussion with a European spaceport representative (Photo: Tomasz Pac)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In this article, we summarise the main takeaways from Bremen and detail how Iterative’s digital solutions address key operational pain points for the space sector, delivering measurable efficiency and reliability for our partners:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ground Infrastructure &amp;amp; Launchpads – oversight, control, and coordination of operations at spaceports,&lt;/li&gt;
+  &lt;li&gt;Mission Control Systems – real-time data integration to support decision-making,&lt;/li&gt;
+  &lt;li&gt;Spacecraft Operations Automation – digital platforms that streamline payload preparation, workflows, and communication,&lt;/li&gt;
+  &lt;li&gt;and building cohesive digital ecosystems that connect all these areas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Europe wants to be “capable of action” – hardware is not enough&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Both at the conference itself and in the broader discussions around European space strategies, one theme kept coming up: Europe needs to be more “capable of action” in space.
+In practice, this means:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;modernising and expanding spaceports – from French Guiana, through Northern Europe, to new locations,&lt;/li&gt;
+  &lt;li&gt;building out satellite constellations for Earth observation, security, communications, and navigation,&lt;/li&gt;
+  &lt;li&gt;strengthening capabilities in areas such as space situational awareness, early warning, and secure government–military communications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s becoming increasingly clear that hardware alone – rockets, antennas, satellites – is not enough. Without a robust digital layer that ties together operations, data, and processes, it’s hard to talk about real autonomy and operational readiness.
+This software-driven dimension was one of the strongest themes in Bremen – and it’s exactly around it that we build our solutions at Iterative.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Digital spaceports: from one-off missions to a steady flow of launches&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For us one of the most relevant topics was spaceports and ground infrastructure. Many talks could be summarised in a single sentence:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“We are developing the rockets, but we will also need spaceports that can sustain an industrial tempo of operations.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/03-2-IMG_6219.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;Panel “Launch operations from Europe – The Future of Spaceports” at Space Tech Expo Europe 2025 (Photo: Tomasz Pac)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Operators and agency representatives spoke about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the need to move from a “one-off project” model to repeatable, well-organised launch campaigns,&lt;/li&gt;
+  &lt;li&gt;the need to increase launch cadence – not a handful, but dozens of launches per year,&lt;/li&gt;
+  &lt;li&gt;the challenges of coordinating the work of multiple actors operating in parallel on the same spaceport site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this context, software stops being a “support” system and becomes the central nervous system of the spaceport.&lt;/p&gt;
+
+&lt;p&gt;This is one of the pillars of our offering:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GROUND INFRASTRUCTURE &amp;amp; LAUNCHPADS – oversight, control &amp;amp; coordination across spaceport facilities.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;From a spaceport operator’s perspective, this includes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;planning and booking launch slots and time windows for tests, fuelling, integration,&lt;/li&gt;
+  &lt;li&gt;coordinating the work of different teams (technical, safety, logistics) in a single environment,&lt;/li&gt;
+  &lt;li&gt;automatically linking operational events to procedures, checklists, and escalation paths.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In Bremen, future spaceports were frequently compared to airports – similar in how they are run day to day, with clear processes and turnaround times, but with far more complex operations and much stricter safety requirements. Without modern oversight and coordination systems, it’s hard to imagine such a model functioning in practice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mission control: data from many domains in a single operational view&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The second big theme was mission control and data integration. Mission control is no longer seen as a one-mission control room, but as a place where many systems, data sources, and users come together.&lt;/p&gt;
+
+&lt;p&gt;A few points kept coming back:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a huge increase in available data – from satellites, ground segment, security sensors, weather systems, and infrastructure devices,&lt;/li&gt;
+  &lt;li&gt;growing expectations for real-time monitoring – in both civil and defence-related operations,&lt;/li&gt;
+  &lt;li&gt;the need to create a common operational picture for many user groups, often geographically distributed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/04-IMG_0405.webp&quot; alt=&quot;CSG&quot; title=&quot;CSG&quot; /&gt;
+&lt;em&gt;Mission control at Europe’s Spaceport – many data sources, one operational view (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Conversations in Bremen showed very clearly that, despite differences in organisation type – from spaceport operators to system integrators to safety teams – everyone is facing a similar challenge: how to bring together data from many sources into one coherent operational environment that helps people decide, instead of just displaying charts.&lt;/p&gt;
+
+&lt;p&gt;This ties directly into what we do at Iterative:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MISSION CONTROL SYSTEMS – integration of real-time and structured data to support decision-making.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In practice, this means building solutions that:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;collect data from multiple systems and protocols (telemetry, ground systems logs, sensor data, logistics information),&lt;/li&gt;
+  &lt;li&gt;process it into role-based views – different for an operator, different for a safety officer, different for an analyst,&lt;/li&gt;
+  &lt;li&gt;preserve full traceability of decisions, which is crucial, for example, for audits or regulatory requirements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;“Industrialising” spacecraft and payload operations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Another strong focus at this year’s edition was the industrialisation of satellite and payload operations. In short:
+How do you move from “one mission built over three years” to a continuous, repeatable stream of missions, where each new project doesn’t require reinventing the wheel?&lt;/p&gt;
+
+&lt;p&gt;From the perspective of smallsat operators, in-space service providers (servicing, orbital tugs, deorbiting), and Earth observation service providers, similar issues surfaced again and again:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;manual payload processes are too time-consuming and error-prone,&lt;/li&gt;
+  &lt;li&gt;a proportional increase does not match the growing number of missions in staff – you need to “do more with the same team”,&lt;/li&gt;
+  &lt;li&gt;communication between multiple teams (operator, integrator, spaceport, safety, end customer) is fragmented.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/05-IMG_6258.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;Discussions around future launch operations at Space Tech Expo Europe (Photo: Tomasz Pac)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is where another pillar of our solutions comes into play:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;SPACECRAFT OPERATIONS AUTOMATION – digital platforms streamlining payload preparation workflows, communication, and multilingual interfaces.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Our approach is based on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;moving complex, manually driven processes into digital workflows with clear steps, responsibilities, and control points,&lt;/li&gt;
+  &lt;li&gt;simplifying communication between teams through a shared tool, instead of multiple disconnected channels,&lt;/li&gt;
+  &lt;li&gt;providing multilingual interfaces, which is particularly important in European and coalition programmes where a single project may involve a dozen or more nationalities.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The more companies transition from prototype phase to regular mission operations, the clearer it becomes that without this kind of automation, they simply won’t be able to scale.&lt;/p&gt;
+
+&lt;p&gt;From point tools to cohesive digital ecosystems&lt;/p&gt;
+
+&lt;p&gt;The fourth key takeaway from Bremen relates to how IT systems for the space sector are being built. Increasingly, participants from both commercial and public sectors are openly saying: the era of isolated, single-purpose tools is coming to an end.&lt;/p&gt;
+
+&lt;p&gt;Instead, there is a growing need for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;interoperability between systems from different vendors and centres,&lt;/li&gt;
+  &lt;li&gt;standardised data interfaces, so that information can move smoothly along the entire value chain – from spaceport, through operator, to the end user,&lt;/li&gt;
+  &lt;li&gt;an architecture that starts in one area (e.g., launch operations) but is ready to be naturally extended with further modules (mission control, payload operations, integration with customer systems).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/06-IMG_6293.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;From orbit to operations – connecting what happens in space with what happens on the ground (Photo: Tomasz Pac)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is exactly the mindset we describe in our approach as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By combining ground infrastructure, mission control, and spacecraft operations into cohesive digital ecosystems, our partners gain faster efficiency, higher reliability, and a solid foundation for future growth.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In practice, a “digital ecosystem” means:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a consistent data model that prevents information from getting stuck in a single system,&lt;/li&gt;
+  &lt;li&gt;a set of modules that can be developed step by step, instead of trying to deploy “everything at once”,&lt;/li&gt;
+  &lt;li&gt;the ability to connect existing customer systems (ERP, safety systems, analytics tools) into the new operational layer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In Bremen, it was very clear that organisations thinking about their infrastructure in this way have a much better chance of scaling their activities sustainably – whether we’re talking about spaceports, satellite constellations, or defence systems.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How did Space Tech Expo Europe change our perspective?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Taking part in Space Tech Expo Europe 2025 gave us several important confirmations and a few additional inspirations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/07-DJI_20251119165740_0560_D.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;Iterative team at Space Tech Expo Europe 2025 in Bremen (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;First, we saw very clearly that the topics we’ve been focusing on for some time now – digitising ground operations, integrating mission-critical data, automating payload workflows – are exactly what the European space sector is talking about the loudest today.&lt;/p&gt;
+
+&lt;p&gt;Second, conversations with operators, agencies, system integrators, and New Space companies showed that, regardless of scale, everyone struggles with similar challenges:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;how to increase the pace of operations without losing control,&lt;/li&gt;
+  &lt;li&gt;how to stop “patching” processes with emails and spreadsheets,&lt;/li&gt;
+  &lt;li&gt;how not to end up with ten disconnected tools that make work harder instead of easier.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Third, we became even more convinced that the future of Europe’s competitiveness in space will come from getting both sides right: building great rockets and satellites, and backing them with equally strong software and digital ecosystems.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusion: where Bremen is taking us&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Coming back from Bremen, we’re bringing home not just business cards and meeting notes, but above all, a handful of key conclusions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Europe is entering a phase of intense investment in space – and CM25 has just confirmed that. ESA’s overall budget has grown significantly, with countries like Canada multiplying their contribution by ten and Poland tripling its own. If this wave of funding is to deliver its full impact, it needs to be matched by a strong digital layer: from spaceports, through mission control, to spacecraft operations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-space-tech-expo-europe-25/08-IMG_6184.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;Business session on future space funding at Space Tech Expo Europe 2025 (Photo: Tomasz Pac)&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Digitisation and automation of mission-critical operations are becoming a necessity if we want to talk about a higher number of launches, better reliability, and faster response to threats.&lt;/li&gt;
+  &lt;li&gt;Data integration and building cohesive digital ecosystems are not buzzwords, but concrete answers to real pain points: fragmented systems, duplicated data, and the lack of a single operational picture.&lt;/li&gt;
+  &lt;li&gt;The CM25 decisions will now translate Strategy 2040 into concrete programmes and industrial opportunities. As new initiatives emerge and existing ones scale up, the ability to connect partners, synchronise activities, and keep operations transparent will increasingly depend on the quality of software and the robustness of digital infrastructure.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the coming months, we’ll continue developing our projects in the space sector, working to ensure that Europe’s space ambitions are supported by solid digital foundations – on the ground, throughout the mission, and across the entire operational chain.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Dec 2025 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/</guid>
+        
+        <category>Business</category>
+        
+        <category>Projects</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>Behind the scenes at the European Spaceport: our visit to CSG</title>
