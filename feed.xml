@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Dec 2025 13:21:29 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Dec 2025 13:21:29 +0100</lastBuildDate>
+    <pubDate>Mon, 15 Dec 2025 17:20:22 +0100</pubDate>
+    <lastBuildDate>Mon, 15 Dec 2025 17:20:22 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -690,6 +690,164 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
         
         
         <category>business</category>
+        
+      </item>
+    
+      <item>
+        <title>How to not lose your sleep while migrating a complex application</title>
+        <image>/assets/images/how-not-to-loose-your-sleep-while-migrating-a-complex-application/how-not-to-loose-your-sleep-while-migrating-a-complex-application.webp</image>
+        <headline>At the end of January we could finally celebrate a successful delivery of a complex system migration. Despite the hard deadline and the importance of the project, the final cut-over day was a piece of cake. In this article we would like to share some lessons that we learned from the project.</headline>
+        <description>&lt;p&gt;At the end of January we could finally celebrate a successful delivery of a complex system migration. Despite the hard deadline and the importance of the project, the final cut-over day was a piece of cake. Due to great planning and exceptional cooperation with our clients, we were able to de-risk the process and execute the final steps with confidence. In this article we would like to share some lessons that we learned from the project.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-background&quot;&gt;The background&lt;/h2&gt;
+
+&lt;p&gt;For the last eight years one of our teams has been involved in the development of a software platform that increases the operational awareness of oil &amp;amp; gas production. Our client has deployed the system to several oil companies. One of their core customers, an independent Norwegian rig operator, was acquired by a bigger entity. The merger entailed a necessity to integrate the IT systems of both companies, including the software platform provided by our client.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-challenges&quot;&gt;The challenges&lt;/h2&gt;
+
+&lt;p&gt;Fortunately, at the start of the project the applications were already running on Azure Kubernetes cluster – our client has recently completed the migration from bare VMs and we have also been involved in that process. The system was supposed to be moved to a new Kubernetes cluster within the tenancy of the acquiring company.&lt;/p&gt;
+
+&lt;p&gt;Our customer’s applications integrate a plethora of data sources, providing a unified analytics platform on top of them. This brought additional challenges, as moving a self-contained application is significantly easier than doing so with a platform that has, by its nature, multiple dependencies with 3rd party systems. Especially when these systems are also being migrated at the same time!&lt;/p&gt;
+
+&lt;p&gt;So, the following challenges had to be addressed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Spin up a new environment, simultaneously supporting the old one for seamless transition.&lt;/li&gt;
+  &lt;li&gt;Integrate with the existing data sources, making sure that they are reachable from the cloud. Be careful, as the vendors are moving their applications too!&lt;/li&gt;
+  &lt;li&gt;Migrate the data owned by the platform itself. It is not just a simple drag &amp;amp; drop, as the data needs to be adjusted to the new environment.&lt;/li&gt;
+  &lt;li&gt;Implement connectors and integrate new data sources that replace the existing ones.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-not-to-loose-your-sleep-while-migrating-a-complex-application/oil-platform.webp&quot; alt=&quot;Oil Platform&quot; title=&quot;Oil Platform&quot; /&gt;
+&lt;em&gt;The systems are used both onshore and offshore&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-deal-with-such-a-complex-project&quot;&gt;How to deal with such a complex project?&lt;/h2&gt;
+
+&lt;p&gt;Every project is different, but after completing a second project of such type, we want to distill a few tips that contributed to the success to share them with you.&lt;/p&gt;
+
+&lt;h3 id=&quot;planning&quot;&gt;Planning&lt;/h3&gt;
+
+&lt;p&gt;Yes, we all know that good project planning is crucial. But how to plan it so that nothing important is missed?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Stocktaking&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Carefully check what you currently have. It sounds obvious, but it’s not, especially for complex integration projects with multiple users, who can create their own content. The documentation may be helpful, but it’s good to double check and list all the features by browsing through the system. Even though we were careful, we also found a few surprises late in the project.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Grooming&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;When you migrate an integration platform into a new environment, some of the features may not be relevant anymore. The new organisation has their own processes and it’s wrong to assume that everything has to be moved 1:1. A perfect dashboard that nobody uses is not worth the effort.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Identifying data sources&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;When you compile a list of features that need to be migrated, identify the data sources currently supporting them and their counterparts within the new organisation. Data sources after an IT merger typically fall into three categories: to be moved, to be integrated and to be replaced by a similar solution.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Verifying business processes&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Pay attention to any differences between the business processes supporting the migrated features. They may have an impact on user or data workflows.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Getting in touch&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Nothing works better than direct contact. Even though the meetings may be cumbersome, they work well during the first phase of the project. It’s important to engage not only with the users of your software, but also try to establish contact with the key technical personnel of the 3rd party vendors. Such communication channels are invaluable for coordinating the migration process.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Defining early milestones&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Approach the challenge iteratively! Make sure to plan some preliminary integration tests far before the actual deadline. This may seem unnecessary at first, especially when the final cut-over date is still far away, but early milestones help expose hidden dependencies and assumptions while there is still time to react.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Involving the end-user early&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Do not wait until everything is “done” to show the results to the users. Even if the system is only partially migrated, early feedback from real users is invaluable. They can quickly tell you which features are business-critical, which ones are merely nice to have, and which workflows no longer make sense in the new organizational setup.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;software-architecture&quot;&gt;Software architecture&lt;/h3&gt;
+
+&lt;p&gt;As software developers we know that a badly designed application may make the process of doing changes a nightmare. We learned the good and bad ways what is especially important when designing an application that should be easy to adjust and migrate:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define generic interfaces&lt;/p&gt;
+
+    &lt;p&gt;Generic interfaces act as shock absorbers during migration. When external systems, data providers, or deployment environments change, well-designed interfaces allow you to swap implementations without rewriting large parts of the application. This proved especially important when integrating with systems that were themselves in flux, as it minimized the ripple effects of late changes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define contracts between modules&lt;/p&gt;
+
+    &lt;p&gt;Clear contracts make responsibilities explicit and reduce ambiguity. When each module clearly states what it expects and what it provides, teams can work in parallel with confidence. During migration projects, contracts also serve as a safety net, ensuring that changes in one area do not silently break functionality elsewhere.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t spread business logic&lt;/p&gt;
+
+    &lt;p&gt;Business logic scattered across services, UI components, and integration layers is hard to reason about and even harder to migrate. Centralizing business rules makes them easier to test, adapt, and validate in a new environment. It also helps when business processes evolve as part of a merger, which is almost always the case.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Encapsulate&lt;/p&gt;
+
+    &lt;p&gt;Encapsulation limits the blast radius of change. By hiding internal details behind well-defined boundaries, you reduce coupling and make the system more resilient to refactoring. This becomes crucial when infrastructure, security models, or data sources differ between the old and new environments.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Think product-wise (configurability) to avoid re-doing from scratch&lt;/p&gt;
+
+    &lt;p&gt;Features that are configurable rather than hard-coded are far easier to migrate. A product-oriented mindset encourages building flexible solutions that can be adapted through configuration instead of code changes. This not only speeds up migration but also helps align the system with the new organization’s processes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Take the opportunity to improve&lt;/p&gt;
+
+    &lt;p&gt;A migration project inevitably exposes technical debt. While it is rarely feasible to fix everything, selective improvements can pay off quickly. Removing obsolete components, simplifying overly complex flows, or improving observability can make the migrated system more stable and easier to operate in the long run.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keep the docs up to date&lt;/p&gt;
+
+    &lt;p&gt;Documentation tends to lag behind reality, especially in long-running projects. During migration, outdated documentation can be more harmful than none at all. Keeping architecture diagrams, integration descriptions, and operational notes current saves time, reduces misunderstandings, and helps onboard new stakeholders involved in the process.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Embrace collaboration&lt;/p&gt;
+
+    &lt;p&gt;Architecture is not created in isolation. Close collaboration between developers, operations, security teams, and external vendors leads to better decisions and fewer surprises. Open communication channels make it easier to resolve issues quickly and align technical solutions with real-world constraints.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Migrating a complex application in the context of an organizational merger is never just a technical exercise. It is a combination of careful planning, clear communication, architectural discipline, and continuous validation. The technical challenges are often intertwined with changing business processes, evolving data sources, and shifting responsibilities across teams and vendors.&lt;/p&gt;
+
+&lt;p&gt;What helped us succeed was breaking the problem down into manageable steps, validating assumptions early, and involving the right people at the right time. Early milestones reduced uncertainty, while close collaboration with end-users ensured that we were building what actually mattered. An equally important contributing factor was the excellent project management on the client’s side, which helped coordinate the project in a constantly changing landscape, where systems, dependencies, and responsibilities were evolving throughout the migration.&lt;/p&gt;
+
+&lt;p&gt;On the technical side, solid architectural principles allowed us to adapt to change without losing control of the system. In the end, a smooth cut-over is rarely the result of last-minute heroics. It is the outcome of many small, deliberate decisions made throughout the project. With the right mindset, strong cooperation, and good project management, even a complex migration can become a predictable and, dare we say, almost boring exercise — and that is exactly how such projects should feel.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Jun 2024 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2024/06/03/how-not-to-loose-your-sleep-while-migrating-a-complex-application/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2024/06/03/how-not-to-loose-your-sleep-while-migrating-a-complex-application/</guid>
+        
+        <category>Business</category>
+        
+        <category>Projects</category>
+        
+        <category>Migration</category>
+        
+        <category>Oil &amp; Gas</category>
+        
+        <category>Cloud</category>
+        
+        <category>Collaboration</category>
+        
+        <category>Systems</category>
+        
+        <category>Deployment</category>
+        
+        <category>Lessons Learned</category>
+        
+        <category>Example</category>
+        
+        
+        <category>technical</category>
         
       </item>
     
