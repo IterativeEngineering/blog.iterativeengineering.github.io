@@ -5,9 +5,167 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Dec 2025 17:20:22 +0100</pubDate>
-    <lastBuildDate>Mon, 15 Dec 2025 17:20:22 +0100</lastBuildDate>
+    <pubDate>Tue, 16 Dec 2025 20:44:33 +0100</pubDate>
+    <lastBuildDate>Tue, 16 Dec 2025 20:44:33 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>LaunchReady – On-Site Simulation</title>
+        <image>/assets/images/launch-ready-on-site-simulation/01_Ariane_6_from_above_in_the_final_hours_before_liftoff.webp</image>
+        <headline>LaunchReady is a satellite campaign management tool tested where it matters most: on site at Europe’s Spaceport in Kourou. This article describes the 2-day simulation at CSG with ESA/CNES teams, how the system supported real workflows, what feedback we gathered, and how it can shape future launch campaign tools.</headline>
+        <description>&lt;p&gt;&lt;em&gt;How we tested digital satellite campaign management, where every detail really matters&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When you want to know whether satellite campaign software really works, you have to test it where launch decisions are actually made. That’s why our team took a satellite campaign management system codenamed LaunchReady into an on-site simulation at Europe’s Spaceport in Kourou, French Guiana, working directly with CSG, ESA, and CNES teams over two intensive days.&lt;/p&gt;
+
+&lt;p&gt;During this on-site workshop, the Iterative Engineering team worked side by side with future users of the system. The goal was not just to “show the tool”, but to see how the solution behaves in a real environment where every service request can influence the overall launch campaign schedule.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/03_2-day workshops.webp&quot; alt=&quot;2-day workshop&quot; title=&quot;2-day workshop&quot; /&gt;
+&lt;em&gt;2-day workshop at CSG – from project presentation to guided and asynchronous simulations (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-did-launchready-come-about&quot;&gt;How did LaunchReady come about?&lt;/h2&gt;
+
+&lt;p&gt;In a typical launch campaign at CSG, you can think of three main streams coming together: range preparations, payload preparations, and launcher preparations. Each has its own sequence of tests, checks, and operational steps – from configuring ground infrastructure and safety measures, through payload processing and cleanroom work, to launcher integration and the last checks before launch. Service requests span all of these streams and are often passed around by email, verbally, or via messaging tools. That approach works as long as the campaign remains relatively simple. The more payloads, teams, and constraints are involved, the harder it becomes to see what has been requested, what status each service is in, and who is waiting on whose decision. That approach works as long as the campaign remains relatively simple. The more payloads, teams and constraints are involved, the harder it becomes to see what has been requested, what status each service is in and who is waiting on whose decision.&lt;/p&gt;
+
+&lt;p&gt;This is where the idea for a launch campaign information and request management system came from. The solution was meant to show that this world can be brought into a single, consistent interface – with a service catalogue, request tracking and support for typical campaign activities. But before we started drawing screens, we first had to understand what daily life in a satellite campaign really looks like.&lt;/p&gt;
+
+&lt;h2 id=&quot;from-documents-to-real-world-context&quot;&gt;From documents to real-world context&lt;/h2&gt;
+
+&lt;p&gt;We began by reviewing launcher user manuals and related documentation to understand how launch campaigns are structured from the launcher’s point of view. From there, we mapped the wider context around the payload preparation process – from the moment a spacecraft arrives at the spaceport, through the sequence of ground operations and integration steps, and how all of this connects to launcher timelines, infrastructure availability, and operator constraints.
+In doing so, we quickly saw a clear split between the planning phase of a campaign (designing the campaign plan and defining which services will be needed) and the operational phase (executing that plan, handling changes, and tracking requests as work progresses). For the solution we developed, we focused on digitising the operational phase – the part where service requests are raised, processed, and followed up during an active launch campaign.&lt;/p&gt;
+
+&lt;p&gt;In parallel, we launched collaborative design work with the CSG teams. On the Iterative Engineering side, a combined design-and-engineering team worked with the client to iteratively create wireframes, mock-ups and successive interface versions. Most of the conceptual work and scope refinement happened asynchronously, complemented by numerous online workshops and real-time meetings where we aligned on the application’s architecture, features, and look &amp;amp; feel.&lt;/p&gt;
+
+&lt;p&gt;By the time we travelled to Kourou, we were bringing a system shaped together with the CNES/CSG team – designed and developed in close collaboration around their real workflows – rather than an abstract concept. It was a working tool aligned with their needs and ready for testing on-site.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-day-workshops-at-csg-from-presentation-to-simulation&quot;&gt;2-day workshops at CSG: from presentation to simulation&lt;/h2&gt;
+
+&lt;p&gt;The on-site visit in French Guiana was a natural extension of this collaboration – but moved from video calls to the real environment of a launch campaign.&lt;/p&gt;
+
+&lt;p&gt;The workshops had a clear purpose:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;present and validate the new tool for satellite campaign management,&lt;/li&gt;
+  &lt;li&gt;collect feedback from future users,&lt;/li&gt;
+  &lt;li&gt;use the system as a concrete starting point for discussing the platform’s future evolution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;project-presentation--building-shared-understanding&quot;&gt;Project Presentation – building shared understanding&lt;/h3&gt;
+
+&lt;p&gt;The first stage was a Project Presentation. Before anyone logged into the system, we needed a shared view of where the project came from, which problems it aims to solve and why certain process decisions were made.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/02_gestion-campagnes-satellite-titan-part-3.webp&quot; alt=&quot;Presentation at CSG&quot; title=&quot;Presentation at CSG&quot; /&gt;
+&lt;em&gt;Project Presentation at CSG – Iterative Engineering team introducing LaunchReady, aligning everyone on the project goals, problems to solve and key process decisions before moving into the live simulation.&lt;br /&gt;
+Still frame from a video recorded by CNES staff (image courtesy of CNES/CSG)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For some participants, this was their first contact with LaunchReady; for others, it continued the discussions started during online sessions. In both cases, the presentation aligned perspectives and prepared the ground for meaningful testing.&lt;/p&gt;
+
+&lt;h3 id=&quot;guided-simulation--feature-testing--a-structured-walkthrough&quot;&gt;Guided simulation &amp;amp; feature testing – a structured walkthrough&lt;/h3&gt;
+
+&lt;p&gt;The second stage was Guided simulation &amp;amp; feature testing. Participants took on their real-life roles – from payload customers to people coordinating the campaign – and went through the system step by step, guided by the CEO and CTO of Iterative Engineering.
+We tested, among other things, raising services from the catalogue, reviewing request status, first approval paths and how information is presented on dashboards.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;“This is exactly what we do here”&lt;/li&gt;
+    &lt;li&gt;“This screen could use one extra field”,&lt;/li&gt;
+    &lt;li&gt;“I can see how this would help for a few campaigns we have in the pipeline”&lt;br /&gt;
+&lt;br /&gt;&lt;cite&gt;comments started appearing immediately.&lt;/cite&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;scenario-based-asynchronous-simulation--closer-to-day-to-day-work&quot;&gt;Scenario-based asynchronous simulation – closer to day-to-day work&lt;/h3&gt;
+
+&lt;p&gt;Once users were comfortable with the interface, we moved to Scenario-based asynchronous simulation. This time, the simulation ran more in the background and less like a classroom exercise: participants worked at their own pace, reacted to notifications and switched between tasks.
+This was where we could really see how the system behaves when several people are acting in parallel – and to what extent it helps them handle the complexity of a launch campaign.&lt;/p&gt;
+
+&lt;h3 id=&quot;test-conclusions--evaluation-summary--structured-takeaways&quot;&gt;Test conclusions &amp;amp; evaluation summary – structured takeaways&lt;/h3&gt;
+
+&lt;p&gt;The final stage was a joint debrief. More than ten people took part actively in the simulations, and throughout the workshops, there were focused discussions about what could be improved or extended. In total, we collected over thirty comments and suggestions – ranging from small UX tweaks to more cross-cutting ideas for the future.
+The feedback was concrete and improvement-oriented, giving us a clear list of areas to refine in the system and a set of ideas to consider for later phases of the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/05_symulacja-blur-2.webp&quot; alt=&quot;tooltip&quot; title=&quot;tooltip&quot; /&gt;
+&lt;em&gt;On-site simulation at CSG – LaunchReady running on operator workstations during the workshop (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;different-roles-one-goal-cooperation&quot;&gt;Different roles, one goal: cooperation&lt;/h2&gt;
+
+&lt;p&gt;From day one, we assumed that LaunchReady has to speak the language of several distinct user groups.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/04_Ultimate_goal.webp&quot; alt=&quot;tooltip&quot; title=&quot;tooltip&quot; /&gt;
+&lt;em&gt;Different user perspectives in LaunchReady – all connected through a shared focus on cooperation during launch campaigns&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For payload customers, the key is to quickly understand the CSG service catalogue, raise a request easily and then see clearly what is happening with it. For managers, the tool needs to support both presenting the service offer and automating recurring process steps, while giving a clear view of overall progress.
+People in roles similar to DDO, responsible for campaign structure and high-level oversight, need views that let them define teams, approve requests and understand their impact on the campaign timeline. Industrialists, on the other hand, expect clear notifications, understandable work orders and a way to report progress and keep a record of what has been done.
+All of these perspectives converge on a single core idea: cooperation. The system is not there to replace human experience, but to give everyone a shared “board” showing who is doing what – and where potential conflicts or bottlenecks may appear.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-the-tests-revealed-first-user-reactions&quot;&gt;What the tests revealed: first user reactions&lt;/h2&gt;
+
+&lt;p&gt;The on-site simulation at CSG was also a very concrete quality test.
+From a user interface point of view, participants emphasised that LaunchReady feels fast and responsive and has a modern look. They appreciated the ability to adapt the appearance to their working conditions: the application supports both light and dark modes, so people working, for example, with several screens can choose the variant that is easier on their eyes and better suited to their workstation. Automatic synchronisation of data was also noted as a plus – there is no need to refresh the page to see the effect of someone else’s actions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/08_feedback-forms.webp&quot; alt=&quot;tooltip&quot; title=&quot;tooltip&quot; /&gt;
+&lt;em&gt;Paper forms were used to quickly gather user feedback on various functions of the software (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the functional side, feedback highlighted that the system can handle both simpler scenarios and more complex workflows. Despite being hosted in Europe, it remained responsive over the visitor network at CSG.&lt;/p&gt;
+
+&lt;p&gt;At the same time, the simulation showed where the experience could be made smoother – for example, on smaller screens, where some views felt quite dense, and in a few UI details that could more closely reflect the design intent.
+A similar pattern appeared around notifications. Some users pointed out that being informed about every single update across all requests can lead to notification fatigue and make it harder to spot what really matters to them. We treated this as concrete input and introduced more flexible notification settings, so that users can control which types of updates they receive and how often. Both in-app and email notifications now reflect these preferences, helping people stay focused on information that is directly relevant to their role and to actions they can take.
+Taken together, this kind of feedback – from screen layout to notification flow – not only confirmed where the tool already works well, but also showed how it can support users even better. For many participants, it was not just a way to test what is possible today, but a starting point for thinking about how digital support for requests and services could evolve in future campaigns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/07_final-presentation.webp&quot; alt=&quot;tooltip&quot; title=&quot;tooltip&quot; /&gt;
+&lt;em&gt;Paweł and Krzysztof running the presentation summarizing the simulation findings (Photo: CNES/CSG)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next-for-the-tool-and-the-future-system&quot;&gt;What’s next for the tool and the future system?&lt;/h2&gt;
+
+&lt;p&gt;One of the important results of the workshops is a set of conclusions that will help smooth out the user experience. Many of the comments focused on making it easier to see which items require action – so that users can focus on what matters most – and on simplifying navigation, forms and filtering. There were also suggestions about tightening up texts, descriptions and interface details to make the system more readable and intuitive, including on smaller screens.
+In parallel, the workshops helped outline a direction for the future, a full-scale solution. Ideas emerged around better support for working on the move, more effective use of historical data and more convenient ways to explore the service catalogue. These are not features that need to be part of the platform itself, but they form valuable context for future decisions – without going into any confidential implementation details.
+Taken together, the simulations and discussions confirmed that a digital platform can play a central role in coordinating services during launch campaigns – provided that operational users and Launch Operators are closely involved in shaping how it works.&lt;/p&gt;
+
+&lt;h2 id=&quot;deployment-and-validation-the-launchready-as-a-real-tool&quot;&gt;Deployment and validation: the LaunchReady as a real tool&lt;/h2&gt;
+
+&lt;p&gt;The simulation at CSG was not just a one-off, impressive demo. As part of Deployment and Validation, we prepared a production-like environment, delivered user training, ran User Acceptance Tests and provided documentation so that LaunchReady can continue to be used as a real test tool.
+This means the application does not “end” when the last participant closes their browser. It remains available as a reference environment for further discussions, iterations and preparation for a potential full-scale deployment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/launch-ready-on-site-simulation/06_ekran-w-csg-2.webp&quot; alt=&quot;tooltip&quot; title=&quot;tooltip&quot; /&gt;
+&lt;em&gt;LaunchReady at work during the asynchronous simulation (Photo: Paweł Grzywocz)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-iterative-engineering&quot;&gt;Why Iterative Engineering?&lt;/h2&gt;
+
+&lt;p&gt;Iterative Engineering was asked to design the app and run the on-site simulation at CSG because we specialise in custom software for engineering-driven environments, including the space sector. Many of our projects support operators, engineers and technical managers in their day-to-day work, where reliability, traceability and clear workflows are as important as the user interface itself.
+For systems like LaunchReady, three things matter in particular: rigorous software engineering, a practical understanding of operational workflows, and proficiency in data integration and analytics that turn operational data into actionable insight. This makes it easier for us to understand how launch campaigns are organised, which constraints are critical and how to reflect them in a digital platform.
+The on-site simulation at CSG is a good example of this approach in practice: bring a realistic tool, put it in the hands of future users, observe how it behaves in their real environment and feed structured feedback from different roles into the next iterations and into discussions about a potential larger system.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Image credits
+Hero image: Ariane 6 at Europe’s Spaceport in Kourou. Image credit: ESA.
+Workshop photos: Paweł Grzywocz / Iterative Engineering.
+Video still: CNES/CSG.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/</guid>
+        
+        <category>Business</category>
+        
+        <category>Travel</category>
+        
+        <category>Projects</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>Guiana Space Center (CSG)</category>
+        
+        <category>CNES</category>
+        
+        <category>ESA</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>What did we learn in Bremen? Key takeaways from Space Tech Expo Europe</title>
