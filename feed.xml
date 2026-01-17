@@ -5,9 +5,298 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Dec 2025 20:57:46 +0100</pubDate>
-    <lastBuildDate>Tue, 16 Dec 2025 20:57:46 +0100</lastBuildDate>
+    <pubDate>Sat, 17 Jan 2026 06:09:00 -0600</pubDate>
+    <lastBuildDate>Sat, 17 Jan 2026 06:09:00 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>From Shetland to the Azores: a practical guide to Europe’s new spaceports</title>
+        <image>/assets/images/practical-guide-to-europes-new-spaceports/01-andoya.webp</image>
+        <headline>A practical overview of Europe’s emerging spaceports and microlaunchers – from Andøya, SaxaVord and Esrange to Santa Maria, El Hierro and offshore concepts. We map mission profiles, operational readiness, and suborbital programmes like PERUN and Skyrora, with CSG as a benchmark, and hint at what comes next.</headline>
+        <description>&lt;p&gt;The North Atlantic at night can be silent – just wind and waves. On a remote Norwegian island, under a thin ribbon of aurora, engineers close the last panels on a launch tower. Europe no longer has a single “gateway to space.” Alongside the crucial European Spaceport in French Guiana (CSG), &lt;a href=&quot;https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/&quot;&gt;which we covered in a separate post&lt;/a&gt;, a mosaic of vertical launch sites is taking shape: different places, different specializations – together forming a network of routes to orbit.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This article is the first in a series where we look at Europe’s emerging spaceports from different angles. In future posts, we’ll come back to topics like regulation, funding models and how these sites might work together as a network.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;why-more-than-one-vertical-port&quot;&gt;Why more than one vertical port?&lt;/h2&gt;
+
+&lt;p&gt;Europe is not replacing CSG with a single new site, but building a small network of specialised launch pads. Several factors push in that direction:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Different headings to orbit.&lt;/strong&gt; Northern sites naturally favour polar/SSO trajectories, while Atlantic-facing pads reduce overflight of populated land.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Safety corridors and local regulation.&lt;/strong&gt; Each location has its own airspace, shipping lanes, population density, and regulator; some trajectories or risk envelopes are only acceptable from specific sites.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Redundancy and resilience.&lt;/strong&gt; Multiple ports reduce the risk of a single point of failure from weather, technical issues, or political constraints at any one location.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Throughput and launch cadence.&lt;/strong&gt; More pads and operators increase the likelihood of aligning narrow launch windows and campaign timelines with customer needs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Room for private players.&lt;/strong&gt; New commercial launch providers and infrastructure consortia need options; they are more likely to invest if they are not locked into a single site or owner.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Local ecosystems and skills.&lt;/strong&gt; Each spaceport anchors its own cluster of jobs, test ranges, and suppliers, which in turn strengthens Europe’s overall industrial base.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Europe’s launch landscape is still early-stage: multiple small spaceports and new microlaunchers are coming online, but real cadence is uncertain and not all will endure. As several speakers in Bremen put it, the bottleneck isn’t tech so much as maturity and regulation – we need licensing measured in months, not years, and repeatable processes that don’t restart from zero each campaign. Near-term demand will likely be anchored by dual-use and institutional missions, with commercial volume following as costs fall. Programmes like ESA’s Boost! and the European Launch Challenge help, but the market will ultimately pick winners. Interoperability and light-touch standards will matter – just not before first flights. Think less “one super-site,” more a network that can scale when real demand shows up.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/01-info-european-launch-sites.webp&quot; alt=&quot;European Launch Sites&quot; title=&quot;European Launch Sites&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-quick-orbit-primer-what-mission-planners-need-to-know&quot;&gt;A quick orbit primer: what mission planners need to know&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Polar / SSO (Sun-Synchronous Orbit)&lt;/strong&gt; – high-inclination orbits; satellites pass each location at a similar local time. Essential for environmental monitoring, agriculture, urban analytics, and security.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LEO (Low Earth Orbit)&lt;/strong&gt; – the workhorse for Earth observation, short-range telecom, and scientific/technology payloads (e.g., instrument tests, microgravity experiments).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Suborbital&lt;/strong&gt; – “up and back.” Used for tech demos, scientific research, and training.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/02-info-infograph-launch-mission-profiles.webp&quot; alt=&quot;Launch mission profiles&quot; title=&quot;Launch mission profiles&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;who-excels-at-what--and-where-to-click-for-more&quot;&gt;Who excels at what – and where to click for more&lt;/h2&gt;
+
+&lt;h3 id=&quot;saxavord-shetland-uk--northern-hub-for-vertical-launches&quot;&gt;SaxaVord (Shetland, UK) – Northern hub for vertical launches&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (vertical; three launch pads at Lamba Ness).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Unst Island location – flight paths and risk zones mainly over ocean.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Fully licensed by the UK Civil Aviation Authority to host up to 30 launches per year; infrastructure in place; first orbital campaigns expected ~2026. (Nov 2025): The first launch window has slipped to next year, according to local reporting, while licensing and infrastructure remain in place. Cadence: low at start (≈1–3/yr), potentially 5–10/yr once customers ramp.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; SaxaVord Spaceport – privately operated launch site on Unst in the Shetland Islands, developed to host small-satellite missions from multiple launch providers using high-latitude trajectories over the North Atlantic. Key launchers: RFA One, Skyrora XL, HyImpulse SL1, ABL RS1, Latitude Zephyr.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; “Edge of the UK” positioning reduces conflicts with shipping and aviation.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://saxavord.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;saxavord.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/02-saxavord.webp&quot; alt=&quot;SaxaVord Spaceport&quot; title=&quot;SaxaVord Spaceport&quot; /&gt;
+&lt;em&gt;SaxaVord Spaceport (UK) – RFA One three-stage launcher concept targeting up to 1,300 kg to a 500 km polar orbit&lt;br /&gt;
+&lt;small&gt;Credit: Rocket Factory Augsburg • Licence: ESA Standard Licence (editorial; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;andøya-norway----from-mature-suborbital-base-to-orbital-readiness&quot;&gt;Andøya (Norway)  –  From mature suborbital base to orbital readiness&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (vertical; legacy sounding-rocket range plus a new orbital launch pad).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; decades of suborbital operations converted into robust orbital procedures; ocean-facing corridors.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; licensed spaceport with permission for up to 30 launches per year; first orbital test flight of Spectrum conducted in March 2025, ending prematurely but providing valuable flight data, with further campaigns in preparation; (Dec 2025): Isar Aerospace completed 30-second integrated static-fire tests on both Spectrum stages and is preparing its second launch from Andøya. Cadence: suborbital several/yr; orbital ~1–3/yr at start.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; Andøya Space – an aerospace company based on Andøya Island in northern Norway with over 60 years of operations, providing launch and test services for scientific, commercial and governmental customers.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; rare case of one site “graduating” from suborbital to orbital within the same campus.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://andoyaspace.no/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;andoyaspace.no&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/03-andoya-2.webp&quot; alt=&quot;Andøya Spaceport&quot; title=&quot;Andøya Spaceport&quot; /&gt;
+&lt;em&gt;Vertical launch of a rocket from a pad&lt;br /&gt;
+&lt;small&gt;Photo: Isar Aerospace / Brady Kenniston – NASASpaceflight.com. Editorial use only; do not alter or remove copyright notices&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;esrange-kiruna-sweden----from-research-range-to-regular-orbital-missions&quot;&gt;Esrange (Kiruna, Sweden)  –  From research range to regular orbital missions&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (vertical; sounding-rocket and balloon range with the LC-3 orbital launch complex).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; EU’s largest rocket/balloon R&amp;amp;D backbone; new orbital pad.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; orbital launch complex operational (LC-3); first satellite launch campaigns contracted from 2026; no orbital launches conducted yet as of early 2026; (Nov 2025): Esrange conducted two sounding-rocket campaigns (MAPHEUS-16 and ORIGIN-2), underscoring sustained suborbital cadence ahead of orbital campaigns. Cadence: suborbital several/yr; orbital ~1–3/yr at start.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; SSC (Swedish Space Corporation) – over 50 years in space services, operating Esrange and a global commercial ground station network for satellite communications.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; polar night and harsh climate are a reliability proving ground during R&amp;amp;D.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://sscspace.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;sscspace.com&lt;/a&gt; (Esrange / Launch Services)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/04-esrange.webp&quot; alt=&quot;Esrange Space Center&quot; title=&quot;Esrange Space Center&quot; /&gt;
+&lt;em&gt;Satellite launch infrastructure under construction at Esrange Space Center, Kiruna, Sweden&lt;br /&gt;
+&lt;small&gt;Image: SSC Space / Esrange Space Center (editorial use; credit required) / Courtesy: DLR GSOC&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;santa-maria-azores-portugal----an-atlantic-pad-in-deployment&quot;&gt;Santa Maria (Azores, Portugal)  –  An Atlantic pad in deployment&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (vertical; Malbusca Launch Centre on Santa Maria Island).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; corridors over open ocean; minimal overflight of populated land.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; first Portuguese spaceport licence granted in 2025 for the Malbusca Launch Centre; infrastructure being deployed, with initial launches targeted from spring 2026. Cadence after commissioning: ~1–3/yr to begin with. (Nov 2025): Portugal and ESA signed a cooperation agreement positioning Santa Maria as the future landing site for Space Rider and consolidating the island’s space hub development.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt;  Atlantic Spaceport Consortium (ASC) – Portuguese consortium developing an open spaceport on Santa Maria Island, licensed in 2025 to operate the Malbusca Launch Centre and provide launch and re-entry services from the mid-Atlantic.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; the island already supports comms and tracking; launch operations to follow when works conclude.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://spaceport.pt/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;spaceport.pt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/05-santamaria.webp&quot; alt=&quot;Santa Maria station&quot; title=&quot;Santa Maria station&quot; /&gt;
+&lt;em&gt;Santa Maria station (Azores, Portugal) – part of ESA’s ESTRACK ground station network&lt;br /&gt;
+&lt;small&gt;Credit: ESA | Licence: ESA Standard Licence (editorial use; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;el-hierro-canary-islands-spain----good-azimuth-hard-realization&quot;&gt;El Hierro (Canary Islands, Spain)  –  Good azimuth, hard realization&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (concept).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; potentially excellent Atlantic trajectories.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Concept/proposal stage; no licensing or build-out. Cadence: n/a until project advances.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; INTA (Spanish National Institute of Aerospace Technology) – proposed the El Hierro Launch Centre as a civil spaceport for small polar and Sun-synchronous missions, but the project has so far remained at feasibility-study stage, with no construction or launch activity.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; great geography isn’t enough – environmental and social factors set the pace.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; (no dedicated official project site at this stage)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/06-elhierro.webp&quot; alt=&quot;El Hierro&quot; title=&quot;El Hierro&quot; /&gt;
+&lt;em&gt;Western cliffs of El Hierro facing the Atlantic. The island has been studied as a potential site for a small launch center&lt;br /&gt;
+&lt;small&gt;Photo: Eckhard Pecher, CC BY 2.5 via Wikimedia Commons&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;Licence: https://creativecommons.org/licenses/by/2.5/&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;eurospaceport-north-sea-denmark--offshore-sea-based-launch-site-under-development&quot;&gt;EuroSpaceport (North Sea, Denmark) – Offshore sea-based launch site under development&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (proposed, offshore; suborbital first; orbital planned).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; North Sea locations near Esbjerg with launch corridors almost entirely over water; focus on shallow-water areas and a mild maritime climate; concept leverages offshore platform know-how.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; In development. ESA-supported milestone via Boost! and a contract with SpaceForest; first sea-based PERUN suborbital mission planned for 2026 from “Spaceport North Sea.” The company indicates a 2026 mission window and active location studies. Cadence: n/a until permitting and construction.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; EuroSpaceport – developer of an offshore launch system branded Spaceport North Sea, headquartered around Esbjerg; provides platforms, propellants, staffing, legal, and education services for launch campaigns.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Plans reference repurposing retired offshore wind-turbine infrastructure to create a cost-effective floating range.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://www.eurospaceport.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;eurospaceport.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;suas-ireland--atlantic-facing-concept-for-irish-launch-sites&quot;&gt;SUAS (Ireland) – Atlantic-facing concept for Irish launch sites&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (concept)&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Atlantic coastline enabling largely over-water flight corridors and high-latitude headings suitable for polar/SSO missions; Irish/EU setting and existing ground-segment ecosystem (company based at the National Space Centre, Cork).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Early-stage proposal to develop two Irish spaceports; targets include an engine-test site (2025) and a first orbital micro-launcher flight (2026); currently fundraising (c. €5 m seed) and subject to licensing. Cadence: n/a at this stage.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; SUAS Aerospace – Irish startup planning commercial spaceport facilities in Ireland&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Ireland’s aviation regulator has already run a consultation on air-launched rocket operations in international airspace southwest of Ireland – a sign the regulatory groundwork for spaceflight is being explored.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://suasaerospace.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;suasaerospace.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/07-suas-expo.webp&quot; alt=&quot;SUAS Aerospace&quot; title=&quot;SUAS Aerospace&quot; /&gt;
+&lt;em&gt;Space Tech Expo Europe 2025 (Bremen) – SUAS Aerospace actively present; visitors could speak with team members about plans and technology&lt;br /&gt;
+&lt;small&gt;Photo by Tomasz Pac / Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;beyond-this-map&quot;&gt;Beyond this map&lt;/h3&gt;
+
+&lt;p&gt;The sites and programmes described above are only one part of Europe’s launch landscape.&lt;/p&gt;
+
+&lt;p&gt;It’s also worth remembering that Europe’s launch infrastructure is broader than the handful of locations described here. Beyond vertical orbital and suborbital sites, there is &lt;strong&gt;Spaceport Cornwall in England&lt;/strong&gt; (a horizontal spaceport that hosted Virgin Orbit’s first – unsuccessful – mission), historic test ranges such as &lt;strong&gt;El Arenosillo in Spain&lt;/strong&gt; (a sounding rocket range, including the Miura 1 launch) and &lt;strong&gt;Salto di Quirra in Sardinia&lt;/strong&gt; (a military range used, among other things, for Space Rider tests), as well as the &lt;strong&gt;German Offshore Spaceport Alliance&lt;/strong&gt; concept, which proposes a mobile launch platform in the North Sea.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/08-elarenosillo.webp&quot; alt=&quot;El Arenosillo&quot; title=&quot;El Arenosillo&quot; /&gt;
+&lt;em&gt;PLD Space’s MIURA 1 lifting off from the El Arenosillo Test Centre in Huelva, Spain – one of Europe’s long-standing sounding rocket and test ranges&lt;br /&gt;
+&lt;small&gt;Photo: PLD Space, CC BY-SA 4.0 via Wikimedia Commons&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;Licence: https://creativecommons.org/licenses/by-sa/4.0/&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Behind this new generation of European spaceports and launchers, one benchmark remains in the background: the Guiana Space Centre (CSG) in French Guiana.&lt;/p&gt;
+
+&lt;h3 id=&quot;guiana-space-centre-kourou-french-guiana--europes-equatorial-gateway-to-orbit&quot;&gt;Guiana Space Centre (Kourou, French Guiana) – Europe’s equatorial gateway to orbit&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (equatorial; multi-launcher; orbital).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Near-equatorial location with launch azimuths over the Atlantic, ideal for GTO/GEO and low-inclination orbits; extensive ground infrastructure with multiple pads, long heritage, and established safety and range operations.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Active. After Ariane 5’s retirement and a short gap, Ariane 6 was inaugurated from CSG in July 2024, with commercial missions following in 2025. Vega-C is planned to resume service from the site, while Ariane 6 is ramping up towards a target cadence of around 10–12 launches per year by 2027, consolidating CSG’s role as Europe’s primary orbital spaceport.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; CNES / ESA / Arianespace – CSG is operated jointly by the French space agency CNES and ESA, with Arianespace providing commercial launch services for Ariane and Vega from the site.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; CSG’s equatorial position allows significantly higher payloads to GTO than higher-latitude sites; between Ariane, Soyuz, and Vega, it has supported hundreds of missions and remains one of the busiest orbital launch sites in the world.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://centrespatialguyanais.cnes.fr&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;centrespatialguyanais.cnes.fr&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Want to go deeper into CSG?
+If you’re interested in what day-to-day work at Europe’s Spaceport looks like, we’ve covered it in more detail in two separate articles:
+&lt;a href=&quot;https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/&quot;&gt;Europe’s Spaceport selected Iterative Engineering to improve the payload preparation process&lt;/a&gt; – how we helped streamline payload preparation workflows on the ground.
+&lt;a href=&quot;https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/&quot;&gt;LaunchReady: on-site simulation at Europe’s Spaceport&lt;/a&gt; – behind the scenes of rehearsing launch campaigns together with local teams.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;launchers-what-actually-flies-from-these-sites&quot;&gt;Launchers: what actually flies from these sites&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Spaceports are only part of the story. To keep this guide practical, we focus here on two launcher programmes that are directly linked to the sites described above: Poland’s PERUN suborbital rocket and the UK’s Skyrora family of small launchers. Both illustrate how new vehicles are being developed to make use of Europe’s emerging launch infrastructure.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;perun-poland----suborbital-tech-demo-platform-from-the-baltic-coast&quot;&gt;Perun (Poland)  –  Suborbital tech-demo platform from the Baltic coast&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (suborbital; not a spaceport)&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; purpose-built suborbital rocket for high-cadence technology demonstrations and research, launched over the sea from the Polish coast.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; active suborbital program with iterative flights; pathfinder for future orbital competencies in Poland; (Nov 2025): SpaceForest completed Perun’s third suborbital test flight, marking another step toward higher-energy profiles and fulfilling the first milestone under ESA’s Boost! programme. Cadence: ~1–4/yr depending on campaigns/customers.active suborbital program with iterative flights; pathfinder for future orbital competencies in Poland; (Nov 2025): SpaceForest completed Perun’s third suborbital test flight, marking another step toward higher-energy profiles. Cadence: ~1–4/yr depending on campaigns/customers.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; SpaceForest – company developing rocket technologies alongside microwave, electronics and AI-based solutions, offering design, prototyping and launch services for experiments on its in-house experimental rockets.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; flights over the Baltic minimize populated overflight and provide rapid campaign learning for local industry.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://spaceforest.pl/perun/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;spaceforest.pl/perun&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;towards-a-polish-suborbital-spaceport-in-ustka&quot;&gt;Towards a Polish suborbital spaceport in Ustka&lt;/h3&gt;
+
+&lt;p&gt;In Poland, PERUN is also at the centre of a broader discussion about creating a permanent suborbital spaceport at the Central Air Force Training Range in Ustka, on the Baltic coast. A parliamentary interpellation submitted in December 2025 (No. 14345) points to Ustka as the only site in the country with unlimited airspace over the sea and explicitly links it to ESA’s Boost! contract, which foresees at least four – and eventually up to ten – PERUN missions per year from 2027. If implemented, this would turn Ustka into a dual-use facility for civil microgravity research and defence-related trajectory tests, giving Central Europe its own dedicated suborbital launch site.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/09-perun.webp&quot; alt=&quot;Perun&quot; title=&quot;Perun&quot; /&gt;
+&lt;em&gt;Perun suborbital rocket launching over the Baltic Sea from the Polish coast&lt;br /&gt;
+&lt;small&gt;Image: SpaceForest (editorial use; attribution required – confirm site’s media terms or request permission if not explicit)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;skyrora-uk----microlauncher-program-aligned-with-northern-polarsso-routes&quot;&gt;Skyrora (UK)  –  Microlauncher program aligned with northern polar/SSO routes&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (small orbital and suborbital rockets; not a spaceport).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; vertically integrated small-launcher development (3D-printed engines, Ecosene fuel) aligned with polar/SSO missions from northern sites (e.g., SaxaVord), with in-house engine and stage development to shorten iteration cycles.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Engines and stages in qualification; ESA/UK-supported milestones; since August 2025, Skyrora also holds the UK’s first vertical launch operator licence for its suborbital Skylark L rocket, authorising up to 16 launches per year from SaxaVord; first orbital attempt TBD (mid-2020s target). Cadence after EIS: ~3–8/yr, subject to pad access (e.g., SaxaVord).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; Skyrora – UK launch provider developing small orbital rockets, aiming to conduct the first vertical orbital launch from the UK and offer cost-effective, flexible access to space for global customers.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; ecosene is produced from otherwise unrecyclable plastic waste; in-house metal additive manufacturing shortens iteration cycles.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://skyrora.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;skyrora.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/10-skyrora.webp&quot; alt=&quot;Skyrora&quot; title=&quot;Skyrora&quot; /&gt;
+&lt;em&gt;Skyrora XL – vehicle concept and development artwork&lt;br /&gt;
+&lt;small&gt;Credit: ESA • Licence: ESA Standard Licence (editorial; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Not all European launch initiatives are at the same stage. This chart ranks selected spaceports and launch programmes by how close they are to regular operations – from active, licensed sites to early-stage concepts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/03-info-europes-spaceports-by-operational-readiness.webp&quot; alt=&quot;Spaceports by operational readiness&quot; title=&quot;Spaceports by operational readiness&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Picking the right vertical port (a practical cheat sheet):&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Small EO payload to SSO/Polar → SaxaVord or Andøya (north, ocean-facing corridors).&lt;/li&gt;
+    &lt;li&gt;High-tempo tech demos (suborbital) → Perun flights over the Baltic (rapid iterations).&lt;/li&gt;
+    &lt;li&gt;R&amp;amp;D transitioning to orbit → Esrange (strong test backbone + new orbital pad).&lt;/li&gt;
+    &lt;li&gt;Future Atlantic corridor → Santa Maria (as infrastructure comes online).&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;why-were-following-europes-spaceports&quot;&gt;Why we’re following Europe’s spaceports&lt;/h2&gt;
+
+&lt;p&gt;At Iterative Engineering, we follow Europe’s emerging spaceports closely because part of our work involves building software around launch campaigns, ground operations, and data flows with European partners. This article is meant as a straightforward overview for people who keep an eye on Europe’s launch ecosystem. Whether you work in the sector or are simply trying to understand what’s coming next, if you spot anything that needs updating or feel a site is missing, we’re always happy to compare notes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/11-saxavord-expo-kg.webp&quot; alt=&quot;Space Tech Expo Europe 2025&quot; title=&quot;Space Tech Expo Europe 2025&quot; /&gt;
+&lt;em&gt;Iterative’s CEO in discussion with a SaxaVord Spaceport representative at Space Tech Expo Europe 2025 – one of several conversations we had with European launch sites during the event&lt;br /&gt;
+&lt;small&gt;Photo by Tomasz Pac / Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hero image: Andøya Spaceport – the Spectrum rocket just after liftoff&lt;br /&gt;
+&lt;small&gt;Photo: Isar Aerospace / Simon Fischer  – Wingmen Media. Editorial use only; do not alter/remove copyright notices&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Jan 2026 00:00:00 -0600</pubDate>
+        <link>https://blog.iterative.engineering/2026/01/16/practical-guide-to-europes-new-spaceports/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/01/16/practical-guide-to-europes-new-spaceports/</guid>
+        
+        <category>Business</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>Guiana Space Center (CSG)</category>
+        
+        <category>CNES</category>
+        
+        <category>ESA</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>LaunchReady – On-Site Simulation</title>
@@ -138,7 +427,7 @@ Hero image: Ariane 6 at Europe’s Spaceport in Kourou. Image credit: ESA.
 Workshop photos: Paweł Grzywocz / Iterative Engineering.
 Video still: CNES/CSG.&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+        <pubDate>Tue, 16 Dec 2025 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/</guid>
         
@@ -357,7 +646,7 @@ How do you move from “one mission built over three years” to a continuous, r
 
 &lt;p&gt;In the coming months, we’ll continue developing our projects in the space sector, working to ensure that Europe’s space ambitions are supported by solid digital foundations – on the ground, throughout the mission, and across the entire operational chain.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 03 Dec 2025 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 03 Dec 2025 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/</guid>
         
@@ -492,7 +781,7 @@ How do you move from “one mission built over three years” to a continuous, r
 
 &lt;p&gt;We left Guiana not so much with inspiration as with a sense of participation in something fundamental to the European space program. Kourou is not just a launch site – it is where the future of Europe’s presence in space is being co-created, and we had the opportunity to participate in it in a real way.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Nov 2025 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/</guid>
         
@@ -691,7 +980,7 @@ How do you move from “one mission built over three years” to a continuous, r
 &lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/csg-poc-implementation.webp&quot; alt=&quot;Project implementation has already started&quot; title=&quot;Project implementation has already started&quot; /&gt;
 &lt;em&gt;Project implementation has already started&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 Dec 2024 00:00:00 +0100</pubDate>
+        <pubDate>Thu, 19 Dec 2024 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</guid>
         
@@ -760,7 +1049,7 @@ How do you move from “one mission built over three years” to a continuous, r
 &lt;em&gt;Ain’t no move without a beer…&lt;/em&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 12 Sep 2024 00:00:00 +0200</pubDate>
+        <pubDate>Thu, 12 Sep 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/09/12/iterative-engineering-new-address/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/09/12/iterative-engineering-new-address/</guid>
         
@@ -820,7 +1109,7 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
 
 &lt;p&gt;Learn more at &lt;a href=&quot;https://nature-energy.com/&quot; target=&quot;_blank&quot;&gt;nature-energy.com&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 12 Jul 2024 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</guid>
         
@@ -980,7 +1269,7 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
 
 &lt;p&gt;On the technical side, solid architectural principles allowed us to adapt to change without losing control of the system. In the end, a smooth cut-over is rarely the result of last-minute heroics. It is the outcome of many small, deliberate decisions made throughout the project. With the right mindset, strong cooperation, and good project management, even a complex migration can become a predictable and, dare we say, almost boring exercise — and that is exactly how such projects should feel.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 03 Jun 2024 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 03 Jun 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/06/03/how-not-to-loose-your-sleep-while-migrating-a-complex-application/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/06/03/how-not-to-loose-your-sleep-while-migrating-a-complex-application/</guid>
         
@@ -1221,7 +1510,7 @@ Additionally, ‘service’ tokens are available to facilitate communication bet
 &lt;p&gt;Further reading:
 &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;&lt;strong&gt;Cloudlfare Zero Trust - Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 Apr 2024 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 29 Apr 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</guid>
         
@@ -1887,7 +2176,7 @@ current performance, areas for improvement, and practical tips to optimize your 
   &lt;li&gt;Explore alternative code analysis tools that might complement Knip and address its shortcomings&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 20 Mar 2024 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</guid>
         
@@ -2001,7 +2290,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 14 Jan 2024 00:00:00 +0100</pubDate>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</guid>
         
@@ -2091,7 +2380,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;p&gt;If you found that subject interesting you may want to look at &lt;a href=&quot;https://adtechmadness.wordpress.com/2019/03/23/javascript-tampering-detection-and-stealth/&quot;&gt;this article&lt;/a&gt;. And if you face fraudulent traffic which affects your campaigns &lt;a href=&quot;https://calendly.com/krzysztof-gasior/adtech-discovery-call-15m&quot;&gt;let’s talk&lt;/a&gt; as we should be able to help out!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Aug 2022 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 22 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
         
@@ -2429,7 +2718,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 08 Aug 2022 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</guid>
         
@@ -2797,7 +3086,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
         
@@ -2867,7 +3156,7 @@ You can check which permissions your app has by going to the azure console:
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.webp&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
         
@@ -3048,7 +3337,7 @@ You can check which permissions your app has by going to the azure console:
   &lt;li&gt;or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
         
@@ -3199,7 +3488,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
         
@@ -3283,7 +3572,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
         <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
         
