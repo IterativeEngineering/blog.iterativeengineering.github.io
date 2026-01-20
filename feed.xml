@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Jan 2026 06:09:00 -0600</pubDate>
-    <lastBuildDate>Sat, 17 Jan 2026 06:09:00 -0600</lastBuildDate>
+    <pubDate>Tue, 20 Jan 2026 10:11:31 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Jan 2026 10:11:31 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -31,17 +31,27 @@
   &lt;li&gt;&lt;strong&gt;Local ecosystems and skills.&lt;/strong&gt; Each spaceport anchors its own cluster of jobs, test ranges, and suppliers, which in turn strengthens Europe’s overall industrial base.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Europe’s launch landscape is still early-stage: multiple small spaceports and new microlaunchers are coming online, but real cadence is uncertain and not all will endure. As several speakers in Bremen put it, the bottleneck isn’t tech so much as maturity and regulation – we need licensing measured in months, not years, and repeatable processes that don’t restart from zero each campaign. Near-term demand will likely be anchored by dual-use and institutional missions, with commercial volume following as costs fall. Programmes like ESA’s Boost! and the European Launch Challenge help, but the market will ultimately pick winners. Interoperability and light-touch standards will matter – just not before first flights. Think less “one super-site,” more a network that can scale when real demand shows up.&lt;/p&gt;
+&lt;p&gt;Europe’s launch landscape is still early-stage: multiple small spaceports and new microlaunchers are coming online, but real cadence is uncertain and not all will endure. &lt;a href=&quot;https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/&quot;&gt;As several speakers in Bremen&lt;/a&gt; put it, the bottleneck isn’t tech so much as maturity and regulation – we need licensing measured in months, not years, and repeatable processes that don’t restart from zero each campaign. Near-term demand will likely be anchored by dual-use and institutional missions, with commercial volume following as costs fall. Programmes like ESA’s Boost! and the European Launch Challenge help, but the market will ultimately pick winners. Interoperability and light-touch standards will matter – just not before first flights. Think less “one super-site,” more a network that can scale when real demand shows up.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/01-info-european-launch-sites.webp&quot; alt=&quot;European Launch Sites&quot; title=&quot;European Launch Sites&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;a-quick-orbit-primer-what-mission-planners-need-to-know&quot;&gt;A quick orbit primer: what mission planners need to know&lt;/h2&gt;
+&lt;h2 id=&quot;getting-oriented-in-orbit-the-essentials&quot;&gt;Getting oriented in orbit: the essentials&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Polar / SSO (Sun-Synchronous Orbit)&lt;/strong&gt; – high-inclination orbits; satellites pass each location at a similar local time. Essential for environmental monitoring, agriculture, urban analytics, and security.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SSO (Sun-Synchronous Orbit)&lt;/strong&gt; – a type of high-inclination (often near-polar) LEO orbit designed so the satellite passes over a given area at roughly the same local solar time on each revisit. That consistency is ideal when you want repeatable lighting conditions (e.g., “always daytime” imaging) for Earth observation in environmental monitoring, agriculture, urban analytics, and security.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;LEO (Low Earth Orbit)&lt;/strong&gt; – the workhorse for Earth observation, short-range telecom, and scientific/technology payloads (e.g., instrument tests, microgravity experiments).&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Polar orbit&lt;/strong&gt; – a high-inclination orbit (near 90°) where the satellite travels roughly north–south, crossing over (or near) the poles as Earth rotates beneath it. Great for broad global coverage; not necessarily sun-synchronous unless specifically designed as SSO.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Suborbital&lt;/strong&gt; – “up and back.” Used for tech demos, scientific research, and training.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LEO (Low Earth Orbit)&lt;/strong&gt; – the workhorse region for Earth observation, short-range telecom, and science/technology payloads (e.g., instrument tests, microgravity experiments). Many polar and SSO missions live here.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Suborbital&lt;/strong&gt; – “up and back.” A ballistic flight that doesn’t complete an orbit; used for tech demos, short microgravity experiments, atmospheric research, and training.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;beyond-the-basics-common-destinations-for-heavier-launchers&quot;&gt;Beyond the basics (common destinations for heavier launchers)&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;MEO (Medium Earth Orbit)&lt;/strong&gt; – higher than LEO, lower than GEO; used for navigation constellations and some telecom/science missions.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GEO (Geostationary Orbit)&lt;/strong&gt; – ~35,786 km altitude over the equator; satellites match Earth’s rotation and appear fixed over one longitude, making GEO a go-to for weather monitoring and broadcast/telecom.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interplanetary / escape trajectories&lt;/strong&gt; – transfers that leave Earth orbit towards the Moon, asteroids, or planets; these typically demand higher energy and often favor launch sites and vehicles optimised for heavier payloads.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/02-info-infograph-launch-mission-profiles.webp&quot; alt=&quot;Launch mission profiles&quot; title=&quot;Launch mission profiles&quot; /&gt;&lt;/p&gt;
 
@@ -51,7 +61,7 @@
 
 &lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Spaceport (vertical; three launch pads at Lamba Ness).&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Unst Island location – flight paths and risk zones mainly over ocean.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Flight paths and risk zones mainly over ocean.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Fully licensed by the UK Civil Aviation Authority to host up to 30 launches per year; infrastructure in place; first orbital campaigns expected ~2026. (Nov 2025): The first launch window has slipped to next year, according to local reporting, while licensing and infrastructure remain in place. Cadence: low at start (≈1–3/yr), potentially 5–10/yr once customers ramp.&lt;br /&gt;&lt;/p&gt;
 
@@ -134,7 +144,7 @@
 &lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; (no dedicated official project site at this stage)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/06-elhierro.webp&quot; alt=&quot;El Hierro&quot; title=&quot;El Hierro&quot; /&gt;
-&lt;em&gt;Western cliffs of El Hierro facing the Atlantic. The island has been studied as a potential site for a small launch center&lt;br /&gt;
+&lt;em&gt;Western cliffs of El Hierro facing the Atlantic. The island has been studied as a potential site for a small launch centre&lt;br /&gt;
 &lt;small&gt;Photo: Eckhard Pecher, CC BY 2.5 via Wikimedia Commons&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;Licence: https://creativecommons.org/licenses/by/2.5/&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -172,9 +182,9 @@
 
 &lt;h3 id=&quot;beyond-this-map&quot;&gt;Beyond this map&lt;/h3&gt;
 
-&lt;p&gt;The sites and programmes described above are only one part of Europe’s launch landscape.&lt;/p&gt;
+&lt;p&gt;The sites above are only part of Europe’s wider launch infrastructure.&lt;/p&gt;
 
-&lt;p&gt;It’s also worth remembering that Europe’s launch infrastructure is broader than the handful of locations described here. Beyond vertical orbital and suborbital sites, there is &lt;strong&gt;Spaceport Cornwall in England&lt;/strong&gt; (a horizontal spaceport that hosted Virgin Orbit’s first – unsuccessful – mission), historic test ranges such as &lt;strong&gt;El Arenosillo in Spain&lt;/strong&gt; (a sounding rocket range, including the Miura 1 launch) and &lt;strong&gt;Salto di Quirra in Sardinia&lt;/strong&gt; (a military range used, among other things, for Space Rider tests), as well as the &lt;strong&gt;German Offshore Spaceport Alliance&lt;/strong&gt; concept, which proposes a mobile launch platform in the North Sea.&lt;/p&gt;
+&lt;p&gt;Beyond vertical orbital and suborbital sites, there is &lt;strong&gt;Spaceport Cornwall in England&lt;/strong&gt; (a horizontal spaceport that hosted Virgin Orbit’s first – unsuccessful – mission), historic test ranges such as &lt;strong&gt;El Arenosillo in Spain&lt;/strong&gt; (a sounding rocket range, including the Miura 1 launch) and &lt;strong&gt;Salto di Quirra in Sardinia&lt;/strong&gt; (a military range used, among other things, for Space Rider tests), as well as the &lt;strong&gt;German Offshore Spaceport Alliance&lt;/strong&gt; concept, which proposes a mobile launch platform in the North Sea.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/08-elarenosillo.webp&quot; alt=&quot;El Arenosillo&quot; title=&quot;El Arenosillo&quot; /&gt;
 &lt;em&gt;PLD Space’s MIURA 1 lifting off from the El Arenosillo Test Centre in Huelva, Spain – one of Europe’s long-standing sounding rocket and test ranges&lt;br /&gt;
@@ -204,9 +214,9 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 &lt;a href=&quot;https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/&quot;&gt;LaunchReady: on-site simulation at Europe’s Spaceport&lt;/a&gt; – behind the scenes of rehearsing launch campaigns together with local teams.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;launchers-what-actually-flies-from-these-sites&quot;&gt;Launchers: what actually flies from these sites&lt;/h2&gt;
+&lt;h2 id=&quot;launchers-another-way-to-map-europes-access-to-space&quot;&gt;Launchers: another way to map Europe’s access to space&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Spaceports are only part of the story. To keep this guide practical, we focus here on two launcher programmes that are directly linked to the sites described above: Poland’s PERUN suborbital rocket and the UK’s Skyrora family of small launchers. Both illustrate how new vehicles are being developed to make use of Europe’s emerging launch infrastructure.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Spaceports are only part of the story – launchers also shape where and how Europe can reach orbit or suborbital space, and many of them are not tied to a single site. Below, we look at several key programmes connected to the locations above: Poland’s PERUN suborbital rocket, the UK’s Skyrora family of small launchers, Spectrum from Isar Aerospace, the Miura line from PLD Space, Maia, Ariane 6, and Vega/Vega-C (Avio). Together they illustrate how Europe is developing both new and established launch vehicles to make use of – and in some cases expand beyond – its emerging network of spaceports, with the broader launcher landscape still evolving.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;perun-poland----suborbital-tech-demo-platform-from-the-baltic-coast&quot;&gt;Perun (Poland)  –  Suborbital tech-demo platform from the Baltic coast&lt;br /&gt;&lt;/h3&gt;
 
@@ -214,11 +224,11 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 
 &lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; purpose-built suborbital rocket for high-cadence technology demonstrations and research, launched over the sea from the Polish coast.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; active suborbital program with iterative flights; pathfinder for future orbital competencies in Poland; (Nov 2025): SpaceForest completed Perun’s third suborbital test flight, marking another step toward higher-energy profiles and fulfilling the first milestone under ESA’s Boost! programme. Cadence: ~1–4/yr depending on campaigns/customers.active suborbital program with iterative flights; pathfinder for future orbital competencies in Poland; (Nov 2025): SpaceForest completed Perun’s third suborbital test flight, marking another step toward higher-energy profiles. Cadence: ~1–4/yr depending on campaigns/customers.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; active suborbital programme with iterative flights; pathfinder for future orbital competencies in Poland; (Nov 2025): SpaceForest completed Perun’s third suborbital test flight, marking another step toward higher-energy profiles and fulfilling the first milestone under ESA’s Boost! programme. Cadence: ~1–4/yr depending on campaigns/customers.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; SpaceForest – company developing rocket technologies alongside microwave, electronics and AI-based solutions, offering design, prototyping and launch services for experiments on its in-house experimental rockets.&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; flights over the Baltic minimize populated overflight and provide rapid campaign learning for local industry.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; flights over the Baltic minimise populated overflight and provide rapid campaign learning for local industry.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://spaceforest.pl/perun/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;spaceforest.pl/perun&lt;/a&gt;&lt;/p&gt;
 
@@ -230,7 +240,7 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 &lt;em&gt;Perun suborbital rocket launching over the Baltic Sea from the Polish coast&lt;br /&gt;
 &lt;small&gt;Image: SpaceForest (editorial use; attribution required – confirm site’s media terms or request permission if not explicit)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;skyrora-uk----microlauncher-program-aligned-with-northern-polarsso-routes&quot;&gt;Skyrora (UK)  –  Microlauncher program aligned with northern polar/SSO routes&lt;br /&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;skyrora-uk----microlauncher-programme-aligned-with-northern-polarsso-routes&quot;&gt;Skyrora (UK)  –  Microlauncher programme aligned with northern polar/SSO routes&lt;br /&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (small orbital and suborbital rockets; not a spaceport).&lt;br /&gt;&lt;/p&gt;
 
@@ -247,6 +257,96 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/10-skyrora.webp&quot; alt=&quot;Skyrora&quot; title=&quot;Skyrora&quot; /&gt;
 &lt;em&gt;Skyrora XL – vehicle concept and development artwork&lt;br /&gt;
 &lt;small&gt;Credit: ESA • Licence: ESA Standard Licence (editorial; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;isar-aerospace-germany--small-sat-launcher-targeting-flexible-access-from-andøya-and-beyond&quot;&gt;Isar Aerospace (Germany) – Small-sat launcher targeting flexible access from Andøya and beyond&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (small orbital rocket; not a spaceport).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Two-stage Spectrum vehicle designed to place up to ~1,000 kg into LEO or ~700 kg into SSO, with fully in-house development of engines, avionics, and structures to reduce cost and increase schedule control.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; First test flight of Spectrum from Andøya Spaceport on 30 March 2025 ended shortly after liftoff but provided valuable flight data; a second test window from Andøya is planned for January 2026. Long-term industrial plans point to a double-digit annual cadence once the system enters commercial service.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; Isar Aerospace – Munich-based launch company developing the Spectrum small-sat launcher to provide dedicated orbital access from European spaceports such as Andøya.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Spectrum’s first flight was the first attempt at an orbital rocket launch from mainland Europe, marking a symbolic step for Europe’s private launch sector.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://www.isaraerospace.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;isaraerospace.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/12-isar.webp&quot; alt=&quot;Isar Aerospace&quot; title=&quot;Isar Aerospace&quot; /&gt;
+&lt;em&gt;Isar Aerospace’s Spectrum on the launch pad at Andøya Spaceport, Norway&lt;br /&gt;
+&lt;small&gt;Credit: © Isar Aerospace | Photo: Brady Kenniston (NASASpaceflight)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pld-space-spain--from-suborbital-miura-1-to-orbital-miura-5&quot;&gt;PLD Space (Spain) – From suborbital Miura 1 to orbital Miura 5&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (suborbital and orbital; not a spaceport).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Reusable small-launch family (Miura 1 suborbital demonstrator, Miura 5 orbital launcher) with strong vertical integration and dedicated test facilities, designed to offer Europe institutional and commercial access for small satellites.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Miura 1 achieved Europe’s first private suborbital launch to space on 7 October 2023 from the El Arenosillo Test Centre in Spain. Miura 5 is in advanced development with engine and subsystem testing at Teruel and first orbital launches targeted from the Guiana Space Centre around 2026; industrial plans envisage scaling towards dozens of launches per year by 2030.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; PLD Space – Spanish launch company developing the Miura family and operating extensive test infrastructure in Elche, Teruel, and Kourou to support suborbital and orbital missions.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Miura 5 has been pre-selected under ESA’s European Launcher Challenge and is positioned as a European competitor in the small-launcher market.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://www.pldspace.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;pldspace.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/13-miura.webp&quot; alt=&quot;Miura 1&quot; title=&quot;Miura 1&quot; /&gt;
+&lt;em&gt;PLD Space’s MIURA 1 rocket&lt;br /&gt;
+&lt;small&gt;Credit: PLD Space, “Miura 1, PLD Space, España, 2017”, CC BY-SA 2.0, via Wikimedia Commons&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;maiaspace--maia-franceeurope--reusable-methane-launcher-built-around-prometheus&quot;&gt;MaiaSpace / Maia (France/Europe) – Reusable methane launcher built around Prometheus&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (partially reusable orbital rocket; not a spaceport).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Two-stage Maia launcher powered by Prometheus® methane-LOX engines, designed from day one in both reusable and expendable versions to serve different satellite mass ranges from a single core design.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; In development, with first flights planned from the Guiana Space Centre’s ELS site around 2026. As a next-generation system, Maia is intended to demonstrate reusability and eventually support a regular institutional and commercial cadence once operational.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; MaiaSpace – a wholly owned ArianeGroup subsidiary focused on sustainable, partially reusable launch systems and related in-space mobility services.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Maia is the first European start-up launcher designed around the Prometheus® reusable engine, a flagship ESA/ArianeGroup technology demonstrator for low-cost methane engines.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://www.maia-space.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;maia-space.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/14-maiaspace.webp&quot; alt=&quot;MaiaSpace&quot; title=&quot;MaiaSpace&quot; /&gt;
+&lt;em&gt;MaiaSpace concept illustration: payload fairing separation&lt;br /&gt;
+&lt;small&gt;Credit: MaiaSpace (via Eutelsat / Mynewsdesk) – Media Use (unmodified)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ariane-6-europe--heavy-lift-backbone-for-europes-institutional-missions&quot;&gt;Ariane 6 (Europe) – Heavy-lift backbone for Europe’s institutional missions&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (heavy-lift orbital rocket; not a spaceport).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; Modular Ariane 6 (A62/A64 variants) providing multi-tonne payload capacity to GTO, GEO, and LEO from the equatorial Guiana Space Centre, designed to serve large institutional missions and constellations with a higher cadence than Ariane 5.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; After its inaugural test flight in July 2024, Ariane 6 entered commercial service in 2025, including a first commercial mission carrying the CSO-3 military satellite and subsequent Galileo launches. By the end of 2025 the vehicle had flown multiple times, and Arianespace is targeting 6–8 launches in 2026 and around 10–12 launches per year from 2027 onward, with more than 30 missions already sold.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; ArianeGroup / Arianespace – ArianeGroup develops and builds Ariane 6, while Arianespace markets and operates it from CSG as Europe’s primary heavy-lift launcher.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Ariane 6, together with Vega-C, restores Europe’s autonomous access to space after the retirement of Ariane 5 and the loss of Soyuz from CSG.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://www.ariane.group/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;ariane.group (launcher) / &lt;/a&gt; &lt;a href=&quot;https://www.arianespace.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;arianespace.com (launch services)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/15-ariane-6.webp&quot; alt=&quot;Ariane 6&quot; title=&quot;Ariane 6&quot; /&gt;
+&lt;em&gt;Ariane 6 climbs away from Europe’s Spaceport on its inaugural flight&lt;br /&gt;
+&lt;small&gt;Credit: © ESA – S. Corvaja (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;vega--vega-c-italyeurope--europes-institutional-small-sat-workhorse&quot;&gt;Vega / Vega-C (Italy/Europe) – Europe’s institutional small-sat workhorse&lt;br /&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; Launcher (small/medium-lift orbital rockets; not a spaceport).&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strength:&lt;/strong&gt; The Vega family (Vega and its upgraded Vega-C variant) offers dedicated access for small and medium institutional payloads to polar, Sun-synchronous, and low Earth orbits, with the ability to deploy multiple satellites via SSMS rideshare missions from the Guiana Space Centre.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Status (incl. estimated cadence):&lt;/strong&gt; Original Vega has now been retired; Vega-C returned to flight in December 2024 with Sentinel-1C and flew additional missions in April and July 2025, including Biomass and the CO3D/MicroCarb satellites. Vega-C is active and ramping up under a model where Avio increasingly commercialises the launcher directly; future upgrades (Vega-E, Vega-C+) and boosters (P160C) are planned for later in the decade.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; Avio – Italian prime contractor and manufacturer for Vega and Vega-C, responsible for development and, progressively, commercial operations, with launches conducted from CSG’s ELV/ZLV complexes.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tidbit:&lt;/strong&gt; Vega-C can lift about 2.3 tonnes to SSO – roughly 60% more than the original Vega – and shares its P120C first-stage motor with Ariane 6, spreading development costs across both launcher families.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Official site:&lt;/strong&gt; &lt;a href=&quot;https://www.avio.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;avio.com (Vega family overview) / &lt;/a&gt; &lt;a href=&quot;https://www.esa.int/Enabling_Support/Space_Transportation/Vega/Vega-C&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Vega-C (ESA launcher page)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/16-vega.webp&quot; alt=&quot;Vega-C&quot; title=&quot;Vega-C&quot; /&gt;
+&lt;em&gt;Vega-C lifts off from Europe’s Spaceport in French Guiana&lt;br /&gt;
+&lt;small&gt;Credit: © ESA – M. Pedoussaut (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Not all European launch initiatives are at the same stage. This chart ranks selected spaceports and launch programmes by how close they are to regular operations – from active, licensed sites to early-stage concepts.&lt;/p&gt;
 
