@@ -5,8 +5,8 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Jan 2026 10:11:31 -0600</pubDate>
-    <lastBuildDate>Tue, 20 Jan 2026 10:11:31 -0600</lastBuildDate>
+    <pubDate>Fri, 30 Jan 2026 05:00:21 -0600</pubDate>
+    <lastBuildDate>Fri, 30 Jan 2026 05:00:21 -0600</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -73,7 +73,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/02-saxavord.webp&quot; alt=&quot;SaxaVord Spaceport&quot; title=&quot;SaxaVord Spaceport&quot; /&gt;
 &lt;em&gt;SaxaVord Spaceport (UK) – RFA One three-stage launcher concept targeting up to 1,300 kg to a 500 km polar orbit&lt;br /&gt;
-&lt;small&gt;Credit: Rocket Factory Augsburg • Licence: ESA Standard Licence (editorial; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Credit: Rocket Factory Augsburg • Licence: ESA Standard Licence&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;andøya-norway----from-mature-suborbital-base-to-orbital-readiness&quot;&gt;Andøya (Norway)  –  From mature suborbital base to orbital readiness&lt;br /&gt;&lt;/h3&gt;
 
@@ -109,7 +109,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/04-esrange.webp&quot; alt=&quot;Esrange Space Center&quot; title=&quot;Esrange Space Center&quot; /&gt;
 &lt;em&gt;Satellite launch infrastructure under construction at Esrange Space Center, Kiruna, Sweden&lt;br /&gt;
-&lt;small&gt;Image: SSC Space / Esrange Space Center (editorial use; credit required) / Courtesy: DLR GSOC&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Image: SSC Space / Esrange Space Center. Courtesy of DLR GSOC. Editorial use only&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;santa-maria-azores-portugal----an-atlantic-pad-in-deployment&quot;&gt;Santa Maria (Azores, Portugal)  –  An Atlantic pad in deployment&lt;br /&gt;&lt;/h3&gt;
 
@@ -127,7 +127,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/05-santamaria.webp&quot; alt=&quot;Santa Maria station&quot; title=&quot;Santa Maria station&quot; /&gt;
 &lt;em&gt;Santa Maria station (Azores, Portugal) – part of ESA’s ESTRACK ground station network&lt;br /&gt;
-&lt;small&gt;Credit: ESA | Licence: ESA Standard Licence (editorial use; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Credit: ESA | Licence: ESA Standard Licence&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;el-hierro-canary-islands-spain----good-azimuth-hard-realization&quot;&gt;El Hierro (Canary Islands, Spain)  –  Good azimuth, hard realization&lt;br /&gt;&lt;/h3&gt;
 
@@ -145,8 +145,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/06-elhierro.webp&quot; alt=&quot;El Hierro&quot; title=&quot;El Hierro&quot; /&gt;
 &lt;em&gt;Western cliffs of El Hierro facing the Atlantic. The island has been studied as a potential site for a small launch centre&lt;br /&gt;
-&lt;small&gt;Photo: Eckhard Pecher, CC BY 2.5 via Wikimedia Commons&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;Licence: https://creativecommons.org/licenses/by/2.5/&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Photo: Eckhard Pecher, CC BY 2.5 via Wikimedia Commons&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;eurospaceport-north-sea-denmark--offshore-sea-based-launch-site-under-development&quot;&gt;EuroSpaceport (North Sea, Denmark) – Offshore sea-based launch site under development&lt;br /&gt;&lt;/h3&gt;
 
@@ -188,8 +187,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/08-elarenosillo.webp&quot; alt=&quot;El Arenosillo&quot; title=&quot;El Arenosillo&quot; /&gt;
 &lt;em&gt;PLD Space’s MIURA 1 lifting off from the El Arenosillo Test Centre in Huelva, Spain – one of Europe’s long-standing sounding rocket and test ranges&lt;br /&gt;
-&lt;small&gt;Photo: PLD Space, CC BY-SA 4.0 via Wikimedia Commons&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;Licence: https://creativecommons.org/licenses/by-sa/4.0/&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Photo: PLD Space, CC BY-SA 4.0 via Wikimedia Commons&lt;/small&gt;&lt;br /&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Behind this new generation of European spaceports and launchers, one benchmark remains in the background: the Guiana Space Centre (CSG) in French Guiana.&lt;/p&gt;
 
@@ -238,7 +236,7 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/09-perun.webp&quot; alt=&quot;Perun&quot; title=&quot;Perun&quot; /&gt;
 &lt;em&gt;Perun suborbital rocket launching over the Baltic Sea from the Polish coast&lt;br /&gt;
-&lt;small&gt;Image: SpaceForest (editorial use; attribution required – confirm site’s media terms or request permission if not explicit)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Image: SpaceForest (spaceforest.pl)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;skyrora-uk----microlauncher-programme-aligned-with-northern-polarsso-routes&quot;&gt;Skyrora (UK)  –  Microlauncher programme aligned with northern polar/SSO routes&lt;br /&gt;&lt;/h3&gt;
 
@@ -256,7 +254,7 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/practical-guide-to-europes-new-spaceports/10-skyrora.webp&quot; alt=&quot;Skyrora&quot; title=&quot;Skyrora&quot; /&gt;
 &lt;em&gt;Skyrora XL – vehicle concept and development artwork&lt;br /&gt;
-&lt;small&gt;Credit: ESA • Licence: ESA Standard Licence (editorial; attribution required)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;small&gt;Image: ©ESA (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;isar-aerospace-germany--small-sat-launcher-targeting-flexible-access-from-andøya-and-beyond&quot;&gt;Isar Aerospace (Germany) – Small-sat launcher targeting flexible access from Andøya and beyond&lt;br /&gt;&lt;/h3&gt;
 
@@ -911,7 +909,7 @@ How do you move from “one mission built over three years” to a continuous, r
       </item>
     
       <item>
-        <title>Europe's Spaceport selected Iterative Engineering to improve the payload preparation process</title>
+        <title>Europe&apos;s Spaceport selected Iterative Engineering to improve the payload preparation process</title>
         <image>/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/iterative-can-into-space-theme.webp</image>
         <headline>An exciting time for us! We have been selected to conduct work on the Proof of Concept System for Launch Campaign Information and Request Management at Guiana Space Centre (CSG) operated by French Space Agency (CNES).</headline>
         <description>&lt;p&gt;An Exciting time for us! We have been selected to work on the Proof of Concept system for Launch Campaign Information and Request Management at Guiana Space Center (CSG) operated by French Space Agency (CNES).&lt;/p&gt;
@@ -1145,7 +1143,7 @@ How do you move from “one mission built over three years” to a continuous, r
 &lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/quick-work.webp&quot; alt=&quot;In between code fixes&quot; title=&quot;In between code fixes&quot; /&gt;
 &lt;em&gt;When there was a need for in between code fixes :P&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/beer-time.webp&quot; alt=&quot;Ain't no move without a beer&quot; title=&quot;Ain't no move without a beer&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/beer-time.webp&quot; alt=&quot;Ain&apos;t no move without a beer&quot; title=&quot;Ain&apos;t no move without a beer&quot; /&gt;
 &lt;em&gt;Ain’t no move without a beer…&lt;/em&gt;&lt;/p&gt;
 
 </description>
@@ -1630,7 +1628,7 @@ Additionally, ‘service’ tokens are available to facilitate communication bet
       <item>
         <title>Strengths and Limitations of Knip for Unused Code Detection in Angular</title>
         <image>/assets/images/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/main.webp</image>
-        <headline>Knip tool's ability to find unused code in the Angular codebase</headline>
+        <headline>Knip tool&apos;s ability to find unused code in the Angular codebase</headline>
         <description>&lt;p&gt;As the codebase grows and evolves, the cost of maintaining it becomes higher. In extreme cases, leading to situations
 where upkeep takes significantly more time and effort than new developments. While you cannot prevent balancing out of
 those proportions overtime, there are ways to mitigate the risk of ending up in an endless maintenance loop. One of such
@@ -1772,7 +1770,7 @@ defined, but property itself is unused as in the following snippet:&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InUseFeatureState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -3019,13 +3017,13 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.springframework.boot&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2.5.0&quot;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'io.spring.dependency-management'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.6.RELEASE'&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'java'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;io.spring.dependency-management&apos;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.6.RELEASE&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;java&apos;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pl.iterative'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;pl.iterative&apos;&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.0-SNAPSHOT'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.0-SNAPSHOT&apos;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
@@ -3036,11 +3034,11 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Spring boot&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-oauth2-client'&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-web'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-oauth2-client&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-web&apos;&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Azure&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0&apos;&lt;/span&gt;
 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
