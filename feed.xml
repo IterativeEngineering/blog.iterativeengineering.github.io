@@ -5,9 +5,308 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Jan 2026 06:35:46 -0600</pubDate>
-    <lastBuildDate>Fri, 30 Jan 2026 06:35:46 -0600</lastBuildDate>
+    <pubDate>Mon, 16 Feb 2026 23:43:16 +0100</pubDate>
+    <lastBuildDate>Mon, 16 Feb 2026 23:43:16 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Payload preparations at the Guiana Space Centre: what does preparing a satellite for the launch look like?</title>
+        <image>/assets/images/payload-preparations-at-csg/001-hero-jwst-unpacked.webp</image>
+        <headline>What does it take to keep a satellite “campaign-ready” in the tropics of French Guiana? Based on Iterative Engineering’s visit and project work at CSG, this piece follows the real flow of payload preparation: controlled transfers, cleanroom discipline, verification and go/no-go decisions, sealed transport interfaces, and high-rigor operations in S5 – plus a few details you won’t see in launch footage.</headline>
+        <description>&lt;p&gt;Before a satellite reaches the launch pad, it is built independently of the launch vehicle. The integration process begins in the preparatory infrastructure: in processing halls, airlocks, transfer corridors, security zones, and control rooms.&lt;/p&gt;
+
+&lt;p&gt;In this article, we describe these preparations step by step, mainly using the example of the Guiana Space Centre (CSG) in Kourou, based on an Iterative Engineering project in this area, our visit to the Europe’s Spaceport, and many conversations with Payload Preparation Managers (RMCU) and other teams involved in the process. Although the CSG is the point of reference, we also consider the broader context of satellite campaigns, including rideshare and the role of payload distributors.&lt;/p&gt;
+
+&lt;p&gt;It is also worth setting the scale right away, because this is not a process that happens “on a whim.” In 2025, there were 7 orbital launches in Kourou – yet the number of payload preparation campaigns at CSG can reach the dozens each year, since a single launch may involve multiple payloads and separate processing flows. Looking ahead, CNES is preparing a major ramp-up in operational bandwidth and launch tempo at CSG, including ELM (fr. &lt;i&gt;Ensemble de Lancement Multi‑lanceurs&lt;/i&gt;) at the former Diamant area (a multi-user complex for small launchers) and a broader cadence increase tied to Ariane 6. And that is still only one spaceport within a much broader global cadence of launch campaigns. This calls for operating in a repeatable, auditable, and schedule-resilient way.&lt;/p&gt;
+
+&lt;h2 id=&quot;load-scale-from-1u-to-several-tons&quot;&gt;Load scale: from 1U to several tons&lt;/h2&gt;
+
+&lt;p&gt;In the public sphere, “satellite” is sometimes used as a catch-all term. At the campaign level, this word covers a wide range of sizes and operating scenarios.&lt;/p&gt;
+
+&lt;p&gt;On the one hand, there are CubeSats: the 1U standard is a cube measuring approximately 10 × 10 × 10 cm, with typical weight limits of around 1 to 1.33 kg. And although such a load can theoretically be carried by hand, this does not shorten the list of requirements regarding access zones, cleanliness, ESD, configuration control, or documentation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/002-fly-your-satellite.webp&quot; alt=&quot;Fly Your Satellite!&quot; title=&quot;Fly Your Satellite!&quot; /&gt;
+&lt;em&gt;A Fly Your Satellite! student signs the mission logo on the Ariane 6 fairing at Europe’s Spaceport in Kourou, marking a memorable moment in the launch campaign ahead of Ariane 6’s inaugural flight&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © ESA / CNES / Arianespace / ArianeGroup (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Even in the case of CubeSats, their “smallness” quickly disappears once the actual launch campaign begins. For Ariane 6’s inaugural flight, the student-built satellites 3Cat-4 and ISTSat-1 arrived at CSG already mounted inside their orbital deployer, after being integrated at Exolaunch’s facility in Berlin a few weeks earlier.&lt;/p&gt;
+
+&lt;p&gt;The deployer is essentially the “flight container” and release mechanism – a shared mechanical/electrical interface that keeps multiple CubeSats secured on the ground, then deploys them safely in orbit. On-site, the teams completed spaceport safety training and joined the campaign flow. Before mating, the deployer went through inspections and functional checks, and a Combined Operations Readiness Review cleared the payloads for installation on the launch vehicle adapter as part of the upper composite. As a memorable campaign tradition, the teams involved in Ariane 6’s inaugural mission were even invited to sign the mission logo on the fairing before it moved on to final assembly and closure.&lt;/p&gt;
+
+&lt;p&gt;That CubeSat example hints at a broader point: at a spaceport, “the payload” is often a configuration rather than a single spacecraft. Depending on the mission, teams may work around a classic single launch, a dual launch structure, piggyback setups, or multi-payload dispensers – and each option changes the mechanical interfaces, access constraints, and the day-to-day campaign flow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/various-payload-setups.webp&quot; alt=&quot;Broader Picture - various payload setups&quot; title=&quot;Broader Picture - various payload setups&quot; /&gt;
+&lt;em&gt;Different payload configurations you can encounter during a launch campaign – from a single spacecraft to dual and piggyback setups, rideshare dispensers (SSMS), and small constellations&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/#broader-picture&quot;&gt;If you want a quick visual overview of these configurations (including Vega-C examples like VESPA-C, VAMPIRE, and SSMS), see our short “broader picture” explainer here. &lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Next comes the world of small satellites and constellations. In the rideshare model, the importance of dispensers is growing – mechanical intermediate structures that collect multiple payloads and then release them into orbit in a planned sequence. In the European ecosystem, a good example is SSMS (&lt;em&gt;Small Spacecraft Mission Service&lt;/em&gt;) for Vega: we are talking about missions in which more than 50 satellites were launched in a single flight.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/003-cubesat-deployer.webp&quot; alt=&quot;CubeSat deployer&quot; title=&quot;CubeSat deployer&quot; /&gt;
+&lt;em&gt;Exolaunch NOVA CubeSat deployer/deployer family – hardware used to carry, handle, and deploy CubeSats during rideshare launch campaigns&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/004-rideshare-and-the-dispenser.webp&quot; alt=&quot;Rideshare and the dispenser&quot; title=&quot;Rideshare and the dispenser&quot; /&gt;
+&lt;em&gt;Rideshare and the dispenser: one campaign can involve dozens of payloads – and with them, multiple teams, interfaces, and access constraints&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © ESA / M. Pedoussaut (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One flight can mean a really large number of objects: there are missions outside Kourou in which over 100 satellites were launched (e.g., PSLV-C37 from 2017 – 104 satellites). This may not be an everyday occurrence yet, but it clearly shows how much logistics change when the number of teams and parallel integrations increases.&lt;/p&gt;
+
+&lt;p&gt;At the other end of the spectrum are large telecommunications and observation platforms, weighing many tons in their launch configuration. For comparison, the James Webb Space Telescope weighed about 6.2 tons. On this scale, a single “step” of a campaign can be a project in itself, because the margin for error is then minimal.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-road-to-kourou-express-air-freight-or-a-voyage-across-the-atlantic&quot;&gt;The road to Kourou: express air freight or a voyage across the Atlantic&lt;/h2&gt;
+
+&lt;p&gt;While still on Earth, the satellite is never alone in its journey. It is accompanied by a team of highly skilled engineers, usually the same people who took part in designing and building it. They arrive at the spaceport days or weeks before the spacecraft shows up in French Guiana, but the campaign planning starts long before. Each person of the team has a set of designated tasks that they need to complete. The goal is simple – make sure that the precious cargo is not damaged during its journey and prepare it for takeoff. The CSG welcomes many guests each year, with the satellite teams ranging around 10-20, depending on the size of the mission.&lt;/p&gt;
+
+&lt;p&gt;As our CTO recalls:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;During the workshops collecting requirements for the Campaign Management tool, we asked about the largest number of people that took part in a single campaign. The Payload Facility Manager recalled the ATV, which was a cargo ship heading to the International Space Station. It was one of the biggest campaigns they had – it lasted around 6 months and involved multiple teams of around 10 people, switching through monthly shifts (so around 60 people in total)!&lt;br /&gt;&lt;br /&gt;&lt;small&gt;– Paweł Grzywocz&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The spacecraft does not arrive in French Guiana “in a shoe box.” The standard procedure involves a special transport container and logistics, where the key factor is not the transport itself, but maintaining a stable environment: temperature, humidity, shock control, and events along the way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/005-air-freight-to-the-spaceport.webp&quot; alt=&quot;Air freight to the spaceport&quot; title=&quot;Air freight to the spaceport&quot; /&gt;
+&lt;em&gt;Air freight to the spaceport: oversized cargo aircraft and dedicated ground handling are part of the campaign logistics&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © ESA / EADS Astrium / Raoul Kieffer (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Therefore, before the container is even opened, teams check the recorded travel parameters. For delicate cargo, the journey to the spaceport itself is part of the campaign, and work at the CSG can take weeks – especially when the plan includes additional tests, repairs, or an unusual integration sequence.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/006-sea-freight-to-kourou.webp&quot; alt=&quot;Sea freight to Kourou&quot; title=&quot;Sea freight to Kourou&quot; /&gt;
+&lt;em&gt;Sea freight to Kourou: dedicated vessels and port operations at Pariacabo are the “quiet” backbone behind launch campaigns&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © ESA / J. Corvaja&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And then there is the context that can be physically felt in French Guiana: the tropics. Heat and rain are a real part of the infrastructure, and insects and humidity are a constant feature of the work. The vehicles and facilities, protecting the precious payload, have to withstand these conditions. Even the rockets must be hardened sometimes – for example, in the Soyuz campaigns in Kourou, measures were implemented to reduce the risk of tropical insects entering sensitive areas (e.g., openings were secured, additional cleaning was carried out, and traps were set).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/007-transfer-at-europes-spaceport-csg.webp&quot; alt=&quot;Transfer at Europe's spaceport CSG&quot; title=&quot;Transfer at Europe's spaceport CSG&quot; /&gt;
+&lt;em&gt;Galileo L14 satellites transfer at Europe’s Spaceport (CSG), Kourou. The payload was moved in its transport container from the S1A facility to S5A as part of the VA266 campaign – Ariane 6’s fourth commercial mission&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace–ArianeGroup / Optique Vidéo CSG / S. Martin, 2025&lt;/small&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;epcu-at-csg-where-payload-preparation-begins&quot;&gt;EPCU at CSG: where payload preparation begins&lt;/h2&gt;
+
+&lt;p&gt;CSG has a complex of facilities for payload preparation, internally called EPCU (fr. &lt;em&gt;Ensemble de préparation des charges utiles&lt;/em&gt;). In practice, the campaign very quickly descends to the level of specific buildings and their “profile.”&lt;/p&gt;
+
+&lt;p&gt;To put it simply:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the S1 and S3 complexes are typically used for less demanding operations (e.g., integration, testing, check-out, preparation),&lt;/li&gt;
+  &lt;li&gt;the S5 complex is designed for hazardous operations (including those related to fuels), and at the same time has large, more modern spaces and extensive transfer logistics, which can accommodate larger spacecraft.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/008-s5-at-europes-spaceport-in-kourou.webp&quot; alt=&quot;S5 at Europe’s Spaceport in Kourou&quot; title=&quot;S5 at Europe’s Spaceport in Kourou&quot; /&gt;
+&lt;em&gt;S5 at Europe’s Spaceport in Kourou: a key facility for hazardous operations and high-rigor payload processing&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / Frédéric Lancelot&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We had the opportunity to see elements of the process in S1 and S5 “from the inside” (including the logic of moving between zones, airlocks, part of the control infrastructure, and how the work of many teams is organised simultaneously).&lt;/p&gt;
+
+&lt;p&gt;Behind these halls and corridors lies a role that is rarely talked about openly, but without which the campaign simply cannot maintain its momentum: the Payload Facility Manager, or RMCU (fr. &lt;em&gt;Responsable moyens charges utiles&lt;/em&gt;). On the CSG side, this function is responsible for the “means” of preparing the payload – in practice, ensuring that the infrastructure is ready, available, and secure on time. This includes coordinating activities at the EPCU, adapting facilities to customer needs, ongoing coordination between teams, and finalizing campaign data and confirmations – often as the first point of contact on the spaceport side.&lt;/p&gt;
+
+&lt;h3 id=&quot;transit-hall-unloading-and-the-way-to-the-airlock&quot;&gt;Transit Hall: unloading and the way to the airlock&lt;/h3&gt;
+
+&lt;p&gt;The satellite arrives in a special transport container. The first stop is not immediately the clean room, but the reception area – often called the Transit Hall. This is a covered buffer space that protects the cargo and crew from the weather and allows initial activities to be carried out before opening the way to areas with higher requirements.&lt;/p&gt;
+
+&lt;p&gt;In the next stages, safe transfer becomes crucial: how to lift, move, and bring the cargo into the next zone without compromising the conditions. Cranes, forklifts, special tools, sometimes air cushions, and dedicated transport trolleys are used for unloading and transfer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/009-container-entering-the-transit-hall.webp&quot; alt=&quot;Container entering the Transit Hall&quot; title=&quot;Container entering the Transit Hall&quot; /&gt;
+&lt;em&gt;Sentinel 1-D Container entering the Transit Hall in S5&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / C. Gallo, 2025&lt;/small&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;air-lock-controlled-transfer-between-zones&quot;&gt;Air lock: controlled transfer between zones&lt;/h3&gt;
+
+&lt;p&gt;Access to the relevant preparation zones is provided via airlocks. In spaceports, an airlock is a controlled transfer space with its own logistics, checkpoints, and environmental regime. The attention to detail is incredible. For example, we saw hat-like covers with a brim and transparent protective rings around crane components, all meant to prevent anything from dripping onto the satellite. That same mindset carries into the transfer interfaces themselves. Even trace amounts of grease or metal filings can cause problems, because the hardware is both delicate and extremely expensive.&lt;/p&gt;
+
+&lt;p&gt;To give a sense of scale, at CSG, airlocks measuring 30 × 20 m are not unusual. In practice, the flow is split: personnel enter through dedicated gowning/entry points, and only after passing through the personnel airlock do they enter what most people call the “clean room.” Entry typically involves lockers, changing clothes, protective gear, ESD control, and often an air shower to blow dust and particles off protective clothing. Payloads and equipment move through larger, controlled transfer routes designed for trolleys, containers, and lifting operations.&lt;/p&gt;
+
+&lt;p&gt;In effect, the airlock acts as a buffer: it allows the cleanest areas to be “cut off” while operations continue smoothly. There have been situations where transfer-zone doors were physically open to the outside, and the required level of cleanliness was still maintained through overpressure, filtration, and practical measures like additional cleaning, flow control, and insect protection.&lt;/p&gt;
+
+&lt;p&gt;One more constraint is less visible: radiofrequency emissions. According to on-site accounts, during an exceptionally sensitive campaign, transfers were coordinated so nearby radar activity was temporarily reduced or paused before opening the airlock, out of caution that strong RF emissions could interfere with delicate electronics or instruments.&lt;/p&gt;
+
+&lt;p&gt;(CSG operates several tracking radars; for example, the Bretagne 1 radar, capable of generating a 1-MW electromagnetic wave.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/009a-airlock.webp&quot; alt=&quot;Satellite entering the Airlock&quot; title=&quot;Satellite entering the Airlock&quot; /&gt;
+&lt;em&gt;Sentinel-2C satellite entering the Airlock at S1A, from the CCU3 transporter docked to the door.&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / T Leduc, 2024&lt;/small&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;clean-room-coveralls-air-shower-and-manual-dust-counting&quot;&gt;Clean room: coveralls, air shower, and… manual dust counting&lt;/h3&gt;
+
+&lt;p&gt;The clean rooms are the heart of the payload preparation facilities. This is where all the work happens – from inspections, through final assembly, to fuelling. All the people and tools need to undergo special procedures to enter.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You cannot simply enter the cleanroom, even if it’s currently not in use. You need at least a protective cap and shoe covers with antistatic straps. While visiting S5B, when we were putting on the “bunny suits” before entering the airlock, we even had to follow a special set of moves – a cover and one leg first, over the counter, and then followed by the second leg. All to minimise the chances of contamination.&lt;br /&gt;&lt;br /&gt;&lt;small&gt;– Paweł Grzywocz&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The following things are key in the halls themselves:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;airborne particle control (sensors, monitoring),&lt;/li&gt;
+  &lt;li&gt;overpressure to “push” air out instead of sucking contaminants in,&lt;/li&gt;
+  &lt;li&gt;and constant, tedious work hygiene: equipment, surfaces, and how tools are brought in.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An interesting fact that illustrates the level of rigor: cleanrooms operate within defined cleanliness classes (ISO 14644-1), meaning there are hard limits on how many airborne particles of a given size can be present per cubic metre of air. In practice, the environment is continuously monitored with laser-based airborne particle counters that sample a known airflow and flag deviations quickly, not just at the end of the day.&lt;/p&gt;
+
+&lt;p&gt;Alongside these electronic readings, teams may still place witness plates – defined sampling surfaces that “collect” particle fallout over time – and then inspect them with optical/microscope-based methods. This gives an independent cross-check (and often an archival record) of what was actually deposited on surfaces during critical phases, which is especially valuable when contamination control extends beyond the main cleanroom into transfers and later integration steps.&lt;/p&gt;
+
+&lt;p&gt;Those facilities involve more clever engineering, such as a central vacuum cleaner built into the wall, so that the cleaning crew does not bring in mobile equipment on wheels that could stir up dust. Or huge blinds that can be used to divide the clean room into two independent work zones (e.g., when work is being done on two payloads at the same time), and covered windows in offices to reduce the risk of “spying” on competitors’ solutions.&lt;/p&gt;
+
+&lt;p&gt;And even though French Guiana is a very seismically calm place, you still need to think about the ground movements – that’s why there’s also a metal vibration-damping plate embedded in the floor, used to isolate the load from shocks and vibrations during work in the hall.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/009b-james-webb-in-csg-cleanroom.webp&quot; alt=&quot;James Webb at CSG&quot; title=&quot;James Webb at CSG&quot; /&gt;
+&lt;em&gt;The James Webb Space Telescope inside the cleanroom at EPCU S5B, being prepared for fuelling.&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / P Piron, 2024&lt;/small&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solar-arrays-and-onions-life-between-critical-steps&quot;&gt;Solar arrays and onions: life between critical steps&lt;/h3&gt;
+
+&lt;p&gt;The office spaces adjacent to the payload facilities can also host multiple teams at the same time. The space can be divided by moveable walls to ensure confidentiality. What you can certainly feel while being inside is the pride and heritage that this place carries. Hundreds of small and big missions took place there, and the spacecraft teams have left behind their mission stickers. The walls in some corridors and visitor spaces are covered with photos of those spacecraft.&lt;/p&gt;
+
+&lt;p&gt;During a launch campaign, teams can be on site for weeks, working in a tight rhythm and under real schedule pressure. That’s why day-to-day practicality matters so much: fatigue, haste, and small decisions can quickly turn into real operational risk.&lt;/p&gt;
+
+&lt;p&gt;In conversations on site, one example that came up was an incident where parts of a satellite’s solar arrays were accidentally damaged by the satellite team during handling. Even though such incidents are generally very rare, the spaceport staff must be prepared for the unexpected and ready to help their guests even in unusual situations.&lt;/p&gt;
+
+&lt;p&gt;And on the lighter end of the spectrum, there’s a local legend that almost everyone seems to know: once, the team working on the satellite was so slammed that someone set up an improvised “meal prep” on the floor in an office area next to the cleanroom and started chopping an onion for dinner. Funny – but it captures the reality of campaign work: not just a checklist, but everyday life squeezed between critical steps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/009c-epcu-s5.webp&quot; alt=&quot;EPCU S5&quot; title=&quot;EPCU S5&quot; /&gt;
+&lt;em&gt;The office buildings at the entrance of the EPCU S5 complex.&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / P.Baudon - E.Prigent, 2021&lt;/small&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;satellite-check-out-tests-measurements-and-gono-go-decisions&quot;&gt;Satellite check-out: tests, measurements, and go/no-go decisions&lt;/h3&gt;
+
+&lt;p&gt;The actual engineering work takes place in clean rooms and adjacent laboratories: electrical and mechanical tests, measurements, check-outs, and preparation of the launch configuration. A good illustration comes from another ESA campaign. A typical check-out phase includes very specific, risk-driven tests.&lt;/p&gt;
+
+&lt;p&gt;For example, in the Sentinel-1C campaign, this meant nitrogen pressurisation of the fuel tank to check for leaks, broad functional tests of subsystems, and payload health checks – such as installing waveguide bridges on the stowed SAR antenna – while the other team, located in another part of the globe (at ESOC in Darmstadt) simultaneously validated telemetry on the operations side – a setting we’ve also had the chance to experience firsthand through ESA’s Mission Operations Academy at ESOC.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/011-iterative-at-esoc.webp&quot; alt=&quot;Iterative Engineering at ESOC&quot; title=&quot;Iterative Engineering at ESOC&quot; /&gt;
+&lt;em&gt;Control Room at ESA’s European Space Operations Centre (ESOC) in Darmstadt, Germany&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Krzysztof Gąsior / Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The CSG infrastructure includes mechanical and chemical laboratories, areas for weighing, environmental parameter control, electromagnetic compatibility testing, and a range of verification activities.&lt;/p&gt;
+
+&lt;p&gt;A typical check-out phase also includes high-pressure safety work on the propulsion side. In one Meteosat campaign at CSG, the teams first validated the EGSE, then ran a pressurisation/depressurisation sequence to confirm the tanks were leak-tight – while partially loading the helium system (50% level, reported as 133 bar), which required installing blast shields around the spacecraft as an added safety layer. These operations are tightly coordinated with the spaceport safety chain (including the CSG Safety Officer), and only after a clean result does the campaign move on to the next steps.&lt;/p&gt;
+
+&lt;p&gt;An important element of this puzzle is the check-out rooms, where the mission team sits and monitors the satellite’s parameters. This is where the cables from the cable passages between the office and the hall end, where the monitoring equipment is located, and where decisions are made: whether to continue or to pause the sequence and return to diagnostics.&lt;/p&gt;
+
+&lt;p&gt;And there is one more thing that usually surprises outsiders: gases. They appear not only in the context of rockets.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Inert gases (most often nitrogen) are used for inerting – filling workspaces with inert gas to reduce the risk of ignition or unwanted reactions.&lt;/li&gt;
+  &lt;li&gt;Electric-powered missions use noble gases as fuel; for example, the BepiColombo mission loaded 581 kg of xenon.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;transport-between-facilities-ccu-and-the-logic-of-sealed-transfer&quot;&gt;Transport between facilities: CCU and the logic of “sealed transfer”&lt;/h3&gt;
+
+&lt;p&gt;As we already described, CSG is not a single building, but a set of facilities, and a campaign may require the transfer of cargo between halls or complexes. This is done using specialized payload containers, called CCU (fr. &lt;em&gt;Conteneurs de charges utiles&lt;/em&gt;), in versions adapted to different sizes and scenarios.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/012-taking-the-satellite-of-ccu2.webp&quot; alt=&quot;Taking the satellite of CCU2&quot; title=&quot;Taking the satellite of CCU2&quot; /&gt;
+&lt;em&gt;CCU2 Taking the satellite 30/MEV-2 out of CCU2 in BAF. Note the stickers and writings on the walls, commemorating all the missions that rode on that transporter vehicle&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / P. Piron, 2020&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Apart from the rocket parts moving through the spaceport, this is the other characteristic element of some roads in Kourou: a huge, mobile container that can drive up to a building and create a sealed transfer connection. The CCU3 version uses inflatable seals that ensure tightness and support the maintenance of a controlled environment (e.g., by maintaining pressure differences and limiting the inflow of outside air).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/013-the-self-propelled-ccu3-transporter.webp&quot; alt=&quot;The self-propelled CCU3 transporter&quot; title=&quot;The self-propelled CCU3 transporter&quot; /&gt;
+&lt;em&gt;Operator controlling the self-propelled CCU3 transporter before docking into the S5B airlock&lt;br /&gt;
+&lt;small&gt;Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / P. Baudon, 2021&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;How does it work in practice? The transporter pulls up sideways to the door of the selected facility and “attaches” itself to the gate with a tight flange/seal. Once the connection is ready, the roller shutter is retracted, and the load can be transferred without exposing it to external conditions. This mechanism, seemingly simple, is crucial in the tropics: it limits the impact of humidity, temperature, and unwanted contaminants, while allowing the transfer of objects of extremely large dimensions.&lt;/p&gt;
+
+&lt;p&gt;Two interesting facts about the location:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;CCU transporters are often densely covered with mission logos and team signatures. Over time, this has become a local tradition – so much so that there have reportedly been less diplomatic additions (e.g., addressed to superiors), which has forced greater control over what ends up on the vehicle’s exterior.&lt;/li&gt;
+  &lt;li&gt;We also learned how varied the scenarios can be. James Webb was so large that it did not fit in the internal corridor connecting the halls of the S5; it had to be transferred in an unusual way, using external transport between buildings.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/014-transporting-the-satellite-using-the-clean-corridor.webp&quot; alt=&quot;Transporting the satellite using the clean corridor&quot; title=&quot;Transporting the satellite using the clean corridor&quot; /&gt;
+&lt;em&gt;Transporting the satellite between S5B and S5C using the clean corridor&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / S. Martin, 2025&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;hazardous-operations-pyrotechnics-blast-shields-and-hypergolic-fuels&quot;&gt;Hazardous operations: pyrotechnics, blast shields, and hypergolic fuels&lt;/h3&gt;
+
+&lt;p&gt;At some point in the campaign, activities arise that require a completely different “layer” of safety. At CSG, the natural environment for such stages is the S5 complex, which includes zones and halls prepared for hazardous operations.
+However, before the container reaches a clean hall, it enters the spaceport’s access-controlled zone. It goes without saying that CSG is a high-security, tightly controlled site, with checkpoints, restricted roads, and tightly managed movement of people and vehicles. Security is provided not only through badges and procedures – the French Foreign Legion guards the area, and a specialised on-site fire brigade also has law-enforcement powers. In practice, this adds a very real operational layer: convoys, access windows, and permitted locations and timings are part of the campaign plan.&lt;/p&gt;
+
+&lt;h4 id=&quot;pyrotechnics-and-blast-shields&quot;&gt;Pyrotechnics and blast shields&lt;/h4&gt;
+
+&lt;p&gt;Many satellites have pyrotechnic components because separation must be performed after launch. If the payload is mechanically bolted to the adapter and then needs to be detached in space, mechanisms are needed that will work reliably in all conditions. In practice, this also means working with components that are treated as hazardous materials on the ground. This is where blast shields come in – we saw them on site as structures resembling metal “chain mail,” whose task is to limit the effects of a possible unplanned detonation.&lt;/p&gt;
+
+&lt;h4 id=&quot;refuelling-the-stage-where-spacesuits-and-atex-regulations-come-into-play&quot;&gt;Refuelling: the stage where “spacesuits” and ATEX regulations come into play&lt;/h4&gt;
+
+&lt;p&gt;Hypergolic fuels are commonly used in satellite campaigns – pairs of components that ignite spontaneously on contact (without an igniter). A classic example is hydrazine (or its derivatives) and an oxidizer in the form of nitrogen oxides/dinitrogen tetroxide. This is convenient in space (reliable ignition), but on Earth, it means strict logistics and safety measures.
+Fuelling is carried out in a dedicated facility, separate from other parts of the spaceport. Before any propellant is loaded, the pressurised system is pressure-tested to rule out leaks – only then can the team proceed. Because hydrazine is both highly toxic and explosive, only a small number of specialists remain inside the cleanroom, protected by SCAPE suits (Self-Contained Atmospheric Protection Ensemble). For example, in the Sentinel-1C campaign, this step involved loading 154 kg of propellant after the Flight Readiness Review, with the process run as combined operations and parameters continuously tracked on the fuelling gauges.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/015-hydrazine-fuelling-preparations.webp&quot; alt=&quot;Hydrazine fuelling preparations&quot; title=&quot;Hydrazine fuelling preparations&quot; /&gt;
+&lt;em&gt;SCAPE suits during hydrazine fuelling preparations. It may look like sci-fi — in reality it’s standard PPE for a high-risk step&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © ESA / CNES / Arianespace / Optique Vidéo du CSG / P. Baudon&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;At S5, there are practical safety rules that stick in your mind: for example, how to park at certain halls (car facing the exit, windows closed) so that in the event of a leak, you can immediately drive away and switch the car to closed circulation.&lt;/p&gt;
+
+&lt;h3 id=&quot;mating-satellite-on-the-adapter&quot;&gt;Mating: satellite on the adapter&lt;/h3&gt;
+
+&lt;p&gt;Once the payload is ready, it is time for the mechanical connection to the payload adapter – a structure that connects the satellite to the upper stage of the rocket.&lt;/p&gt;
+
+&lt;p&gt;The payload adapter is more than just a mounting ring: it is a structural interface that takes on loads during launch and a separation system that must release the spacecraft with precision. It is usually an adapter with separation elements designed to provide the spacecraft with a minimum relative separation velocity of approximately 0.5 m/s. During the time of the Sentinel-2C campaign, the teams could still keep the satellite powered and run checks via umbilical lines routed through the adapter. At that point, the adapter was already an active interface – not just a metal component.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/017–mechanical-integration.webp&quot; alt=&quot;The spacecraft is aligned with the launcher adapter&quot; title=&quot;The spacecraft is aligned with the launcher adapter&quot; /&gt;
+&lt;em&gt;Mechanical integration (fit check): the spacecraft is aligned with the launcher adapter while teams verify interfaces and readiness – a step dominated by tooling, torque, verification, and configuration control&lt;br /&gt;
+&lt;small&gt;Photo – © ESA (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;encapsulation-the-fairing-as-a-controlled-environment&quot;&gt;Encapsulation: the fairing as a controlled environment&lt;/h3&gt;
+
+&lt;p&gt;In the European rockets used in Kourou (Vega-C and Ariane 6), the fairing is assembled from two large half-shells that are closed and locked as part of the integration process.&lt;/p&gt;
+
+&lt;p&gt;The fairing is primarily an aerodynamic cover, but it is also designed to maintain controlled conditions (temperature, humidity, cleanliness) and protect the payload both on the ground and during the first minutes of flight. This is especially important in such a hot and humid environment as French Guiana, as it is the only barrier that keeps the precious satellite dry, cool and free of (insects wanting to hitchhike on it).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/payload-preparations-at-csg/018-pac-exiting-s5b.webp&quot; alt=&quot;PAC exiting S5B&quot; title=&quot;PAC exiting S5B&quot; /&gt;
+&lt;em&gt;PAC (Payload Assembly Composite – the spacecraft encapsulated within a fairing) exiting S5B&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © CNES / ESA / Arianespace / Optique Vidéo CSG / J.-M. Guillon, 2024&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the spacecraft is encapsuled within the fairing, it is ready to leave the Payload Preparations Facilities to be placed on top of the rocket. This is the moment when the payload preparation process typically ends. But the satellite team doesn’t leave the complex yet. The most important step in the satellites journey is about to begin!&lt;/p&gt;
+
+&lt;p&gt;During the launch sequence, the satellite team stays at EPCU and monitors the spacecraft to make sure that everything is in order, up to the very seconds before the ignition. They keep a close contact with the DDO (Range Operations Manager) and take part in the go/no-go poll. They even have their own well-known “big red button”, that can abort the launch if they spot anything off-nominal.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-the-software-can-support-the-payload-preparation&quot;&gt;How the software can support the payload preparation?&lt;/h2&gt;
+
+&lt;p&gt;The process is complex, and good oversight is what keeps it from drifting into avoidable delays and rework. The biggest risks rarely come from one “big step” – they come from intersections: people, zones, tools, permissions, deliveries, schedule changes, and dependencies between tasks happening in parallel.&lt;/p&gt;
+
+&lt;p&gt;That’s why, working closely with CSG, Iterative Engineering developed &lt;a href=&quot;/2025/12/16/launch-ready-on-site-simulation/&quot;&gt;a digital platform to support campaign and service management across the spaceport’s preparation facilities&lt;/a&gt;. The platform ties a service catalogue to request intake and tracking, giving customers and CSG teams a shared view of status, ownership, and blockers. It strengthens traceability, makes oversight clearer, and supports configurable automation across different campaign setups – which matters when similar workflows have to adapt to different payloads, constraints, and timelines.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Hero image: The James Webb Space Telescope is unpacked at a special spacecraft preparation center at the European spaceport in Kourou, where teams are checking it after its journey to French Guiana ahead of launch&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © ESA / CNES / Arianespace (ESA Standard Licence)&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0100</pubDate>
+        <link>https://blog.iterative.engineering/2026/02/11/payload-preparations-at-the-csg/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/02/11/payload-preparations-at-the-csg/</guid>
+        
+        <category>Business</category>
+        
+        <category>Travel</category>
+        
+        <category>Projects</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>Guiana Space Center (CSG)</category>
+        
+        <category>CNES</category>
+        
+        <category>ESA</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>From Shetland to the Azores: a practical guide to Europe’s new spaceports</title>
@@ -371,7 +670,7 @@ If you’re interested in what day-to-day work at Europe’s Spaceport looks lik
 &lt;p&gt;&lt;em&gt;Hero image: Andøya Spaceport – the Spectrum rocket just after liftoff&lt;br /&gt;
 &lt;small&gt;Photo: Isar Aerospace / Simon Fischer  – Wingmen Media. Editorial use only; do not alter/remove copyright notices&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Jan 2026 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 16 Jan 2026 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2026/01/16/practical-guide-to-europes-new-spaceports/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2026/01/16/practical-guide-to-europes-new-spaceports/</guid>
         
@@ -525,7 +824,7 @@ Hero image: Ariane 6 at Europe’s Spaceport in Kourou. Image credit: ESA.
 Workshop photos: Paweł Grzywocz / Iterative Engineering.
 Video still: CNES/CSG.&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 16 Dec 2025 00:00:00 -0600</pubDate>
+        <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2025/12/16/launch-ready-on-site-simulation/</guid>
         
@@ -744,7 +1043,7 @@ How do you move from “one mission built over three years” to a continuous, r
 
 &lt;p&gt;In the coming months, we’ll continue developing our projects in the space sector, working to ensure that Europe’s space ambitions are supported by solid digital foundations – on the ground, throughout the mission, and across the entire operational chain.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 03 Dec 2025 00:00:00 -0600</pubDate>
+        <pubDate>Wed, 03 Dec 2025 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2025/12/03/key-takeaways-from-space-tech-expo-europe-25/</guid>
         
@@ -879,7 +1178,7 @@ How do you move from “one mission built over three years” to a continuous, r
 
 &lt;p&gt;We left Guiana not so much with inspiration as with a sense of participation in something fundamental to the European space program. Kourou is not just a launch site – it is where the future of Europe’s presence in space is being co-created, and we had the opportunity to participate in it in a real way.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Nov 2025 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2025/11/10/behind-the-scenes-at-the-european-spaceport/</guid>
         
@@ -909,7 +1208,7 @@ How do you move from “one mission built over three years” to a continuous, r
       </item>
     
       <item>
-        <title>Europe&apos;s Spaceport selected Iterative Engineering to improve the payload preparation process</title>
+        <title>Europe's Spaceport selected Iterative Engineering to improve the payload preparation process</title>
         <image>/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/iterative-can-into-space-theme.webp</image>
         <headline>An exciting time for us! We have been selected to conduct work on the Proof of Concept System for Launch Campaign Information and Request Management at Guiana Space Centre (CSG) operated by French Space Agency (CNES).</headline>
         <description>&lt;p&gt;An Exciting time for us! We have been selected to work on the Proof of Concept system for Launch Campaign Information and Request Management at Guiana Space Center (CSG) operated by French Space Agency (CNES).&lt;/p&gt;
@@ -1078,7 +1377,7 @@ How do you move from “one mission built over three years” to a continuous, r
 &lt;p&gt;&lt;img src=&quot;/assets/images/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/csg-poc-implementation.webp&quot; alt=&quot;Project implementation has already started&quot; title=&quot;Project implementation has already started&quot; /&gt;
 &lt;em&gt;Project implementation has already started&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 Dec 2024 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 19 Dec 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/12/19/europe-spaceport-selected-iterative-engineering-to-improve-the-payload-preparation-process/</guid>
         
@@ -1143,11 +1442,11 @@ How do you move from “one mission built over three years” to a continuous, r
 &lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/quick-work.webp&quot; alt=&quot;In between code fixes&quot; title=&quot;In between code fixes&quot; /&gt;
 &lt;em&gt;When there was a need for in between code fixes :P&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/beer-time.webp&quot; alt=&quot;Ain&apos;t no move without a beer&quot; title=&quot;Ain&apos;t no move without a beer&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/iterative-engineering-new-address/beer-time.webp&quot; alt=&quot;Ain't no move without a beer&quot; title=&quot;Ain't no move without a beer&quot; /&gt;
 &lt;em&gt;Ain’t no move without a beer…&lt;/em&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 12 Sep 2024 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 12 Sep 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/09/12/iterative-engineering-new-address/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/09/12/iterative-engineering-new-address/</guid>
         
@@ -1207,7 +1506,7 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
 
 &lt;p&gt;Learn more at &lt;a href=&quot;https://nature-energy.com/&quot; target=&quot;_blank&quot;&gt;nature-energy.com&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 12 Jul 2024 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/07/12/iterative-delivers-innovative-solution-for-biomethane/</guid>
         
@@ -1367,7 +1666,7 @@ The company is the market leader in turning biomass into green, CO₂-neutral ga
 
 &lt;p&gt;On the technical side, solid architectural principles allowed us to adapt to change without losing control of the system. In the end, a smooth cut-over is rarely the result of last-minute heroics. It is the outcome of many small, deliberate decisions made throughout the project. With the right mindset, strong cooperation, and good project management, even a complex migration can become a predictable and, dare we say, almost boring exercise — and that is exactly how such projects should feel.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 03 Jun 2024 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 03 Jun 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/06/03/how-not-to-loose-your-sleep-while-migrating-a-complex-application/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/06/03/how-not-to-loose-your-sleep-while-migrating-a-complex-application/</guid>
         
@@ -1608,7 +1907,7 @@ Additionally, ‘service’ tokens are available to facilitate communication bet
 &lt;p&gt;Further reading:
 &lt;a href=&quot;https://developers.cloudflare.com/cloudflare-one/&quot;&gt;&lt;strong&gt;Cloudlfare Zero Trust - Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 Apr 2024 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 29 Apr 2024 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/04/29/secure-vps-with-cloud-flare-zero-trust-in-5min/</guid>
         
@@ -1628,7 +1927,7 @@ Additionally, ‘service’ tokens are available to facilitate communication bet
       <item>
         <title>Strengths and Limitations of Knip for Unused Code Detection in Angular</title>
         <image>/assets/images/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/main.webp</image>
-        <headline>Knip tool&apos;s ability to find unused code in the Angular codebase</headline>
+        <headline>Knip tool's ability to find unused code in the Angular codebase</headline>
         <description>&lt;p&gt;As the codebase grows and evolves, the cost of maintaining it becomes higher. In extreme cases, leading to situations
 where upkeep takes significantly more time and effort than new developments. While you cannot prevent balancing out of
 those proportions overtime, there are ways to mitigate the risk of ending up in an endless maintenance loop. One of such
@@ -1770,7 +2069,7 @@ defined, but property itself is unused as in the following snippet:&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InUseFeatureState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;definedButUnusedState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;unused&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -2274,7 +2573,7 @@ current performance, areas for improvement, and practical tips to optimize your 
   &lt;li&gt;Explore alternative code analysis tools that might complement Knip and address its shortcomings&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 20 Mar 2024 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 20 Mar 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/03/20/strengths-and-limitations-of-knip-for-unused-code-detection-in-angular/</guid>
         
@@ -2388,7 +2687,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sun, 14 Jan 2024 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2024/01/14/teaching-java-reflections-on-the-attempt/</guid>
         
@@ -2478,7 +2777,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;p&gt;If you found that subject interesting you may want to look at &lt;a href=&quot;https://adtechmadness.wordpress.com/2019/03/23/javascript-tampering-detection-and-stealth/&quot;&gt;this article&lt;/a&gt;. And if you face fraudulent traffic which affects your campaigns &lt;a href=&quot;https://calendly.com/krzysztof-gasior/adtech-discovery-call-15m&quot;&gt;let’s talk&lt;/a&gt; as we should be able to help out!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Aug 2022 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 22 Aug 2022 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/22/battling-ad-fraud-spoofed-browsers-detection/</guid>
         
@@ -2816,7 +3115,7 @@ Declare two variables x,y which will be natural number values. Initialize them w
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 08 Aug 2022 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/08/08/contract-testing-with-spring/</guid>
         
@@ -3017,13 +3316,13 @@ Declare two variables x,y which will be natural number values. Initialize them w
 
 &lt;div class=&quot;language-gradle highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;org.springframework.boot&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;2.5.0&quot;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;io.spring.dependency-management&apos;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.6.RELEASE&apos;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;java&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'io.spring.dependency-management'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.6.RELEASE'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'java'&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;pl.iterative&apos;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'pl.iterative'&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;1.0.0-SNAPSHOT&apos;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1.0.0-SNAPSHOT'&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
@@ -3034,11 +3333,11 @@ Declare two variables x,y which will be natural number values. Initialize them w
 &lt;span class=&quot;k&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Spring boot&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-oauth2-client&apos;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;org.springframework.boot:spring-boot-starter-web&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-oauth2-client'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.springframework.boot:spring-boot-starter-web'&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// Azure&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.azure.spring:azure-spring-boot-starter-active-directory:3.5.0'&lt;/span&gt;
 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -3184,7 +3483,7 @@ You can check which permissions your app has by going to the azure console:
 
 &lt;p&gt;Securing an application with an Identity Provider can simplify the application code and shift responsibility for securing users’ data from your application to the provider. Doing it with Azure AD is one of the multiple options, but all modern Identity Providers supports OAuth2 protocol that standardizes the Authorization process.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 10 Jan 2022 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 10 Jan 2022 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2022/01/10/secure-spring-boot-application-with-microsoft-azure-ad/</guid>
         
@@ -3254,7 +3553,7 @@ You can check which permissions your app has by going to the azure console:
 &lt;p&gt;&lt;img src=&quot;/assets/images/how-to-keep-the-team-integrated/wasted.webp&quot; alt=&quot;Coming back home&quot; title=&quot;Coming back home&quot; /&gt;
 &lt;em&gt;That was actually quite a challenging day 😉!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 20 Dec 2021 00:00:00 -0600</pubDate>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/20/how-to-keep-the-team-integrated/</guid>
         
@@ -3435,7 +3734,7 @@ You can check which permissions your app has by going to the azure console:
   &lt;li&gt;or simply book a discovery call &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Dec 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 10 Dec 2021 00:00:00 +0100</pubDate>
         <link>https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/12/10/key-8-takeaways-from-stackoverflow-2021-developers-survey/</guid>
         
@@ -3586,7 +3885,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If this topic interests you, visit &lt;a href=&quot;https://docs.docker.com/develop/develop-images/multistage-build/&quot;&gt;use multi-stage builds&lt;/a&gt; for more details or even better &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 28 Sep 2021 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/09/28/creating-optimised-docker-images-using-multi-stage-builds/</guid>
         
@@ -3670,7 +3969,7 @@ demo-webapp		multistage	44af0173ce49		8 seconds ago		217MB
 
 &lt;p&gt;If you want to learn more, feel most welcome to &lt;a href=&quot;https://calendly.com/krzysztof-gasior&quot;&gt;talk to our team&lt;/a&gt; today.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 Jul 2021 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
         <link>https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</link>
         <guid isPermaLink="true">https://blog.iterative.engineering/2021/07/09/how-to-avoid-overdesigning/</guid>
         
