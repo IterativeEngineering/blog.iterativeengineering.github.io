@@ -5,9 +5,224 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Feb 2026 23:43:16 +0100</pubDate>
-    <lastBuildDate>Mon, 16 Feb 2026 23:43:16 +0100</lastBuildDate>
+    <pubDate>Thu, 02 Apr 2026 14:34:35 +0200</pubDate>
+    <lastBuildDate>Thu, 02 Apr 2026 14:34:35 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>CNES’s Secret Island: From Forgotten Ruins to Rocket Launches</title>
+        <image>/assets/images/cnes-secret-island/001-hero-approaching-iles-du-salut.webp</image>
+        <headline>We board a boat in the port of Kourou. We are lucky, because the ocean is still and it’s not raining. From the locals we know that it can be a bumpy ride. Even from a distance, we clearly see our destination – three small green shapes rising from the Atlantic – Îles du Salut, the Salvation Islands. Their name refers to the salvation of French colonists in the 1760s, who used the islands as a refuge from deadly diseases on the French Guiana mainland. The name later became ironic over time, given the later islands’ fate.</headline>
+        <description>&lt;p&gt;After a long week at Guiana Space Centre, we board a boat in the port of Kourou. We are lucky, because the ocean is still and it’s not raining. From the locals we know that it can be a bumpy ride. Even from a distance, we clearly see our destination – three small green shapes rising from the Atlantic – Îles du Salut, the Salvation Islands. Their name refers to the salvation of French colonists in the 1760s, who used the islands as a refuge from deadly diseases on the French Guiana mainland. The name later became ironic over time, given the later islands’ fate.&lt;/p&gt;
+
+&lt;p&gt;We are getting closer, accompanied by dolphins. From a closer perspective, the islands look like a postcard: palm trees and ocean waves crashing over the rocky shores. And yet, well into the 20th century, they were part of one of France’s most notorious penal systems, later made famous by the book and film “Papillon.”&lt;/p&gt;
+
+&lt;p&gt;Today, the same archipelago, about 14 km north of Kourou, belongs to the French space agency CNES and serves as a natural platform hosting the remotely-controlled equipment for tracking the rockets lifting off from the Guiana Space Centre (CSG).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/002-iles-du-salut-satellite.webp&quot; alt=&quot;Salvation Islands from Pléiades satellite&quot; title=&quot;Salvation Islands from Pléiades satellite&quot; /&gt;
+&lt;em&gt;Îles du Salut (Salvation Islands), French Guiana – Pléiades satellite imagery, 3 April 2015&lt;br /&gt;
+&lt;small&gt;Credit: CNES – GeoImage, Licence Ouverte / Etalab 2.0&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;a-penal-colony-that-turned-paradise-into-hell&quot;&gt;A penal colony that turned paradise into hell&lt;/h1&gt;
+
+&lt;p&gt;Îles du Salut – the three volcanic islands of Île Royale, Île Saint-Joseph, and Île du Diable – formed part of the overseas French penal colony system. Between 1852 and 1953, around 70,000 convicts were sent to the “bagne” of French Guiana – a chain of detention camps, including the Salvation Islands. Only a fraction of them ever returned to France; thousands died of malaria, yellow fever, dysentery, and sheer exhaustion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/003-ile-royale-hospital.webp&quot; alt=&quot;Hospital on Île Royale&quot; title=&quot;Hospital on Île Royale&quot; /&gt;
+&lt;em&gt;Old hospital building on Île Royale, slowly turning into ruins&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The prisoners themselves called the system “la guillotine sèche” – the dry guillotine. Instead of a steel blade, there was tropical humidity, disease, forced labour, and isolation from the outside world. The term appears again and again in the testimonies of former &lt;em&gt;bagnards&lt;/em&gt; – the convicts deported to the Guiana penal colonies – and in historical studies.&lt;/p&gt;
+
+&lt;p&gt;The darkest reputation fell on Île du Diable – Devil’s Island, used mainly for political prisoners. This is where Alfred Dreyfus, a French army officer, was sent and eventually died after being falsely convicted of spying for Germany at the end of the 19th century. His trial and later rehabilitation divided French society for years.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/004-ile-du-diable-dreyfus-house.webp&quot; alt=&quot;Dreyfus’ house on Île du Diable&quot; title=&quot;Dreyfus’ house on Île du Diable&quot; /&gt;
+&lt;em&gt;Dreyfus’ house on Île du Diable&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Decades later, the wider world discovered the bagnards’ stories through Henri Charrière’s book “Papillon” (1969) and the 1973 film starring Steve McQueen and Dustin Hoffman. Charrière claimed to be writing his own life story, but modern researchers show that he blended his experiences with anecdotes from many other prisoners – it is more a literary construction than a strict documentary memoir. Thanks to the film, though, the history of the penal colony reached a global audience and embedded itself in the popular imagination.&lt;/p&gt;
+
+&lt;p&gt;On Île Royale, the administrative heart of the archipelago, you can still visit a small children’s cemetery. It is mentioned in prison records as early as 1852; several dozen children of staff stationed on the islands were buried there after dying from disease in the harsh climate. Over time, the cemetery was reserved specifically for children, and today it is one of the most moving places on the islands.&lt;br /&gt;
+&lt;img src=&quot;/assets/images/cnes-secret-island/004-ile-saint-joseph-cemetery-entrance.webp&quot; alt=&quot;Entrance to the cemetery on Île St. Joseph&quot; title=&quot;Entrance to the cemetery on Île St. Joseph&quot; /&gt;
+&lt;em&gt;Entrance to the cemetery on Île St. Joseph&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;from-shackles-to-spaceflight-a-surprising-transformation&quot;&gt;From shackles to spaceflight: a surprising transformation&lt;/h1&gt;
+
+&lt;p&gt;The penal colony system in French Guiana was officially closed in 1953. Abandoned buildings on the Salvation Islands slowly disappeared under the vegetation until the early 1970s, when the French space programme realised it needed a new vantage point on rockets launching from Kourou.&lt;/p&gt;
+
+&lt;p&gt;In 1971, Îles du Salut were placed under the authority of CNES. The archipelago lies directly under the flight path of rockets launched from the Guiana Space Centre, which makes it an ideal observation point – unfortunately, closed to the spectators.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/005-ile-saint-joseph-welcome-sign.webp&quot; alt=&quot;Welcome sign on Île St. Joseph, reminding that the place is governed by CNES/CSG and the French Foreign Legion&quot; title=&quot;Welcome sign on Île St. Joseph, reminding that the place is governed by CNES/CSG and the French Foreign Legion&quot; /&gt; 
+&lt;em&gt;Welcome sign on Île St. Joseph, reminding that the place is governed by CNES/CSG and the French Foreign Legion&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In good weather, you could follow a launch from the islands from the very moment the engines ignite on the pad at Kourou until the bright dot of the rocket disappears into the sky, flying above the islands. The place lies directly below the ascend trajectory, that is why the archipelago is evacuated before every launch; only the owner of the lodge on Île Royale and a handful of gendarmes responsible for security remain. Pity, because it would make for a perfect observation spot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/006-ile-royale-tracking-station-k400.webp&quot; alt=&quot;CNES Tracking Station on Île Royale, hosting *Ciné Télescope K400*&quot; title=&quot;CNES Tracking Station on Île Royale, hosting Ciné Télescope K400&quot; /&gt;
+&lt;em&gt;CNES Tracking Station on Île Royale, hosting *Ciné Télescope K400&lt;/em&gt;&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;*&lt;/p&gt;
+
+&lt;p&gt;The works on Île Royale started in 1968, when a specialised optical system called  &lt;em&gt;cinétheodolite&lt;/em&gt; was installed.In 1995, it was upgraded into the &lt;em&gt;cinétéléscope K400&lt;/em&gt; – the most powerful system used by the CNES to observe and record all launch-related events that may occur during flight, up to the point where the rocket is no longer visible optically.&lt;/p&gt;
+
+&lt;p&gt;For Ariane 5 launches, the event most commonly visible was the fairing separation (at around 110 km altitude). Occasionally, it was also possible to observe the separation of the main cryogenic stage (EPC) and the ignition of the storable propellant stage (EPS), as well as the ignition of the cryogenic upper stage in the Ariane 5 ECA version.&lt;/p&gt;
+
+&lt;p&gt;The system is equipped with a video camera, two film cameras, and two thermal/infrared cameras (operating in the 8–12 micron IR range). It can track targets either through manual designation or via infrared-based tracking measurements.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/007-ariane-6-booster-separation.webp&quot; alt=&quot;Long-range tracking shot of Ariane 6 (VA265) booster separation&quot; title=&quot;Long-range tracking shot of Ariane 6 (VA265) booster separation&quot; /&gt;
+&lt;em&gt;Long-range tracking shot of Ariane 6 (VA265) booster separation&lt;br /&gt;
+&lt;small&gt;Credit: ESA/Arianespace/Optique Vidéo du CSG&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There is also the lighthouse on Île Royale. The current tower, known as the “Phare de l’Île Royale”, was brought into service in 1934 as an approach light for ships. In the 1980s, it was electrified and automated, and, despite the rise of satellite navigation, it still serves as a visual reference point for shipping in this part of the Atlantic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/008-ile-royale-lighthouse.webp&quot; alt=&quot;Lighthouse on Île Royale&quot; title=&quot;Lighthouse on Île Royale&quot; /&gt;
+&lt;em&gt;Lighthouse on Île Royale&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;walking-between-graveyards-and-cnes-antennas&quot;&gt;Walking between graveyards and CNES antennas&lt;/h1&gt;
+
+&lt;p&gt;On an ordinary day, only two of the three islands are open to visitors: Île Royale and Saint-Joseph. Île du Diable remains practically off limits – steep shores, strong currents, occasional forgotten wells and other potential traps – an official ban means that most people only ever see it from a distance, from the cliffs of Île Royale.&lt;/p&gt;
+
+&lt;p&gt;A walk on Île Royale usually starts at the old landing stage. On one side, you see the ruins of kitchens, the hospital, and barracks; on the other, buildings converted into a small museum and a simple hostel. A short climb uphill brings you to the children’s cemetery, where white crosses are slowly being swallowed by tropical greenery. A few minutes further on, you pass the remnants of the “free town”: the guards’ houses, a small church, and administrative buildings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/009-penal-colony-flowers.webp&quot; alt=&quot;Flowering plants slowly taking over the walls of the penal colony&quot; title=&quot;Flowering plants slowly taking over the walls of the penal colony&quot; /&gt; 
+&lt;em&gt;Flowering plants slowly taking over the walls of the penal colony&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow the path a bit further, and you suddenly reach the edge of the former “technical” zone: concrete foundations, low technical buildings, a mast with CNES telemetry antennas. Just a few steps away from places where prisoners once spent months in punishment cells, you stand next to equipment that, until recently, was tracking Ariane in flight.&lt;/p&gt;
+
+&lt;p&gt;From the top of the hill in the middle of the island, you look across to Île Saint-Joseph – the island once nicknamed the “man-eater”. This is where the most recalcitrant prisoners were sent for long-term isolation in damp, dark cells. Today, the island attracts visitors with its beach and deep palm shade, but among the trees, you can still see the walls of former solitary confinement blocks. They made a particularly thrilling impression on us, covered with vegetation and spider webs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/010-ile-saint-joseph-isolation-camp.webp&quot; alt=&quot;Former long-term isolation camp on the hilltop of Île Saint-Joseph&quot; title=&quot;Former long-term isolation camp on the hilltop of Île Saint-Joseph&quot; /&gt;
+&lt;em&gt;Former long-term isolation camp on the hilltop of Île Saint-Joseph&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Although the Îles du Salut are best known for their penal colony history, there are also traces of a much older, pre-colonial presence. On some of the rocky outcrops, visitors can look for petroglyphs attributed to Indigenous peoples of the Guiana coast, carved long before the arrival of Europeans.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/011-turtle-petroglyph-ile-saint-joseph.webp&quot; alt=&quot;An image of a turtle carved out in a rock on the shore of Île Saint-Joseph&quot; title=&quot;An image of a turtle carved out in a rock on the shore of Île Saint-Joseph&quot; /&gt;
+&lt;em&gt;An image of a turtle carved out in a rock on the shore of Île Saint-Joseph&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;a-paradise-for-wildlife&quot;&gt;A paradise for wildlife&lt;/h1&gt;
+
+&lt;p&gt;The islands are still a part of the tropical rainforest, and something you need to be prepared for is the abundance of wildlife everywhere. You will most certainly notice the squirrel monkeys (saimiri) and capuchin monkeys dart about everywhere, approaching visitors without fear and often snatching fruit or small items whenever the opportunity arises. On the ground, small rodents called agoutis scurry between roots and undergrowth. On Île Royale, a caiman can occasionally be spotted in the pond, lying motionless at the water’s edge before slipping silently beneath the surface – apart from it, there are no other larger predators, so the mammals can thrive.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/012-capuchin-monkey-snacks.webp&quot; alt=&quot;Capuchin monkey, looking for snacks&quot; title=&quot;Capuchin monkey, looking for snacks&quot; /&gt;
+&lt;em&gt;Capuchin monkey, looking for snacks&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Salvation Islands are also home to a more discreet but equally fascinating array of creatures. In the bushes, long columns of leafcutter ants march tirelessly, carrying fragments of leaves many times their size back to their hidden nests. Scolopendras, spiders, mosquitoes and countless other insects thrive in the humid climate. You can only imagine how in the past their presence added to the already terrible fate of the prisoners.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/013-atta-ants-ile-saint-joseph.webp&quot; alt=&quot;Farming ants from the *atta* genus, carrying leafs, at Île St. Joseph.&quot; title=&quot;Farming ants from the atta genus, carrying leafs, at Île St. Joseph.&quot; /&gt;
+&lt;em&gt;Farming ants from the atta genus, carrying leafs, at Île St. Joseph.&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Vegetation plays a central role in shaping this environment. Large Cecropia trees, recognizable by their pale trunks and umbrella-like leaves, are particularly notable for their symbiotic relationship with ants that live inside their hollow stems and defend them fiercely. Around them grow palm trees, sprawling ficus with tangled roots, and bursts of tropical flowers that bring color to the deep green landscape. The dense foliage creates a layered habitat where animals can move, hide, and feed with ease.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/014-cecropia-leaf-ile-saint-joseph.webp&quot; alt=&quot;Paweł with a Cecropia leaf found on Île St. Joseph.&quot; title=&quot;Paweł with a Cecropia leaf found on Île St. Joseph.&quot; /&gt;
+&lt;em&gt;Paweł with a Cecropia leaf found on Île St. Joseph.&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Beyond the forest, the surrounding waters are just as alive. Dolphins can often be seen gliding through the waves, while sea turtles and the unusual four-eyed fish inhabit the coastal shallows. In the past, sharks were drawn close to the islands by blood from the penal colony’s slaughterhouse, reinforcing their reputation as a natural barrier against escape.&lt;/p&gt;
+
+&lt;p&gt;Finally, the islands are home to a number of tropical bird species, including parrots, macaws, and seabirds. What we didn’t expect in this unique ecosystem were peacocks, not native to the islands. They also wander freely around the Royal Island.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/015-caiman-water-ile-royale.webp&quot; alt=&quot;Cayman lurking from the water on Île Royale&quot; title=&quot;Cayman lurking from the water on Île Royale&quot; /&gt;
+&lt;em&gt;Cayman lurking from the water on Île Royale&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;from-isolation-to-space-exploration-what-the-salvation-islands-teach-us&quot;&gt;From isolation to space exploration: what the Salvation Islands teach us&lt;/h1&gt;
+
+&lt;p&gt;The Salvation Islands are an extraordinary tropical destination. It’s a setting where the harshest chapters of human history overlap with technological ambition.&lt;/p&gt;
+
+&lt;p&gt;For about a century, the archipelago existed to cut people off from the world. Today, the same islands help to reach out into space, supporting rocket launches and missions that put scientific, telecommunications, and Earth-observation satellites into orbit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/016-ile-royale-hospital-ruins.webp&quot; alt=&quot;Old hospital on Île Royale, the largest building on the islands&quot; title=&quot;Old hospital on Île Royale, the largest building on the islands&quot; /&gt;
+&lt;em&gt;Old hospital on Île Royale, the largest building on the islands&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That layering of past and present means that many visitors treat the islands not just as a tropical day trip, but as a place to pause for a moment and reflect on how radically the role of a single, seemingly isolated patch of land can change over time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/017-salvation-islands-sunrise-kourou.webp&quot; alt=&quot;The Salvation Islands at sunrise, as viewed from Kourou&quot; title=&quot;The Salvation Islands at sunrise, as viewed from Kourou&quot; /&gt;
+&lt;em&gt;The Salvation Islands at sunrise, as viewed from Kourou&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;what-a-trip-to-cness-secret-island-looks-like&quot;&gt;What a trip to CNES’s “secret island” looks like&lt;/h1&gt;
+
+&lt;p&gt;You reach the Salvation Islands by boat from Kourou. The crossing typically takes 45–60 minutes, and the journey itself is part of the experience: behind you, the coastline and launch towers of the Guiana Space Centre; ahead of you, the outlines of the three islands become clearer with every kilometre.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/018-krzysztof-steering-boat.webp&quot; alt=&quot;If you are nice to the captain, he can let you steer the boat :&quot; title=&quot;If you are nice to the captain, he can let you steer the boat :)&quot; /&gt;
+&lt;em&gt;If you are nice to the captain, he can let you steer the boat :)&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once ashore, you basically have two options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;explore Île Royale on your own along the marked paths, or&lt;/li&gt;
+  &lt;li&gt;join a guided tour with a local guide, who will take you to the church, the old hospital, the children’s cemetery, the small museum, and a couple of viewpoints.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-tips-planning-your-own-trip&quot;&gt;Practical tips: planning your own trip&lt;/h2&gt;
+
+&lt;h3 id=&quot;getting-there&quot;&gt;Getting there&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Salvation Islands lie about 14 km north of Kourou.&lt;/li&gt;
+  &lt;li&gt;Regular tourist boats (catamarans or motorboats) run from Kourou to Île Royale and Île Saint-Joseph, most often as day trips with several hours of free time on the main island. You can book the trip online in advance.&lt;/li&gt;
+  &lt;li&gt;Île du Diable is closed to visitors; you can view it from Île Royale’s viewpoints.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cnes-angle--what-to-look-for&quot;&gt;CNES angle – what to look for&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;As the owner of the archipelago, CNES uses its location directly under the launch trajectory from Kourou.&lt;/li&gt;
+  &lt;li&gt;Before each launch, the islands are evacuated of tourists; only essential personnel (including gendarmes) remain.&lt;/li&gt;
+  &lt;li&gt;On Île Royale, you can look for traces of the space infrastructure: thecinétheodolite / cinétéléscope tracking site, CNES/CSG signage, cars and personnel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;when-to-go&quot;&gt;When to go&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;French Guiana has a hot, humid equatorial climate, but the driest and sunniest period is usually from around August to November. That’s when you’re statistically likely to get the least rain and the easiest conditions for travel.&lt;/li&gt;
+  &lt;li&gt;In other months, you should expect frequent, often short, heavy showers – but the forest is at its greenest, and dramatic cloudscapes can make for excellent photos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Hero image: Catamaran approaching the Salvation Islands&lt;br /&gt;
+&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2026 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2026/04/02/cnes-secret-island-from-forgotten-ruins-to-rocket-launches/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/04/02/cnes-secret-island-from-forgotten-ruins-to-rocket-launches/</guid>
+        
+        <category>Lifestyle</category>
+        
+        <category>Travel</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>Guiana Space Center (CSG)</category>
+        
+        <category>CNES</category>
+        
+        <category>ESA</category>
+        
+        <category>Salvation Islands</category>
+        
+        <category>After Work</category>
+        
+        
+        <category>lifestyle</category>
+        
+      </item>
     
       <item>
         <title>Payload preparations at the Guiana Space Centre: what does preparing a satellite for the launch look like?</title>
