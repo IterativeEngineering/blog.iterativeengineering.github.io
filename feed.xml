@@ -5,201 +5,170 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Apr 2026 14:34:35 +0200</pubDate>
-    <lastBuildDate>Thu, 02 Apr 2026 14:34:35 +0200</lastBuildDate>
+    <pubDate>Thu, 28 May 2026 21:56:21 +0200</pubDate>
+    <lastBuildDate>Thu, 28 May 2026 21:56:21 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
-        <title>CNES’s Secret Island: From Forgotten Ruins to Rocket Launches</title>
-        <image>/assets/images/cnes-secret-island/001-hero-approaching-iles-du-salut.webp</image>
-        <headline>We board a boat in the port of Kourou. We are lucky, because the ocean is still and it’s not raining. From the locals we know that it can be a bumpy ride. Even from a distance, we clearly see our destination – three small green shapes rising from the Atlantic – Îles du Salut, the Salvation Islands. Their name refers to the salvation of French colonists in the 1760s, who used the islands as a refuge from deadly diseases on the French Guiana mainland. The name later became ironic over time, given the later islands’ fate.</headline>
-        <description>&lt;p&gt;After a long week at Guiana Space Centre, we board a boat in the port of Kourou. We are lucky, because the ocean is still and it’s not raining. From the locals we know that it can be a bumpy ride. Even from a distance, we clearly see our destination – three small green shapes rising from the Atlantic – Îles du Salut, the Salvation Islands. Their name refers to the salvation of French colonists in the 1760s, who used the islands as a refuge from deadly diseases on the French Guiana mainland. The name later became ironic over time, given the later islands’ fate.&lt;/p&gt;
+        <title>Key takeaways from the European Economic Congress 2026: Europe needs speed, sovereignty, and execution</title>
+        <image>/assets/images/key-takeaways-from-the-eec-2026/001-hero-eec-2026-katowice-opening-session-world-maps.webp</image>
+        <headline>European Economic Congress 2026 showed Europe under pressure to move faster, strengthen industrial competitiveness, and turn ambition into execution. In this article, Iterative Engineering reflects on key takeaways from Katowice: space as strategic infrastructure, Polish-French cooperation, automation, talent, and the role of software in complex industrial operations.</headline>
+        <description>&lt;h2 id=&quot;executive-summary&quot;&gt;Executive summary&lt;/h2&gt;
 
-&lt;p&gt;We are getting closer, accompanied by dolphins. From a closer perspective, the islands look like a postcard: palm trees and ocean waves crashing over the rocky shores. And yet, well into the 20th century, they were part of one of France’s most notorious penal systems, later made famous by the book and film “Papillon.”&lt;/p&gt;
+&lt;p&gt;EEC 2026 ran for three days in Katowice, featuring panels on space, industry, energy, and defense, among others. A recurring question emerged: Can Europe move fast enough to stay competitive? Most speakers agreed that the main issue is execution speed. The strategies are already in place.&lt;/p&gt;
 
-&lt;p&gt;Today, the same archipelago, about 14 km north of Kourou, belongs to the French space agency CNES and serves as a natural platform hosting the remotely-controlled equipment for tracking the rockets lifting off from the Guiana Space Centre (CSG).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/002-iles-du-salut-satellite.webp&quot; alt=&quot;Salvation Islands from Pléiades satellite&quot; title=&quot;Salvation Islands from Pléiades satellite&quot; /&gt;
-&lt;em&gt;Îles du Salut (Salvation Islands), French Guiana – Pléiades satellite imagery, 3 April 2015&lt;br /&gt;
-&lt;small&gt;Credit: CNES – GeoImage, Licence Ouverte / Etalab 2.0&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;a-penal-colony-that-turned-paradise-into-hell&quot;&gt;A penal colony that turned paradise into hell&lt;/h1&gt;
-
-&lt;p&gt;Îles du Salut – the three volcanic islands of Île Royale, Île Saint-Joseph, and Île du Diable – formed part of the overseas French penal colony system. Between 1852 and 1953, around 70,000 convicts were sent to the “bagne” of French Guiana – a chain of detention camps, including the Salvation Islands. Only a fraction of them ever returned to France; thousands died of malaria, yellow fever, dysentery, and sheer exhaustion.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/003-ile-royale-hospital.webp&quot; alt=&quot;Hospital on Île Royale&quot; title=&quot;Hospital on Île Royale&quot; /&gt;
-&lt;em&gt;Old hospital building on Île Royale, slowly turning into ruins&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The prisoners themselves called the system “la guillotine sèche” – the dry guillotine. Instead of a steel blade, there was tropical humidity, disease, forced labour, and isolation from the outside world. The term appears again and again in the testimonies of former &lt;em&gt;bagnards&lt;/em&gt; – the convicts deported to the Guiana penal colonies – and in historical studies.&lt;/p&gt;
-
-&lt;p&gt;The darkest reputation fell on Île du Diable – Devil’s Island, used mainly for political prisoners. This is where Alfred Dreyfus, a French army officer, was sent and eventually died after being falsely convicted of spying for Germany at the end of the 19th century. His trial and later rehabilitation divided French society for years.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/004-ile-du-diable-dreyfus-house.webp&quot; alt=&quot;Dreyfus’ house on Île du Diable&quot; title=&quot;Dreyfus’ house on Île du Diable&quot; /&gt;
-&lt;em&gt;Dreyfus’ house on Île du Diable&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Decades later, the wider world discovered the bagnards’ stories through Henri Charrière’s book “Papillon” (1969) and the 1973 film starring Steve McQueen and Dustin Hoffman. Charrière claimed to be writing his own life story, but modern researchers show that he blended his experiences with anecdotes from many other prisoners – it is more a literary construction than a strict documentary memoir. Thanks to the film, though, the history of the penal colony reached a global audience and embedded itself in the popular imagination.&lt;/p&gt;
-
-&lt;p&gt;On Île Royale, the administrative heart of the archipelago, you can still visit a small children’s cemetery. It is mentioned in prison records as early as 1852; several dozen children of staff stationed on the islands were buried there after dying from disease in the harsh climate. Over time, the cemetery was reserved specifically for children, and today it is one of the most moving places on the islands.&lt;br /&gt;
-&lt;img src=&quot;/assets/images/cnes-secret-island/004-ile-saint-joseph-cemetery-entrance.webp&quot; alt=&quot;Entrance to the cemetery on Île St. Joseph&quot; title=&quot;Entrance to the cemetery on Île St. Joseph&quot; /&gt;
-&lt;em&gt;Entrance to the cemetery on Île St. Joseph&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;from-shackles-to-spaceflight-a-surprising-transformation&quot;&gt;From shackles to spaceflight: a surprising transformation&lt;/h1&gt;
-
-&lt;p&gt;The penal colony system in French Guiana was officially closed in 1953. Abandoned buildings on the Salvation Islands slowly disappeared under the vegetation until the early 1970s, when the French space programme realised it needed a new vantage point on rockets launching from Kourou.&lt;/p&gt;
-
-&lt;p&gt;In 1971, Îles du Salut were placed under the authority of CNES. The archipelago lies directly under the flight path of rockets launched from the Guiana Space Centre, which makes it an ideal observation point – unfortunately, closed to the spectators.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/005-ile-saint-joseph-welcome-sign.webp&quot; alt=&quot;Welcome sign on Île St. Joseph, reminding that the place is governed by CNES/CSG and the French Foreign Legion&quot; title=&quot;Welcome sign on Île St. Joseph, reminding that the place is governed by CNES/CSG and the French Foreign Legion&quot; /&gt; 
-&lt;em&gt;Welcome sign on Île St. Joseph, reminding that the place is governed by CNES/CSG and the French Foreign Legion&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In good weather, you could follow a launch from the islands from the very moment the engines ignite on the pad at Kourou until the bright dot of the rocket disappears into the sky, flying above the islands. The place lies directly below the ascend trajectory, that is why the archipelago is evacuated before every launch; only the owner of the lodge on Île Royale and a handful of gendarmes responsible for security remain. Pity, because it would make for a perfect observation spot.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/006-ile-royale-tracking-station-k400.webp&quot; alt=&quot;CNES Tracking Station on Île Royale, hosting *Ciné Télescope K400*&quot; title=&quot;CNES Tracking Station on Île Royale, hosting Ciné Télescope K400&quot; /&gt;
-&lt;em&gt;CNES Tracking Station on Île Royale, hosting *Ciné Télescope K400&lt;/em&gt;&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;*&lt;/p&gt;
-
-&lt;p&gt;The works on Île Royale started in 1968, when a specialised optical system called  &lt;em&gt;cinétheodolite&lt;/em&gt; was installed.In 1995, it was upgraded into the &lt;em&gt;cinétéléscope K400&lt;/em&gt; – the most powerful system used by the CNES to observe and record all launch-related events that may occur during flight, up to the point where the rocket is no longer visible optically.&lt;/p&gt;
-
-&lt;p&gt;For Ariane 5 launches, the event most commonly visible was the fairing separation (at around 110 km altitude). Occasionally, it was also possible to observe the separation of the main cryogenic stage (EPC) and the ignition of the storable propellant stage (EPS), as well as the ignition of the cryogenic upper stage in the Ariane 5 ECA version.&lt;/p&gt;
-
-&lt;p&gt;The system is equipped with a video camera, two film cameras, and two thermal/infrared cameras (operating in the 8–12 micron IR range). It can track targets either through manual designation or via infrared-based tracking measurements.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/007-ariane-6-booster-separation.webp&quot; alt=&quot;Long-range tracking shot of Ariane 6 (VA265) booster separation&quot; title=&quot;Long-range tracking shot of Ariane 6 (VA265) booster separation&quot; /&gt;
-&lt;em&gt;Long-range tracking shot of Ariane 6 (VA265) booster separation&lt;br /&gt;
-&lt;small&gt;Credit: ESA/Arianespace/Optique Vidéo du CSG&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;There is also the lighthouse on Île Royale. The current tower, known as the “Phare de l’Île Royale”, was brought into service in 1934 as an approach light for ships. In the 1980s, it was electrified and automated, and, despite the rise of satellite navigation, it still serves as a visual reference point for shipping in this part of the Atlantic.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/008-ile-royale-lighthouse.webp&quot; alt=&quot;Lighthouse on Île Royale&quot; title=&quot;Lighthouse on Île Royale&quot; /&gt;
-&lt;em&gt;Lighthouse on Île Royale&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;walking-between-graveyards-and-cnes-antennas&quot;&gt;Walking between graveyards and CNES antennas&lt;/h1&gt;
-
-&lt;p&gt;On an ordinary day, only two of the three islands are open to visitors: Île Royale and Saint-Joseph. Île du Diable remains practically off limits – steep shores, strong currents, occasional forgotten wells and other potential traps – an official ban means that most people only ever see it from a distance, from the cliffs of Île Royale.&lt;/p&gt;
-
-&lt;p&gt;A walk on Île Royale usually starts at the old landing stage. On one side, you see the ruins of kitchens, the hospital, and barracks; on the other, buildings converted into a small museum and a simple hostel. A short climb uphill brings you to the children’s cemetery, where white crosses are slowly being swallowed by tropical greenery. A few minutes further on, you pass the remnants of the “free town”: the guards’ houses, a small church, and administrative buildings.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/009-penal-colony-flowers.webp&quot; alt=&quot;Flowering plants slowly taking over the walls of the penal colony&quot; title=&quot;Flowering plants slowly taking over the walls of the penal colony&quot; /&gt; 
-&lt;em&gt;Flowering plants slowly taking over the walls of the penal colony&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Follow the path a bit further, and you suddenly reach the edge of the former “technical” zone: concrete foundations, low technical buildings, a mast with CNES telemetry antennas. Just a few steps away from places where prisoners once spent months in punishment cells, you stand next to equipment that, until recently, was tracking Ariane in flight.&lt;/p&gt;
-
-&lt;p&gt;From the top of the hill in the middle of the island, you look across to Île Saint-Joseph – the island once nicknamed the “man-eater”. This is where the most recalcitrant prisoners were sent for long-term isolation in damp, dark cells. Today, the island attracts visitors with its beach and deep palm shade, but among the trees, you can still see the walls of former solitary confinement blocks. They made a particularly thrilling impression on us, covered with vegetation and spider webs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/010-ile-saint-joseph-isolation-camp.webp&quot; alt=&quot;Former long-term isolation camp on the hilltop of Île Saint-Joseph&quot; title=&quot;Former long-term isolation camp on the hilltop of Île Saint-Joseph&quot; /&gt;
-&lt;em&gt;Former long-term isolation camp on the hilltop of Île Saint-Joseph&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Although the Îles du Salut are best known for their penal colony history, there are also traces of a much older, pre-colonial presence. On some of the rocky outcrops, visitors can look for petroglyphs attributed to Indigenous peoples of the Guiana coast, carved long before the arrival of Europeans.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/011-turtle-petroglyph-ile-saint-joseph.webp&quot; alt=&quot;An image of a turtle carved out in a rock on the shore of Île Saint-Joseph&quot; title=&quot;An image of a turtle carved out in a rock on the shore of Île Saint-Joseph&quot; /&gt;
-&lt;em&gt;An image of a turtle carved out in a rock on the shore of Île Saint-Joseph&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;a-paradise-for-wildlife&quot;&gt;A paradise for wildlife&lt;/h1&gt;
-
-&lt;p&gt;The islands are still a part of the tropical rainforest, and something you need to be prepared for is the abundance of wildlife everywhere. You will most certainly notice the squirrel monkeys (saimiri) and capuchin monkeys dart about everywhere, approaching visitors without fear and often snatching fruit or small items whenever the opportunity arises. On the ground, small rodents called agoutis scurry between roots and undergrowth. On Île Royale, a caiman can occasionally be spotted in the pond, lying motionless at the water’s edge before slipping silently beneath the surface – apart from it, there are no other larger predators, so the mammals can thrive.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/012-capuchin-monkey-snacks.webp&quot; alt=&quot;Capuchin monkey, looking for snacks&quot; title=&quot;Capuchin monkey, looking for snacks&quot; /&gt;
-&lt;em&gt;Capuchin monkey, looking for snacks&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Salvation Islands are also home to a more discreet but equally fascinating array of creatures. In the bushes, long columns of leafcutter ants march tirelessly, carrying fragments of leaves many times their size back to their hidden nests. Scolopendras, spiders, mosquitoes and countless other insects thrive in the humid climate. You can only imagine how in the past their presence added to the already terrible fate of the prisoners.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/013-atta-ants-ile-saint-joseph.webp&quot; alt=&quot;Farming ants from the *atta* genus, carrying leafs, at Île St. Joseph.&quot; title=&quot;Farming ants from the atta genus, carrying leafs, at Île St. Joseph.&quot; /&gt;
-&lt;em&gt;Farming ants from the atta genus, carrying leafs, at Île St. Joseph.&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Vegetation plays a central role in shaping this environment. Large Cecropia trees, recognizable by their pale trunks and umbrella-like leaves, are particularly notable for their symbiotic relationship with ants that live inside their hollow stems and defend them fiercely. Around them grow palm trees, sprawling ficus with tangled roots, and bursts of tropical flowers that bring color to the deep green landscape. The dense foliage creates a layered habitat where animals can move, hide, and feed with ease.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/014-cecropia-leaf-ile-saint-joseph.webp&quot; alt=&quot;Paweł with a Cecropia leaf found on Île St. Joseph.&quot; title=&quot;Paweł with a Cecropia leaf found on Île St. Joseph.&quot; /&gt;
-&lt;em&gt;Paweł with a Cecropia leaf found on Île St. Joseph.&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Beyond the forest, the surrounding waters are just as alive. Dolphins can often be seen gliding through the waves, while sea turtles and the unusual four-eyed fish inhabit the coastal shallows. In the past, sharks were drawn close to the islands by blood from the penal colony’s slaughterhouse, reinforcing their reputation as a natural barrier against escape.&lt;/p&gt;
-
-&lt;p&gt;Finally, the islands are home to a number of tropical bird species, including parrots, macaws, and seabirds. What we didn’t expect in this unique ecosystem were peacocks, not native to the islands. They also wander freely around the Royal Island.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/015-caiman-water-ile-royale.webp&quot; alt=&quot;Cayman lurking from the water on Île Royale&quot; title=&quot;Cayman lurking from the water on Île Royale&quot; /&gt;
-&lt;em&gt;Cayman lurking from the water on Île Royale&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;from-isolation-to-space-exploration-what-the-salvation-islands-teach-us&quot;&gt;From isolation to space exploration: what the Salvation Islands teach us&lt;/h1&gt;
-
-&lt;p&gt;The Salvation Islands are an extraordinary tropical destination. It’s a setting where the harshest chapters of human history overlap with technological ambition.&lt;/p&gt;
-
-&lt;p&gt;For about a century, the archipelago existed to cut people off from the world. Today, the same islands help to reach out into space, supporting rocket launches and missions that put scientific, telecommunications, and Earth-observation satellites into orbit.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/016-ile-royale-hospital-ruins.webp&quot; alt=&quot;Old hospital on Île Royale, the largest building on the islands&quot; title=&quot;Old hospital on Île Royale, the largest building on the islands&quot; /&gt;
-&lt;em&gt;Old hospital on Île Royale, the largest building on the islands&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;That layering of past and present means that many visitors treat the islands not just as a tropical day trip, but as a place to pause for a moment and reflect on how radically the role of a single, seemingly isolated patch of land can change over time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/017-salvation-islands-sunrise-kourou.webp&quot; alt=&quot;The Salvation Islands at sunrise, as viewed from Kourou&quot; title=&quot;The Salvation Islands at sunrise, as viewed from Kourou&quot; /&gt;
-&lt;em&gt;The Salvation Islands at sunrise, as viewed from Kourou&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;what-a-trip-to-cness-secret-island-looks-like&quot;&gt;What a trip to CNES’s “secret island” looks like&lt;/h1&gt;
-
-&lt;p&gt;You reach the Salvation Islands by boat from Kourou. The crossing typically takes 45–60 minutes, and the journey itself is part of the experience: behind you, the coastline and launch towers of the Guiana Space Centre; ahead of you, the outlines of the three islands become clearer with every kilometre.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cnes-secret-island/018-krzysztof-steering-boat.webp&quot; alt=&quot;If you are nice to the captain, he can let you steer the boat :&quot; title=&quot;If you are nice to the captain, he can let you steer the boat :)&quot; /&gt;
-&lt;em&gt;If you are nice to the captain, he can let you steer the boat :)&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Once ashore, you basically have two options:&lt;/p&gt;
-
+&lt;p&gt;Four key points stood out for us:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;explore Île Royale on your own along the marked paths, or&lt;/li&gt;
-  &lt;li&gt;join a guided tour with a local guide, who will take you to the church, the old hospital, the children’s cemetery, the small museum, and a couple of viewpoints.&lt;/li&gt;
+  &lt;li&gt;Space is becoming a strategic industry. Polish companies have the right capabilities, but the sector lacks coordinated financing and a stronger supplier base.&lt;/li&gt;
+  &lt;li&gt;Polish-French cooperation has practical value. France offers expertise in aerospace, nuclear, and defense; Poland contributes not only a growing market, but also engineering talent, technical expertise, and the potential to deliver subsystems and solutions for the defence and aerospace sectors. Together, they are closer to achieving European autonomy than many strategy papers suggest.&lt;/li&gt;
+  &lt;li&gt;Talent needs a clearer path into industry. Poland has a pool of ambitious young engineers and growing space expertise. The next step is to connect this potential with real projects, internships, companies, and long-term industrial work.&lt;/li&gt;
+  &lt;li&gt;Software is no longer just a support tool. In sectors with strict regulations and complex supply chains, good systems help teams move faster, make better decisions, and keep complex operations under control.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;practical-tips-planning-your-own-trip&quot;&gt;Practical tips: planning your own trip&lt;/h2&gt;
+&lt;p&gt;For Iterative Engineering, the themes discussed at EEC 2026 are not distant trends. They are already part of our work in space, energy, oil &amp;amp; gas, and industry. In these sectors, the challenge is often the same: operations are becoming more complex, while teams need to move faster, keep control, and make better decisions.&lt;/p&gt;
 
-&lt;h3 id=&quot;getting-there&quot;&gt;Getting there&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Strategic industries do not need more abstract talk about innovation. They need tools that help people execute.”
+– Krzysztof Gąsior, CEO, Iterative Engineering&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;The Salvation Islands lie about 14 km north of Kourou.&lt;/li&gt;
-  &lt;li&gt;Regular tourist boats (catamarans or motorboats) run from Kourou to Île Royale and Île Saint-Joseph, most often as day trips with several hours of free time on the main island. You can book the trip online in advance.&lt;/li&gt;
-  &lt;li&gt;Île du Diable is closed to visitors; you can view it from Île Royale’s viewpoints.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Our work with Europe’s Spaceport in French Guiana is one example. The software we build supports parts of launch operations that often remain invisible – payload preparation, access, campaign status, workflows, and the next decisions to be made. The same practical approach matters in energy and heavy industry, where good software helps teams manage complexity and turn plans into action.&lt;/p&gt;
 
-&lt;h3 id=&quot;cnes-angle--what-to-look-for&quot;&gt;CNES angle – what to look for&lt;/h3&gt;
+&lt;h2 id=&quot;europe-from-different-perspectives&quot;&gt;Europe from different perspectives&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;As the owner of the archipelago, CNES uses its location directly under the launch trajectory from Kourou.&lt;/li&gt;
-  &lt;li&gt;Before each launch, the islands are evacuated of tourists; only essential personnel (including gendarmes) remain.&lt;/li&gt;
-  &lt;li&gt;On Île Royale, you can look for traces of the space infrastructure: thecinétheodolite / cinétéléscope tracking site, CNES/CSG signage, cars and personnel.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The 18th European Economic Congress opened in Katowice with three giant screens behind the main stage showing maps of Europe from different angles: Europe as Europeans see it, Europe from the Pacific, and Europe from so far away that the continent appeared small and its borders were hard to see.&lt;/p&gt;
 
-&lt;h3 id=&quot;when-to-go&quot;&gt;When to go&lt;/h3&gt;
+&lt;p&gt;The opening keynote made a similar point: from inside Europe, things may still look relatively stable. From outside, Europe is harder to notice and define. It suggested the world shaped by clear rules has been replaced by something closer to managed chaos.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;French Guiana has a hot, humid equatorial climate, but the driest and sunniest period is usually from around August to November. That’s when you’re statistically likely to get the least rain and the easiest conditions for travel.&lt;/li&gt;
-  &lt;li&gt;In other months, you should expect frequent, often short, heavy showers – but the forest is at its greenest, and dramatic cloudscapes can make for excellent photos.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Europe, seen from our own perspective, looked very different from how it was seen in China, the United States, or the Global South.&lt;/p&gt;
+
+&lt;p&gt;It was a simple visual idea, but it captured the mood of the whole congress well. The old order hasn’t just been shaken – it is visibly shifting. Europe now has to navigate a landscape that is evolving faster than its own procedures, institutions, and industrial playbooks.&lt;/p&gt;
+
+&lt;p&gt;Geopolitical pressure is growing. Energy costs remain a major burden. Regulation is becoming heavier. Industrial leaders are asking whether Europe can still be a place where technologies are not only designed, but also manufactured, deployed, and scaled.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/002-eec-2026-europe-reindustrialisation-competitiveness-panel.webp&quot; alt=&quot;Europes competitiveness debate&quot; title=&quot;Europes competitiveness debate&quot; /&gt; &lt;em&gt;Opening discussion on Europe’s reindustrialisation and competitiveness, with Krzysztof Pawiński, Michał Sołowow and Johan Pelissier among the speakers&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;At the same time, AI, robotics, and automation are no longer abstract trends. They are beginning to affect real operations, real costs, and real competitiveness.&lt;/p&gt;
+
+&lt;p&gt;You could see this at the Congress. Humanoid robots were out on the exhibition floor, waving at people, jogging short loops, mirroring the gestures of whoever stood in front of them. Still closer to a demo than a working colleague, but enough to make the abstract talk about automation feel suddenly concrete.&lt;/p&gt;
+
+&lt;h2 id=&quot;space-is-no-longer-a-side-topic&quot;&gt;Space is no longer a side topic&lt;/h2&gt;
+
+&lt;p&gt;One of the strongest themes at EEC 2026 was the space industry. And this was not only about prestige, astronauts or inspiring stories. The message was broader: space is becoming part of strategic infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Satellites quietly support energy, agriculture, logistics, telecommunications, and defense. Not everything would stop without them, but much of it would slow down, become less precise, and cost more.&lt;/p&gt;
+
+&lt;p&gt;Data from orbit helps us understand what is happening on Earth. More and more space technology is dual-use meaning the same satellite serves civilian customers and the military.&lt;/p&gt;
+
+&lt;p&gt;Poland has made significant progress in recent years. The country now has companies with real space capabilities, stronger engagement with ESA, the Ignis mission, and growing public interest in the sector. But the space panels also carried a more uncomfortable message: isolated success stories are not enough.&lt;/p&gt;
+
+&lt;p&gt;Poland needs a more coherent strategy, more stable financing, faster institutional decisions, and a stronger ecosystem. Not only a few excellent companies, but also a second and third layer of suppliers, integrators, subcontractors, research partners, and people able to turn technology into working systems.&lt;/p&gt;
+
+&lt;p&gt;The most charged moment came during one of the space panels, when Polish astronaut Sławosz Uznański-Wiśniewski joined the discussion from the audience in an exchange with Marta Wachowicz, President of POLSA. For a moment, this was no longer a typical conference conversation. The room clearly felt that the debate touched real pressure points: the pace of institutional action, the effectiveness of national programs, the use of public interest created by the Ignis mission, and whether Poland can turn a symbolic moment into long-term industrial momentum.&lt;/p&gt;
+
+&lt;p&gt;That kind of moment matters. It strips away the polite layer of conference language and shows what is really at stake. The Polish space sector does not need only more visibility. It needs execution.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/003-eec-2026-space-panel-slawosz-uznanski-wisniewski-marta-wachowicz.webp&quot; alt=&quot;Space panel with Slawosz Uznanski-Wisniewski&quot; title=&quot;Space panel with Slawosz Uznanski-Wisniewski&quot; /&gt;
+&lt;em&gt;A lively, unscripted moment during the space industry panel: Polish ESA astronaut Sławosz Uznański-Wiśniewski joins the discussion in an exchange with Marta Wachowicz, President of the Polish Space Agency. Also pictured: Jacek Mandas of Creotech Instruments and Hubert Kijek of TVN24 BiS, the panel moderator&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;education-is-part-of-the-infrastructure&quot;&gt;Education is part of the infrastructure&lt;/h2&gt;
+
+&lt;p&gt;Education was another recurring theme. Space is not one discipline. It combines mechanics, electronics, optics, software, AI, materials science, telecommunications, cybersecurity, law, logistics, and mission management.&lt;/p&gt;
+
+&lt;p&gt;It is difficult to build such a sector if education continues to operate in silos. Missions like Ignis and Artemis, or the development of satellite technologies, could serve as powerful entry points into engineering, science, programming, and systems thinking. But that requires materials, projects, and language that connect major space events with what students actually learn at school.&lt;/p&gt;
+
+&lt;p&gt;On 23 April, the EEC panel on the aerospace industry put five speakers and ESA astronaut Sławosz Uznański-Wiśniewski around the same table: Airbus Polska, GoCosmic, AROBS, the Silesian University of Technology, and – representing science communication and education – Tomasz Rożek. The session’s listed themes ran from production demand and specialisation to innovation, skills, and Poland’s role in the European space value chain. The skills strand is what Rożek has been working on for years. His foundation Nauka.To Lubię released a full set of lesson scenarios tied to the Ignis mission – physics, maths, biology, Polish, history, and even PE – for primary schools.&lt;/p&gt;
+
+&lt;p&gt;In Silesia, this is no longer a theoretical debate. The region has put itself forward as a candidate for the new ESA centre in Poland, with the Górnośląsko-Zagłębiowska Metropolia presenting its &lt;a href=&quot;https://metropoliagzm.pl/wp-content/uploads/2026/04/GZM-2026-Gotowi-do-startu.pdf&quot; target=&quot;_blank&quot;&gt;“GZM2026: Ready to Launch”&lt;/a&gt; report as the case for hosting it. Where the centre eventually lands is one question. A more useful one is what actually gets built around it: which faculties in Gliwice or Katowice rewrite their programmes, which local companies start bidding for ESA subcontracts, and whether the engineers trained here have a reason to stay in Poland rather than take the next offer from Toulouse or Munich.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/004-eec-2026-tomasz-rozek-space-education-panel.webp&quot; alt=&quot;Tomasz Rozek on space education&quot; title=&quot;Tomasz Rozek on space education&quot; /&gt;
+&lt;em&gt;Tomasz Rożek speaking during the space industry panel, alongside Sławosz Uznański-Wiśniewski and Michał Szwajewski. His remarks on education, public engagement and the long-term talent pipeline became an important part of the discussion about Poland’s space sector&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the most interesting informal conversations for us was also the meeting with students representing Silesian Aerospace Technologies from the Silesian University of Technology.&lt;/p&gt;
+
+&lt;p&gt;In conversations like this, you can see the energy that the sector needs. The question is whether the economy can use it well: through internships, joint projects, first deployments, contact with industry, and real entry paths for young engineers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/005-eec-2026-silesian-aerospace-technologies-students.webp&quot; alt=&quot;Silesian aerospace students&quot; title=&quot;Silesian aerospace students&quot; /&gt;
+&lt;em&gt;Conversation with students from Silesian Aerospace Technologies at the Silesian University of Technology – a reminder that the future of the space sector will depend not only on institutions and companies, but also on the next generation of engineers&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For Silesia, this is especially important. A region historically associated with heavy industry and mining now has a chance to use its engineering DNA in new areas: space, automation, data, energy, and advanced software.&lt;/p&gt;
+
+&lt;h2 id=&quot;polish-french-cooperation-from-diplomacy-to-industrial-execution&quot;&gt;Polish-French cooperation: from diplomacy to industrial execution&lt;/h2&gt;
+
+&lt;p&gt;Another important theme of the congress was Polish-French cooperation. At EEC 2026, this did not feel like a diplomatic side topic. It was part of a larger question: how can Europe rebuild its industrial strength and strategic autonomy?&lt;/p&gt;
+
+&lt;p&gt;Poland and France bring different, but complementary strengths. France has deep capabilities in aerospace, space, defence, nuclear energy, infrastructure, and industry. Poland has a growing market, strong engineering talent, a strategic location, transformation experience, and an urgent need to modernize its energy and industrial base.&lt;/p&gt;
+
+&lt;p&gt;In space and defence, this cooperation can be particularly important. Airbus, Safran, MBDA, EDF, and TotalEnergies are not just names on conference slides. They represent real industrial capabilities – from space and defence systems, through nuclear energy, to fuels, biogas, renewables, and infrastructure transformation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/006-eec-2026-polish-french-economic-cooperation-panel.webp&quot; alt=&quot;Polish-French cooperation panel&quot; title=&quot;Polish-French cooperation panel&quot; /&gt;
+&lt;em&gt;Polish-French economic cooperation panel at EEC 2026. The discussion placed industrial partnerships, energy, defence, and European strategic autonomy in a broader business context&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For Poland, the key question is what role it wants to play in these value chains. Will it remain mainly a supplier of components and talent, or will it gradually move toward greater responsibility for systems, integration, and final solutions?&lt;/p&gt;
+
+&lt;p&gt;This question goes far beyond space. In energy, Polish-French cooperation touches nuclear power, renewables, biogas, and storage. In oil &amp;amp; gas and petrochemicals, it reminds us that the energy transition is not as simple as switching off the old world. Europe still needs stable supply chains, raw materials, infrastructure, and production capacity.&lt;/p&gt;
+
+&lt;h2 id=&quot;ai-robots-and-the-pressure-to-automate&quot;&gt;AI, robots, and the pressure to automate&lt;/h2&gt;
+
+&lt;p&gt;EEC 2026 also showed that AI and robotics are no longer a separate “technology track.” They are becoming an answer to the same problems discussed in energy, industry, and security: shortages of skilled workers, rising costs, complex processes, and pressure to move faster.&lt;/p&gt;
+
+&lt;p&gt;The robots present at the congress, including humanoid robots, made an impression. Not because they will replace people everywhere tomorrow. Rather, they show the direction of travel. Automation is no longer just a production line or a simple script. Increasingly, it means combining mechanics, sensors, AI, data, and software.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/007-eec-2026-agh-humanoid-robot-automation.webp&quot; alt=&quot;AGH humanoid robot&quot; title=&quot;AGH humanoid robot&quot; /&gt;
+&lt;em&gt;A humanoid robot at the AGH University of Krakow stands at EEC 2026, drawing both fascination and unease&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For Europe, this matters. With high energy costs, strong regulation, and demographic pressure, competitiveness cannot be based only on human effort and manual coordination. Europe needs higher productivity, faster reaction times, and better control over complex processes.&lt;/p&gt;
+
+&lt;p&gt;And this leads to a topic that is especially close to us.&lt;/p&gt;
+
+&lt;h2 id=&quot;software-is-becoming-industrial-infrastructure&quot;&gt;Software is becoming industrial infrastructure&lt;/h2&gt;
+
+&lt;p&gt;Many debates at the congress can be reduced to one sentence: Europe does not lack ambition. It lacks deployment speed.&lt;/p&gt;
+
+&lt;p&gt;Regulations are becoming more complex. Energy systems are harder to manage. Supply chains are more fragile. Space projects require coordination between teams, facilities, procedures, suppliers, safety rules, and access controls. Defence and dual-use technologies require control over data. The energy transition requires not only infrastructure, but also intelligent management of that infrastructure.&lt;/p&gt;
+
+&lt;p&gt;This is where software stops being an add-on. It becomes the operational layer of industry.&lt;/p&gt;
+
+&lt;p&gt;Well-designed systems can automate processes, organize data, shorten decision-making, support compliance, and reduce operational risk. In energy, they help manage complexity. In space, they help organize campaigns, payload preparations, workflows, user roles, and access control. In oil &amp;amp; gas and industry, they help move from reactive work to data-driven processes.&lt;/p&gt;
+
+&lt;p&gt;In each of these sectors, the same pattern appears: complexity grows faster than the traditional ways of managing it.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-all-of-that-means-for-iterative-engineering&quot;&gt;What all of that means for Iterative Engineering&lt;/h2&gt;
+
+&lt;p&gt;The conversations at EEC 2026 were not detached from our day-to-day work. They touched exactly the areas where Iterative Engineering has been building experience: space operations, industrial software, energy, oil &amp;amp; gas, and complex process management.&lt;/p&gt;
+
+&lt;p&gt;In the space sector, our work with Europe’s Spaceport in French Guiana has demonstrated the significant operational value that can be derived from software that supports real procedures, rather than just reporting. Payload preparations, campaign coordination, roles, access, workflows, and operational visibility are not secondary details. They are part of how a spaceport functions.&lt;/p&gt;
+
+&lt;p&gt;That is why the discussions about Poland’s space ecosystem, institutional speed, talent, and international cooperation felt especially relevant. If Europe wants to strengthen its space capabilities, it will need not only rockets, satellites, and ambitious programs. It will also need the digital systems that make complex operations repeatable, auditable, and scalable.&lt;/p&gt;
+
+&lt;p&gt;The same applies to energy and oil &amp;amp; gas. The transition will not be managed by infrastructure alone. It will require systems that help companies coordinate assets, data, compliance, maintenance, risk, and decision-making across increasingly complex environments.&lt;/p&gt;
+
+&lt;p&gt;This is the area where we believe Iterative Engineering can contribute: by building and integrating software that helps strategic industries move from discussion to execution.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/008-eec-2026-krzysztof-gasior-michal-zachara-kp-labs.webp&quot; alt=&quot;Krzysztof Gasior with Michal Zachara&quot; title=&quot;Krzysztof Gasior with Michal Zachara&quot; /&gt;
+&lt;em&gt;Krzysztof Gąsior, CEO of Iterative Engineering, on the right, in conversation with Michał Zachara, CEO of KP Labs, during EEC 2026&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The congress also confirmed the importance of staying close to the ecosystem. Conversations in the corridors – including meetings with representatives of Airbus Poland, KP Labs, and students from Silesian Aerospace Technologies – were a reminder that industrial capability is built through networks: companies, institutions, universities, and people who understand both technology and operations.&lt;/p&gt;
+
+&lt;p&gt;For us, this is one of the practical outcomes of EEC 2026. Not only a list of observations, but a clearer sense of where our work fits into Europe’s broader industrial challenge.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/key-takeaways-from-the-eec-2026/009-eec-2026-space-industry-corridor-conversations.webp&quot; alt=&quot;Space industry corridor conversations&quot; title=&quot;Space industry corridor conversations&quot; /&gt;
+&lt;em&gt;Conversations continued after the space industry panels, with participants from business, science, and the space ecosystem exchanging views beyond the formal agenda&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;em&gt;Hero image: Catamaran approaching the Salvation Islands&lt;br /&gt;
-&lt;small&gt;Credit: Photo – © Paweł Grzywocz/Iterative Engineering&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hero image: Opening session of the European Economic Congress 2026 in Katowice. The world maps shown on the main screens set the tone for one of the congress’s central themes: Europe’s changing role in a rapidly shifting global order&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;All photos by Tomasz Pac for Iterative Engineering.&lt;/p&gt;
+
 </description>
-        <pubDate>Thu, 02 Apr 2026 00:00:00 +0200</pubDate>
-        <link>https://blog.iterative.engineering/2026/04/02/cnes-secret-island-from-forgotten-ruins-to-rocket-launches/</link>
-        <guid isPermaLink="true">https://blog.iterative.engineering/2026/04/02/cnes-secret-island-from-forgotten-ruins-to-rocket-launches/</guid>
+        <pubDate>Thu, 28 May 2026 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2026/05/28/key-takeaways-from-the-eec-2026/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/05/28/key-takeaways-from-the-eec-2026/</guid>
         
-        <category>Lifestyle</category>
-        
-        <category>Travel</category>
+        <category>Business</category>
         
         <category>Space Industry</category>
         
@@ -207,20 +176,16 @@
         
         <category>Space Engineering</category>
         
-        <category>Spaceport</category>
+        <category>European Economic Congress</category>
         
-        <category>Guiana Space Center (CSG)</category>
+        <category>EEC</category>
         
-        <category>CNES</category>
+        <category>France</category>
         
-        <category>ESA</category>
-        
-        <category>Salvation Islands</category>
-        
-        <category>After Work</category>
+        <category>Events</category>
         
         
-        <category>lifestyle</category>
+        <category>business</category>
         
       </item>
     
