@@ -5,17 +5,115 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jul 2026 15:04:18 +0200</pubDate>
-    <lastBuildDate>Tue, 07 Jul 2026 15:04:18 +0200</lastBuildDate>
+    <pubDate>Mon, 10 Aug 2026 22:43:50 +0200</pubDate>
+    <lastBuildDate>Mon, 10 Aug 2026 22:43:50 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>The Spaceports App</title>
+        <image>/assets/images/the-spaceports-app/spaceports-app.webp</image>
+        <headline>Discover Spaceports App – a new, interactive tool for the SpaceTech industry that aggregates global launch infrastructure data in one place. Learn how our application eliminates information chaos, streamlines the technical analysis of spaceports, and helps launch providers and payload manufacturers plan orbital missions efficiently. Join the testing phase</headline>
+        <description>&lt;p&gt;The Spaceports App is an interactive, map-based platform that brings global launch infrastructure data into one place, so engineers and analysts can compare spaceports by technical specification and operational status.&lt;/p&gt;
+
+&lt;p&gt;The space industry is expanding fast. New companies are entering the launch market, next-generation vehicles are in development, and microsatellites are changing how telecommunications and Earth observation work. As the number of companies grows, ground infrastructure has become a bottleneck. We’re building the Spaceports App to close that gap.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-the-idea-came-from&quot;&gt;Where the idea came from&lt;/h2&gt;
+
+&lt;p&gt;The idea grew out of watching engineers and logistics managers deal with the same recurring problem, and it took shape during our team’s visit to the Guiana Space Centre (CSG). Seeing the scale and complexity of operations at the launch pad made the issue clear: checking available infrastructure is still a slow, manual task, even in an industry that runs on advanced technology.&lt;/p&gt;
+
+&lt;p&gt;Spaceport data is currently split across separate agency websites, buried in PDF bulletins, or locked in spreadsheets that don’t talk to each other. We concluded that the industry needs one reliable source showing spaceport locations alongside their technical specifications and current operational status.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-comparing-launch-sites-is-difficult&quot;&gt;Why comparing launch sites is difficult&lt;/h2&gt;
+
+&lt;p&gt;Choosing a launch site means checking dozens of details, and we identified three obstacles that slow this process down.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data isn’t standardised.&lt;/strong&gt; Each operator describes its capabilities and facilities differently, which makes it hard to compare sites quickly or accurately.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cross-referencing takes too long.&lt;/strong&gt; Confirming that a site with a cleanroom also holds the right administrative status (Dual-Use Ready, for example) and supports the required orbital inclinations means manually pulling data from several sources.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operational statuses go stale fast.&lt;/strong&gt; Launch windows shift, No Earlier Than (NET) dates change, and historical launch records get updated, so traditional databases are out of date shortly after publication.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-the-spaceports-app-does&quot;&gt;What the Spaceports App does&lt;/h2&gt;
+
+&lt;p&gt;Instead of building another list, we’re developing an interactive, map-based application for quick site analysis. The Spaceports App pulls infrastructure metadata from around the world into one interface.&lt;/p&gt;
+
+&lt;p&gt;It connects to external databases, including The Space Devs API, to process real-time data on thousands of launches. Users can filter sites by technical specifications, readiness level (investment and legal maturity), supported orbits, and number of pads.&lt;/p&gt;
+
+&lt;h2 id=&quot;who-the-spaceports-app-is-for&quot;&gt;Who the Spaceports App is for&lt;/h2&gt;
+
+&lt;p&gt;The Spaceports App is built to simplify spatial and technical analysis. Its filters let users narrow the global map down to a handful of sites that meet specific requirements within seconds.&lt;/p&gt;
+
+&lt;p&gt;We designed it for people working across the space sector:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Launch service providers&lt;/strong&gt; assessing infrastructure and operational capacity at new sites.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Payload manufacturers&lt;/strong&gt; checking that their hardware specifications match ground integration capabilities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Supply chain managers&lt;/strong&gt; planning logistics and operational support for missions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Analysts and investors&lt;/strong&gt; tracking how global launch infrastructure is developing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-try-the-spaceports-app&quot;&gt;How to try the Spaceports App&lt;/h2&gt;
+
+&lt;p&gt;The Spaceports App is still in active development. The SpaceTech community has specific technical requirements, and we want the product to genuinely help engineers and decision-makers do their jobs. We’re taking feedback from anyone in the industry.&lt;/p&gt;
+
+&lt;p&gt;Try the tool, tell us what’s missing, and let us know which features to build next.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Aug 2026 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2026/08/09/the-spaceports-app/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/08/09/the-spaceports-app/</guid>
+        
+        <category>Business</category>
+        
+        <category>Official</category>
+        
+        <category>Announcement</category>
+        
+        
+        <category>business</category>
+        
+      </item>
+    
+      <item>
+        <title>ESA and CSG Industry Days 2026</title>
+        <image>/assets/images/esa-csg-industry-days-2026/ISD2026-image-2048.webp</image>
+        <headline>Join Iterative Engineering at the ESA Industry Space Days in Noordwijk and CSG Industry Days in Paris this September and October. We will discuss spaceport IT solutions and payload preparation software. Follow our live event hub to track our activities, access key resources, and book a B2B meeting with us.</headline>
+        <description>&lt;p&gt;We are heading into a busy period, participating in events that shape the future of the European space infrastructure. This autumn, Iterative Engineering will be attending two major industry events.&lt;/p&gt;
+
+&lt;h3 id=&quot;key-events-we-are-attending&quot;&gt;Key Events We Are Attending:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ESA Industry Space Days 2026:&lt;/strong&gt; Taking place this September in Noordwijk, the Netherlands. We will explore the infrastructure and facilities where satellites are tested, and network with European industry representatives.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CSG Industry Days 2026:&lt;/strong&gt; Taking place in early October in Paris, France. Our team will give a presentation on the technical challenges of payload preparation software and share our experience of entering the space sector.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;your-central-live-updates-hub&quot;&gt;Your Central Live Updates Hub&lt;/h3&gt;
+
+&lt;p&gt;We appreciate the invitations from ESA to both events. To help you keep track of our updates, this article will serve as our central reference point.
+We will aggregate key information right here and link to more detailed materials and coverage published across different platforms. Bookmark this page to stay updated.&lt;/p&gt;
+
+&lt;h3 id=&quot;book-a-b2b-meeting&quot;&gt;Book a B2B Meeting&lt;/h3&gt;
+
+&lt;p&gt;We will soon share details on how to book short B2B meetings with us through the organizers’ platforms. See you there!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Aug 2026 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2026/08/08/esa-csg-industry-days-2026/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/08/08/esa-csg-industry-days-2026/</guid>
+        
+        <category>Business</category>
+        
+        <category>Official</category>
+        
+        <category>Announcement</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>Key takeaways from the European Economic Congress 2026: Europe needs speed, sovereignty, and execution</title>
         <image>/assets/images/key-takeaways-from-the-eec-2026/001-hero-eec-2026-katowice-opening-session-world-maps.webp</image>
         <headline>European Economic Congress 2026 showed Europe under pressure to move faster, strengthen industrial competitiveness, and turn ambition into execution. In this article, Iterative Engineering reflects on key takeaways from Katowice: space as strategic infrastructure, Polish-French cooperation, automation, talent, and the role of software in complex industrial operations.</headline>
-        <description>&lt;h2 id=&quot;executive-summary&quot;&gt;Executive summary&lt;/h2&gt;
-
-&lt;p&gt;EEC 2026 ran for three days in Katowice, featuring panels on space, industry, energy, and defense, among others. A recurring question emerged: Can Europe move fast enough to stay competitive? Most speakers agreed that the main issue is execution speed. The strategies are already in place.&lt;/p&gt;
+        <description>&lt;p&gt;EEC 2026 ran for three days in Katowice, featuring panels on space, industry, energy, and defense, among others. A recurring question emerged: Can Europe move fast enough to stay competitive? Most speakers agreed that the main issue is execution speed. The strategies are already in place.&lt;/p&gt;
 
 &lt;p&gt;Four key points stood out for us:&lt;/p&gt;
 &lt;ul&gt;
