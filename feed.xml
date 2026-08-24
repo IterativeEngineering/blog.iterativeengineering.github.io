@@ -5,9 +5,150 @@
     <description>Blog where we share our thoughts, reflections and experiences from building digital products and software at Iterative Engineering</description>
     <link>https://blog.iterative.engineering</link>
     <atom:link href="https://blog.iterative.engineering/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2026 15:40:04 +0200</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2026 15:40:04 +0200</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2026 11:03:59 +0200</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2026 11:03:59 +0200</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>How the United States built a launch system, not a single spaceport</title>
+        <image>/assets/images/how-the-usa-built-a-launch-system/001-axiom-1-pad-39a-artemis-i-pad-39b-kennedy-space-center.webp</image>
+        <headline>The United States did not build one dominant spaceport. It built a distributed launch system shaped by geography, infrastructure, regulation, and specialization. From Florida and Vandenberg to Wallops and Starbase, this article looks at how that network works – and what Europe can learn from it.</headline>
+        <description>&lt;p&gt;Seen from Europe, American access to space still tends to come down to one picture: Florida, a countdown clock, a rocket climbing over the Atlantic. The picture is striking, but it no longer explains much. The United States does not run a single gateway to orbit. It runs a layered launch system, with different sites taking on different orbital geometries, safety cases, vehicle classes, and institutional roles. Pads and propellant farms are only part of it. The rest is range operations, licensing, airspace management, military oversight, and a regulatory culture that keeps trying to speed up launches without loosening its grip on risk.&lt;/p&gt;
+
+&lt;p&gt;That is the real American advantage, and it has little to do with sheer numbers. The country has built an ecosystem in which public infrastructure, private operators and range services can sustain repeated launches at industrial scale. NASA now describes Kennedy plainly as a multi-user spaceport, and the Pentagon’s launch contracting has moved past a two-player structure by bringing SpaceX, ULA and Blue Origin into the top tier of national security awards. The system is not built around a single flagship facility or a single champion launcher. It is built around redundancy, specialisation and operational capacity.&lt;/p&gt;
+
+&lt;h1 id=&quot;floridas-space-coast-is-the-industrial-core-of-us-launch&quot;&gt;Florida’s Space Coast is the industrial core of US launch&lt;/h1&gt;
+
+&lt;p&gt;The Space Coast is still the industrial centre of American launch, though it is better understood now as a launch belt than as a single site. Kennedy and Cape Canaveral sit next to each other, remain institutionally distinct, and work in close operational overlap. NASA’s description of Kennedy as a premier multi-user spaceport is not marketing. It reflects a mature public–private campus where government programmes, private launch systems, spacecraft processing, and long-term commercial leases share the same ground at high density.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/002-artemis-ii-rollout-vab-pad-39b-crawler-transporter.webp&quot; alt=&quot;Artemis II on the crawler-transporter en route to Launch Pad 39B.&quot; title=&quot;Artemis II on the crawler-transporter en route to Launch Pad 39B.&quot; /&gt;
+&lt;em&gt;NASA’s Artemis II stack leaves the Vehicle Assembly Building for Launch Pad 39B on the upgraded crawler-transporter, January 2026.&lt;br /&gt;
+&lt;small&gt;Credit: NASA/Sam Lott&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That density matters more in 2026 than it did even a few years ago. Artemis II lifted off from Launch Complex 39B on 1 April 2026 and returned its four-person crew safely on 10 April, turning SLS from a mostly programmatic argument into a flown, crewed vehicle. Commercial work continues nearby from LC-39A, SpaceX keeps SLC-40 central to the orbital market’s cadence, ULA is pushing Vulcan as its next core rocket, and Blue Origin’s New Glenn is integrated, launched, recovered and meant to be re-flown within a few miles of the same coastline. This is what maturity looks like in practice: not one pad trying to do everything, but a cluster of specialised assets sharing geography, workforce and range support.&lt;/p&gt;
+
+&lt;p&gt;Florida’s strength now comes with a problem that success created. NASA’s inspector general, in a report published in June 2026, found that launches supported at Kennedy and Cape Canaveral rose from 31 in 2020 to 109 in 2025, and warned that Kennedy and Wallops would be operating near capacity around 2028 to 2029 without major upgrades. The auditors put the cost of fully modernising Kennedy’s infrastructure at roughly a billion dollars, against about 250 million already allocated. The American model is not frictionless. It is mature enough to have shifted from a shortage of demand to a shortage of supporting infrastructure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/003-morrell-operations-center-inspiration4-range-operations.webp&quot; alt=&quot;Range operations inside the Morrell Operations Center during Inspiration4.&quot; title=&quot;Range operations inside the Morrell Operations Center during Inspiration4.&quot; /&gt;
+&lt;em&gt;U.S. Space Force Guardians and Department of Defense civilians support the Inspiration4 launch inside the Morrell Operations Center, September 2021.&lt;br /&gt;
+&lt;small&gt;Credit: U.S. Space Force photo by Gwendolyn Kurzen&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;vandenberg-handles-polar-and-sun-synchronous-launches&quot;&gt;Vandenberg handles polar and sun-synchronous launches&lt;/h1&gt;
+
+&lt;p&gt;If Florida is the main industrial core, Vandenberg is the clearest case of geographic specialisation. Its strength is orbital rather than symbolic. Southbound trajectories over the Pacific make it the natural American address for polar and sun-synchronous missions, the orbit classes that matter most for Earth observation and many defence payloads. That logic has not changed, and it remains one of the reasons why a mature launch system does not rely on a single coast.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/004-slc-6-vandenberg-space-force-base-modernization.webp&quot; alt=&quot;Space Launch Complex 6 during modernization at Vandenberg.&quot; title=&quot;Space Launch Complex 6 during modernization at Vandenberg.&quot; /&gt;
+&lt;em&gt;Space Launch Complex 6 at Vandenberg Space Force Base during its 2026 modernization, as legacy infrastructure was removed for future launch operations.&lt;br /&gt;
+&lt;small&gt;Credit: U.S. Space Force photo by Staff Sgt. Daekwon Stith&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What has changed is the level of activity around it. The misty Vandenberg is not a Cold War museum. It handles continuing Falcon 9 traffic and ongoing redevelopment to support future growth, including plans announced in April 2026 for a New Glenn pad, SLC-14, that would give the vehicle polar-orbit access from the West Coast. Its role is no longer just “the place for polar launches.” It is the West Coast anchor of a national network that still divides missions by geometry and risk in a very practical way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/004a-starbase-starship-s39.webp&quot; alt=&quot;Starship at Starbase Texas&quot; title=&quot;Starship at Starbase Texas&quot; /&gt;
+&lt;em&gt;Ship S39 being rolled out to the new pad at Starbase ahead of the 12th test flight.&lt;br /&gt;
+&lt;small&gt;Credit: SpaceX&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;wallops-and-starbase-secondary-sites-and-private-campuses&quot;&gt;Wallops and Starbase: secondary sites and private campuses&lt;/h1&gt;
+
+&lt;p&gt;Wallops stays interesting precisely because it does not try to match the Space Coast on scale. A national launch system needs more than large hubs. It needs secondary sites, specialist campaigns, test capacity and room for vehicles and customers that do not fit the main corridor. The same June 2026 oversight report found that Wallops was growing so quickly that its infrastructure was coming under pressure, with launches rising from 3 in 2020 to 17 in 2025. “Secondary” does not mean marginal here. It means differently positioned.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/005-antares-cygnus-pad-0a-wallops-sunrise.webp&quot; alt=&quot;Antares and Cygnus on Pad-0A at Wallops at sunrise.&quot; title=&quot;Antares and Cygnus on Pad-0A at Wallops at sunrise.&quot; /&gt;
+&lt;em&gt;Antares and Cygnus on Pad-0A at NASA’s Wallops Flight Facility at sunrise, October 2014.&lt;br /&gt;
+&lt;small&gt;Credit: NASA/Joel Kowsky&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Starbase belongs to another category entirely. SpaceX’s site at Boca Chica in Texas is not a classical multi-tenant spaceport but a vertically integrated private campus, where manufacturing, testing, launch infrastructure, and vehicle iteration run as one development loop.&lt;/p&gt;
+
+&lt;p&gt;That makes it one of the most useful examples in the whole sector, though not because it has escaped regulation. The opposite is true. FAA material on Boca Chica shows Starship operations sitting inside a framework of licensing, public-safety review, insurance requirements and environmental assessment, and it now contemplates up to 25 Starship and Super Heavy orbital launches a year at the site, along with 25 Starship and 25 Super Heavy landings. Starbase captures both sides of the modern American story at once: unusual private engineering speed, and a layer of institutional control that will not go away.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-established-launchers-falcon-9-falcon-heavy-and-sls&quot;&gt;The established launchers: Falcon 9, Falcon Heavy and SLS&lt;/h1&gt;
+
+&lt;p&gt;Falcon 9 still sets the cadence. SpaceX flew 165 Falcon 9 missions in 2025, and by June 2026 it had flown a single first stage on its 35th flight, another record for booster reuse. This is reusability turned into industrial rhythm rather than reusability as a talking point. Falcon Heavy, for its part, returned to flight on 27 April 2026 with the ViaSat-3 F3 mission after roughly eighteen months on the ground, and remains an available heavy-lift option for high-energy commercial and government payloads.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/006-spacex-falcon-9-booster-landing-lz-2-cape-canaveral.webp&quot; alt=&quot;Falcon 9 first stage returning to Landing Zone 2 at Cape Canaveral.&quot; title=&quot;Falcon 9 first stage returning to Landing Zone 2 at Cape Canaveral.&quot; /&gt;
+&lt;em&gt;A Falcon 9 first-stage booster returns to Landing Zone 2 at Cape Canaveral Space Force Station after the CRS NG-23 mission, September 2025.&lt;br /&gt;
+&lt;small&gt;Credit: U.S. Space Force photo by Gwendolyn Kurzen&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;SLS occupies a different place in the system. NASA now frames Artemis II as a completed crewed lunar flyby and still describes SLS as the only rocket able to send Orion, astronauts, and cargo directly to the Moon in a single launch. None of this makes SLS a market rocket, and it was never meant to be one. What it does mean is that the state-owned heavy-lift segment is no longer a promise. It is a part of the American architecture for deep-space human exploration.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-new-entrants-vulcan-new-glenn-and-starship&quot;&gt;The new entrants: Vulcan, New Glenn and Starship&lt;/h1&gt;
+
+&lt;p&gt;Vulcan Centaur has crossed an important threshold too, though not in a straight line. ULA presents Vulcan as its scalable successor platform for national security, civil and commercial missions, and the US Space Force certified it for national security launches in March 2025, citing added capacity, resilience and flexibility. Then, after a repeat solid-booster anomaly on the USSF-87 flight in February 2026, the Space Force paused national security Vulcan missions pending investigation. Vulcan still matters strategically, because the system needs a credible non-SpaceX heavy provider. Operationally, 2026 has shown that redundancy on paper still has to survive contact with the hardware.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/007-vulcan-ussf-87-slc-41-cape-canaveral.webp&quot; alt=&quot;Vulcan launching USSF-87 from Space Launch Complex 41.&quot; title=&quot;Vulcan launching USSF-87 from Space Launch Complex 41.&quot; /&gt;
+&lt;em&gt;A Vulcan rocket carrying the USSF-87 mission lifts off from Space Launch Complex 41 at Cape Canaveral Space Force Station, February 2026.&lt;br /&gt;
+&lt;small&gt;Credit: U.S. Space Force photo by Gwendolyn Kurzen&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;New Glenn is no longer a future entrant. By Blue Origin’s own figures, it is a reusable heavy launcher built to carry more than 45 tonnes to low Earth orbit, with a first stage intended for at least 25 flights and a manufacturing and refurbishment loop on the Space Coast around LC-36. Its 2026 record, though, is mixed. On its third flight, on 19 April 2026, the booster landed successfully while the upper stage underperformed and left AST SpaceMobile’s BlueBird 7 satellite in a useless orbit, prompting an FAA mishap investigation and a grounding. Then, on 28 May 2026, a ground-test explosion badly damaged Launch Complex 36, Blue Origin’s only operational pad, though the company has said it aims to fly again before the end of the year. New Glenn has entered the field, but it has entered the hard way, moving from concept risk to operational risk.&lt;/p&gt;
+
+&lt;p&gt;Starship is still the unusual case. It remains the largest gamble in the system, and being ambitious has not made it routine. Flight 12 on 22 May 2026 was the debut of the redesigned V3 vehicle from a new Starbase pad: the ship deployed its mock payload and survived re-entry, while the booster failed its boost-back burn and crash-landed at sea. The pattern is by now familiar, with real progress and repeated setbacks running side by side across a campaign that has not yet become ordinary transportation. What Starship is really testing is broader than any single flight. It is whether the United States can extend its system from high cadence and partial reuse toward full reusability at a very large scale, without breaking the regulatory and environmental frameworks around it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/007a-starship-hot-staging.webp&quot; alt=&quot;Starship - hot staging manoeuvre&quot; title=&quot;Starship - hot staging manoeuvre&quot; /&gt;
+&lt;em&gt;Starship separates from the Super Heavy booster with a hot staging manoeuvre during the 13th flight test.&lt;br /&gt;
+&lt;small&gt;Credit: SpaceX&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;brazil-and-canada-the-americas-unfinished-spaceports&quot;&gt;Brazil and Canada: the Americas’ unfinished spaceports&lt;/h1&gt;
+
+&lt;p&gt;Setting aside the &lt;a href=&quot;/2025/11/10/behind-the-scenes-at-the-european-spaceport/&quot;&gt;Guiana Space Centre&lt;/a&gt;, which is geographically South American but operationally central to Europe, the rest of the Americas has nothing resembling the American network. The site that stays strategically interesting in the south is Brazil’s Alcântara Space Center. Operated by the Brazilian Air Force and unusually close to the equator, it holds a genuine positional advantage for some launch profiles, particularly against high-latitude sites. But the old lesson holds: geography alone does not produce cadence. Alcântara matters for its location and long-term potential, not because it has yet built anything like Florida’s ecosystem of operators, infrastructure density and routine orbital business.&lt;/p&gt;
+
+&lt;p&gt;Canada makes the same point from the far north, and it shows how far intent alone can carry a site before the infrastructure exists to back it. Maritime Launch Services is building Spaceport Nova Scotia near Canso, on the Atlantic coast, pitched as the country’s first commercial orbital launch complex and its answer to being the only G7 nation without one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/008-nova-scotia-atlantic-coast-from-iss.webp&quot; alt=&quot;Nova Scotia’s Atlantic coastline seen from the International Space Station.&quot; title=&quot;Nova Scotia’s Atlantic coastline seen from the International Space Station.&quot; /&gt;
+&lt;em&gt;Nova Scotia’s Atlantic coastline seen from the International Space Station, May 2019.&lt;br /&gt;
+&lt;small&gt;Credit: NASA Earth Observatory / ISS Crew Earth Observations Facility and Earth Science and Remote Sensing Unit, Johnson Space Center&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The positional case is real: over-ocean corridors and access to a wide band of polar and sun-synchronous inclinations from a single site. The political and financial backing arrived in March 2026, when the Department of National Defence signed on as an anchor tenant, leasing a dedicated pad on a ten-year, 200-million-dollar agreement backdated to April 2025, with the pad meant to reach initial operational readiness by the end of 2026. What has actually flown so far, though, is suborbital: a series of T-Minus Barracuda hypersonic test shots, the most recent on 10 June 2026. The site itself remains largely a construction project, with civil works and the first support buildings still in progress, and Canada’s orbital launch regulations were still only at the consultation stage through the spring of 2026. Nova Scotia is worth watching because it sums up the whole argument: a good location and serious money do not, by themselves, make a working spaceport. Closing the gap between announcement and cadence is what the American system has spent decades doing.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-europe-should-learn-from-the-us-launch-model&quot;&gt;What Europe should learn from the US launch model&lt;/h1&gt;
+
+&lt;p&gt;The lesson for Europe is not to copy one American site or one American company. It is that real launch maturity is systemic. The American model combines differentiated geography, multi-user infrastructure, heavy public participation, aggressive private execution, a slowly adapting regulatory apparatus, and several launch providers working under long-term demand from both government and commercial customers. The system is strong enough to absorb failure, and busy enough that infrastructure itself is now becoming a constraint.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/009-europes-spaceport-csg-launch-complexes-from-orbit.webp&quot; alt=&quot;Europe’s Spaceport in French Guiana with its launch complexes identified from orbit.&quot; title=&quot;Europe’s Spaceport in French Guiana with its launch complexes identified from orbit.&quot; /&gt;
+&lt;em&gt;Europe’s Spaceport in French Guiana seen from orbit, with its main launch complexes identified across the site.&lt;br /&gt;
+&lt;small&gt;Credit: ESA/NASA&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Part of that network logic is software. A launch campaign has to line up range preparations, payload processing and launcher integration, and the requests that connect those teams are still often handled by email, phone and chat. That holds up while a campaign is simple, but not as payloads and teams multiply. This is where our work at Iterative Engineering sits: we build custom software for engineering-heavy fields, including space. One recent project brings scattered service requests together in a single tool, with a service catalogue, request tracking and shared dashboards. We tested it on site at the Guiana Space Centre, Europe’s spaceport in French Guiana, with the operator’s staff using it in their real roles. It is a small reminder of the article’s main point: a mature launch system is not only pads and rockets, but also the software that lets many teams work in parallel.&lt;/p&gt;
+
+&lt;p&gt;That is why the most useful European question is no longer “which single spaceport will matter most?” Europe is beginning to diversify its launch geography, with new sites such as Andøya in Norway adding orbital launch infrastructure outside French Guiana, but these sites do not yet form a network with anything like the cadence, redundancy and operational depth of the US system.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/how-the-usa-built-a-launch-system/010-spectrum-launch-pad-andoya-spaceport-norway.webp&quot; alt=&quot;Spectrum on the launch pad at Andøya Spaceport in northern Norway.&quot; title=&quot;Spectrum on the launch pad at Andøya Spaceport in northern Norway.&quot; /&gt;
+&lt;em&gt;Isar Aerospace’s Spectrum on the launch pad at Andøya Spaceport in northern Norway, during preparations for its second launch campaign.&lt;br /&gt;
+&lt;small&gt;Credit: Isar Aerospace&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It is “how do different sites, ranges, regulators and vehicles work together as a network?” The United States offers a mature example of that network logic. Its advantage does not rest on one heroic project. It rests on the ability to distribute launches by mission type, orbit, operator and institutional function while the system as a whole keeps moving. If Europe wants a realistic benchmark, that is the one that matters.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;*Hero image: SpaceX’s Axiom-1 on Launch Pad 39A, with NASA’s Artemis I on Pad 39B at Kennedy Space Center, April 2022.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Credit: Credit: NASA/Jamie Peer&lt;/small&gt;*&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Aug 2026 00:00:00 +0200</pubDate>
+        <link>https://blog.iterative.engineering/2026/08/21/how-the-usa-built-a-launch-system/</link>
+        <guid isPermaLink="true">https://blog.iterative.engineering/2026/08/21/how-the-usa-built-a-launch-system/</guid>
+        
+        <category>Business</category>
+        
+        <category>Space Industry</category>
+        
+        <category>Space Tech</category>
+        
+        <category>Space Engineering</category>
+        
+        <category>Spaceport</category>
+        
+        <category>SpaceX</category>
+        
+        <category>Launch Vehicles</category>
+        
+        <category>NASA</category>
+        
+        <category>ESA</category>
+        
+        
+        <category>business</category>
+        
+      </item>
     
       <item>
         <title>The Spaceports App</title>
